@@ -1,6 +1,6 @@
 site_name: The PROVES Kit Documentation
 
-theme: 'material'#Using material theme. There are many other options also
+theme: 'material' #Using material them
 
 plugins:
   - search  # To have search functionality on the document
