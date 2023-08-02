@@ -1,6 +1,7 @@
 site_name: The PROVES Kit Documentation
 
-theme: 'material' # Using material them
+theme: 
+  name: material
   features:
     - navigation.tabs
 
