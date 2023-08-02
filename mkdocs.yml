@@ -10,6 +10,9 @@ theme:
 plugins:
   - search  # To have search functionality on the document
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
 
 nav: # Setting up the navigation. The below list will be tabs on left panel
   - Home: index.md
