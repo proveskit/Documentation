@@ -1,1 +1,17 @@
-site_name: My Docs
+site_name: The PROVES Kit Documentation
+
+theme: 'material'#Using material theme. There are many other options also
+
+plugins:
+  - search  # To have search functionality on the document
+  - mkdocstrings  # To generate documentation from the code docstrings
+
+
+nav: # Setting up the navigation. The below list will be tabs on left panel
+  - Home: index.md
+  - Overview: overview.md # Overview of the project
+  - Design: design_philosophy.md  # 
+  - Assembly Guide: assembly_guide.md # Assembly guide
+  - Core Documentation: 
+    - 'Hardware': hardware.md
+    - 'Software': software.md
