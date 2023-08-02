@@ -4,6 +4,8 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - header.autohide
+    - navigation.path
 
 plugins:
   - search  # To have search functionality on the document
@@ -16,4 +18,10 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
   - Assembly Guide: assembly_guide.md # Assembly guide
   - Core Documentation: 
     - Hardware: hardware.md
+      - Hardware Overview: hardware.md # hardware-overview
+      - 1U Structure: 1U_structure.md # 1u-structure
+      - Flight Control Board: FC_board.md # flight-control-board
+      - XY Solar Panels: XY_solar_board.md
+      - Z Solar Panels: Z_solar_board.md
+      - Battery Board: battery_board.md
     - Software: software.md
