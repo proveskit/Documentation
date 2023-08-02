@@ -1,6 +1,8 @@
 site_name: The PROVES Kit Documentation
 
 theme: 'material' # Using material them
+  features:
+    - navigation.tabs
 
 plugins:
   - search  # To have search functionality on the document
