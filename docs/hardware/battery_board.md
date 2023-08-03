@@ -1,5 +1,7 @@
 # Overview
-The PROVES kit "1U" structure was designed around maximum customizability. With sixteen unique positions, several boards can fit inside to fulfill most mission requirements. The structure is laser cut, bent, and anodized Aluminum sheet metal, and is even strong enough to withstand the weight of a fully grown adult! Primary holes on the structure not joined with a bracket or hardware internally contain pressed PEM-Nuts for easy external mounting. The main structure was designed to be separate halves that are joined together by brackets and Printed Circuit Boards.
+The PROVES kit Battery Board was designed around
+## Getting Started
+
 ## Utilized Parts
 The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions. The board serves as an interface with the rest of the satellite. A 12 position picolock is utilized to interface between the Flight Controller and the Battery Board. The board interfaces with 5 solar faces of the satellite using 5 position picolocks. The other 2 position picolocks are used for interfacing with the inhibit scheme, battery heater, burn wire, and direct charging port. The hardware utilized on the module is the following:
 <div class="result" markdown>
@@ -13,3 +15,7 @@ The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions. 
 - **R5460N208AA** is utilized to disconnect the negative side of the batteries from the system in overcharge and overdischarge events.
 - **APAN3109 Relay** is implemented to allow current to flow to the battery heater and burn wire MOSFETS.
 </div>
+
+## Known Issues
+
+## Troubleshooting
