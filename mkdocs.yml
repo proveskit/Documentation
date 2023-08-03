@@ -27,7 +27,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Introduction: assembly_guide/introduction.md
     - "Chapter 0: Parts and Tools": assembly_guide/ch_0_parts_tools.md
     - "Chapter 1: Battery Board Preintegration": assembly_guide/ch_1_eps.md
-    - "Chapter 2: Feet Assembly Preintegration": assembly_guide/ch_2_feet.md
+    - "Chapter 2: Feet and Heater Assembly Preintegration": assembly_guide/ch_2_feet.md
     - "Chapter 3: Solar Boards Preintegration": ch_3_soalr.md
     - "Chapter 4: Flight Controller Board Preintegration": assembly_guide/ch_4_fc.md
     - "Chapter 5: Antenna Preintegration": assembly_guide/ch_5_antenna.md
