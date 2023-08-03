@@ -13,6 +13,7 @@ plugins:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - attr_list
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
