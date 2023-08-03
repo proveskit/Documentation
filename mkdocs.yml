@@ -11,6 +11,9 @@ plugins:
   - search  # To have search functionality on the document
 
 markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - attr_list
   - md_in_html
 
