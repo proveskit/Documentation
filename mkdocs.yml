@@ -20,30 +20,30 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
   - Design: design_philosophy.md  # 
   - Assembly Guide:
     - assembly_guide/index.md
-    - Introduction: introduction.md
-    - Chapter 0':' Parts and Tools: ch_0_parts_tools.md
-    - Chapter 1':' Battery Board Preintegration: ch_1_eps.md
-    - Chapter 2':' Feet Assembly Preintegration: ch_2_feet.md
+    - Introduction: assembly_guide/introduction.md
+    - Chapter 0':' Parts and Tools: assembly_guide/ch_0_parts_tools.md
+    - Chapter 1':' Battery Board Preintegration: assembly_guide/ch_1_eps.md
+    - Chapter 2':' Feet Assembly Preintegration: assembly_guide/ch_2_feet.md
     - Chapter 3':' Solar Boards Preintegration: ch_3_soalr.md
-    - Chapter 4':' Flight Controller Board Preintegration: ch_4_fc.md
-    - Chapter 5':' Antenna Preintegration: ch_5_antenna.md
-    - Chapter 6':' Structure Preintegration: ch_6_structure.md
-    - Chapter 7':' Preintegration Testing: ch_7_testing.md
-    - Chapter 8':' Integration Procedure: ch_8_integration.md
-    - Chapter 9':' Final Tests: ch_9_final_tests.md
+    - Chapter 4':' Flight Controller Board Preintegration: assembly_guide/ch_4_fc.md
+    - Chapter 5':' Antenna Preintegration: assembly_guide/ch_5_antenna.md
+    - Chapter 6':' Structure Preintegration: assembly_guide/ch_6_structure.md
+    - Chapter 7':' Preintegration Testing: assembly_guide/ch_7_testing.md
+    - Chapter 8':' Integration Procedure: assembly_guide/ch_8_integration.md
+    - Chapter 9':' Final Tests: assembly_guide/ch_9_final_tests.md
   - Core Documentation: 
     - Hardware: 
       - hardware/index.md
-      - 1U Structure: 1U_structure.md # 1u-structure
-      - Flight Control Board: FC_board.md # flight-control-board
-      - XY Solar Panels: XY_solar_board.md
-      - Z Solar Panels: Z_solar_board.md
-      - Battery Board: battery_board.md
+      - 1U Structure: hardware/1U_structure.md # 1u-structure
+      - Flight Control Board: hardware/FC_board.md # flight-control-board
+      - XY Solar Panels: hardware/XY_solar_board.md
+      - Z Solar Panels: hardware/Z_solar_board.md
+      - Battery Board: hardware/battery_board.md
     - Software:
       - software/index.md
-      - pysquared.py: pysquared.md
-      - functions.py: functions.md
-      - big_data.py: big_data.md
-      - cdh.py: cdh.md
-      - payload.py: payload.md
-      - detumble.py: detumble.md
+      - pysquared.py: software/pysquared.md
+      - functions.py: software/functions.md
+      - big_data.py: software/big_data.md
+      - cdh.py: software/cdh.md
+      - payload.py: software/payload.md
+      - detumble.py: software/detumble.md
