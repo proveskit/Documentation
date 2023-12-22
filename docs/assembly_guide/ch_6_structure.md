@@ -1,4 +1,4 @@
-# Chapter 6: Structure Integration
+# Chapter 6: Structure Pre-Integration
 
 1. **Cataloging Parts**
    a. **The Structure**
