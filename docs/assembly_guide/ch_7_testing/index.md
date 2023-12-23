@@ -1,6 +1,6 @@
-# Chapter 7: Testing Procedures Index
+# Chapter 7: Testing Procedures Overview
 
-This index provides links to various testing procedures outlined in Chapter 7. Each link leads to a detailed guide on how to perform each specific test.
+This overview provides links to various testing procedures outlined in Chapter 7. Each link leads to a detailed guide on how to perform each specific test.
 
 ## Testing Sections
 
@@ -17,4 +17,4 @@ Please click on the links above to navigate to the respective testing procedure.
 
 ---
 
-[Return to Overview ](ch_7_testing.md)
+[Return to Overview ](../ch_7_testing.md)
