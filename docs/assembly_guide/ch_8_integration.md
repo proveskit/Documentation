@@ -66,28 +66,55 @@
 
 ## 5) Cable Management
 ### a. Connections
-  - *Note*: Route wires through the sides of the battery board with cutouts to ensure that the solar panels will sit flush in later steps.
+
+![Figure 8-13](images/8-13.png)
+<p align="center">Figure 8.13: A battery board with necessary connections boxed in blue</p>
+
+> **Note:** Route wires through the sides of the battery board with cutouts to ensure that the solar panels will sit flush in later steps.
+
   - **1. Foot Switch Ports:** The foot assembly will terminate to a 2-position Pico-Lock connector. Pull the connected wires up along the open sides of the battery board.
   - **2. Remove Before Flight (RBF):** The RBF assembly will terminate to a 2-position Pico-Lock connector. This will be connected when the top-cap is installed.
   - **3. Direct Charge Port:** 2-position to 2-position Pico-Lock connector cable.
   - **4. Face Ports:** 5-position to 5-position Pico-Lock connector cable.
     - *Face 4* is reserved for the bottom or -Z solar face while Faces 0 to 3 are to be used for the side solar faces of the satellite.
   - **5. Main Board (Top Cap) Port:** 12-position to 12-position Pico-Lock connector cable.
+    > **Note:** If a 915 MHz RF module is used instead of a 437.4 MHz, then a wire in the cable needs to be removed. This can be seen in Figure 8.14 below. 
   - **6. Burn Wire Port:** 2-position to 2-position Pico-Lock connector cable.
   - **7. Battery Heater Port:** The battery heater terminates to a 2-position Pico-Lock connector cable.
+
+![Figure 8-14](images/8-14.png)
+<p align="center">Figure 8.14: Battery board with Modified Connector </p>
 
 ## 6) Integrating Solar Faces & Top Cap
 ### a. Solar Faces
   - **i.** Determine the orientation of each face using the top cap as a guide.
-    <p align="center">Figure 8.14: Showing the orientation diagram on the Top Cap.</p>
+<div style="text-align: center;">
+    <img src="images/8-15.png" width="300" />
+</div>
+    <p align="center">Figure 8.15: Showing the orientation diagram on the Top Cap.</p>
+
   - **ii.** Connect each pin-out to the proper face (+-X, +-Y, +-Z) on the satellite.
-  - **iii.** Secure the solar faces of the satellite to the structure with 5mm stainless steel fasteners.
-    <p align="center">Figure 8.15: Securing the solar faces onto the structure.</p>
-  - **iv.** Connect the -Z face by securing the thermocouple wire into the proper terminals on the board.
+<div style="text-align: center;">
+    <img src="images/8-16.png" width="600" />
+</div>
     <p align="center">Figure 8.16: Securing the solar faces onto the structure.</p>
+
+  - **iii.** Secure the solar faces of the satellite to the structure with 5mm stainless steel fasteners.
+<div style="text-align: center;">
+    <img src="images/8-17.png" width="300" />
+</div>
+    <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
+
+  - **iv.** Connect the -Z face by securing the thermocouple wire into the proper terminals on the board. The yellow wire should go into the terminal with the square footprint, while the red wire should go into the terminal with the circular footprint.
+
+<div style="text-align: center;">
+    <img src="images/8-18.png" width="700" />
+</div>
+    <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
+
   - **v.** Connect the “face 4” connection to this face then secure the face with M2.5x5mm pan head bolts onto the structure.
   - **vi.** Connect the RBF wire and other wires to the corresponding connectors on the top cap.
-    <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
+
 
 ## 7) Final Steps
 ### a. Tying down the antenna
