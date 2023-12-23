@@ -32,8 +32,16 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - "Chapter 4: Flight Controller Board Preintegration": assembly_guide/ch_4_fc.md
     - "Chapter 5: Antenna Preintegration": assembly_guide/ch_5_antenna.md
     - "Chapter 6: Structure Preintegration": assembly_guide/ch_6_structure.md
-    - "Chapter 7: Preintegration Testing": assembly_guide/ch_7_testing.md
+    - "Chapter 7: Preintegration Testing":
       - "Preintegration Testing Index": assembly_guide/ch_7_testing/index.md
+      - "Solar Board Testing": assembly_guide/ch_7_testing/solar_board_testing.md
+      - "Battery Board Testing": assembly_guide/ch_7_testing/battery_board_testing.md
+      - "Flight Controller Testing": assembly_guide/ch_7_testing/flight_controller_testing.md
+      - "Antenna Testing": assembly_guide/ch_7_testing/antenna_testing.md
+      - "Structural Integrity Testing": assembly_guide/ch_7_testing/structural_integrity_testing.md
+      - "Communication Systems Testing": assembly_guide/ch_7_testing/communication_systems_testing.md
+      - "Thermal Testing": assembly_guide/ch_7_testing/thermal_testing.md
+      - "Final Integration Testing": assembly_guide/ch_7_testing/final_integration_testing.md
     - "Chapter 8: Integration Procedure": assembly_guide/ch_8_integration.md
     - "Chapter 9: Final Tests": assembly_guide/ch_9_final_tests.md
   - Core Documentation: 
@@ -52,3 +60,4 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - cdh.py: software/cdh.md
       - payload.py: software/payload.md
       - detumble.py: software/detumble.md
+
