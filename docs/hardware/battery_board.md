@@ -1,21 +1,46 @@
 # Overview
 The PROVES kit Battery Board was designed around
 ## Getting Started
+Currently there is one officially supported version of the batery board and one in development version: 
+
+| Version |Flight Heritage| Description |
+|---------|---------------|--------------------|
+| **V2a** | Pleiades - Yearling 2, Pleiades - Squared | This version contains the core functionalities needed for battery and sensor management. |
+| **V3**  | None| This version is a significant overhaul of the battery board, and it implements a RP2040 microcontroller for power management. |
+ 
 
 ## Utilized Parts
 The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions. The board serves as an interface with the rest of the satellite. A 12 position picolock is utilized to interface between the Flight Controller and the Battery Board. The board interfaces with 5 solar faces of the satellite using 5 position picolocks. The other 2 position picolocks are used for interfacing with the inhibit scheme, battery heater, burn wire, and direct charging port. The hardware utilized on the module is the following:
-<div class="result" markdown>
-- **LT3652 MPPT Solar Charger** is utilized to charge the batteries up from the solar faces. The Solar Charging circuitry should only allow higher potentials to be fed to the battery, and allow no reverse current into the charging circuitry.
-- **PCA9685 LED Driver** is utilized to toggle the power to each of the solar faces. In the event that a sensor or other component fails on a face, it makes it possible to isolate the problem and power down the face.
-- **TCA9548 I2C Multiplexer** is implemented to allow the use of a single I2C bus from the flight computer. This I2C bus can then get multiplexed to the solar faces. This allows the sensors on all of the faces to be the exact same, maintain the same addresses, and still be individually addressable. Two of the multiplexed lines are unused, 5 are used for each solar face, and 1 is used to breakout a stemma QT connection for additional sensors or I2C devices.
-- **TPS54226PWP Switching Voltage Regulator** is utilized to maximize the efficiency of the system, and generate less heat central to the system. A 3.3V bus is created from the battery voltage and circuitry inspired by the PyCubed has been implemented to allow the satellite to reset the 3.3V bus. This functionality is known as the "One Shot" Regulator Reset that with a logic "High" applied, the 3.3V bus will shutdown and restart momentarily.
-- **TPS7A4501 LDO Voltage Regulator** is implemented to supply 5V to the radio on the flight controller. This bus voltage can be toggled by an input taken from the flight controller.
-- **(2) INA219 Power Monitors** are implemented to measure the power supplied from the solar cells, and the power dropped across the system. This data is fed back via the I2C bus to the flight controller
-- **PTC2075 Temperature Sensor** is utilized to obtain ambient temperature readings from inside the satellite.
-- **R5460N208AA** is utilized to disconnect the negative side of the batteries from the system in overcharge and overdischarge events.
-- **APAN3109 Relay** is implemented to allow current to flow to the battery heater and burn wire MOSFETS.
-</div>
+
+### LT3652 Solar Charger 
+This component is used to charge the satellite's batteries using power harvested from solar panels. This part is not a true MPPT solar charger, but it emulates one. There is debate as to whether true MPPT is worth it on small 1U class satellites due to its extra complexity. In the future we will look towards using the microcontroller on the battery board to manage a true MPPT charging curcuit. 
+
+### PCA9685 LED Driver
+The PCA9685 LED Driver controls the power distribution to the solar faces. It enables selective powering of solar face components, facilitating isolation and power-down of specific faces in case of malfunction, thus protecting the system and conserving energy.
+
+### TCA9548 I2C Multiplexer
+The TCA9548 I2C Multiplexer expands a single I2C bus from the flight computer into multiple channels. This design simplifies the communication with multiple sensors on different solar faces while keeping their addresses identical, enhancing the modularity and scalability of the system. The TCA also appears to provide some level of bus protection, so in the case of an I2C sensor failure the fault is limited to only the face that the sensor is on rather than also interupting all other I2C sensors on the satellite. 
+
+#### TPS54226PWP Switching Voltage Regulator
+This Switching Voltage Regulator is the primary regulator for supplying the microcontroller and sensors onboard the satellite. It creates a stable 3.3V power supply from the variable battery voltage, and its "One Shot" Regulator Reset feature provides a way to reset the power bus, aiding in system recovery and fault tolerance. This part is borrowed from Max Holliday's PyCubed, and is believed to be slightly more radiation tolerant than other switching regulators due to there being a radiation hardened version in the part family. 
+
+### TPS7A4501 LDO Voltage Regulator
+The TPS7A4501 LDO Voltage Regulator is essential for supplying a stable 5V power to critical components like the radio on the flight controller. Although a linear regulator is more inefficient than a switching one, there are significantly lower concerns of noise on the power lines. This is important for ensuring an electrically clean enviroment for the radio to operate in. This part is borrowed from Max Holliday's PyCubed, and is believed to be slightly more radiation tolerant than other switching regulators due to there being a radiation hardened version in the part family. 
+
+### INA219 Power Monitors
+These Power Monitors are crucial for real-time tracking of power input from solar cells and power consumption across the system. They provide valuable data for monitoring the health of the electrical power system and for optimizing power usage. These power monitors have extensive flight heritage across many CubeSats. 
+
+### PTC2075 Temperature Sensor
+The PTC2075 Temperature Sensor provides ambient temperature data from inside the satellite. This information is vital for thermal management, ensuring that the satellite's components operate within their safe temperature ranges.
+
+### R5460N208AA
+The R5460N208AA plays a protective role by disconnecting the battery in cases of overcharge or overdischarge. This function is critical for battery health and safety, preventing potential damage to the power system. This part is borrowed from Max Holliday's PyCubed. 
+
+### APAN3109 Relay
+The APAN3109 Relay is used to control the flow of current to the battery heater and burn wire MOSFETs. It is an essential component for managing the deployment mechanisms and thermal systems of the satellite.
+
 
 ## Known Issues
+- Although the R5460N208AA is supposed to auto-release in the case of a battery protection event, it does not appear to actually do this. If you find that the satellite is not delivering power because of a battery protection event that has now been cleared, you can reset the protection circuit by "jump starting" the satellite by applying a voltage higher than the current voltage of the batteries. On-orbit these jump starts should be automatically applied by the solar charger, if they are needed. 
 
 ## Troubleshooting

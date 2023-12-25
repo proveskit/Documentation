@@ -23,7 +23,6 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
   - Overview: overview.md # Overview of the project
   - Design: design_philosophy.md  # 
   - Assembly Guide:
-    - assembly_guide/index.md
     - Introduction: assembly_guide/introduction.md
     - "Chapter 0: Parts and Tools": assembly_guide/ch_0_parts_tools.md
     - "Chapter 1: Battery Board Preintegration": assembly_guide/ch_1_eps.md
@@ -40,6 +39,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - "FlatSat Testing": assembly_guide/ch_7_testing/flatsat_testing.md
     - "Chapter 8: Integration Procedure": assembly_guide/ch_8_integration.md
     - "Chapter 9: Final Tests": assembly_guide/ch_9_final_tests.md
+    - assembly_guide/index.md
   - Core Documentation: 
     - Hardware: 
       - hardware/index.md

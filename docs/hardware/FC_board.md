@@ -4,15 +4,28 @@ The PROVES kit Flight Controller is part of the Pysquared architecture that harb
 
 ## Utilized Parts
 The Flight Controller:
-<div class="result" markdown>
-- **RP2040 Microcontroller** programmed in circuitpython
-- **RFM98PW 433 MHZ LoRa Radio Module** to communicate between satellites or to ground stations
-- **VL6180 LiDAR** to detect antenna deployment
-- **MOLEX Micro SD Card Reader** to log additional data
-- **MAX706RESA Watch Dog Timer** to ensure the Flight Controller stays operational
-- **AZ1117CH 3.3V Linear Voltage Regulator** to power the Flight Controller without a Battery Board
-</div>
+
+### RP2040 Microcontroller
+Programmed in CircuitPython.
+
+### RFM98PW 433 MHZ LoRa Radio Module
+To communicate between satellites or to ground stations.
+
+### VL6180 LiDAR
+To detect antenna deployment.
+
+### MOLEX Micro SD Card Reader
+To log additional data.
+
+### MAX706RESA Watch Dog Timer
+To ensure the Flight Controller stays operational.
+
+### AZ1117CH 3.3V Linear Voltage Regulator
+To power the Flight Controller without a Battery Board.
+
 
 ## Known Issues
+- Microcontroller and radio possibility have a high suspectibility failure due to thermal and radiation effects. In a future version imrpoved placement and redundancy will be implemented to protect these core components from those effects.  
+- Antennas are very annoying to install and may also be suceptible to failure due to thermal effects. 
 
 ## Troubleshooting

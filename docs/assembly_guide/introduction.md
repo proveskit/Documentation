@@ -7,3 +7,5 @@
 
 Welcome to the assembly and integration guide for the PROVES (Pleaides Rapid Orbital Verification Experiment System) 1U CubeSat Kit. In this guide we will detail all the steps needed to take your kit and make it a functioning satellite! 
 
+> NOTE: Some images are still missing throughout this guide as it is in a pre-release state. If you require more specific guidence please contact Michael Pham: mlpham@cpp.edu
+
