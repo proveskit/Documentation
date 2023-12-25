@@ -12,7 +12,7 @@
 
 2. **Hand Solder the Micro USB port**
    a. Pre-tin the pads of the Micro USB port as seen in Figure 4.4.
-   
+
    ![Figure 4-4](images/4-4.png)
    <p align="center">Figure 4.4: Pre-tinned pads</p>
 
@@ -33,7 +33,7 @@
 
    e. After removing the heat the connector should be adequately Soldered to the Board and should appear as in Figure 4.8.
 
-   ![Figure 4-8](images/4-8.png)
+   ![Figure 4-8](images/4-8.jpg)
    <p align="center">Figure 4.8: Final Appearance</p>
 
 3. **Loading the Firmware onto the board**
