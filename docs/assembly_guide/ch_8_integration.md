@@ -91,26 +91,30 @@
 <div style="text-align: center;">
     <img src="images/8-15.png" width="300" />
 </div>
-    <p align="center">Figure 8.15: Showing the orientation diagram on the Top Cap.</p>
+
+  <p align="center">Figure 8.15: Showing the orientation diagram on the Top Cap.</p>
 
   - **ii.** Connect each pin-out to the proper face (+-X, +-Y, +-Z) on the satellite.
 <div style="text-align: center;">
     <img src="images/8-16.png" width="600" />
 </div>
-    <p align="center">Figure 8.16: Securing the solar faces onto the structure.</p>
+
+  <p align="center">Figure 8.16: Securing the solar faces onto the structure.</p>
 
   - **iii.** Secure the solar faces of the satellite to the structure with 5mm stainless steel fasteners.
 <div style="text-align: center;">
     <img src="images/8-17.png" width="300" />
 </div>
-    <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
+
+  <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
 
   - **iv.** Connect the -Z face by securing the thermocouple wire into the proper terminals on the board. The yellow wire should go into the terminal with the square footprint, while the red wire should go into the terminal with the circular footprint.
 
 <div style="text-align: center;">
     <img src="images/8-18.png" width="700" />
 </div>
-    <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
+
+  <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
 
   - **v.** Connect the “face 4” connection to this face then secure the face with M2.5x5mm pan head bolts onto the structure.
   - **vi.** Connect the RBF wire and other wires to the corresponding connectors on the top cap.
