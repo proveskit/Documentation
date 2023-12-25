@@ -88,49 +88,41 @@
 ## 6) Integrating Solar Faces & Top Cap
 ### a. Solar Faces
   - **i.** Determine the orientation of each face using the top cap as a guide.
-
-<div style="text-align: center;">
-    <img src="images/8-15.png" width="300" />
-</div>
-
-<figure markdown>
-  ![8-15](images/8-15.png){ width="300" }
-  <figcaption>Figure 8.15: Showing the orientation diagram on the Top Cap.</figcaption>
-</figure>
-
-  <p align="center">Figure 8.15: Showing the orientation diagram on the Top Cap.</p>
+    <figure markdown>
+      ![Figure 8.15](images/8-15.png){ width="300" }
+      <figcaption>Figure 8.15: Showing the orientation diagram on the Top Cap.</figcaption>
+    </figure>
 
   - **ii.** Connect each pin-out to the proper face (+-X, +-Y, +-Z) on the satellite.
-<div style="text-align: center;">
-    <img src="images/8-16.png" width="600" />
-</div>
-
-  <p align="center">Figure 8.16: Securing the solar faces onto the structure.</p>
+    <figure markdown>
+      ![Figure 8.16](images/8-16.png){ width="600" }
+      <figcaption>Figure 8.16: Securing the solar faces onto the structure.</figcaption>
+    </figure>
 
   - **iii.** Secure the solar faces of the satellite to the structure with 5mm stainless steel fasteners.
-<div style="text-align: center;">
-    <img src="images/8-17.png" width="300" />
-</div>
-
-  <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
+    <figure markdown>
+      ![Figure 8.17](images/8-17.png){ width="300" }
+      <figcaption>Figure 8.17: Securing the solar faces onto the structure.</figcaption>
+    </figure>
 
   - **iv.** Connect the -Z face by securing the thermocouple wire into the proper terminals on the board. The yellow wire should go into the terminal with the square footprint, while the red wire should go into the terminal with the circular footprint.
-
-<div style="text-align: center;">
-    <img src="images/8-18.png" width="700" />
-</div>
-
-  <p align="center">Figure 8.17: Securing the solar faces onto the structure.</p>
+    <figure markdown>
+      ![Figure 8.18](images/8-18.png){ width="700" }
+      <figcaption>Figure 8.17: Securing the solar faces onto the structure.</figcaption>
+    </figure>
 
   - **v.** Connect the “face 4” connection to this face then secure the face with M2.5x5mm pan head bolts onto the structure.
   - **vi.** Connect the RBF wire and other wires to the corresponding connectors on the top cap.
-
 
 ## 7) Final Steps
 ### a. Tying down the antenna
   - **i.** Cut a long section of fishing line to secure the antenna in place around the satellite.
   - **ii.** Tie one end of the fishing line to the end of one antenna and wrap it around the satellite, weaving the line across the burn wire.
-    <p align="center">Figure 8.18: Finished satellite with RBF pin and antenna tied down securely.</p>
+    <figure markdown>
+      ![Figure 8.19](images/8-19.png){ width="300" }
+      <figcaption>Figure 8.19: Finished satellite with RBF pin and antenna tied down securely.</figcaption>
+    </figure>
+
 
 
 
