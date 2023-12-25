@@ -12,14 +12,28 @@
 
 2. **Hand Solder the Micro USB port**
    a. Pre-tin the pads of the Micro USB port as seen in Figure 4.4.
+   
+   ![Figure 4-4](images/4-4.png)
    <p align="center">Figure 4.4: Pre-tinned pads</p>
+
    b. Insert USB onto Footprint and flip board over as seen in Figure 4.5.
+
+   ![Figure 4-5](images/4-5.png)
    <p align="center">Figure 4.5: USB Orientation upside down</p>
+
    c. Solder through hole pins of USB to ensure structural stability of connector as seen in Figure 4.6.
+
+   ![Figure 4-6](images/4-6.png)
    <p align="center">Figure 4.6: Soldered USB Structural Supports</p>
+
    d. Flip Board over and apply hot air to the connector while holding the connector down with a pair of tweezers as seen in Figure 4.7.
+
+   ![Figure 4-7](images/4-7.png)
    <p align="center">Figure 4.7: Applying Hot Air</p>
+
    e. After removing the heat the connector should be adequately Soldered to the Board and should appear as in Figure 4.8.
+
+   ![Figure 4-8](images/4-8.png)
    <p align="center">Figure 4.8: Final Appearance</p>
 
 3. **Loading the Firmware onto the board**
