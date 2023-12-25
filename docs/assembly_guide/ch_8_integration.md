@@ -88,10 +88,15 @@
 ## 6) Integrating Solar Faces & Top Cap
 ### a. Solar Faces
   - **i.** Determine the orientation of each face using the top cap as a guide.
-  
+
 <div style="text-align: center;">
     <img src="images/8-15.png" width="300" />
 </div>
+
+<figure markdown>
+  ![8-15](images/8-15.png){ width="300" }
+  <figcaption>Figure 8.15: Showing the orientation diagram on the Top Cap.</figcaption>
+</figure>
 
   <p align="center">Figure 8.15: Showing the orientation diagram on the Top Cap.</p>
 
