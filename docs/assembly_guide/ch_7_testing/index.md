@@ -6,15 +6,8 @@ This overview provides links to various testing procedures outlined in Chapter 7
 
 - [Solar Board Testing](solar_board_testing.md)
 - [Battery Board Testing](battery_board_testing.md)
-- [Flight Controller Testing](flight_controller_testing.md)
-- [Antenna Testing](antenna_testing.md)
-- [Structural Integrity Testing](structural_integrity_testing.md)
-- [Communication Systems Testing](communication_systems_testing.md)
-- [Thermal Testing](thermal_testing.md)
-- [Final Integration Testing](final_integration_testing.md)
+- [Flight Controller Testing](flight_computer_testing.md)
 
 Please click on the links above to navigate to the respective testing procedure.
 
 ---
-
-[Return to Overview ](../ch_7_testing.md)
