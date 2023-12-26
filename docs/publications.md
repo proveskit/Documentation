@@ -2,7 +2,7 @@
 
 ## Publication Title 1
 Here is a brief description or abstract of the first publication.
-<iframe src="publication_pdfs/ILWS.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
+<iframe src="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=4662&context=smallsat" style="width:100%; height:500px;" frameborder="0"></iframe>
 
 <object data="publication_pdfs/ILWS.pdf" type="application/pdf">
     <embed src="publication_pdfs/ILWS.pdf" type="application/pdf" />
