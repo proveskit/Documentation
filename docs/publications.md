@@ -4,8 +4,8 @@
 Here is a brief description or abstract of the first publication.
 <iframe src="publication_pdfs/ILWS.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
 
-<object data="{{publication_pdfs/ILWS.pdf}}" type="application/pdf">
-    <embed src="{{publication_pdfs/ILWS.pdf}}" type="application/pdf" />
+<object data="publication_pdfs/ILWS.pdf" type="application/pdf">
+    <embed src="publication_pdfs/ILWS.pdf" type="application/pdf" />
 </object>
 
 ## Publication Title 2
