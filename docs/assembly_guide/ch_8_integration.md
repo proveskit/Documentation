@@ -119,8 +119,8 @@
   - **i.** Cut a long section of fishing line to secure the antenna in place around the satellite.
   - **ii.** Tie one end of the fishing line to the end of one antenna and wrap it around the satellite, weaving the line across the burn wire.
     <figure markdown>
-      ![Figure 8.19](images/8-19.png){ width="300" }
-      <figcaption>Figure 8.19: Finished satellite with RBF pin and antenna tied down securely.</figcaption>
+      ![Figure 8.19](images/8-19.jpg){ width="300" }
+      <figcaption>Figure 8.19: Finished satellite with antenna tied down securely.</figcaption>
     </figure>
 
 
