@@ -3,7 +3,7 @@
 ## IWLS 2023: Lessons Learned from 4 Back to Back Satellites on 4 SpaceX Transporter Launches
 This was presented at the International Workshop on Lean Satellite in Tokyo in December 2023. It is currently the most up to date record of Bronco Space satellites. 
 
-![Alt text](publication_pdfs/ILWS.pdf){ type=application/pdf style="min-height:75vh;width:100%" }
+![Alt text](publication_pdfs/ILWS.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
 ## SmallSat 2020 QUIC: The Quickly Universally Integrated CubeSat
 This was the very first poster referencing our idea of creating a novel CubeSat bus! 
