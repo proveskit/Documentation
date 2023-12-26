@@ -9,6 +9,7 @@ theme:
 
 plugins:
   - search  # To have search functionality on the document
+  - mkdocs-pdf #PDF Embed Ability
 
 markdown_extensions:
   - attr_list
