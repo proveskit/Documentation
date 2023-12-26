@@ -20,7 +20,7 @@ markdown_extensions:
   - pymdownx.pathconverter:
       base_path: 'DOCUMENTATION' # default: ''
       relative_path: '' # default ''
-      absolute: true # default: false
+      absolute: false # default: false
       tags: 'a script img link object embed'
 
 nav: # Setting up the navigation. The below list will be tabs on left panel
