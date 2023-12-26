@@ -2,7 +2,7 @@
 
 ## Publication Title 1
 Here is a brief description or abstract of the first publication.
-<iframe src="docs/publication_pdfs/ILWS.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
+<iframe src="publication_pdfs/ILWS.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
 
 ## Publication Title 2
 Here is a brief description or abstract of the second publication.
