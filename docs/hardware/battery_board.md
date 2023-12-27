@@ -8,6 +8,21 @@ Currently there is one officially supported version of the batery board and one 
 | **V2a** | Pleiades - Yearling 2, Pleiades - Squared | This version contains the core functionalities needed for battery and sensor management. |
 | **V3**  | None| This version is a significant overhaul of the battery board, and it implements a RP2040 microcontroller for power management. |
  
+## Functionalities
+
+```mermaid
+graph TD
+    A[Start] --> B[Boot Sequence]
+    B --> C{Check Power Mode}
+    C -->|Critical| D[Critical Power Operations]
+    C -->|Low| E[Low Power Operations]
+    C -->|Normal| F[Normal Power Operations]
+    C -->|Maximum| G[Maximum Power Operations]
+    D --> C
+    E --> C
+    F --> C
+    G --> C
+```
 
 ## Utilized Parts
 The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions. The board serves as an interface with the rest of the satellite. A 12 position picolock is utilized to interface between the Flight Controller and the Battery Board. The board interfaces with 5 solar faces of the satellite using 5 position picolocks. The other 2 position picolocks are used for interfacing with the inhibit scheme, battery heater, burn wire, and direct charging port. The hardware utilized on the module is the following:
