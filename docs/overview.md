@@ -4,7 +4,7 @@ The PROVES Kit blends Open-Source Hardware and Software. The Hardware developed 
 ![Figure 1](images/YearlingV2.jpg)
 <p align="center">Figure 1: The Yearling-2 Satellite</p>
 
-# Flight Heritage
+## Flight Heritage
 In order to ensure that the educational experience provided by using a PROVES Kit here on Earth is as authentic as possible we strove to fly it in outer space and verify that something can indeed be built with a BOM cost of less than $1k and do all of the core functions of a satellite. 
 
 ## Pleaides - Yearling: The Chaotic First Attempt 
