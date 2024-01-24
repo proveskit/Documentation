@@ -5,13 +5,26 @@ This was presented at the International Workshop on Lean Satellite in Tokyo in D
 
 ![Alt text](publication_pdfs/ILWS.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
+## CDW 2023: A Low-Cost Educational CubeSat Kit
+This was presented at the CDW 2023. It is currently the most up to date record of the Day 1 Session 3 by Beck.
+
+![Alt text](publication_pdfs/CDW_2023_Day1_Session3_Beck.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+
+## CDW 2023: CubeSats are the Stroads of the Space Industry
+This was presented at the CDW 2023. It is currently the most up to date record of the Day 1 Session 3 by Pham.
+
+![Alt text](publication_pdfs/CDW_2023_Day1_Session3_Pham.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+
+## CDW 2023: PROVES Electionics
+This was presented at the CDW 2023. It is currently the most up to date record of the Day 3 Session 8 by Ewing.
+
+![Alt text](publication_pdfs/CDW_2023_Day3_Session8_Ewing.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+
 ## SmallSat 2020 QUIC: The Quickly Universally Integrated CubeSat
 This was the very first poster referencing our idea of creating a novel CubeSat bus! 
 
 <iframe src="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=4662&context=smallsat" style="width:100%; height:500px;" frameborder="0"></iframe>
 
-## Publication Title 3
-Here is a brief description or abstract of the third publication.
-<iframe src="path/to/publication3.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
+
 
 <!-- Repeat the pattern for more publications -->
