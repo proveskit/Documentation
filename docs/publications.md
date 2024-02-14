@@ -1,5 +1,10 @@
 # Notable Publications
 
+## BIRDS Open Source Webinar: The Any% Method: A Lessons Learned on Designing and Executing LeanSat Missions Quickly and Affordably 
+This was presented virtually during the Feb 2024 BIRDS Open Source Webinar. 
+
+![Alt text](publication_pdfs/BIRDS_Webinar_Feb2024.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+
 ## IWLS 2023: Lessons Learned from 4 Back to Back Satellites on 4 SpaceX Transporter Launches
 This was presented at the International Workshop on Lean Satellite in Tokyo in December 2023. It is currently the most up to date record of Bronco Space satellites. 
 
