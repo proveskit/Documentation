@@ -1,6 +1,6 @@
 # Welcome to the PROVES Kit!
 The Pleiades Rapid Orbital Verification Experiment System (PROVES) 1U kit is intended as an education first option for members of academia and industry who look to be first time or returning CubeSat developers. 
-![Picture of the PROVES Family](docs/images/SN11.JPG)
+![Picture of the PROVES Family](images/SN11.JPG)
 ## Overview of the PROVES Kit
 Hey you! You’re finally awake. You were trying to cross the border into CubeSats too weren’t you? Walked right into all the complexities and costs and wondering what even is a quasi-static load? Just like those guys over there.
 
@@ -11,4 +11,9 @@ Well, it turned out to be the most difficult thing that any of us had ever under
 This is what inspired us to dream of a world where the CubeSat developer never has to wonder whether or not their satellite will work. They would only have to ask “how well will my satellite work.” The PROVES CubeSat Kit is just the beginning of how we are planning to make this world a reality. 
 
 ## Documentation Layout
-
+This documentation site is split into five sections: 
+- **Overview:** Detailing the general background and flight heritage of the PROVES Kit.
+- **Design:** Which presents the key design decisions that have gone into the PROVES Kit.
+- **Assembly Guide:** A chapter by chapter walkthrough of building a PROVES Kit. 
+- **Core Documentation:** Detailed accounts of the components of the PROVES Kit. 
+- **Publications:** A record of the presentations and papers presented at conferences and workshops regarding the PROVES Kit. 
