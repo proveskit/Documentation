@@ -25,6 +25,13 @@ This was presented at the CDW 2023. It is currently the most up to date record o
 
 ![Alt text](publication_pdfs/CDW_2023_Day3_Session8_Ewing.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
+## SmallSat 2022 The Pleiades CubeSat Cluster: Enabling Open Architectures and Satellite Collaboration
+This poster was presented at both the 2021 ASGSR Meeting and the 2022 SmallSat Conference! It laid some of the ground work for why we believed more open source CubeSat activity was needed to build a stronger space community. 
+
+![Alt text](publication_pdfs/SSC22-P5-15​.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+
+
+
 ## SmallSat 2020 QUIC: The Quickly Universally Integrated CubeSat
 This was the very first poster referencing our idea of creating a novel CubeSat bus! 
 
