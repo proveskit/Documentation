@@ -1,17 +1,71 @@
 site_name: The PROVES Kit Documentation
 
-theme: 'material' #Using material them
+theme: 
+  name: material
+  features:
+    - navigation.tabs
+    - header.autohide
+    - navigation.path
 
 plugins:
   - search  # To have search functionality on the document
-  - mkdocstrings  # To generate documentation from the code docstrings
+  - mkdocs-pdf #PDF Embed Ability
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - attr_list
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.pathconverter:
+      base_path: 'DOCUMENTATION' # default: ''
+      relative_path: '' # default ''
+      absolute: false # default: false
+      tags: 'a script img link object embed'
 
 nav: # Setting up the navigation. The below list will be tabs on left panel
   - Home: index.md
   - Overview: overview.md # Overview of the project
   - Design: design_philosophy.md  # 
-  - Assembly Guide: assembly_guide.md # Assembly guide
+  - Assembly Guide:
+    - Introduction: assembly_guide/introduction.md
+    - "Chapter 0: Parts and Tools": assembly_guide/ch_0_parts_tools.md
+    - "Chapter 1: Battery Board Preintegration": assembly_guide/ch_1_eps.md
+    - "Chapter 2: Feet and Heater Assembly Preintegration": assembly_guide/ch_2_feet.md
+    - "Chapter 3: Solar Boards Preintegration": assembly_guide/ch_3_solar.md
+    - "Chapter 4: Flight Controller Board Preintegration": assembly_guide/ch_4_fc.md
+    - "Chapter 5: Antenna Preintegration": assembly_guide/ch_5_antenna.md
+    - "Chapter 6: Structure Preintegration": assembly_guide/ch_6_structure.md
+    - "Chapter 7: Preintegration Testing Overview":
+      - "Preintegration Testing Index": assembly_guide/ch_7_testing/index.md
+      - "Solar Board Testing": assembly_guide/ch_7_testing/solar_board_testing.md
+      - "Battery Board Testing": assembly_guide/ch_7_testing/battery_board_testing.md
+      - "Flight Controller Testing": assembly_guide/ch_7_testing/flight_computer_testing.md
+      - "FlatSat Testing": assembly_guide/ch_7_testing/flatsat_testing.md
+    - "Chapter 8: Integration Procedure": assembly_guide/ch_8_integration.md
+    - "Chapter 9: Final Tests": assembly_guide/ch_9_final_tests.md
+    - assembly_guide/index.md
   - Core Documentation: 
-    - Hardware: hardware.md
-    - Software: software.md
+    - Hardware: 
+      - hardware/index.md
+      - 1U Structure: hardware/1U_structure.md # 1u-structure
+      - Flight Control Board: hardware/FC_board.md # flight-control-board
+      - XY Solar Panels: hardware/XY_solar_board.md
+      - Z Solar Panels: hardware/Z_solar_board.md
+      - Battery Board: hardware/battery_board.md
+    - Software:
+      - software/index.md
+      - pysquared.py: software/pysquared.md
+      - functions.py: software/functions.md
+      - big_data.py: software/big_data.md
+      - cdh.py: software/cdh.md
+      - payload.py: software/payload.md
+      - detumble.py: software/detumble.md
+  - Publications: publications.md
+
