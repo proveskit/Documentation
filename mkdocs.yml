@@ -6,11 +6,13 @@ theme:
     - navigation.tabs
     - header.autohide
     - navigation.path
+    - navigation.indexes
 
 plugins:
+  - blog # To have blog functionality on the site
   - search  # To have search functionality on the document
   - mkdocs-pdf #PDF Embed Ability
-  - blog # To have blog functionality on the site
+
 
 markdown_extensions:
   - attr_list
@@ -72,4 +74,8 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
   - Publications: publications.md
   - Blog: 
     - blog/index.md
-
+    
+nav:
+  - index.md
+  - Blog:
+    - blog/index.md
