@@ -52,20 +52,21 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - "Chapter 9: Final Tests": assembly_guide/ch_9_final_tests.md
     - assembly_guide/index.md
   - Core Documentation: 
+    - core_documentation/index.md
     - Hardware: 
-      - hardware/index.md
-      - 1U Structure: hardware/1U_structure.md # 1u-structure
-      - Flight Control Board: hardware/FC_board.md # flight-control-board
-      - XY Solar Panels: hardware/XY_solar_board.md
-      - Z Solar Panels: hardware/Z_solar_board.md
-      - Battery Board: hardware/battery_board.md
+      - core_documentation/hardware/index.md
+      - 1U Structure: core_documentation/hardware/1U_structure.md # 1u-structure
+      - Flight Control Board: core_documentation/hardware/FC_board.md # flight-control-board
+      - XY Solar Panels: core_documentation/hardware/XY_solar_board.md
+      - Z Solar Panels: core_documentation/hardware/Z_solar_board.md
+      - Battery Board: core_documentation/hardware/battery_board.md
     - Software:
-      - software/index.md
-      - pysquared.py: software/pysquared.md
-      - functions.py: software/functions.md
-      - big_data.py: software/big_data.md
-      - cdh.py: software/cdh.md
-      - payload.py: software/payload.md
-      - detumble.py: software/detumble.md
+      - core_documentation/software/index.md
+      - pysquared.py: core_documentation/software/pysquared.md
+      - functions.py: core_documentation/software/functions.md
+      - big_data.py: core_documentation/software/big_data.md
+      - cdh.py: core_documentation/software/cdh.md
+      - payload.py: core_documentation/software/payload.md
+      - detumble.py: core_documentation/software/detumble.md
   - Publications: publications.md
 
