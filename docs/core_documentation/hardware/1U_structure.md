@@ -1,5 +1,9 @@
 # Overview
 The PROVES kit "1U" structure was designed around maximum customizability. With sixteen unique positions, several boards can fit inside to fulfill most mission requirements. The structure is laser cut, bent, and anodized Aluminum sheet metal, and is even strong enough to withstand the weight of a fully grown adult! Primary holes on the structure not joined with a bracket or hardware internally contain pressed PEM-Nuts for easy external mounting. The main structure was designed to be separate halves that are joined together by brackets and Printed Circuit Boards.
+
+![Figure 1](images/Structure_1.jpg)
+   <p align="center">Figure 1: The PROVES Kit Structure</p>
+   
 ## Brackets
 The strucutre can be populated with two separate brackets for joining the halves together. The "L Bracket" joins the alves at the top and bottom of the strucutre, while the card brackets mount PCBs internally and help provide structural rigidity.
 ## Peripheral Hardware
