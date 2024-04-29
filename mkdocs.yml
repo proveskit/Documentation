@@ -6,7 +6,7 @@ theme:
     - navigation.tabs
     - header.autohide
     - navigation.path
-    - navigation.indexes
+    # - navigation.indexes
 
 plugins:
   - blog # To have blog functionality on the site
