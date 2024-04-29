@@ -10,6 +10,7 @@ theme:
 plugins:
   - search  # To have search functionality on the document
   - mkdocs-pdf #PDF Embed Ability
+  - blog # To have blog functionality on the site
 
 markdown_extensions:
   - attr_list
@@ -69,4 +70,5 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - payload.py: core_documentation/software/payload.md
       - detumble.py: core_documentation/software/detumble.md
   - Publications: publications.md
+  - Dev Blog: blog/index.md
 
