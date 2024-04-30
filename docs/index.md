@@ -31,8 +31,9 @@ The Pleiades - CubeSat Cluster and the Yearling line of satellites was where we 
 
 ## Documentation Layout
 This documentation site is split into five sections: 
+
 - **Overview:** Detailing the general background and flight heritage of the PROVES Kit.
-- **Design:** Which presents the key design decisions that have gone into the PROVES Kit.
+- **Quick Start Guide:** Which presents the key design decisions that have gone into the PROVES Kit.
 - **Assembly Guide:** A chapter by chapter walkthrough of building a PROVES Kit. 
 - **Core Documentation:** Detailed accounts of the components of the PROVES Kit. 
 - **Publications:** A record of the presentations and papers presented at conferences and workshops regarding the PROVES Kit. 
