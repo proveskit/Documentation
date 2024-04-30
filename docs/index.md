@@ -3,7 +3,7 @@ The Pleiades Rapid Orbital Verification Experiment System (PROVES) 1U kit is int
 ![Picture of SN11](images/SN11.JPG)
 <p align="center">Figure 1: A Picture of Pleiades - Yearling SN11</p>
 
-## Overview of the PROVES Kit
+## Trials and Tribulations in CubeSats
 Hey you! You’re finally awake. You were trying to cross the border into CubeSats too weren’t you? Walked right into all the complexities and costs and wondering what even is a quasi-static load? Just like those guys over there.
 
 We were right where you were not too long ago. As founding members of Bronco Space at Cal Poly Pomona we started our journey into the land of CubeSats as a group of extremely naive undergrads in Spring of 2019. We wanted to bring something with our names on it and get it to outer space by 2022, whatever it took. How hard could it be? 
@@ -18,6 +18,7 @@ Well, it turned out to be the most difficult thing that any of us had ever under
 
 By then our little student club had managed to carve out an existence as a small lab at Cal Poly Pomona, and we managed to persevere through to doing NASA backed instrument development and many more satellites on their way to space. We bet the farm on BroncoSat-1 and it still worked out despite the on-orbit failure, but it could have very easily gone the other way and been the end of our dreams of space. Most teams don't aren't able to catch that lightning in a bottle intersection between talent, opportunity, and luck to survive this long. 
 
+## The PROVES Kit: Past, Present, and Future
 ![The Yearling Team](images/Proves_Team.JPG)
 <p align="center">Figure 4: The Team That Built Yearling</p>
 
