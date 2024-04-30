@@ -4,22 +4,22 @@
 
 The PROVES kit "1U" structure was designed around maximum customizability. With sixteen unique positions, several boards can fit inside to fulfill most mission requirements. The structure is laser cut, bent, and anodized 5052 Aluminum sheet metal, and is even strong enough to withstand the weight of a fully grown adult! Primary holes on the structure not joined with a bracket or hardware internally contain pressed PEM-Nuts for easy external mounting. The main structure was designed to be two separate halves that are joined together by brackets and Printed Circuit Boards.
    
-# The Primary Structure
+## The Primary Structure
 The primary structure of the satellite is usually considered the parts of the physical structure that will carry load during the launch environment and define the first resonant mode. Within the PROVES Kit we have two “Half U’s” that are joined by two “L-Brackets” connecting the top and bottom flanges of the half U’s”. The Half-U’s have a series of holes that run up and down the structure to provide spots for mounting “Card Brackets” which carry any component that needs to be held inside of the CubeSat. Additionally, there are eight “Foot Assemblies” that serve the dual purpose of providing a uniform satellite to satellite interface (when multiple 1U’s are stacked with each other) and containing the inhibit switches that keep the satellite turned off while it is inside the deployer. 
 ![Figure 2](images/Structure_2.jpg)
 <p align="center">Figure 2: The Raw PROVES Kit Structure Components</p>
 
 > WARNING: When selecting fasteners do not use Zinc Plated. Although the risk is low, use of Zinc Plated Fasteners for flight can cause issues with your launch provider. See this [NASA site](https://nepp.nasa.gov/whisker/reference/tech_papers/Brusse2003-Zinc-Whisker-Awareness.pdf) for more details. 
 
-## Half U's
+### Half U's
 - **Material:** 1.6mm Thickness 5052 Formable Aluminum Sheet Metal 
 - **Recommended Fasteners:** CLS-M2.5-2, Self-Clinching Nuts | 18-8 Stainless Steel M2.5x5mm T8 Torx Panhead
 
-## Brackets 
+### Brackets 
 - **Material:** 1.6mm Thickness 5052 Formable Aluminum Sheet Metal 
 - **Recommended Fasteners:** CLS-M2.5-2, Self-Clinching Nuts | 18-8 Stainless Steel M2.5x5mm T8 Torx Panhead
 
-## Feet Assemblies 
+### Feet Assemblies 
 - **Material:** PA-12 Nylon made in MJF or SLS 3D Printing Process
 - **Recommended Fasteners:** 
 
