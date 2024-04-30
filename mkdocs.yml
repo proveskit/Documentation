@@ -42,6 +42,9 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Design Philosophy: design_philosophy.md
   - Quick Start Guide: # Qucok start guide 
     - Introduction: quick_start/index.md
+    - CubeSat Fundementals: quick_start/cubesat_fundementals.md
+    - Getting Started with PROVES: quick_start/proves_quick_start.md
+    - Becoming a Contributor: quick_start/becoming_contributor.md
   - Assembly Guide:
     - Introduction: assembly_guide/introduction.md
     - "Chapter 0: Parts and Tools": assembly_guide/ch_0_parts_tools.md
