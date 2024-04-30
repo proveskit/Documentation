@@ -7,13 +7,13 @@ The PROVES Kit blends Open-Source Hardware and Software. The Hardware developed 
 ## Flight Heritage
 In order to ensure that the educational experience provided by using a PROVES Kit here on Earth is as authentic as possible we strove to fly it in outer space and verify that something can indeed be built with a BOM cost of less than $1k and do all of the core functions of a satellite. 
 
-## Pleaides - Yearling: The Chaotic First Attempt 
+## Pleiades - Yearling: The Chaotic First Attempt 
 We began this process with Pleiades - Yearling, which was conceived in April 2022 and Launched in January 2023. Despite sucessfully reaching orbit, the orbital transfer vehicle that we were hosted on suffered a critical systems failure after seperating from the Falcon 9. As a result, the satellite was never deployed and is now stuck orbiting the Earth in its deployer pod. 
 
 ![Figure 2](images/fig2.jpg)
 <p align="center">Figure 2: Yearling 1 Being Loaded into the Deployer (Credit: Launcher Space)</p>
 
-## Pleaides - Yearling 2: The Unexpected Second Try 
+## Pleiades - Yearling 2: The Unexpected Second Try 
 We never expected Yearling 1 to be Yearling 1. Kind of like how they didn't expect it to be World War I. Yearling 2 came very shortly after Yearling 1 was pronounced dead by failure of the deployment vehicle. We began R&D into an entirely new generation of the PROVES Kit on January 25, 2023 and had a completed Version 2 of the kit completed and qualified for spaceflight by March 1, 2023. This satellite went through two complete design iterations in that time and rolled in a significant amount of improvements over the Yearling 1 architecture. 
 
 ![Figure 3](images/fig3.jpg)
@@ -24,7 +24,7 @@ This satellite was launched on April 8th, 2024, and contact was sucessfully made
 ![Figure 4](images/fig4.jpg)
 <p align="center">Figure 4: The First Packet From Yearling 2!</p>
 
-## Pleaides - Squared: Third Time's the Charm! 
+## Pleiades - Squared: Third Time's the Charm! 
 Due to the early loss of Pleaides - Yearling 2, our plan was to spend many months ironning out potential issues with the kit before attempting another spaceflight. This plan was totally served at the last minute though, when just a couple weeks after the launch of Yearling 2 we needed to do an emergancy delivery of a 1U satellite for a use it or lose it launch slot. This satellite was built, tested, and delivered for launch in only 1 calendar week. 
 
 ![Figure 5](images/fig5.png)

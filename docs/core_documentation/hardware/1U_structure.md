@@ -24,6 +24,7 @@ The primary structure of the satellite is usually considered the parts of the ph
 ### Feet Assemblies 
 - **Material:** PA-12 Nylon made in MJF or SLS 3D Printing Process
 - **Recommended Fasteners:** 
+
 The structure also maintains mounting holes for feet on each structure half, and each 3D printed foot can house switches for inhibiting the satellite. When the satellite is in the deployment pod on its way to space, it needs to remain off until it has been deployed. While the satellite is in the pod, its feet are covered, and thus embedded switches can be depressed to inhibit the satellite. After the satellite is deployed, with nothing depressing the switches, the satellite can spring to life. 
 
 ![Figure 4](images/Structure_4.jpg)
