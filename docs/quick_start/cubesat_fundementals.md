@@ -1,1 +1,0 @@
-# Foundational Info About CubeSats
