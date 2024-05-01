@@ -11,10 +11,15 @@ So this is your first time ever getting into CubeSats, welcome! This page contai
 
 When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has passed the required testing per the December 2023 RPUG” anyone who is familiar with those standards can instantly know what your satellite’s compatibility is and what kind of launch vehicles it can go on without having to do a deep dive into how you’ve built your satellite. 
 
-???+ info "[The CubeSat Design Specification (CDS)](https://static1.squarespace.com/static/5418c831e4b0fa4ecac1bacd/t/62193b7fc9e72e0053f00910/1645820809779/CDS+REV14_1+2022-02-09.pdf)"
+???+ info "The CubeSat Design Specification (CDS)"
 
     The CubeSat Design Specification (also known as CDS) is the seminal document defining CubeSats. Published by the Cal Poly San Luis Obispo CubeSat Lab, this document is the closest that we have to the law of the land in CubeSats. This is a good place to start when trying to understand on a specific technical level "what is a CubeSat."
+    
+    [Link to the Spec](https://static1.squarespace.com/static/5418c831e4b0fa4ecac1bacd/t/62193b7fc9e72e0053f00910/1645820809779/CDS+REV14_1+2022-02-09.pdf)"
 
-???+ info "[The SpaceX Rideshare Payload User's Guide Version 9](https://storage.googleapis.com/rideshare-static/Rideshare_Payload_Users_Guide.pdf)"
+
+???+ info "The SpaceX Rideshare Payload User's Guide Version 9"
 
     The SpaceX Rideshare Payload User’s Guide (RPUG) is the preeminent source of guidelines on the testing requirements to fly to space in the modern SmallSat industry. The overwhelming majority of launches from the US are SpaceX rockets, so if you are a US institution looking to go to space it is a good bet that you’ll want to design and test your satellite in a way that is compliant with SpaceX requirements. Make sure to read these guidelines carefully and also look at the design recommendation that they make as well. 
+
+    [Link to the Spec](https://storage.googleapis.com/rideshare-static/Rideshare_Payload_Users_Guide.pdf)
