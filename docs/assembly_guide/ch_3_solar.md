@@ -20,7 +20,8 @@ Before continuing it is important to note that gloves should be worn prior to ap
    a. If the solar board has already been removed from the oven, the resistor can be removed by a fine tip soldering iron heating each pad simultaneously. If the board is still hot from the oven, tweezers can be used very swiftly to remove the resistor.
    <p align="center">Figure 3.3: Motor Driver Resistor Removal</p>
 
-   > **NOTE:** This step is completely optional as the magnetorquers can be deactivated in software. Only one X Magnetorquer and one perpendicular Y Magnetorquer need to remain active in order to detumble the satellite effectively. The Z- Solar board should let the magnetorquer coil remain active as this is the only coil on the Z faces.
+!!! note
+      This step is completely optional as the magnetorquers can be deactivated in software. Only one X Magnetorquer and one perpendicular Y Magnetorquer need to remain active in order to detumble the satellite effectively. The Z- Solar board should let the magnetorquer coil remain active as this is the only coil on the Z faces.
 
 ## Z- Face
 4. **Z- Face Solar Boards**
@@ -35,4 +36,5 @@ Before continuing it is important to note that gloves should be worn prior to ap
 5. **Install the Two Position Screw Terminal on the bottom side of the board as seen in Figure 3.6**
    <p align="center">Figure 3.6: Properly Populated Screw Terminal</p>
 
-   > **NOTE:** Two different screw terminal footprints are available as options depending on preference.
+!!! 
+      Two different screw terminal footprints are available as options depending on preference.
