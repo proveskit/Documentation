@@ -68,6 +68,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - assembly_guide/index.md
   - Core Documentation: 
     - core_documentation/index.md
+    - Quick Reference: core_documentation/quick_reference.md
     - Hardware: 
       - core_documentation/hardware/index.md
       - 1U Structure: core_documentation/hardware/1U_structure.md # 1u-structure
