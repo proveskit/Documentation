@@ -7,6 +7,7 @@ theme:
     - header.autohide
     - navigation.path
   palette:
+    - primary: black
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
@@ -97,3 +98,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - detumble.py: core_documentation/software/detumble.md
   - Publications: publications.md
 
+extra:
+  social:
+    - icon: material/github 
+      link: https://github.com/proveskit
