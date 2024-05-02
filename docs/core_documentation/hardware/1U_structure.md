@@ -9,7 +9,9 @@ The primary structure of the satellite is usually considered the parts of the ph
 ![Figure 2](images/Structure_2.jpg)
 <p align="center">Figure 2: The Raw PROVES Kit Structure Components</p>
 
-> WARNING: When selecting fasteners do not use Zinc Plated. Although the risk is low, use of Zinc Plated Fasteners for flight can cause issues with your launch provider. See this [NASA site](https://nepp.nasa.gov/whisker/reference/tech_papers/Brusse2003-Zinc-Whisker-Awareness.pdf) for more details. 
+!!! warning 
+   
+   When selecting fasteners do not use Zinc Plated. Although the risk is low, use of Zinc Plated Fasteners for flight can cause issues with your launch provider. See this [NASA site](https://nepp.nasa.gov/whisker/reference/tech_papers/Brusse2003-Zinc-Whisker-Awareness.pdf) for more details. 
 
 ### Half U's
 - **Material:** 1.6mm Thickness 5052 Formable Aluminum Sheet Metal 

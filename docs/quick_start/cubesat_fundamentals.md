@@ -4,6 +4,8 @@ So this is your first time ever getting into CubeSats, welcome! This page contai
 
 ## CubeSat 101
 
+Although it is a bit of a toss up between the US and Japan on who came up with the idea of a "picosatellite" form factor that can ride along with the bigger satellites, it is generally accepted that a Stanford Professor, Bob Twiggs, and a Cal Poly San Luis Obispo Professor, Dr. Jordi Puig-Suari, jointly developed the first CubeSat specification in 1999. It would be a couple years before the first CubeSat would take to the skies, but that was to be the start of an unprecedented revolution in small spacecraft. 
+
 ## Our Favorite CubeSat Missions! 
 
 !!! example "ELFIN | The Electron Losses and Fields INvestigation"
@@ -33,5 +35,6 @@ The PyCubed architecture was developed by the man, the myth, the legend, Max Hol
 #### OreSat
 The OreSat architecture has been in development one way or another since the founding of the Portland State Aerospace Society in 1996! They have a really cool modular card cage system. Today it has sucessfully been to space once on OreSat-0 and will be flying again soon on OreSat-0.5! 
 
-
 #### The Artemis CubeSat Kit
+
+Developed by the Hawai'i Space Flight Lab (HSFL), located at the University of Hawai'i at Manoa, the Artemis CubeSat kit was designed to cost less than $5k to fabricate and have an accompanying space mission education course that could be implemented anywhere from universities all the way down to middle and high schools. 
