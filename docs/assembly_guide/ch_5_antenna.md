@@ -4,7 +4,9 @@
    a. Using a Milwaukee 6ft keychain measuring tape, completely pull out the tape measure from the keychain.
    b. Cut the measuring tape into 180mm lengths using a pair of scissors. These will need to be shortened down to a size correlated to the radio frequency. For example, the antenna lengths need to be 165mm to broadcast in the 437.4MHz range. Only 2 lengths are necessary for the satellite; however, it’s best to use all of it in case there is a mistake. If you are interested in broadcasting in other frequencies, use a dipole antenna calculator to find out the proper element length for your desired frequency.
    <p align="center">Figure 5.1: Lengths of measuring tape cut for use as antenna.</p>
-   > **NOTE:** After attaching the antenna, you may need to shorten the antenna, but this can be done later.
+
+!!! note
+      After attaching the antenna, you may need to shorten the antenna in order to tune it, but this can be done later.
    
    c. Using a Dremel or sandpaper, sand off roughly ½-inch of the paint off the end of the measuring tape. Do the same to the opposite side of the measuring tape.
    <p align="center">Figure 5.2: Antenna length with sanded end and mount hole after drilling.</p>

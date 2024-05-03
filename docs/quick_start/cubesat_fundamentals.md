@@ -32,6 +32,17 @@ Although it is a bit of a toss up between the US and Japan on who came up with t
 #### The PyCubed
 The PyCubed architecture was developed by the man, the myth, the legend, Max Holliday while he was a Ph.D student at Stanford University. Since it was announced to the world at the SmallSat 2019 the PyCubed took the world by storm with the promise of being an easy to use and very low cost solution for CubeSat avionics. 
 
+![The Py4 Mission from NASA](https://www.nasa.gov/wp-content/uploads/2024/03/acd23-0110-001-2.jpg)
+
+<p align="center">Figure 3: The Py4 CubeSats | The Latest Flight of the PyCubed <br>Courtesy: NASA/Don Richey</p>
+
+??? danger "The PolyCubed"
+    For BroncoSat-1 we created a private fork of the PyCubed architecture that we called the "PolyCubed." This architecture took the PyCubed V4 to what we thought was a logical conclusion, loading it up with as many features as possible inside of the single board form factor. This design was never open sourced, as we had a fundamental change in mindset for how to design the avionics (leading to the 3PySquared used today!), but design files can be shared privately if anyone would like to take a look. 
+
+    ![BroncoSat Breakdown](images/broncosat_breakdown.jpg)
+
+    <p align="center">Figure 4: A Breakdown of BroncoSat-1 Showing the Iterations from PyCubed v4 to PolyCubed V2a</p>
+
 #### OreSat
 The OreSat architecture has been in development one way or another since the founding of the Portland State Aerospace Society in 1996! They have a really cool modular card cage system. Today it has sucessfully been to space once on OreSat-0 and will be flying again soon on OreSat-0.5! 
 

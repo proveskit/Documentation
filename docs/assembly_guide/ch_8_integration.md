@@ -5,13 +5,17 @@
   - **i.** For this part of the integration, you will need two Main “U” halves, four small L-shaped brackets, and stainless steel 5mm long M2.5 Button Head fasteners. 
     ![Figure 8-1](images/8-1.jpg)
     <p align="center">Fig 8.1: Main structure components</p>
->*Note*: It is extremely important that the button head fasteners are used in this step and NOT the pan head fasteners for the L Brackets as this will allow the Solar Boards to fit on top of the fasteners. 
+!!! note
+    It is extremely important that the button head fasteners are used in this step and NOT the pan head fasteners for the L Brackets as this will allow the Solar Boards to fit on top of the fasteners. 
   - **ii.** Loosely attach the two halves together using the four L-brackets and 5mm fasteners as shown in figure 8.1 below. Ensure not to over-tighten as we will “square up” the structure later using a jig.
 ![Figure 8-2](images/8-2.jpg)
     <p align="center">Figure 8.2: Example of how to attach the L brackets to initial structure assembly.</p>
-> *Warning*: Make sure to ALWAYS screw in the fasteners horizontally when dealing with pre-installed pem-nuts.
+!!! warning
+    Make sure to ALWAYS screw in the fasteners horizontally when dealing with pre-installed pem-nuts.
   - **iii.** If you happen to pop out one of the pem-nuts, secure the fasteners with locknuts but be extra careful not to tighten them too much.
-> WARNING: TORQUE SPEC IS 0.59 N-M (5.22 IN-LB), DO NOT EXCEED THIS ON M2.5 BOLTS/FASTENERS.
+
+!!! warning
+    TORQUE SPEC IS 0.59 N-M (5.22 IN-LB), DO NOT EXCEED THIS ON M2.5 BOLTS/FASTENERS.
 
 ## 2) Card Brackets & Battery Board
 ### a. Initial bracket mounting.
@@ -57,7 +61,9 @@
 ## 4) Squaring the Satellite
 ### a. It’s Jig Time!
 - Place the structure into the jig as shown in figure 8.11. Slide it back and forth multiple times through the jig to square up the structure.
-> **Note:** If you cannot fit the satellite into the jig, loosen the fasteners on the structure (not including the feet) and attempt to fit it again.
+
+!!! note
+    If you cannot fit the satellite into the jig, loosen the fasteners on the structure (not including the feet) and attempt to fit it again.
 
 ![Figure 8-12](images/8-12.png)
 <p align="center">Figure 8.12: Example of squaring the satellite inside a 3D-printed jig.</p>
@@ -70,7 +76,8 @@
 ![Figure 8-13](images/8-13.png)
 <p align="center">Figure 8.13: A battery board with necessary connections boxed in blue</p>
 
-> **Note:** Route wires through the sides of the battery board with cutouts to ensure that the solar panels will sit flush in later steps.
+!!! note
+    Route wires through the sides of the battery board with cutouts to ensure that the solar panels will sit flush in later steps.
 
   - **1. Foot Switch Ports:** The foot assembly will terminate to a 2-position Pico-Lock connector. Pull the connected wires up along the open sides of the battery board.
   - **2. Remove Before Flight (RBF):** The RBF assembly will terminate to a 2-position Pico-Lock connector. This will be connected when the top-cap is installed.
@@ -78,7 +85,9 @@
   - **4. Face Ports:** 5-position to 5-position Pico-Lock connector cable.
     - *Face 4* is reserved for the bottom or -Z solar face while Faces 0 to 3 are to be used for the side solar faces of the satellite.
   - **5. Main Board (Top Cap) Port:** 12-position to 12-position Pico-Lock connector cable.
-    > **Note:** If a 915 MHz RF module is used instead of a 437.4 MHz, then a wire in the cable needs to be removed. This can be seen in Figure 8.14 below. 
+
+!!! note
+    If a 915 MHz RF module is used instead of a 437.4 MHz, then a wire in the cable needs to be removed. This can be seen in Figure 8.14 below. 
   - **6. Burn Wire Port:** 2-position to 2-position Pico-Lock connector cable.
   - **7. Battery Heater Port:** The battery heater terminates to a 2-position Pico-Lock connector cable.
 
