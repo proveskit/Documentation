@@ -59,8 +59,43 @@ Currently there is no dedicated function check script. The best way to validate 
 ```py
 from pysquared import cubesat as c
 ```
-!!! info "What does ```pysquared.py``` do?"
-    ```pysquared.py``` instantiates all of the core functionalities of the the satellite within one class. We borrowed this design pattern from Max Holliday's PyCubed software implementation, so alot of the 
-5. 
+!!! info "What does this command do?"
+    This line of code instantiates the ```cubesat``` class within ```pysquared.py``` and names it an object ```c```. 
+    
+    This gives us access to all of the core functionalities of the the satellite within a single object. We borrowed this design pattern from Max Holliday's PyCubed software implementation, so alot of the functionalities cross over. 
+5. Call the ```c.hardware``` dictionary to determine if all of the satellite functionalities are ```true```. 
+
+### Radio Check
+With an active instance of the ```cubesat``` class we can quickly send some packets to validate that the radio is operational. Make sure to check the properties in the ```self.radio_cfg``` dictionary before proceeding: 
+
+!!! info "Default ```self.radio_cfg```" 
+    ```py 
+        self.radio_cfg = {
+            'id':   0xfb,   # The ID of the sender
+            'gs':   0xfa,   # The ID of the receiver
+            'freq': 437.4,  # Transmit frequency
+            'sf':   8,      # LoRa Spreading Factor
+            'bw':   125,    # Transmit bandwidth
+            'cr':   8,      # LoRa Coding Rate
+            'pwr':  23,     # Transmit power
+            'st' :  80000   
+        }
+    ```
+
+1. First, configure something to listen in and monitor the radio waves
+
+??? info "Using an SDR"
+    If you have a SDR hooked up, tune into to frequency that you're transmitting on and watch the waterfall. 
+
+??? info "Using another HopeRF Radio Module"
+    If you have a second PROVES Kit, a Flight Controller Dev Board, or a standalone RFM98PW you can use that to monitor for transmissions as well. Make sure that the ```'id'``` and ```'gs'``` parameters are the opposite of what 
+
+!!! warning
+    If your PROVES Kit is equipped with the RFM98PW (the 433 Mhz Band radio) use caution when calling 
+
+2. You can send a packet using a command such as: 
+```c.radio1.send("Hello World!")```
+
 
 *[REPL]: Read Print Evaluate Loop
+*[SDR]: Software Defined Radio
