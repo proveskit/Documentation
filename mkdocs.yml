@@ -111,6 +111,8 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - cdh.py: core_documentation/software/cdh.md
       - payload.py: core_documentation/software/payload.md
       - detumble.py: core_documentation/software/detumble.md
+    - Legacy Documentation: 
+      - Yearling-1 Block Diagram: core_documentation/legacy/yearling_1_block_diagram.md
   - Publications: publications.md
 
 extra:
