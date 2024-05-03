@@ -6,6 +6,8 @@ theme:
     - navigation.tabs
     - header.autohide
     - navigation.path
+    - content.code.copy
+    - content.code.select
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -42,9 +44,15 @@ markdown_extensions:
   - abbr
   - def_list
   - admonition
-  - pymdownx.details
+  - pymdownx.details'
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
