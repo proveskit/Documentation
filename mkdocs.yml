@@ -107,6 +107,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - Battery Board: core_documentation/hardware/battery_board.md
     - Software:
       - core_documentation/software/index.md
+      - RMF9x Radio Usage: core_documentation/software/rfm_radio_usage.md
       - pysquared.py: core_documentation/software/pysquared.md
       - functions.py: core_documentation/software/functions.md
       - big_data.py: core_documentation/software/big_data.md

@@ -9,7 +9,7 @@ Before we crack into using our PROVES Kit it is important to acquire or install 
 #### Required Items
 In order to interact with the hardware, we will need to install some software that will give us the ability to view and change the code from a serial terminal, download the latest code from the the Github, and edit the code if we desire. Make sure all of these tools are installed on your computer using the links below before proceeding! 
 
-!!! success "A Serial Terminal Software"
+??? success "A Serial Terminal Software"
     We need some way to read the output of the satellite on a serial port and ideally a way to also type serial commands back during debugging.Any software that is capable of opening a serial port will do (even the built in terminal on Linux and MacOS will work!), but we recommend installing something like Tabby for a better user experience.  
 
     ![Tabby Terminal](images/tabby_1.png)
@@ -18,7 +18,7 @@ In order to interact with the hardware, we will need to install some software th
 
     Learn more about Tabby [here](https://tabby.sh). 
 
-!!! success "A Code Editor"
+??? success "A Code Editor"
     If you're a Linux lunatic you could view and edit all of your code on the command line using Vim or something, but our recommendation for a good user experience is something like Visual Studio Code!   
 
     ![VS Code](images/VSCode_1.png)
@@ -82,20 +82,48 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
         }
     ```
 
-1. First, configure something to listen in and monitor the radio waves
+1. First, configure something to listen in and monitor the radio waves:
 
 ??? info "Using an SDR"
     If you have a SDR hooked up, tune into to frequency that you're transmitting on and watch the waterfall. 
 
 ??? info "Using another HopeRF Radio Module"
-    If you have a second PROVES Kit, a Flight Controller Dev Board, or a standalone RFM98PW you can use that to monitor for transmissions as well. Make sure that the ```'id'``` and ```'gs'``` parameters are the opposite of what 
+    If you have a second PROVES Kit, a Flight Controller Dev Board, or a standalone RFM98PW you can use that to monitor for transmissions as well. Make sure that the ```'id'``` and ```'gs'``` parameters on the receiving node are the opposite of what they are on the sending node. 
 
-!!! warning
-    If your PROVES Kit is equipped with the RFM98PW (the 433 Mhz Band radio) use caution when calling 
+    Once you're ready to start receiving you can setup a receiving loop with the following coding pattern: 
 
-2. You can send a packet using a command such as: 
+    ```py
+    from pysquared import cubesat as c
+    import time
+
+    while True:
+        time.sleep(1)
+        print(c.radio1.receive())
+    ```
+
+    This code will print either ```none``` when there is no received message or a whatever message has come over the airwaves if there is a valid packet. It can either be implemented as its own script and called or you're a pro gamer you can type it line by line into the REPL. 
+
+    If you are using a stand alone RFM98PW with a dev board you'll have to go through setting up the pins and radio object for the specific microcontroller you're pairing it with. We recommend referring to the [Adafruit RFM9x documentation](https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts/circuitpython-for-rfm9x-lora) for how to do that. 
+
+    This is the most basic pattern for receiving and demodulating messages. For more advanced (and useful) test patterns please refer to our dedicated page on [RFM9x Radio Usage](https://docs.proveskit.space/en/latest/core_documentation/software/rfm_radio_usage/).
+
+2. You can now send a packet using a command such as: 
 ```c.radio1.send("Hello World!")```
 
+!!! warning
+    If your PROVES Kit is equipped with the RFM98PW (the 433 Mhz Band radio) use caution when calling ```c.radio1.send()``` directly, as it bypasses the ```c.is_licensed``` parameter that will usually stop you from violating FCC regulations unless you've verified you have a valid license to operate the radio.  
+
+3. Check if the message comes through! Each call of ```c.radio1.send()``` should return ```True``` if the radio accepts the string and sends it out sucessfully. You should also see the following things on whatever receiving device you're using as well: 
+
+??? info "Using an SDR"
+    You should see a blip on the SDR shortly after using the ```send``` command. What that blip looks like will be different, depending on which modulation you are using: 
+
+    - LoRa Mode 
+
+    - FSK Mode
+
+??? info "Using another HopeRF Radio Module"
+    If you are receiving from a HopeRF module your serial terminal should look someting like this: 
 
 *[REPL]: Read Print Evaluate Loop
 *[SDR]: Software Defined Radio
