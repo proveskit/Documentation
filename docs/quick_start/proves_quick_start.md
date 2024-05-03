@@ -48,3 +48,19 @@ Hardware:
 ## Initial Checkouts 
 
 Assuming that you have a fully assembled PROVES Kit in front of you, we will go through a quick tour of the major features of the kit!
+
+### Function Check
+Currently there is no dedicated function check script. The best way to validate if all of satellite's subsystems are online is to use the built in state of health functionality in the ```pysquared.py``` class. To do this, take the following steps: 
+
+1. Connect to the satellite via the micro usb cable. You should see a USB drive pop up if you're using the CircuitPython firmware.
+2. Open a serial connection using Tabby. 
+3. Use the keyboard shortcut ++ctrl+c++ to interupt any currently running code and follow the instructions that pop up to enter the REPL
+4. Type the following command: 
+```py
+from pysquared import cubesat as c
+```
+!!! info "What does ```pysquared.py``` do?"
+    ```pysquared.py``` instantiates all of the core functionalities of the the satellite within one class. We borrowed this design pattern from Max Holliday's PyCubed software implementation, so alot of the 
+5. 
+
+*[REPL]: Read Print Evaluate Loop
