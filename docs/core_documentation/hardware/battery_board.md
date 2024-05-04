@@ -1,5 +1,8 @@
 # Overview
-The PROVES Kit Battery Board was baselined on the PyCubed battery board, but has since evolved into more of a fully fledged EPS board. 
+![Figure 1](images/battery_3_and_a.jpg)
+<p align="center">Figure 1: The Battery Board V3 (left) and V2 (right)</p>
+
+The PROVES Kit Battery Board was baselined on the PyCubed battery board, but has since evolved into more of a fully fledged EPS board. This is especially true of V3 and V3a which both host their own RP2040 microcontroller.  
 ## Getting Started
 Currently there is one officially supported version of the batery board and one in development version: 
 

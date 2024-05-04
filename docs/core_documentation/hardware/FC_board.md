@@ -1,5 +1,8 @@
 # Overview
-The PROVES Kit Flight Controller is part of the PySquared architecture that harbors all of the satellites core operations
+![Figure 1](images/fc_internal_1a.jpg)
+<p align="center">Figure 1: The Internal Flight Controller Board</p>
+
+The PROVES Kit Flight Controller is part of the PySquared architecture that harbors all of the satellites core operations. There are two variants of the Flight Controller, an internal variant and an external variant.
 ## Getting Started
 
 ## Utilized Parts

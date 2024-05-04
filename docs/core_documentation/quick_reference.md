@@ -4,12 +4,16 @@ This page contains links and context on a variety of useful tools and references
 ## Tools and Templates 
 
 ??? abstract "Jan King's Satellite Link Budget Spreadsheet" 
-
     This spreadsheet is absolutely legendary in the CubeSat community. Last updated in the mid 2000’s, it is the most comprehensive piece of freeware currently available for running the calculations on whether or not your satellite will be able to connect to your ground station. It is honestly overkill in many ways, but if you want to be walked through doing a deep dive on how that RF link forms this is the one stop shop. 
 
     One of these days we should have someone in the community modernize it as a web tool! 
 
     [Link to Download the Sheet](http://www.amsat.org/wordpress/xtra/AMSAT-IARU_Link_Model_Rev2.5.3.xls)
+
+??? abstract "The NASA GMAT (General Mission Analysis Tool)" 
+    This is a really powerful piece of open source mission simulation software from the NASA Goddard Space Flight Center. You can do all sorts of things, but the most useful for us to probably ground station link analysis for mission operations planning. 
+
+    [Link to their SourceForge](https://sourceforge.net/projects/gmat/)
 
 ## Specifications and Standards
 When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has passed the required testing per the December 2023 RPUG” anyone who is familiar with those standards can instantly know what your satellite’s compatibility is and what kind of launch vehicles it can go on without having to do a deep dive into how you’ve built your satellite. That is the power of specifications and standards. 
@@ -47,7 +51,7 @@ When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has p
 
     [Link to the Standard](https://explorers.larc.nasa.gov/2019APSMEX/MO/pdf_files/SMC-S-016_05SEP2014.pdf)
 
-??? abstract "A Tip on Requirements"
+??? tip "A Tip on Requirements"
 
     One of the first things you should learn in engineering is how to understand and write good requirements for whatever system you are designing. Requirements are the measuring stick by which we can measure the success of our work and a guiding star for how to make out design decisions. The second thing you should learn in engineering is that requirement can, should, and will change throughout a project’s lifecycle. To assume that a project’s requirements will never undergo change presumes that the requirement writers at the beginning of the project had an absolutely perfect understanding of exactly what was needed, exactly what will meet that need, and exactly what it takes to accomplish the task at hand. 
 

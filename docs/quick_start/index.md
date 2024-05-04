@@ -6,12 +6,12 @@
 
     ---
 
-    Install [`mkdocs-material`](#) with [`pip`](/proves_quick_start.md) and get up
+    Install [`mkdocs-material`](#) with [`pip`](https://docs.proveskit.space/en/latest/quick_start/proves_quick_start/) and get up
     and running in minutes
 
     [:octicons-arrow-right-24: Getting started](#)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+-   :fontawesome-brands-markdown:{ .lg .middle } __CubeSat Context__
 
     ---
 
