@@ -1,7 +1,7 @@
 # Foundational Info About CubeSats
-![BroncoSat-1 Going in the Deployer](images/broncosatin.jpg)
+![BroncoSat-1 Going in the Deployer](images/BroncoSats.png)
 
-<p align="center">Figure 1: BroncoSat-1 Going in the Deployer <br>Courtesy: Momentus Space</p>
+<p align="center">Figure 1: Bronco Space Satellites and Deployers! <br>Courtesy: Momentus Space, Launcher Space, and Exolaunch</p>
 
 So this is your first time ever getting into CubeSats, welcome! This page contains a list of resources that are useful for understanding the CubeSat community and developing a foundational understanding of the space we work in. 
 

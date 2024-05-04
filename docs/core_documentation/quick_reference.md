@@ -3,15 +3,23 @@ This page contains links and context on a variety of useful tools and references
 
 ## Tools and Templates 
 
-??? abstract "Jan King's Satellite Link Budget Spreadsheet" 
+??? note "The NASA Debris Assessment Software (DAS)"
+
+    Completing an ODAR (Orbital Debris Assessment Report) is an essential part of licensing a spacecraft to fly in the US. If you are flying with CSLI their mission managers will assist you in doing this, but if you're flying by yourself you'll have to generate your own ODAR. To do this NASA has the Debris Assessment Software avalible for calculating inputs like what the expexted orbital lifetime of the satellite is an whether or not there is any risk that parts of the satellite will survive re-entry and pose a risk to human life. 
+
+    It is important to note that orbtial debris analysis is an imperfect science and these steps mitigate risk but do not entirely eliminate it! Satellite operators should also be mindful of doing due diligence to keep outer space safe and clean. 
+
+    [Link to Learn More](https://orbitaldebris.jsc.nasa.gov/mitigation/debris-assessment-software.html)
+
+??? note "Jan King's Satellite Link Budget Spreadsheet" 
     This spreadsheet is absolutely legendary in the CubeSat community. Last updated in the mid 2000’s, it is the most comprehensive piece of freeware currently available for running the calculations on whether or not your satellite will be able to connect to your ground station. It is honestly overkill in many ways, but if you want to be walked through doing a deep dive on how that RF link forms this is the one stop shop. 
 
     One of these days we should have someone in the community modernize it as a web tool! 
 
     [Link to Download the Sheet](http://www.amsat.org/wordpress/xtra/AMSAT-IARU_Link_Model_Rev2.5.3.xls)
 
-??? abstract "The NASA GMAT (General Mission Analysis Tool)" 
-    This is a really powerful piece of open source mission simulation software from the NASA Goddard Space Flight Center. You can do all sorts of things, but the most useful for us to probably ground station link analysis for mission operations planning. 
+??? note "The NASA GMAT (General Mission Analysis Tool)" 
+    This is a really powerful piece of open source mission simulation software from the NASA Goddard Space Flight Center. You can do all sorts of things, but the most useful feature for us is ground station link analysis for mission operations planning. 
 
     [Link to their SourceForge](https://sourceforge.net/projects/gmat/)
 
