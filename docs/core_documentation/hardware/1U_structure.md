@@ -38,8 +38,12 @@ The primary reason that we opted to 3D print the feet rather than machine them i
 There also exists an older part number that uses SDS005R microswitches to detect deployment. We refer to this as “BIRDS Style” because it is used by the Japanese BIRDS Open Source CubeSat Bus. The reason these switches are no longer used is that they are an incredible pain to assemble into the satellite and sometimes can be burned through by the burn wire circuit. These older feet can be used if you must absolutely optimize internal volume or need a part that can be CNC machined when the extra strength is needed or a launch provider will not budge on the requirement that all the touch points for the structure must be made of metal. 
 
 ## Peripheral Hardware
-
 A Remove Before Flight ("RBF") switch and pin can also be added to the satellites top cap PCB for inhibitting the satellite as it is transported and placed in the deployment pod. The bracket that is mounted to the top cap PCB can house the switch and the top cap PCB features a hole for dropping a pin into place to depress the RBF switch.
+
+![Figure 5](images/Structure_5.png)
+<p align="center">Figure 5: Taking the Jig for a Spin</p>
+
+The Jig is also a valuable piece of hardware for squaring up the structure during assembly. We recommend 3D printing one on a printer known to have good dimensional accuracy and using it throughout the build and intergration process.
 
 ## Expansion
 The PROVES kit can be expanded to stack structures to meet larger satellite requirements (such as a "3u"). Special feet have been designed for this very concept to help join the structures together. This design implementation is completely experimental and has not ever been vibration tested or qualified for space. With the PROVES kit design being open-source, the concept could be tested and experimented with by anyone to further improve the community using the designs.
