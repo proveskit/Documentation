@@ -1,4 +1,6 @@
 # So You Have a PROVES Kit!
+![The Yearling Fleet!](images/yearling_fleet.jpg)
+<p align="center">The Pleiades - Yearling Fleet</p>
 
 We are assuming that you have received a fully assembled PROVES Kit to get started. If you only have the indivudual components please refer to the the assembly guide to get things together or the individual checkout procedures for individual components. 
 
@@ -36,7 +38,6 @@ Note that these recommendations are for Windows and MacOS users. We presume that
     
     Learn more about GitHub Desktop [here](https://desktop.github.com).
 
-
 There are a few hardware tools that are helpful when working with the satellite as well. A micro USB cable is essential, to connect to the satellite and pull data from it. The multimeter is useful for measuring the voltages across various parts of the kit to verify functionality. An SDR (Software Defined Radio) is completely optional, but very useful for verifying that the radio is working and it is also cool to listen into the airwaves around you. 
 
 Hardware:
@@ -59,10 +60,12 @@ Currently there is no dedicated function check script. The best way to validate 
     ```py
     from pysquared import cubesat as c
     ```
+    
     !!! info "What does this command do?"
         This line of code instantiates the ```cubesat``` class within ```pysquared.py``` and names it an object ```c```. 
         
         This gives us access to all of the core functionalities of the the satellite within a single object. We borrowed this design pattern from Max Holliday's PyCubed software implementation, so alot of the functionalities cross over. 
+
 5. Call the ```c.hardware``` dictionary to determine if all of the satellite functionalities are ```true```. 
 
 ### Radio Check
@@ -143,6 +146,12 @@ Unless you have already implemented a payload into the PROVES Kit, most of the d
     f = functions.functions(c)
     ```
 5. Call ```f.all_face_data()```. You should expect an output like this: 
+
+### Conducting a Range Test
+One of the number one things that keeps us up at night with the satellite is whether or not we will actually hear back from it after sending it off on its journey in outer space. As a result, a fundemental test to do for every build is a verification of the performance of the radio at long range. We will have a seperate page forthcoming that goes into detail about the reasons and methedology behind this test, but we will quickly reference some of the key steps here: 
+
+1. Position a sending and receiving node some distance away from each other. We recommend at least 1km of seperation and a clear line of sight between the two nodes. 
+2. 
 
 ## Changing the Code
 Inevitably you'll want to change the code out on one of your boards. By default we recommend the CircuitPython implementation be loaded on the boards for ground testing, but this should be swapped out for more resiliant code before flight. 

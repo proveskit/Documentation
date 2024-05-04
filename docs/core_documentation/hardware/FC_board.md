@@ -1,5 +1,5 @@
 # Overview
-The PROVES kit Flight Controller is part of the Pysquared architecture that harbors all of the satellites core operations
+The PROVES Kit Flight Controller is part of the PySquared architecture that harbors all of the satellites core operations
 ## Getting Started
 
 ## Utilized Parts
