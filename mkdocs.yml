@@ -124,6 +124,11 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - detumble.py: core_documentation/software/detumble.md
     - Legacy Documentation: 
       - Yearling-1 Block Diagram: core_documentation/legacy/yearling_1_block_diagram.md
+    - Testing:
+      - core_documentation/testing/index.md
+      - Testing Overview: core_documentation/testing/testing_overview.md
+      - Testing Procedures: core_documentation/testing/testing_procedures.md
+      - Testing Results: core_documentation/testing/testing_results.md
   - Publications: publications.md
 
 extra:
