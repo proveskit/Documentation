@@ -1,10 +1,17 @@
 # Foundational Info About CubeSats
+![BroncoSat-1 Going in the Deployer](images/broncosatin.jpg)
+
+<p align="center">Figure 1: BroncoSat-1 Going in the Deployer <br>Courtesy: Momentus Space</p>
 
 So this is your first time ever getting into CubeSats, welcome! This page contains a list of resources that are useful for understanding the CubeSat community and developing a foundational understanding of the space we work in. 
 
 ## CubeSat 101
 
 Although it is a bit of a toss up between the US and Japan on who came up with the idea of a "picosatellite" form factor that can ride along with the bigger satellites, it is generally accepted that a Stanford Professor, Bob Twiggs, and a Cal Poly San Luis Obispo Professor, Dr. Jordi Puig-Suari, jointly developed the first CubeSat specification in 1999. It would be a couple years before the first CubeSat would take to the skies, but that was to be the start of an unprecedented revolution in small spacecraft. 
+
+Although it was last updated in 2017, the CubeSat 101 document from NASA is still fantastic as a foundational document laying out what it takes to launch a CubeSat. It is nessicarily brief in many regards, but for someone entirely new to the community it is a good idea to at least give it a skim to get a feel for things! 
+
+Check out [CubeSat 101 here](https://www.nasa.gov/wp-content/uploads/2017/03/nasa_csli_cubesat_101_508.pdf)
 
 ## Our Favorite CubeSat Missions! 
 Learning about past CubeSat missions can be an excellent way to get inspired about what is possible inside the box. These missions are some great examples of how these tiny satellites can have a big impact on the world! 

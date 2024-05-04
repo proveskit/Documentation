@@ -6,7 +6,7 @@
 
     ---
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
+    Install [`mkdocs-material`](#) with [`pip`](/proves_quick_start.md) and get up
     and running in minutes
 
     [:octicons-arrow-right-24: Getting started](#)
