@@ -16,7 +16,7 @@ Check out [CubeSat 101 here](https://www.nasa.gov/wp-content/uploads/2017/03/nas
 #### The CubeSat Subsystems
 Although on the PROVES team we prefer to work in a very flat and dynamic team structure, it is still very useful to seperate the CubeSat into sub-systems so people can have areas of responsibility that they can sort themselves into. **Figure 2** shows the mid project org chart for BroncoSat-1, and illustrates the most common pattern for dividing up elements of the CubeSat into sub-systems with sub-teams that are assigned to each of them. 
 
-![BroncoSat-1 Org Chart](images/BroncoSat_org.png)
+![BroncoSat-1 Org Chart](images/BroncoSat_Org.png)
 
 <p align="center">Figure 2: The BroncoSat-1 Mid Project Org Chart</p>
 
