@@ -22,7 +22,7 @@ Although on the PROVES team we prefer to work in a very flat and dynamic team st
 
 You will usually find a chart like this and a similar breakdown of sub-systems across most space engineering organizations that subscribe to more traditional space mission engineering. Sometimes, in especially big organizations, you'll see even more stratification with a sub-system like **hardware** being split into **a command and data handling system** and **electrical power system** for example. 
 
-!!! tip "A Tip on Org Structure"
+??? tip "A Tip on Org Structure"
     Although it is very common to see hierarchical team structures like the one seen in **Figure 2** we strongly advise against any hierarchy that goes more than three levels deep unless you are an exceptionally well funded and organized team. The 2011 print of the Space Mission Analysis and Design (SMAD) textbook (the space engineering bible by some regards) has a specific section on SmallSats that also recommends not exceeding around 20 people on the entire engineering team if possible. 
 
     These recommendations stem from a simple issue, as the org gets bigger it becomes an exponentially more unweidly and difficult to manage beast. This can be handled, for well funded and full time staffed engineering teams, but will be the death of leaner and more strapped for cash projects. Although it can seem attractive to enlist as many hands as possible (especially in a voulenteer student organization where the labor costs are pizza money!) too many cooks in the kitchen will quickly lead to chaos and confusion. 

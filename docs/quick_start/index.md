@@ -2,37 +2,36 @@
 
 <div class="grid cards" markdown>
 
+-   :material-cube-send:{ .lg .middle } __CubeSat Context__
+
+    ---
+
+    Whether you're a new or veteran developer, it is always a good idea to stay up to date with the state of CubeSats. 
+
+    [:octicons-arrow-right-24: Reference](https://docs.proveskit.space/en/latest/quick_start/cubesat_fundamentals/)
+
 -   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
 
     ---
 
-    Install [`mkdocs-material`](#) with [`pip`](https://docs.proveskit.space/en/latest/quick_start/proves_quick_start/) and get up
-    and running in minutes
+    It is quick and easy to get started interacting with the PROVES Kit! Check out the quick start guide here.
 
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Getting started](https://docs.proveskit.space/en/latest/quick_start/proves_quick_start/)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __CubeSat Context__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
+-   :material-format-font:{ .lg .middle } __Contribute to the Project!__
 
     ---
 
-    Change the colors, fonts, language, icons, logo and more with a few lines
+    Open source project rely on users like you contributing to the source! 
 
-    [:octicons-arrow-right-24: Customization](#)
+    [:octicons-arrow-right-24: Customization](https://docs.proveskit.space/en/latest/quick_start/becoming_contributor/)
 
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   :material-scale-balance:{ .lg .middle } __Simple, Open, and Accessible__
 
     ---
 
-    Material for MkDocs is licensed under MIT and available on [GitHub]
+    We're dedicated to creating as much open access to space as possible! Check out how reasons for why here.
 
-    [:octicons-arrow-right-24: License](#)
+    [:octicons-arrow-right-24: License](https://docs.proveskit.space/en/latest/design_philosophy/)
 
 </div>

@@ -173,9 +173,9 @@ Changing out the firmware on the microcontrollers is how we can switch between u
 5. Once in bootloader mode you can drag and drop a new ```.uf2``` file in as needed. 
 
 ??? note "Can't Reach the Buttons?" 
-    If you're currently using binaries and want to switch to CircuitPython or update the firmware sorry but you'll have to disassemble to access the buttons for a swap. 
+    If you're currently using binaries, and want to switch to CircuitPython or update the firmware, sorry but you'll have to disassemble to access the buttons for a swap. 
 
-    If you're currently using CircitPython you're in luck! There are some REPL commands that can come to the rescue. Just type the following into a fresh terminal: 
+    If you're currently using CircuitPython you're in luck! There are some REPL commands that can come to the rescue. Just type the following into a fresh terminal: 
     ```py
     import microcontroller
     microcontroller.on_next_reset(microcontroller.RunMode.UF2)
