@@ -18,7 +18,7 @@ Although on the PROVES team we prefer to work in a very flat and dynamic team st
 
 ![BroncoSat-1 Org Chart](images/BroncoSat_org.png)
 
-<p align="center">Figure 2: Bronco Space Satellites and Deployers! 
+<p align="center">Figure 2: The BroncoSat-1 Mid Project Org Chart</p>
 
 You will usually find a chart like this and a similar breakdown of sub-systems across most space engineering organizations that subscribe to more traditional space mission engineering. Sometimes, in especially big organizations, you'll see even more stratification with a sub-system like **hardware** being split into **a command and data handling system** and **electrical power system** for example. 
 
