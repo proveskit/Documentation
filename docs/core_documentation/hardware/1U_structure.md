@@ -45,8 +45,13 @@ A Remove Before Flight ("RBF") switch and pin can also be added to the satellite
 
 The Jig is also a valuable piece of hardware for squaring up the structure during assembly. We recommend 3D printing one on a printer known to have good dimensional accuracy and using it throughout the build and intergration process.
 
-## Expansion
+## Expansion & Varients
 The PROVES kit can be expanded to stack structures to meet larger satellite requirements (such as a "3u"). Special feet have been designed for this very concept to help join the structures together. This design implementation is completely experimental and has not ever been vibration tested or qualified for space. With the PROVES kit design being open-source, the concept could be tested and experimented with by anyone to further improve the community using the designs.
+
+For fun, Adam Elsharhawy has also been working on a carbon fiber varient of the structure! 
+
+![Figure 5](images/carbon_1.png)
+<p align="center">Figure 6: Carbon Fiber!</p>
 
 ## Qualified for space
 An Earlier version of the kit was vibration tested for 20 g's RMS. As stated earlier, the kit's structure can withstand the weight of an adult. The kit has been put through intense thermal cycling and has also survived. After two mission successes, the PROVES kit structure can easily qualify for space.

@@ -13,13 +13,29 @@ Although it was last updated in 2017, the CubeSat 101 document from NASA is stil
 
 Check out [CubeSat 101 here](https://www.nasa.gov/wp-content/uploads/2017/03/nasa_csli_cubesat_101_508.pdf)
 
-## Our Favorite CubeSat Missions! 
+#### The CubeSat Subsystems
+Although on the PROVES team we prefer to work in a very flat and dynamic team structure, it is still very useful to seperate the CubeSat into sub-systems so people can have areas of responsibility that they can sort themselves into. **Figure 2** shows the mid project org chart for BroncoSat-1, and illustrates the most common pattern for dividing up elements of the CubeSat into sub-systems with sub-teams that are assigned to each of them. 
+
+![BroncoSat-1 Org Chart](images/BroncoSat_org.png)
+
+<p align="center">Figure 2: Bronco Space Satellites and Deployers! 
+
+You will usually find a chart like this and a similar breakdown of sub-systems across most space engineering organizations that subscribe to more traditional space mission engineering. Sometimes, in especially big organizations, you'll see even more stratification with a sub-system like **hardware** being split into **a command and data handling system** and **electrical power system** for example. 
+
+!!! tip "A Tip on Org Structure"
+    Although it is very common to see hierarchical team structures like the one seen in **Figure 2** we strongly advise against any hierarchy that goes more than three levels deep unless you are an exceptionally well funded and organized team. The 2011 print of the Space Mission Analysis and Design (SMAD) textbook (the space engineering bible by some regards) has a specific section on SmallSats that also recommends not exceeding around 20 people on the entire engineering team if possible. 
+
+    These recommendations stem from a simple issue, as the org gets bigger it becomes an exponentially more unweidly and difficult to manage beast. This can be handled, for well funded and full time staffed engineering teams, but will be the death of leaner and more strapped for cash projects. Although it can seem attractive to enlist as many hands as possible (especially in a voulenteer student organization where the labor costs are pizza money!) too many cooks in the kitchen will quickly lead to chaos and confusion. 
+
+    To read more about our recommendations for structuring your organization, see this page [WORK IN PROGRESS]. 
+
+## Some of Our Favorite CubeSat Missions! 
 Learning about past CubeSat missions can be an excellent way to get inspired about what is possible inside the box. These missions are some great examples of how these tiny satellites can have a big impact on the world! 
 ***
 #### ELFIN | The Electron Losses and Fields INvestigation
 ![Exploded View of ELFIN](https://images.squarespace-cdn.com/content/v1/5b3bd5a9266c077a5bdfcafd/1536638856060-9TLJDHLPNTUVT1CDOZTG/COMPONENTS2.jpg?format=2500w)
 
-<p align="center">Figure 1: ELFIN Exploded View <br>Courtesy: UCLA ELFIN</p>
+<p align="center">Figure 3: ELFIN Exploded View <br>Courtesy: UCLA ELFIN</p>
 
 In our opinion the ELFIN mission from UCLA is the shining example for what is possible with a university led scientific CubeSat mission. As a pair of 3U CubeSats, this mission generated remarkable scientific data from deployment all the way until deorbit. 
 
@@ -30,7 +46,7 @@ And read their mission summary paper [here.](https://link.springer.com/article/1
 #### Seahawk-1 | Sustained Ocean Color Observations with Nanosatellites (SOCON)
 ![Image Description](https://www.earthdata.nasa.gov/s3fs-public/2021-10/HawkEye_Image_Gallery.png?VersionId=nuvGHK_9ZKkiE7J1LwrG5SK5vftc5T3D)
 
-<p align="center">Figure 2: A Gallery of Images from Seahawk <br>Courtesy: NASA Earthdata</p>
+<p align="center">Figure 4: A Gallery of Images from Seahawk <br>Courtesy: NASA Earthdata</p>
 
 The Seahawk-1 CubeSat from UNCW is an amazing example of how small satellites can have big impacts! Ocean color is a remarkable but rather niche field of scientific inquiry. As a result, it is difficult to fund dedicated satellite missions to collect high resolution ocean color data. The SOCON mission demonstrated that it was possible ot use these shoebox sized satellites to collect useful scientific data far beyond what the current state of the art is. 
 
@@ -43,7 +59,7 @@ The PyCubed architecture was developed by the man, the myth, the legend, Max Hol
 
 ![The Py4 Mission from NASA](https://www.nasa.gov/wp-content/uploads/2024/03/acd23-0110-001-2.jpg)
 
-<p align="center">Figure 3: The Py4 CubeSats | The Latest Flight of the PyCubed <br>Courtesy: NASA/Don Richey</p>
+<p align="center">Figure 5: The Py4 CubeSats | The Latest Flight of the PyCubed <br>Courtesy: NASA/Don Richey</p>
 
 The PyCubed v5 is the forebearer of our 3PySquared architecture that now powers the PROVES Kit. Much has changed since we were PyCubed users, but we still owe a huge ammount of our sucess to the existence of the PyCubed platform.
 
@@ -52,13 +68,13 @@ The PyCubed v5 is the forebearer of our 3PySquared architecture that now powers 
 
     ![BroncoSat Breakdown](images/broncosat_breakdown.jpg)
 
-    <p align="center">Figure 4: A Breakdown of BroncoSat-1 Showing the Iterations from PyCubed v4 to PolyCubed V2a</p>
+    <p align="center">Figure 6: A Breakdown of BroncoSat-1 Showing the Iterations from PyCubed v4 to PolyCubed V2a</p>
 
 #### OreSat
 
-![OreSat](https://lh5.googleusercontent.com/LHYGBSTgM3olQEn2j4W_Yy9tbKIDZr1C3uFENayzu8o8njqsmkSz5jO1qnU8EAjzFxHg1bGd3eHRkVQ-edQBRVnRo97JLd_hpBd2_5yBBcafeuYkINKA4OVjhAJesZXTGA=w1280)
+![OreSat](images/oresat_1.jpeg)
 
-<p align="center">Figure 4: The OreSat Team with OreSat-0! <br>Courtesy: OreSat</p>
+<p align="center">Figure 7: The OreSat Team with OreSat-0! <br>Courtesy: OreSat</p>
 
 The OreSat architecture has been in development one way or another since the founding of the Portland State Aerospace Society in 1996! They have a really cool modular card cage system. Today it has sucessfully been to space once on OreSat-0 and will be flying again soon on OreSat-0.5! 
 
@@ -66,7 +82,7 @@ The OreSat architecture has been in development one way or another since the fou
 
 ![Artemis](images/artemis.png)
 
-<p align="center">Figure 5: An Expanded View of the Artemis CubeSat Kit <br>Courtesy: Hawaii Space Flight Lab</p>
+<p align="center">Figure 8: An Expanded View of the Artemis CubeSat Kit <br>Courtesy: Hawaii Space Flight Lab</p>
 
 
 Developed by the Hawai'i Space Flight Lab (HSFL), located at the University of Hawai'i at Manoa, the Artemis CubeSat kit was designed to cost less than $5k to fabricate and have an accompanying space mission education course that could be implemented anywhere from universities all the way down to middle and high schools. 
