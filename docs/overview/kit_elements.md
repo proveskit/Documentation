@@ -1,5 +1,6 @@
 # Elements of the Kit 
 There are a few key components of the kit that align with the usual lineup of satellite sub-systems: 
+
 - Structure 
 - Electrical Power System
 - Flight Controller 

@@ -22,7 +22,7 @@
 
     ---
 
-    Open source project rely on users like you contributing to the source! 
+    Open source project rely on users like you contributing to the source! If you have some ideas about how things can be better join us!
 
     [:octicons-arrow-right-24: Becoming a Contributor](https://docs.proveskit.space/en/latest/quick_start/becoming_contributor/)
 

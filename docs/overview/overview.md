@@ -13,6 +13,8 @@ We began this process with Pleiades - Yearling, which was conceived in April 202
 ![Figure 2](images/fig2.jpg)
 <p align="center">Figure 2: Yearling 1 Being Loaded into the Deployer (Credit: Launcher Space)</p>
 
+***
+
 ## Pleiades - Yearling 2: The Unexpected Second Try 
 We never expected Yearling 1 to be Yearling 1. Kind of like how they didn't expect it to be World War I. Yearling 2 came very shortly after Yearling 1 was pronounced dead by failure of the deployment vehicle. We began R&D into an entirely new generation of the PROVES Kit on January 25, 2023 and had a completed Version 2 of the kit completed and qualified for spaceflight by March 1, 2023. This satellite went through two complete design iterations in that time and rolled in a significant amount of improvements over the Yearling 1 architecture. 
 
@@ -24,6 +26,8 @@ This satellite was launched on April 8th, 2024, and contact was sucessfully made
 ![Figure 4](images/fig4.jpg)
 <p align="center">Figure 4: The First Packet From Yearling 2!</p>
 
+***
+
 ## Pleiades - Squared: Third Time's the Charm! 
 Due to the early loss of Pleaides - Yearling 2, our plan was to spend many months ironning out potential issues with the kit before attempting another spaceflight. This plan was totally served at the last minute though, when just a couple weeks after the launch of Yearling 2 we needed to do an emergancy delivery of a 1U satellite for a use it or lose it launch slot. This satellite was built, tested, and delivered for launch in only 1 calendar week. 
 
@@ -32,12 +36,3 @@ Due to the early loss of Pleaides - Yearling 2, our plan was to spend many month
 
 This satellite was launched on June 12, 2024. Due to an unexpectedly early deployment from the host vehicle the satellite was actually lost in space for the first 5 hours of its mission life. Through a herculean emergancy ground station effort from the amateur radio community though, contact was established and valuable mission telemetry was downlinked. This satellite unfortunately also suffered an early loss. 
 
-## Elements of the Kit 
-There are a few key components of the kit that align with the usual lineup of satellite sub-systems: 
-    - Structure 
-    - Electrical Power System
-    - Flight Controller 
-    - Communications
-    - Attitude Determination and Control
-    - Flight Software 
-    - Ground Support Systems
