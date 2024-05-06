@@ -78,8 +78,9 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Core Documentation: core_documentation/index.md
     - Publications: publications.md
   - Overview:  # Overview of the project
-    - Overview: overview.md
-    - Design Philosophy: design_philosophy.md
+    - Overview: overview/overview.md
+    - Design Philosophy: overview/design_philosophy.md
+    - Kit Elements: overview/kit_elements.md
   - Quick Start Guide: # Qucok start guide 
     - Introduction: quick_start/index.md
     - CubeSat Fundamentals: quick_start/cubesat_fundamentals.md

@@ -8,7 +8,7 @@
 
     Whether you're a new or veteran developer, it is always a good idea to stay up to date with the state of CubeSats. 
 
-    [:octicons-arrow-right-24: Reference](https://docs.proveskit.space/en/latest/quick_start/cubesat_fundamentals/)
+    [:octicons-arrow-right-24: CubeSat Fundementals](https://docs.proveskit.space/en/latest/quick_start/cubesat_fundamentals/)
 
 -   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
 
@@ -24,14 +24,14 @@
 
     Open source project rely on users like you contributing to the source! 
 
-    [:octicons-arrow-right-24: Customization](https://docs.proveskit.space/en/latest/quick_start/becoming_contributor/)
+    [:octicons-arrow-right-24: Becoming a Contributor](https://docs.proveskit.space/en/latest/quick_start/becoming_contributor/)
 
 -   :material-scale-balance:{ .lg .middle } __Simple, Open, and Accessible__
 
     ---
 
-    We're dedicated to creating as much open access to space as possible! Check out how reasons for why here.
+    We're dedicated to creating as much open access to space as possible! Check out our reasons for why here.
 
-    [:octicons-arrow-right-24: License](https://docs.proveskit.space/en/latest/design_philosophy/)
+    [:octicons-arrow-right-24: Philosophy](https://docs.proveskit.space/en/latest/design_philosophy/)
 
 </div>
