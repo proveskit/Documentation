@@ -14,7 +14,7 @@ There are a few key components of the kit that align with the usual lineup of sa
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal, self clinching fasteners, and 3M 2216.
     
     ![PROVES Structure](images/Structure_2.jpg)
 
@@ -38,33 +38,33 @@ There are a few key components of the kit that align with the usual lineup of sa
     [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/battery_board/) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/battery_board)
 
--   :material-clock-fast:{ .lg .middle } __Internal Flight Controller__
+-   :fontawesome-solid-computer:{ .lg .middle } __Internal Flight Controller__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    The brain of the CubeSat, this is where the radio and main microcontroller lives on an internal board for temperature stability.
     
-    ![PROVES Structure](images/Structure_2.jpg)
+    ![PROVES Structure](images/fc_internal_1a.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** V1a is Supported! <br>
+    No Flight Heritage Yet. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/1U_structure/) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/FC_board/) <br>
+    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/flight_controller_board)
 
--   :material-clock-fast:{ .lg .middle } __External Flight Controller__
+-   :fontawesome-solid-computer:{ .lg .middle } __External Flight Controller__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    The brain of the Yearling CubeSats! All mounted on the Z+ endcard of the satellite. Great for education maybe not for flight. 
     
-    ![PROVES Structure](images/Structure_2.jpg)
+    ![PROVES Structure](images/external_fc.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** V2 is Supported! <br>
+    V1 has 2x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/1U_structure/) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/FC_board/) <br>
+    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/flight_controller_board)
 
 -   :material-clock-fast:{ .lg .middle } __XY Solar Board__
 
