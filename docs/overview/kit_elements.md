@@ -67,33 +67,33 @@ There are a few key components of the kit that align with the usual lineup of sa
     [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/FC_board/) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/flight_controller_board)
 
--   :material-clock-fast:{ .lg .middle } __XY Solar Board__
+-   :material-solar-power-variant-outline:{ .lg .middle } __XY Solar Board__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    These are the solar panels that suround the X and Y faces of the CubeSat. They are a common part number for all of the faces to reduce cost!  
     
-    ![PROVES Structure](images/Structure_2.jpg)
+    ![PROVES Structure](images/YearlingV2.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** V1 is Supported! <br>
+    V1 has 2x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/1U_structure/) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/XY_solar_board/) <br>
+    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/solar_boards)
 
--   :material-clock-fast:{ .lg .middle } __Z- Solar Board__
+-   :material-solar-power-variant:{ .lg .middle } __Z- Solar Board__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    The Z- face of the satellite is a little special. It stil collects solar power, so it has cells on it. We also add unique interfacing elements.
     
-    ![PROVES Structure](images/Structure_2.jpg)
+    ![PROVES Structure](images/YearlingV2.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** V2 is In Development! <br>
+    V1 has 2x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/1U_structure/) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/Z_solar_board/) <br>
+    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/solar_boards)
 
 -   :material-clock-fast:{ .lg .middle } __Camera Payload__
 
@@ -101,7 +101,7 @@ There are a few key components of the kit that align with the usual lineup of sa
 
     The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
     
-    ![PROVES Structure](images/Structure_2.jpg)
+    ![PROVES Structure](images/YearlingV2.jpg)
 
     **Status:** V2.1 is Supported! <br>
     V1 has 3x Flight Heritage. 
@@ -115,7 +115,7 @@ There are a few key components of the kit that align with the usual lineup of sa
 
     The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
     
-    ![PROVES Structure](images/Structure_2.jpg)
+    ![PROVES Structure](images/YearlingV2.jpg)
 
     **Status:** V2.1 is Supported! <br>
     V1 has 3x Flight Heritage. 
