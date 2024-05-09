@@ -65,6 +65,20 @@ When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has p
 
     In the real world this is rarely, if ever, the case. We have a saying that the best and worst answer in engineering as always “it depends.” To that end, we encourage people to look towards standards and specifications not as an end all be all for how things should get done, but just as a set of guidelines that will make your life easier if you are able to follow them. If there is a good reason for deviation there is always a way to make it work, and sometimes that deviation leads to innovation that moves the whole industry forward. 
 
+## Useful Datasheets and Reference Documents
+
+??? abstract "3M 2216: The Space Glue" 
+    
+    3M 2216 (also known as "The Space Glue" or "The Grey Stuff") is one of the most common two part expoxies used in spaceflight. It is relatively cheap (as long as you don't get price gougd for the Aerospace Qualified EC varient) and avalible on Amazon! Use this to join virtually any two materials together and sure up any soft connections on the satellite. 
+
+    [Link to the Datasheet](https://multimedia.3m.com/mws/media/153955O/3mtm-scotch-weldtm-epoxy-adhesive-2216-b-a.pdf)
+
+??? abstract "SatNOGS Taxonomy of Observations"
+
+    SatNOGS has a great wiki page that consolidates what some common radio modulations used by satellites will look like on a waterfall.
+
+    [Link to the Wiki Entry](https://wiki.satnogs.org/Observations)
+
 ## Sucessful CSLI Proposal Examples
 
 ??? note "OreSat-1: Oregon's First Space Mission" 
@@ -79,3 +93,4 @@ When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has p
 
     [Link to the Proposal](https://cpb-us-e1.wpmucdn.com/blogs.rice.edu/dist/2/9500/files/2019/11/2019-2020-CSLI-Proposal.pdf)
 
+*[SatNOGS]: Satellite Network of Open Ground Stations 
