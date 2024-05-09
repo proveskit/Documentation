@@ -31,7 +31,6 @@ This poster was presented at both the 2021 ASGSR Meeting and the 2022 SmallSat C
 ![Alt text](publication_pdfs/SSC22-P5-15​.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
 
-
 ## SmallSat 2020 QUIC: The Quickly Universally Integrated CubeSat
 This was the very first poster referencing our idea of creating a novel CubeSat bus! 
 

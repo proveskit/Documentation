@@ -64,3 +64,18 @@ When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has p
     One of the first things you should learn in engineering is how to understand and write good requirements for whatever system you are designing. Requirements are the measuring stick by which we can measure the success of our work and a guiding star for how to make out design decisions. The second thing you should learn in engineering is that requirement can, should, and will change throughout a project’s lifecycle. To assume that a project’s requirements will never undergo change presumes that the requirement writers at the beginning of the project had an absolutely perfect understanding of exactly what was needed, exactly what will meet that need, and exactly what it takes to accomplish the task at hand. 
 
     In the real world this is rarely, if ever, the case. We have a saying that the best and worst answer in engineering as always “it depends.” To that end, we encourage people to look towards standards and specifications not as an end all be all for how things should get done, but just as a set of guidelines that will make your life easier if you are able to follow them. If there is a good reason for deviation there is always a way to make it work, and sometimes that deviation leads to innovation that moves the whole industry forward. 
+
+## Sucessful CSLI Proposal Examples
+
+??? note "OreSat-1: Oregon's First Space Mission" 
+
+    The first (and do date only) CSLI selection from the State of Oregon. Portland State University leads this one and it has been in the works since 2016! Hopefully it will actually get to space soon. 
+
+    [Link to the Proposal](http://oresat.github.io/mission/oresat-2016-csli-application-r6-PUBLIC.pdf)
+
+??? note "OwlSat: Rice University's First CubeSat" 
+
+    OwlSat was selected in the 11th round of the CubeSat Launch Initative and is slated to investigate the Extreme Ultra Violet enviroment of outer space.
+
+    [Link to the Proposal](https://cpb-us-e1.wpmucdn.com/blogs.rice.edu/dist/2/9500/files/2019/11/2019-2020-CSLI-Proposal.pdf)
+
