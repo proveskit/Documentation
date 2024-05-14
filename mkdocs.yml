@@ -126,6 +126,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Legacy Documentation: 
       - Yearling-1 Block Diagram: core_documentation/legacy/yearling_1_block_diagram.md
       - Blue Dawn Hackathon: core_documentation/legacy/blue_dawn.md
+      - Yearling Software Sword: core_documentation/legacy/yearling_software_sword.md
     - Testing:
       - core_documentation/testing/index.md
       - Testing Overview: core_documentation/testing/testing_overview.md
