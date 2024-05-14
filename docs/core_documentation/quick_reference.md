@@ -2,6 +2,7 @@
 This page contains links and context on a variety of useful tools and references for doing CubeSats! 
 
 ## Tools and Templates 
+Using tools and Templates can really speed up your development! Many of these tools could totally use a facelift, possibly something that the community can take up!. 
 
 ??? note "The NASA Debris Assessment Software (DAS)"
 
@@ -66,6 +67,7 @@ When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has p
     In the real world this is rarely, if ever, the case. We have a saying that the best and worst answer in engineering as always “it depends.” To that end, we encourage people to look towards standards and specifications not as an end all be all for how things should get done, but just as a set of guidelines that will make your life easier if you are able to follow them. If there is a good reason for deviation there is always a way to make it work, and sometimes that deviation leads to innovation that moves the whole industry forward. 
 
 ## Useful Datasheets and Reference Documents
+If in doubt make sure to check the datasheet! These are links to some of the ones that are more common and likely to come up when you need to check something like a cure time or pin assignment. 
 
 ??? abstract "3M 2216: The Space Glue" 
     
@@ -80,6 +82,7 @@ When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has p
     [Link to the Wiki Entry](https://wiki.satnogs.org/Observations)
 
 ## Sucessful CSLI Proposal Examples
+Looking to craft your own CSLI proposal? Check out these successful examples to help you get a feel for what they should entail! Remember that the CSLI folks really do want you to succeed, just make sure you're following the directions and have a compelling reason for why you're doing what you're doing! 
 
 ??? note "OreSat-1: Oregon's First Space Mission" 
 
