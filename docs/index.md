@@ -24,7 +24,7 @@ By then our little student club had managed to carve out an existence as a small
 
 This is what inspired us to dream of a world where the CubeSat developer never has to wonder whether or not their satellite will work. They would only have to ask “how well will my satellite work.” The PROVES CubeSat Kit is just the beginning of how we are planning to make this world a reality. Inspired by the work of open source space community pioneers such as Max Holliday, the Stanford Student Space Initiative, the Portland State Aerospace Society, and the Hawaii Spaceflight Lab, the PROVES CubeSat Kit is just the beginning of how we are planning to make this world a reality.
 
-![The Pleaides Five Team](images/Pleiades_Five_Team_Photo.png)
+![The Pleiades Five Team](images/Pleiades_Five_Team_Photo.png)
 <p align="center">Figure 5: The Future in the Pleiades Five</p>
 
 The Pleiades - CubeSat Cluster and the Yearling line of satellites was where we sought to lay the ground work for a radically low cost and open source CubeSat architecture. Now we invite the rest of the New Space community to join us in our quest for a more open, accessible, and successful future in the stars! 

@@ -12,7 +12,7 @@ The Flight Controller:
 Programmed in CircuitPython.
 
 ### RFM98PW 433 MHZ LoRa Radio Module
-To communicate between satellites or to ground stations.
+To communicate between satellites or to ground stations. This module was selected based on its flight heritage on the PyCubed lineage of CubeSats. 
 
 ### VL6180 LiDAR
 To detect antenna deployment.
