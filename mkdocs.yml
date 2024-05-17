@@ -72,7 +72,7 @@ markdown_extensions:
 nav: # Setting up the navigation. The below list will be tabs on left panel
   - Home: 
     - Welcome: index.md
-    - Overview: overview.md
+    - Overview: overview/overview.md
     - Quick Start Guide: quick_start/index.md
     - Assembly Guide: assembly_guide/index.md
     - Core Documentation: core_documentation/index.md
