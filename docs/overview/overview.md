@@ -36,3 +36,12 @@ Due to the early loss of Pleaides - Yearling 2, our plan was to spend many month
 
 This satellite was launched on June 12, 2024. Due to an unexpectedly early deployment from the host vehicle the satellite was actually lost in space for the first 5 hours of its mission life. Through a herculean emergancy ground station effort from the amateur radio community though, contact was established and valuable mission telemetry was downlinked. This satellite unfortunately also suffered an early loss. 
 
+***
+
+## Pleiades - Orpheus: Going Upstream
+Scheduled to launch in Fall 2024, Pleiades - Orpheus will be the launch of a PROVES Kit based satellite from the Irvington High School Girls in STEM Club! Funded by the gracious donations of Christie English, the Orhpeus project will be a trail of flowing the educational potential of the PROVES Kit upstream to a group of students from a public highschool in Fremont, California. 
+
+***
+
+## The Pleiades Five: This is Getting Out of Hand
+Now there are six of them! With its very confusing name, the Pleiades Five mission is tasked with taking six 1U CubeSats to orbit from five different colleges and universities (not including the lead, Cal Poly Pomona). This mission was selected in the 2024 round of NASA's CubeSat Launch Initative (CSLI). s
