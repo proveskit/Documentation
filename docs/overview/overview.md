@@ -13,19 +13,15 @@ We began this process with Pleiades - Yearling, which was conceived in Feburary 
 
 With a graceous endowment from our benefactor, Mike Beckage, we purchased a commerical rideshare opportunity for a 1U CubeSat and looked to the skies for the first journey of the PROVES Kit. Unfortunately a fully modular backplane system proved to be too complicated for us to finish developing in few short months we had from signing the launch contract to launch day. As a result, we did a massive rescope and brought back the PyCubed architecture (at the time in newly minted V5 form!) to pilot our ultra-low cost satellite. 
 
+??? note "FiFi for PROVES x Ember"
+    Technically, the first flight of the PROVES kit was actually not to orbit, but on the Bronco Space Balloon Launch Vehicle! On the third official flight of the Bronco Space BLV (aptly named Cube Your Enthusiasm) a stripped down Yearling took to the skies in order to assist the fledgling Bronco Ember team in figuring out whether or not their chosen stepper motor would perform at 100,000ft. 
+
+    Check out the post flight analysis here: 
+    ![Alt text](images/Cube_Your_Enthusiasm_Post-Flight_Review.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+
+
 ![Figure 1](images/mega_breadboard.png)
 <p align="center">The Yearling Mega Breadboard</p>
-
-??? note "A Structural Sidebar"
-    The sheet metal structure that we now know and love as a part of the PROVES kit was designed by Gavin James after the Yearling rescope. What many people don't know though is that our sheet metal lineage actually began much earlier than that with multiple prototype structures being designed by Bronco Space Co-Founder and one time **CAD God** Ben Narita. 
-
-    ![Ben and Kelsey!](images/figb1.png)
-    <p align="center">Figure B1: Ben and Kelsey with the Proto Structure in the El Monte Branch!</p>
-
-    This design was really interesting, because it tried to emulate the OreSat card cage system with significantly less parts and greatly simplified manufacturing. The idea was to use a slotted sheet metal sandwich structure to create a clinching force when set screws were threaded in to deform an inner layer. It could have been pretty cool! We never followed through with trying to make it work long term though, since the much simpler half-u style structure won out in the long run. 
-
-    ![Protostructure Close Up](images/figb2.JPG)
-    <p align="center">Figure B2: A Close Up of the Proto Structure</p>
 
 We didn't really have a whole lot of money to play with or deep engineering talent to pull it off, so we went as cheap and simple as possible. This manifested in even going as far as soldering Adafruit sensor breakout boards to every face of the satellite to try and save as much engineering effort as possible! 
 
