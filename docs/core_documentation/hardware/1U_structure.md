@@ -3,6 +3,17 @@
 <p align="center">Figure 1: The PROVES Kit Structure</p>
 
 The PROVES kit "1U" structure was designed around maximum customizability. With sixteen unique positions, several boards can fit inside to fulfill most mission requirements. The structure is laser cut, bent, and anodized 5052 Aluminum sheet metal, and is even strong enough to withstand the weight of a fully grown adult! Primary holes on the structure not joined with a bracket or hardware internally contain pressed PEM-Nuts for easy external mounting. The main structure was designed to be two separate halves that are joined together by brackets and Printed Circuit Boards.
+
+??? note "A Structural Sidebar"
+    The sheet metal structure that we now know and love as a part of the PROVES kit was designed by Gavin James after the Yearling rescope. What many people don't know though is that our sheet metal lineage actually began much earlier than that with multiple prototype structures being designed by Bronco Space Co-Founder and one time **CAD God** Ben Narita. 
+
+    ![Ben and Kelsey!](images/figb1.png)
+    <p align="center">Figure B1: Ben and Kelsey with the Proto Structure in the El Monte Branch!</p>
+
+    This design was really interesting, because it tried to emulate the OreSat card cage system with significantly less parts and greatly simplified manufacturing. The idea was to use a slotted sheet metal sandwich structure to create a clinching force when set screws were threaded in to deform an inner layer. It could have been pretty cool! We never followed through with trying to make it work long term though, since the much simpler half-u style structure won out in the long run. 
+
+    ![Protostructure Close Up](images/figb2.JPG)
+    <p align="center">Figure B2: A Close Up of the Proto Structure</p>
    
 ## The Primary Structure
 The primary structure of the satellite is usually considered the parts of the physical structure that will carry load during the launch environment and define the first resonant mode. Within the PROVES Kit we have two “Half U’s” that are joined by two “L-Brackets” connecting the top and bottom flanges of the half U’s”. The Half-U’s have a series of holes that run up and down the structure to provide spots for mounting “Card Brackets” which carry any component that needs to be held inside of the CubeSat. Additionally, there are eight “Foot Assemblies” that serve the dual purpose of providing a uniform satellite to satellite interface (when multiple 1U’s are stacked with each other) and containing the inhibit switches that keep the satellite turned off while it is inside the deployer. 
