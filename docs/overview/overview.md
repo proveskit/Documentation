@@ -14,7 +14,7 @@ We began this process with Pleiades - Yearling, which was conceived in Feburary 
 With a graceous endowment from our benefactor, Mike Beckage, we purchased a commerical rideshare opportunity for a 1U CubeSat and looked to the skies for the first journey of the PROVES Kit. Unfortunately a fully modular backplane system proved to be too complicated for us to finish developing in few short months we had from signing the launch contract to launch day. As a result, we did a massive rescope and brought back the PyCubed architecture (at the time in newly minted V5 form!) to pilot our ultra-low cost satellite. 
 
 ??? note "A Structural Sidebar"
-    The sheet metal structure that we now know and love as a part of the PROVES kit was designed by Gavin James after the Yearling rescope. What many people don't know though is that our sheet metal lineage actually began much earlier than that with multiple prototype structures being designed by Bronco Space Founder and one time **CAD God** Ben Narita. 
+    The sheet metal structure that we now know and love as a part of the PROVES kit was designed by Gavin James after the Yearling rescope. What many people don't know though is that our sheet metal lineage actually began much earlier than that with multiple prototype structures being designed by Bronco Space Co-Founder and one time **CAD God** Ben Narita. 
 
     ![Ben and Kelsey!](images/figb1.png)
     <p align="center">Figure B1: Ben and Kelsey with the Proto Structure in the El Monte Branch!</p>
@@ -34,6 +34,9 @@ Pleiades - Yearling was launched in January 2023 alongside Sapling - Semperviren
 ## Pleiades - Yearling 2: The Unexpected Second Try 
 ***
 We never expected Yearling 1 to be Yearling 1. Kind of like how they didn't expect it to be World War I. Yearling 2 came very shortly after Yearling 1 was pronounced dead by failure of the deployment vehicle. We began R&D into an entirely new generation of the PROVES Kit on January 25, 2023 and had a completed Version 2 of the kit completed and qualified for spaceflight by March 1, 2023. This satellite went through two complete design iterations in that time and rolled in a significant amount of improvements over the Yearling 1 architecture. 
+
+??? note "The Hunt for Red Sapling"
+    One of the more interesting side chapters of the Yearling arc was a span of approximately one week in which we thought it was possible that Sapling - Sempervirens had slipped out from the confines of its orbital prison and was faintly transmitting from orbit! 
 
 ![Figure 3](images/fig3.jpg)
 <p align="center">Figure 3: The Launch of Yearling 2 (Credit: SpaceX)</p>
