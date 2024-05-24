@@ -11,14 +11,13 @@ In order to ensure that the educational experience provided by using a PROVES Ki
 ***
 We began this process with Pleiades - Yearling, which was conceived in Feburary 2022 as the brain child of Michael Pham and Megan Beck. This satellite was hot on the heels of BroncoSat-1 and, inspired by our friends at PSAS, we first tried to use a modular backplane solution that we were going to call the Lovelace Architecture. 
 
-With a graceous endowment from our benefactor, Mike Beckage, we purchased a commerical rideshare opportunity for a 1U CubeSat and looked to the skies for the first journey of the PROVES Kit. Unfortunately a fully modular backplane system proved to be too complicated for us to finish developing in few short months we had from signing the launch contract to launch day. As a result, we did a massive rescope and brought back the PyCubed architecture (at the time in newly minted V5 form!) to pilot our ultra-low cost satellite. 
-
 ??? note "FiFi for PROVES x Ember"
     Technically, the first flight of the PROVES kit was actually not to orbit, but on the Bronco Space Balloon Launch Vehicle! On the third official flight of the Bronco Space BLV (aptly named Cube Your Enthusiasm) a stripped down Yearling took to the skies in order to assist the fledgling Bronco Ember team in figuring out whether or not their chosen stepper motor would perform at 100,000ft. 
 
     Check out the post flight analysis here: 
     ![Alt text](images/Cube_Your_Enthusiasm_Post-Flight_Review.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
+With a graceous endowment from our benefactor, Mike Beckage, we purchased a commerical rideshare opportunity for a 1U CubeSat and looked to the skies for the first journey of the PROVES Kit. Unfortunately a fully modular backplane system proved to be too complicated for us to finish developing in few short months we had from signing the launch contract to launch day. As a result, we did a massive rescope and brought back the PyCubed architecture (at the time in newly minted V5 form!) to pilot our ultra-low cost satellite. 
 
 ![Figure 1](images/mega_breadboard.png)
 <p align="center">The Yearling Mega Breadboard</p>
@@ -47,12 +46,17 @@ This satellite was launched on April 8th, 2024, and contact was sucessfully made
 
 ## Pleiades - Squared: Third Time's the Charm! 
 ***
-Due to the early loss of Pleaides - Yearling 2, our plan was to spend many months ironning out potential issues with the kit before attempting another spaceflight. This plan was totally served at the last minute though, when just a couple weeks after the launch of Yearling 2 we needed to do an emergancy delivery of a 1U satellite for a use it or lose it launch slot. This satellite was built, tested, and delivered for launch in only 1 calendar week. 
+Due to the early loss of Pleaides - Yearling 2, our plan was to spend many months ironning out potential issues with the kit before attempting another spaceflight. This plan was totally cooked at the last minute though, when just a couple weeks after the launch of Yearling 2 we needed to do an emergancy delivery of a 1U satellite for a use it or lose it launch slot. 
+
+![Figure 5](images/squared_trio.png)
+<p align="center">The Journey of Pleiades - Squared</p>
+
+This satellite was built, tested, and delivered for launch in only 1 calendar week. In order to get this done we did a rapid rebuild of the Yearling-2 engineering model to become SN11. The main updates from the SN10 that flew in April and this satellite were some small udpates to the software, adding new redundant eletrical connections, along with some additional glue and conformal coating of the boards. 
+
+This satellite was launched on June 12, 2024. Due to an unexpectedly early deployment from the host vehicle the satellite was actually lost in space for the first 5 hours of its mission life. Through a herculean emergancy ground station effort from the amateur radio community though, contact was established and valuable mission telemetry was downlinked. This satellite unfortunately also suffered an early loss. 
 
 ![Figure 5](images/fig5.png)
 <p align="center">Figure 5: The Pleaides - Squared Satellite Right Before Integration!</p>
-
-This satellite was launched on June 12, 2024. Due to an unexpectedly early deployment from the host vehicle the satellite was actually lost in space for the first 5 hours of its mission life. Through a herculean emergancy ground station effort from the amateur radio community though, contact was established and valuable mission telemetry was downlinked. This satellite unfortunately also suffered an early loss. 
 
 ## Pleiades - Orpheus: Going Upstream
 ***
