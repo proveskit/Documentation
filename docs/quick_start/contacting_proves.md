@@ -6,6 +6,7 @@ Unfortunately none of the flown PROVES Kit based satellites are currently known 
 | -------- | -------- |
 | Operational?   | No   |
 | Frequency   | 437.4 Mhz   |
+| Modulation   | LoRa   |
 | Spreading Factor   | 8   |
 | Callsign   | KN6NAQ   |
 
@@ -14,5 +15,6 @@ Unfortunately none of the flown PROVES Kit based satellites are currently known 
 | -------- | -------- |
 | Operational?   | No   |
 | Frequency   | 437.4 Mhz   |
+| Modulation   | LoRa & FSK  |
 | Spreading Factor   | 8   |
 | Callsign   | KN6NAT   |
