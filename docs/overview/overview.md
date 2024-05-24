@@ -13,6 +13,9 @@ We began this process with Pleiades - Yearling, which was conceived in Feburary 
 
 With a graceous endowment from our benefactor, Mike Beckage, we purchased a commerical rideshare opportunity for a 1U CubeSat and looked to the skies for the first journey of the PROVES Kit. Unfortunately a fully modular backplane system proved to be too complicated for us to finish developing in few short months we had from signing the launch contract to launch day. As a result, we did a massive rescope and brought back the PyCubed architecture (at the time in newly minted V5 form!) to pilot our ultra-low cost satellite. 
 
+![Figure 1](images/mega_breadboard.png)
+<p align="center">The Yearling Mega Breadboard</p>
+
 ??? note "A Structural Sidebar"
     The sheet metal structure that we now know and love as a part of the PROVES kit was designed by Gavin James after the Yearling rescope. What many people don't know though is that our sheet metal lineage actually began much earlier than that with multiple prototype structures being designed by Bronco Space Co-Founder and one time **CAD God** Ben Narita. 
 
