@@ -6,6 +6,32 @@ theme:
     - navigation.tabs
     - header.autohide
     - navigation.path
+    - content.code.copy
+    - content.code.select
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 plugins:
   - search  # To have search functionality on the document
@@ -15,7 +41,21 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - attr_list
+  - abbr
   - def_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.superfences:
@@ -30,9 +70,23 @@ markdown_extensions:
       tags: 'a script img link object embed'
 
 nav: # Setting up the navigation. The below list will be tabs on left panel
-  - Home: index.md
-  - Overview: overview.md # Overview of the project
-  - Design: design_philosophy.md  # 
+  - Home: 
+    - Welcome: index.md
+    - Overview: overview/overview.md
+    - Quick Start Guide: quick_start/index.md
+    - Assembly Guide: assembly_guide/index.md
+    - Core Documentation: core_documentation/index.md
+    - Publications: publications.md
+  - Overview:  # Overview of the project
+    - Overview: overview/overview.md
+    - Design Philosophy: overview/design_philosophy.md
+    - Kit Elements: overview/kit_elements.md
+  - Quick Start Guide: # Qucok start guide 
+    - Introduction: quick_start/index.md
+    - CubeSat Fundamentals: quick_start/cubesat_fundamentals.md
+    - Getting Started with PROVES: quick_start/proves_quick_start.md
+    - Contact an Orbiting Satellite: quick_start/contacting_proves.md
+    - Becoming a Contributor: quick_start/becoming_contributor.md
   - Assembly Guide:
     - Introduction: assembly_guide/introduction.md
     - "Chapter 0: Parts and Tools": assembly_guide/ch_0_parts_tools.md
@@ -53,6 +107,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - assembly_guide/index.md
   - Core Documentation: 
     - core_documentation/index.md
+    - Quick Reference: core_documentation/quick_reference.md
     - Hardware: 
       - core_documentation/hardware/index.md
       - 1U Structure: core_documentation/hardware/1U_structure.md # 1u-structure
@@ -62,11 +117,25 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - Battery Board: core_documentation/hardware/battery_board.md
     - Software:
       - core_documentation/software/index.md
+      - RMF9x Radio Usage: core_documentation/software/rfm_radio_usage.md
       - pysquared.py: core_documentation/software/pysquared.md
       - functions.py: core_documentation/software/functions.md
       - big_data.py: core_documentation/software/big_data.md
       - cdh.py: core_documentation/software/cdh.md
       - payload.py: core_documentation/software/payload.md
       - detumble.py: core_documentation/software/detumble.md
+    - Legacy Documentation: 
+      - Yearling-1 Block Diagram: core_documentation/legacy/yearling_1_block_diagram.md
+      - Blue Dawn Hackathon: core_documentation/legacy/blue_dawn.md
+      - Yearling Software Sword: core_documentation/legacy/yearling_software_sword.md
+    - Testing:
+      - core_documentation/testing/index.md
+      - Testing Overview: core_documentation/testing/testing_overview.md
+      - Testing Procedures: core_documentation/testing/testing_procedures.md
+      - Testing Results: core_documentation/testing/testing_results.md
   - Publications: publications.md
 
+extra:
+  social:
+    - icon: material/github 
+      link: https://github.com/proveskit

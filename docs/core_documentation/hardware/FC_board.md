@@ -1,5 +1,8 @@
 # Overview
-The PROVES kit Flight Controller is part of the Pysquared architecture that harbors all of the satellites core operations
+![Figure 1](images/fc_internal_1a.jpg)
+<p align="center">Figure 1: The Internal Flight Controller Board</p>
+
+The PROVES Kit Flight Controller is part of the PySquared architecture that harbors all of the satellites core operations. There are two variants of the Flight Controller, an internal variant and an external variant.
 ## Getting Started
 
 ## Utilized Parts
@@ -9,7 +12,7 @@ The Flight Controller:
 Programmed in CircuitPython.
 
 ### RFM98PW 433 MHZ LoRa Radio Module
-To communicate between satellites or to ground stations.
+To communicate between satellites or to ground stations. This module was selected based on its flight heritage on the PyCubed lineage of CubeSats. 
 
 ### VL6180 LiDAR
 To detect antenna deployment.

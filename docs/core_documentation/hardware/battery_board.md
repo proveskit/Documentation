@@ -1,5 +1,8 @@
 # Overview
-The PROVES kit Battery Board was designed around
+![Figure 1](images/battery_3_and_a.jpg)
+<p align="center">Figure 1: The Battery Board V3 (left) and V2 (right)</p>
+
+The PROVES Kit Battery Board was baselined on the PyCubed battery board, but has since evolved into more of a fully fledged EPS board. This is especially true of V3 and V3a which both host their own RP2040 microcontroller.  
 ## Getting Started
 Currently there is one officially supported version of the batery board and one in development version: 
 
@@ -59,3 +62,6 @@ The APAN3109 Relay is used to control the flow of current to the battery heater 
 - Although the R5460N208AA is supposed to auto-release in the case of a battery protection event, it does not appear to actually do this. If you find that the satellite is not delivering power because of a battery protection event that has now been cleared, you can reset the protection circuit by "jump starting" the satellite by applying a voltage higher than the current voltage of the batteries. On-orbit these jump starts should be automatically applied by the solar charger, if they are needed. 
 
 ## Troubleshooting
+
+
+*[EPS]: Electrical Power System

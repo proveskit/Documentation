@@ -6,7 +6,8 @@ Before continuing it is important to note that gloves should be worn prior to ap
 1. **Hand solder pico-lock connector following silkscreen and pad outlines.**
    a. Follow the silkscreen pattern on the board to place the components in the correct positions/orientations. For the pico-lock connectors line up the mounting pads when soldering connectors.
 
-   > **WARNING:** Test all sensors for full functionality prior to solar cell installation (see Chapter 7 that identifies the proper test to complete for the solar boards). If sensors are faulty and need to be reflowed or removed with a heat gun, the cells will be damaged in the process.
+!!! warning
+      Test all sensors for full functionality prior to solar cell installation (see Chapter 7 that identifies the proper test to complete for the solar boards). If sensors are faulty and need to be reflowed or removed with a heat gun, the cells will be damaged in the process.
 
 2. **Install the Solar Cells (KXOB101K08F-TR) using low temperature solder paste and a reflow oven.**
    a. Apply Low Temperature Solder Paste to the pads on the Solar Board as seen in Figure 3.1.
@@ -20,7 +21,8 @@ Before continuing it is important to note that gloves should be worn prior to ap
    a. If the solar board has already been removed from the oven, the resistor can be removed by a fine tip soldering iron heating each pad simultaneously. If the board is still hot from the oven, tweezers can be used very swiftly to remove the resistor.
    <p align="center">Figure 3.3: Motor Driver Resistor Removal</p>
 
-   > **NOTE:** This step is completely optional as the magnetorquers can be deactivated in software. Only one X Magnetorquer and one perpendicular Y Magnetorquer need to remain active in order to detumble the satellite effectively. The Z- Solar board should let the magnetorquer coil remain active as this is the only coil on the Z faces.
+!!! note
+      This step is completely optional as the magnetorquers can be deactivated in software. Only one X Magnetorquer and one perpendicular Y Magnetorquer need to remain active in order to detumble the satellite effectively. The Z- Solar board should let the magnetorquer coil remain active as this is the only coil on the Z faces.
 
 ## Z- Face
 4. **Z- Face Solar Boards**
@@ -35,4 +37,5 @@ Before continuing it is important to note that gloves should be worn prior to ap
 5. **Install the Two Position Screw Terminal on the bottom side of the board as seen in Figure 3.6**
    <p align="center">Figure 3.6: Properly Populated Screw Terminal</p>
 
-   > **NOTE:** Two different screw terminal footprints are available as options depending on preference.
+!!! note
+      Two different screw terminal footprints are available as options depending on preference.

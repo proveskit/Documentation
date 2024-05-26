@@ -8,7 +8,8 @@
    c. Place Standoffs in reflow oven (this is to avoid letting the board touch the oven tray).
    d. Place board on standoffs and set the oven to 185C or temperature slightly above solder paste’s recommended temperature.
    
-   > **NOTE:** The NeoPixel does not need to be populated but can be utilized by the Flight Controller to show the status of the system.
+!!! note
+      The NeoPixel does not need to be populated but can be utilized by the Flight Controller to show the status of the system.
 
 2. **Hand Solder the Micro USB port**
    a. Pre-tin the pads of the Micro USB port as seen in Figure 4.4.
@@ -37,7 +38,9 @@
    <p align="center">Figure 4.8: Final Appearance</p>
 
 3. **Loading the Firmware onto the board**
-    > **NOTE:** The Firmware and Flight Software can be obtained on the GitHub: www.github.com/proveskit 
+
+!!! note
+      The Firmware and Flight Software can be obtained on the GitHub: www.github.com/proveskit 
 
    a. After soldering the USB connector onto the board the flight controller can be plugged into the computer and power should enter the system by jumping the pins of J? as seen in Figure 4.9.
    <p align="center">Figure 4.9: J? Pins</p>
@@ -49,7 +52,9 @@
    d. After dropping the firmware into the file system a new file system should load with the name “Pysquared” as seen in Figure 4.12.
    e. Load Flight Software from the GitHub Repository onto the File system allowing all files to be replaced.
    f. Open a new session on a terminal software that can read the output from the flight controller. The output should look similar to that seen in Figure 4.13.
-   > **NOTE:** If the output is not like what is seen in Figure 4.13 try reloading the software by pressing ctrl+C and then ctrl+D.
+
+!!! note
+      If the output is not like what is seen in Figure 4.13 try reloading the software by pressing ctrl+C and then ctrl+D.
 
 
 
@@ -65,7 +70,8 @@
    c. If using the smaller radio module then a Jumper wire should be soldered to the pads as seen in Figure 4.18.
    d. If using the smaller radio module the following cable seen in Figure 4.19 should be removed from the cable assembly and that side specifically should be inserted into the flight controller as seen in Figure 4.20.
    
-   > **WARNING:** If using the smaller radio module it is imperative that the user does NOT plug in the 12 position Molex Picolock connector UNTIL following the next step.
+!!! warning
+      If using the smaller radio module it is imperative that the user does NOT plug in the 12 position Molex Picolock connector UNTIL following the next step.
 
 6. **Solder two position Pico-Lock headers**
    a. Follow the silkscreen pattern on the board to place the two headers in the correct positions/orientations and solder them into place. The connectors should appear as they do in Figure 4.21.
