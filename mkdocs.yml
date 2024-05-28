@@ -110,6 +110,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Quick Reference: core_documentation/quick_reference.md
     - Hardware: 
       - core_documentation/hardware/index.md
+      - FlatSat Dev Board: core_documentation/hardware/flatsat_dev_board.md
       - 1U Structure: core_documentation/hardware/1U_structure.md # 1u-structure
       - Flight Control Board: core_documentation/hardware/FC_board.md # flight-control-board
       - XY Solar Panels: core_documentation/hardware/XY_solar_board.md
