@@ -1,5 +1,7 @@
 # Documentation
-The Official Documentation of the PROVES kit
+The Official Documentation of the PROVES kit. 
+
+Our documentation is primarily hosted as a readthedocs site using the Material format.
 
 🚧👷‍♀️CURRENTLY UNDER CONSTRUCTION👷‍♀️🚧
 ## kit_part_list
