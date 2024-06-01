@@ -1,5 +1,8 @@
 # Overview
 The PROVES kit XY Solar Boards...
+
+![Figure 1](images/solar-panel-NoCutout.png)
+<p align="center">Figure 1: A Render of the Pleiades Five XY Solar Board</p>
 ## Getting Started
 
 ## Utilized Parts
