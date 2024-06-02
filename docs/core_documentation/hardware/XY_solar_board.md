@@ -17,7 +17,7 @@ One of the big things that the really expensive triple junction cells bring to t
 This is a temperature sensor. Not much else to say about it. 
 
 ### TI DRV2605LDGSR I2C Haptic Motor Drivers 
-These low current motor drivers are used to energize the magnetorquer coils inside the PCB. 
+These low current motor drivers are used to energize the magnetorquer coils inside the PCB. Because the solar boards are a 4-layer PCB, we were able to stick two artisinally hand drawn coils that are connectd to these motor drivers. The haptic motor drivers push very little current through the coils, but it is still enough to create enough of a magnetic field for detumbling! 
 
 ### Vishay VEML7700-TT Ambient Light Sensors 
 The ambient light sensor returns a luminance value proportional to the angle of incidence of the sun. It tracks roughly a bell curve. 
