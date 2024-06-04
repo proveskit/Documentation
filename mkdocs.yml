@@ -134,6 +134,8 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - Testing Overview: core_documentation/testing/testing_overview.md
       - Testing Procedures: core_documentation/testing/testing_procedures.md
       - Testing Results: core_documentation/testing/testing_results.md
+    - Mission Operations:
+      - core_documentation/mission_operations/index.md
   - Publications: publications.md
 
 extra:
