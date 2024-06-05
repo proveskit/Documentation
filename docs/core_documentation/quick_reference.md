@@ -81,6 +81,21 @@ If in doubt make sure to check the datasheet! These are links to some of the one
 
     [Link to the Wiki Entry](https://wiki.satnogs.org/Observations)
 
+## Recommended Reading
+If books are more your speed there are a couple texts that we think should be in every space engineering library! A few of these are textbook style, a few are novels, and a couple are government or industry reports that round up key facts about the state of space! 
+
+??? abstract "The SMAD: Space Mission Analysis and Desgin" 
+    
+    Referred to by some as "The Space Bible" the SMAD is probably the most comprehensive textbook there is on all aspects of space mission engineering. From concept development, to finnancing, and preliminary design this book has it all! The latest version was published in 2011, so there have been many modern trends that are not reflected in the SMAD, but it is still a fantastic reference for the general process. 
+
+    [Link to the Buy a Copy](https://astrobooks.com/spacemissionengineeringthenewsmadsme-smadwertzeverettpuschellavailablespring2011softcover.aspx)
+
+??? abstract "NASA's State of the Art of Small Spacecraft Technology" 
+    
+    Published each year by NASA's S3VI (Small Spacecraft Systems Virtual Institute) this report is as close as you'll get to a full round up of what the SmallSat community is technologically capable of! 
+
+    [Link to the 2024 Report](https://www.nasa.gov/wp-content/uploads/2024/03/soa-2023.pdf?emrc=8ad1a1)
+
 ## Sucessful CSLI Proposal Examples
 Looking to craft your own CSLI proposal? Check out these successful examples to help you get a feel for what they should entail! Remember that the CSLI folks really do want you to succeed, just make sure you're following the directions and have a compelling reason for why you're doing what you're doing! 
 
