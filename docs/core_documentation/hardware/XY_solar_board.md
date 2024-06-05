@@ -5,6 +5,8 @@ The PROVES kit XY Solar Boards...
 <p align="center">Figure 1: A Render of the Pleiades Five XY Solar Board</p>
 ## Getting Started
 
+!!! Find the Structure on Github [Here!](https://github.com/proveskit/solar_boards)
+
 ## Utilized Parts
 Each XY solar panel implements the following elements:
 
@@ -25,8 +27,16 @@ The ambient light sensor returns a luminance value proportional to the angle of 
 ### Fun Blue LED!
 A great indicator that everything is powered up! 
 
-### 5-pin Molex 1.5mm Pitch Picolock for VSolar, 3.3V Power, and I2C connections
+### 5-pin Molex 1.5mm Pitch Picolock
+This positivly locking conenctor carries VSolar, 3.3V Power, Ground, and I2C connections for all the face sensors. 
 
+## Design Rationale
+The goal for the these XY solar panels is to create a solar panel board that can work on any XY face of the satellite without modification. This modularity allows us to reduce the number of unique parts, simplifying integration and testing while also reducing cost in manufacturing. 
+
+### Use of Silicon Solar Cells vs Gallium Arsenide
+Most traditional space missions fly using Gallium Arsenide (also referred to as GaAs or Triple Junction) cells due to their very high efficiency. By our reckoning, virtually the entire Triple Junction solar cell industry serves space applications as the extremely high cost of these cells prohibits their use for any terrestrial applications. 
+
+Today it is believed that silicon solar cells are actually the most common solar cell chemistry flown in LEO (pretty much all of them on Starlink satellites) due to their very robust supply chain and radiacally lower cost. 
 
 ## Known Issues
 There are no known issues with the solar panels. Amanda kind of hit it out of the park on the first try! 
