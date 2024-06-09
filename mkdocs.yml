@@ -136,6 +136,8 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - Testing Results: core_documentation/testing/testing_results.md
     - Mission Operations:
       - core_documentation/mission_operations/index.md
+    - Programatic:
+      - core_documentation/programatic/index.md
   - Publications: publications.md
 
 extra:
