@@ -24,7 +24,7 @@ With a graceous endowment from our benefactor, Mike Beckage, we purchased a comm
 
 We didn't really have a whole lot of money to play with or deep engineering talent to pull it off, so we went as cheap and simple as possible. This manifested in even going as far as soldering Adafruit sensor breakout boards to every face of the satellite to try and save as much engineering effort as possible! 
 
-Pleiades - Yearling was launched in January 2023 alongside Sapling - Sempervirens from the Stanford Student Space Initative. Despite sucessfully reaching orbit, the orbital transfer vehicle that we were hosted on suffered a critical systems failure after seperating from the Falcon 9. As a result, the satellite was never deployed and is now stuck orbiting the Earth in its deployer pod. 
+Pleiades - Yearling was launched in January 2023 alongside Sapling - Sempervirens from the Stanford Student Space Initiative. Despite successfully reaching orbit, the orbital transfer vehicle that we were hosted on suffered a critical systems failure after separating from the Falcon 9. As a result, the satellite was never deployed and is now stuck orbiting the Earth in its deployer pod.
 
 ![Figure 2](images/fig2.jpg)
 <p align="center">Figure 2: Yearling 1 Being Loaded into the Deployer (Credit: Launcher Space)</p>
@@ -39,7 +39,7 @@ We never expected Yearling 1 to be Yearling 1. Kind of like how they didn't expe
 ![Figure 3](images/fig3.jpg)
 <p align="center">Figure 3: The Launch of Yearling 2 (Credit: SpaceX)</p>
 
-This satellite was launched on April 8th, 2024, and contact was sucessfully made through the TinyGS network just 7 minutes after deployment. Unfortunately, contact was soon lost with the satellite before it could be transitioned into its amateur radio mission. Valuable experience and validation of our ultra low cost satellite thesis was nonetheless gained. 
+This satellite was launched on April 8th, 2024, and contact was successfully made through the TinyGS network just 7 minutes after deployment. Unfortunately, contact was soon lost with the satellite before it could be transitioned into its amateur radio mission. Valuable experience and validation of our ultra-low-cost satellite thesis was nonetheless gained.
 
 ![Figure 4](images/fig4.jpg)
 <p align="center">Figure 4: The First Packet From Yearling 2!</p>
@@ -51,9 +51,9 @@ Due to the early loss of Pleaides - Yearling 2, our plan was to spend many month
 ![Figure 5](images/squared_trio.png)
 <p align="center">The Journey of Pleiades - Squared</p>
 
-This satellite was built, tested, and delivered for launch in only 1 calendar week. In order to get this done we did a rapid rebuild of the Yearling-2 engineering model to become SN11. The main updates from the SN10 that flew in April and this satellite were some small udpates to the software, adding new redundant eletrical connections, along with some additional glue and conformal coating of the boards. 
+This satellite was built, tested, and delivered for launch in only 1 calendar week. In order to get this done we did a rapid rebuild of the Yearling-2 engineering model to become SN11. The main updates from the SN10 that flew in April and this satellite were some small updates to the software, adding new redundant electrical connections, along with some additional glue and conformal coating of the boards.
 
-This satellite was launched on June 12, 2024. Due to an unexpectedly early deployment from the host vehicle the satellite was actually lost in space for the first 5 hours of its mission life. Through a herculean emergancy ground station effort from the amateur radio community though, contact was established and valuable mission telemetry was downlinked. This satellite unfortunately also suffered an early loss. 
+This satellite was launched on June 12, 2024. Due to an unexpectedly early deployment from the host vehicle the satellite was actually lost in space for the first 5 hours of its mission life. Through a herculean emergency ground station effort from the amateur radio community though, contact was established and valuable mission telemetry was downlinked. This satellite unfortunately also suffered an early loss, but we were able to collect enough mission data to validate all of the core spacecraft systems. 
 
 ![Figure 5](images/fig5.png)
 <p align="center">Figure 5: The Pleaides - Squared Satellite Right Before Integration!</p>
