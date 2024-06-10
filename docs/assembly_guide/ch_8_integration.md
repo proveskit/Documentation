@@ -33,7 +33,7 @@
 <p align="center">Figure 8.5: Approach 2 of Installing Battery Board Inside Structure</p>
 
 ### b. Applying Thermocouple
-  - **i.** Apply space-rated glue to the Thermocouple and place it on the side of one of the two middle batteries. 
+  - **i.** Apply space-rated glue to the Thermocouple and place it on the side of one of the two middle batteries. Make sure that the metal part of the thermocouple is touching the battery casing.
   ![Figure 8-6](images/8-6.png)
     <p align="center">Figure 8.6: Applied Thermocouple</p>
 
