@@ -126,6 +126,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - payload.py: core_documentation/software/payload.md
       - detumble.py: core_documentation/software/detumble.md
     - Legacy Documentation: 
+      - Original Pleiades Concept Proposal: core_documentation/legacy/original_pleiades_proposal.md
       - Yearling-1 Block Diagram: core_documentation/legacy/yearling_1_block_diagram.md
       - Blue Dawn Hackathon: core_documentation/legacy/blue_dawn.md
       - Yearling Software Sword: core_documentation/legacy/yearling_software_sword.md
