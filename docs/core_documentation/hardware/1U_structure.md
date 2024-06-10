@@ -2,6 +2,8 @@
 ![Figure 1](images/Structure_1.jpg)
 <p align="center">Figure 1: The PROVES Kit Structure</p>
 
+!!! Find the Structure on Github [Here!](https://github.com/proveskit/1U_structure)
+
 The PROVES kit "1U" structure was designed around maximum customizability. With sixteen unique positions, several boards can fit inside to fulfill most mission requirements. The structure is laser cut, bent, and anodized 5052 Aluminum sheet metal, and is even strong enough to withstand the weight of a fully grown adult! Primary holes on the structure not joined with a bracket or hardware internally contain pressed PEM-Nuts for easy external mounting. The main structure was designed to be two separate halves that are joined together by brackets and Printed Circuit Boards.
 
 ??? note "A Structural Sidebar"
