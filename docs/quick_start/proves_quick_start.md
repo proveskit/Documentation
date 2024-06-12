@@ -165,6 +165,8 @@ Changing out the firmware on the microcontrollers is how we can switch between u
     ??? info "Flight Controller Board"
 
     ??? info "Internal Flight Computer" 
+    ![Description of where the Boot Select and Reset are](images/fc_callout.png)
+    <p align="center">Internal FC Board Button Locations</p>
 
     ??? info "Battery Board"
 
