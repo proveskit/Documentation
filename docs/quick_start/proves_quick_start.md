@@ -169,6 +169,8 @@ Changing out the firmware on the microcontrollers is how we can switch between u
         <p align="center">Internal FC Board Button Locations</p>
 
     ??? info "Battery Board"
+        ![Description of where the Boot Select and Reset are](images/bb_callout.png)
+        <p align="center">Battery Board Button Locations</p>
 
 3. While holding the **BOOTSELECT** button, tap the **RESET** button 
 4. The board will now reboot into bootloader mode 
