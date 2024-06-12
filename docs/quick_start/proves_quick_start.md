@@ -122,6 +122,8 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
         You should see a blip on the SDR shortly after using the ```send``` command. What that blip looks like will be different, depending on which modulation you are using: 
 
         - LoRa Mode 
+        ![Example LoRa Messages](images/LoRa_Look.png)
+        <p align="center">Example LoRa Messages</p>
 
         - FSK Mode
 
@@ -146,6 +148,8 @@ Unless you have already implemented a payload into the PROVES Kit, most of the d
     f = functions.functions(c)
     ```
 5. Call ```f.all_face_data()```. You should expect an output like this: 
+![Example Face Data](images/face_data_out.png)
+<p align="center">Example Face Data Output</p>
 
 ### Conducting a Range Test
 One of the number one things that keeps us up at night with the satellite is whether or not we will actually hear back from it after sending it off on its journey in outer space. As a result, a fundemental test to do for every build is a verification of the performance of the radio at long range. We will have a seperate page forthcoming that goes into detail about the reasons and methedology behind this test, but we will quickly reference some of the key steps here: 
