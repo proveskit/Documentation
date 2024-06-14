@@ -29,6 +29,7 @@ TBD!
 For major changes in hardware we denote each unique version a full version number iteration. As an example, going from ```V1``` to ```V2``` to ```V3```. A full version iteration *must be reviewed* before it is considered official on the main branch. 
 
 These are examples of changes that might be considered a major change:
+
 - Adding an entirely new component (i.e. addition of an I2C multiplexer)
 - Eliminating an entire component (i.e. removing an I2C multiplexer)
 - Redoing the layout of more than 50% of a board 
@@ -37,6 +38,7 @@ These are examples of changes that might be considered a major change:
 For minor changes in hardware we denote each unique version by appending a letter to each unique version. As an example, going from ```V3``` to ```V3a``` to ```V3c```. These changes can be committed without review as long as it does not override existing versions of the same number. 
 
 These are examples of changes that might be considered a minor change: 
+
 - Moving a component from one side of a board to another 
 - Adding or removing interfaces (connectors, breakouts, etc.)
 - Changing part numbers of passive components (resistors, capacitors, etc.)
