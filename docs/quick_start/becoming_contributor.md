@@ -9,6 +9,9 @@ You can email Michael Pham at mlpham@cpp.edu.
     More instructions coming soon! 
 
 ### How to use GitHub
+!!! Tip "First Time Using GitHub?"
+    If this is your first time using GitHub, we highly recommend checking out the [GitHub Skills Page](https://skills.github.com)
+
 GitHub is our preferred method of version control. Once you've been added to (or have forked) one of our repositories the procedure for making contributions is pretty straightforward! 
 
 1. **Step 1:** Check into your new branch. 
