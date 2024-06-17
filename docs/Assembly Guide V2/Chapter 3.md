@@ -1,10 +1,23 @@
-# Chapter 3: Solar Boards Preintegration
+# Chapter 3: Solar Assembly
+
+Before continuing it is important to note that gloves should be worn prior to applying solder paste to avoid ingestion of a lead-based material.
+
+
 # Z Faces
- 1.  **Soldering the pins to the board**
+ **Soldering the pins to the board**
+ 1. Hand solder pico-lock connector following silkscreen and pad outlines. a. Follow the silkscreen pattern on the board to place the components in the correct positions/orientations. For the pico-lock connectors line up the mounting pads when soldering connectors.
 
  
 !!! warning
       Test all sensors for full functionality prior to solar cell installation (see Chapter 7 that identifies the proper test to complete for the solar boards). If sensors are faulty and need to be reflowed or removed with a heat gun, the cells will be damaged in the process.
+
+      1. Install the Solar Cells (model number???)  using low temperature solder paste and a reflow oven. a. Apply Low Temperature Solder Paste to the pads on the Solar Board as seen in Figure 3.1.
+
+      (note fig 3.1 should include before and after)
+
+# XY Faces 
+
+
 
 
 7. Move heat shrink tubing up and use hot air to shrink tubing around heater leads
@@ -23,6 +36,7 @@ a.	Look for the footprint on the board (face up) labeled Face 0, Face 1, Face 2,
 
    ![Figure 3-4](images/DBoard.png)
    <p align="center">Figure 4.4: solar board w/ daugher and 5 pin </p>  
+
 
 
 
