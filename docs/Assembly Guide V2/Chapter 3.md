@@ -1,7 +1,6 @@
 # Chapter 3: Solar Assembly
 
 !!! note
-
     Before continuing it is important to note that gloves should be worn prior to applying solder paste to avoid ingestion of a lead-based material.
 
 
@@ -55,7 +54,6 @@ Include figure as an example
    <p align="center">Figure 3.4: Motor Driver Resistor Removal</p>
 
 !!! note
-
       This step is completely optional as the magnetorquers can be deactivated in software. Only one X Magnetorquer and one perpendicular Y Magnetorquer need to remain active in order to detumble the satellite effectively. The Z- Solar board should let the magnetorquer coil remain active as this is the only coil on the Z faces.
 
 

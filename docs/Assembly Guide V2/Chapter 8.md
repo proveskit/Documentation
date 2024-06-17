@@ -8,7 +8,6 @@
     <p align="center">Fig 8.1: Main structure components</p>
 
 !!! note
-
     It is extremely important that the button head fasteners are used in this step and NOT the pan head fasteners for the L Brackets as this will allow the Solar Boards to fit on top of the fasteners.
 
    
@@ -17,12 +16,10 @@
     <p align="center">Figure 8.2: Example of how to attach the L brackets to initial structure assembly.</p>
 
 !!! warning
-
     Make sure to ALWAYS screw in the fasteners horizontally when dealing with pre-installed pem-nuts.
   - **iii.** If you happen to pop out one of the pem-nuts, secure the fasteners with locknuts but be extra careful not to tighten them too much.
 
 !!! warning
-
     TORQUE SPEC IS 0.59 N-M (5.22 IN-LB), DO NOT EXCEED THIS ON M2.5 BOLTS/FASTENERS.
 
 ## 2) Card Brackets & Battery Board

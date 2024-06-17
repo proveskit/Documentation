@@ -6,7 +6,6 @@
    <p align="center">Figure 5.1: Lengths of measuring tape cut for use as antenna.</p>
 
 !!! note
-
       After attaching the antenna, you may need to shorten the antenna in order to tune it, but this can be done later.
    
    c. Using a Dremel or sandpaper, sand off roughly ½-inch of the paint off the end of the measuring tape. Do the same to the opposite side of the measuring tape.
