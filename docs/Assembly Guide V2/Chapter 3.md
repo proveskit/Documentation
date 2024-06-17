@@ -18,7 +18,7 @@ a.	Look for the footprint on the board (face up) labeled Face 0, Face 1, Face 2,
 
 
 
- ![Figure 3-4](images/5pin.png) retake this image, not the best quality (edit)
+ <p align="center">![Figure 3-4](images/5pin.png) retake this image, not the best quality (edit) </p>
    <p align="center">Figure 4.4: Pre-tinned pads</p>
 
    ![Figure 3-4](images/DBoard.png)
@@ -26,15 +26,5 @@ a.	Look for the footprint on the board (face up) labeled Face 0, Face 1, Face 2,
 
 
 
-
-
-![Figure 4-4](images/FCR.png)
-   <p align="center">Figure 4.4: Pre-tinned pads</p>
-
-   ![Figure 4-4](images/radio1.png)
-   <p align="center">Figure 4.4: Pre-tinned pads</p>
-   
-   ![Figure 4-4](images/FCB.png)
-   <p align="center">Figure 4.4: Pre-tinned pads</p>
 
   
