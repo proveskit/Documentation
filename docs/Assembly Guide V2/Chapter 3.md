@@ -4,20 +4,27 @@ Before continuing it is important to note that gloves should be worn prior to ap
 
 
 # Z Faces
- **Soldering the pins to the board**
- 1. Hand solder pico-lock connector following silkscreen and pad outlines. a. Follow the silkscreen pattern on the board to place the components in the correct positions/orientations. For the pico-lock connectors line up the mounting pads when soldering connectors.
 
- 
-!!! warning
-      Test all sensors for full functionality prior to solar cell installation (see Chapter 7 that identifies the proper test to complete for the solar boards). If sensors are faulty and need to be reflowed or removed with a heat gun, the cells will be damaged in the process.
+4. **Z- Face Solar Boards**
+   a. Install the Solar Cells (KXOB101K08F-TR) using low temperature solder paste and a reflow oven.
+   b. Apply Low Temperature Solder Paste to the pads on the Solar Board as seen in Figure 3.4.
+   <p align="center">Figure 3.4: Z-Face Solar Board Preparation</p>
+   c. Check that the positive and negative terminals on the back side of the cells are matched with the plus and minus silk screened on the PCB.
+   
+   d. For cells that are immediately next to each other, scoot them together so that the gap between them is as small as possible.
+   e. Reflow on low heat (the low temperature for the solder that you use is recommended) and do not touch until completely cool.
 
-      1. Install the Solar Cells (model number???)  using low temperature solder paste and a reflow oven. a. Apply Low Temperature Solder Paste to the pads on the Solar Board as seen in Figure 3.1.
+**Soldering the pins to the board**
+7. Move heat shrink tubing up and use hot air to shrink tubing around heater leads
+</div>
 
-      (note fig 3.1 should include before and after)
+<div class="result" markdown>
+1.	5pin Headers. 
+1. 
+a.	Look for the footprint on the board (face up) labeled Face 0, Face 1, Face 2, Face 3, and Solar Breakout. Take your five pin headers and solder them individually onto each of these five imprints. Make sure the ends are lined up with the two gold squares in the corners. When soldering, try to ensure that the picolock headers are flat on the board (not elevated). Solder individual pins to the corresponding pin. (don't connect all together/will scrabble the connections together). Then solder a little bit on the sides of the gold sides to ensure the five head picolock headers are secure on to the board. Repeat that till all the five (5 pin) picolock headers are placed.
+</div>
 
 # XY Faces 
-
-## XY Faces
 1. **Hand solder pico-lock connector following silkscreen and pad outlines.**
    a. Follow the silkscreen pattern on the board to place the components in the correct positions/orientations. For the pico-lock connectors line up the mounting pads when soldering connectors.
 
@@ -41,13 +48,7 @@ Before continuing it is important to note that gloves should be worn prior to ap
 
 
 
-7. Move heat shrink tubing up and use hot air to shrink tubing around heater leads
-</div>
 
-<div class="result" markdown>
-1.	5pin Headers. 
-a.	Look for the footprint on the board (face up) labeled Face 0, Face 1, Face 2, Face 3, and Solar Breakout. Take your five pin headers and solder them individually onto each of these five imprints. Make sure the ends are lined up with the two gold squares in the corners. When soldering, try to ensure that the picolock headers are flat on the board (not elevated). Solder individual pins to the corresponding pin. (don't connect all together/will scrabble the connections together). Then solder a little bit on the sides of the gold sides to ensure the five head picolock headers are secure on to the board. Repeat that till all the five (5 pin) picolock headers are placed.
-</div>
 
 
 
