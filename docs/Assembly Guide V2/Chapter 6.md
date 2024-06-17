@@ -6,11 +6,13 @@
       ii. Figure 6.1 shows an example measurement of the width using calipers, as well as other dimensions of the structure. These additional measurements are useful for verifying that your satellite will fit inside a launch vehicle pod after integration is complete and to ensure no damage has occurred during shipping.
       
 !!! warning 
+
       Make sure not to bend the U-shape inwards when measuring, as this will ruin the measurement. Take the measurement as close to the “closed” side of the U as possible.
 
    <p align="center">Figure 6.1: Example measurements of Main “U” structure.</p>
 
 !!! note
+
       If you are planning on flying your satellite and have more than two Main “U” structure halves, record and identify which structures are optimal for flight. The structures should come in at about 99.77mm nominally, but they will vary depending on the bends and the anodizing.
 
 2. **Checking out the PEM-Nuts**
@@ -21,6 +23,7 @@
    a. Access the GitHub Documentation repository where an STL file can be obtained and printed for the jig.
 
 !!! note
-      The Jig will become very important for ensuring the satellite is squared up enough to fit into its deployment mechanism.
+       
+        The Jig will become very important for ensuring the satellite is squared up enough to fit into its deployment mechanism.
 
 4. **Repeat steps 1 through 3 for each solar board.**
