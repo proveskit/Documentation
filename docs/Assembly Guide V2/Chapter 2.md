@@ -12,9 +12,9 @@ In this chapter the user will learn the steps to assemble a foot switch. A minim
 
 </div>
 
-!!! note
+!!!note
+The steps are similar for creating the non-jumped cables required for the burn wire and direct charging ports. The primary difference is that two cables will be required as well as 2 connector housings. The non-Jumped assemblies can be seen in Figure 2.3
 
-    The steps are similar for creating the non-jumped cables required for the burn wire and direct charging ports. The primary difference is that two cables will be required as well as 2 connector housings. The non-Jumped assemblies can be seen in Figure 2.3
 
 <p align="center">Figure 2.3:  </p>
 
