@@ -1,4 +1,4 @@
-# Chapter 5: Antennas Attachment
+# Chapter 5: Antenna Board
 
 1. **Cutting and Drilling the Antenna**
    a. Using a Milwaukee 6ft keychain measuring tape, completely pull out the tape measure from the keychain.
