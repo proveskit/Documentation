@@ -6,7 +6,7 @@
 
 # Z Faces
 
-4. ### **Z- Face Solar Boards**
+ ### **Z- Face Solar Boards**
 
    **a**. Install the Solar Cells (KXOB101K08F-TR) using low temperature solder paste and a reflow oven.
    **b.** Apply Low Temperature Solder Paste to the pads on the Solar Board as seen in Figure 3.4.
@@ -20,13 +20,20 @@
 
 
  ### **Soldering the pins to the board**
-4.  Move heat shrink tubing up and use hot air to shrink tubing around heater leads
+
 </div>
 
 <div class="result" markdown>
-1. Get five 5 pin connectors and align them onto the white imprints as seen in figure 3.2. Make sure they are aligned to the corresponding pins.
+
+1. Get five 5 pin connectors and align them onto the white imprints as seen in Figure 3.2 and 3.3. Make sure they are aligned to the corresponding pins.
+![Figure 3-2](images/5pinface1.jpeg)
 <p align="center">Figure 3.2: 
+
+![Figure 3-3](images/5pinface2.jpeg)
+<p align="center">Figure 3.3: 
+
 2. Tape down the connectors with a single piece of tape to ensure it does not move while you solder it on. Ensure that the picolock headers are flat on the board 
+
 3. First solder on the connectors with the two metal pads and remove the tape.
 4. Solder on the final five pins on the back of the connector. 
 (note that not a lot of material is needed to soder these pieces/should be thin)
