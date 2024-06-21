@@ -1,31 +1,36 @@
 # Chapter 4: Flight Controller (FC) Board 
 <span style="color:red">***Before continuing:** it is important to note that gloves should worn when soldering and it should be done in a well-ventilated area to avoid the harmful fumes.*</span>
 
-## Installing the HOPERF (Radio Module)
+## Installing the 433 MHz HOPERF (Radio Module)
 
-**1.** When soldering the radio, the metal part on the underside of the module should be taped up in order to avoid contact with the FC board.
-![Figure 4-1](images/radiota.jpeg)
-  <p align="center">Figure 4.2 The back side of the radio module taped up </p>
+**0.** Locate the HopeRF Radio Module Footprint on the FC Board.
+**a.** The HopeRF Radio Module Footprint is portrayed as the big rectangle footprint with 8 copper pads located on each side. You can also locate it below the CubeSat Logo. This can be seen in Figure 4-1.
 
-**2.** Align the radio module to the white rectangular outline
+
+**1.** When soldering the radio, the exposed metal part on the underside of the module should be taped up with Kapton Tape in order to avoid contact with the copper pads on the HopeRF footprint of the FC Board.
+![Figure 4-2](images/radiota.jpeg)
+  *<p align="center"> Figure 4.2 Taped Section of Radio Module</p>*
+
+**2.** Align the radio module to the white rectangular outline 
 
 **3.** On the radio module, there is a dot on the metal side which should be next to the C15 connection.
-![Figure 4-2](images/radioc15.png) 
- <p align="center">Figure 4.3 The front side of the radio module </p>
+![Figure 4-3](images/radioc15.png) 
+ *<p align="center">Figure 4.3 Front Side of Radio Module </p>*
 
-**4.** Tape down the module to ensure no movement occurs 
+**4.** Tape down the radio module to ensure that it stays in place while soldering the pins of the radio module to the copper pads of the footprint on the FC Board.
 
-**5.** Once everything is aligned solder the metal sqaures to the board
+**5.** Once the radio module is aligned and secured, begin soldering.
 
-![Figure 4-3](images/radiofc.jpeg)
-<p align="center">Figure 4.5: The FCB after the radio module has been soldered on</p>
+![Figure 4-4](images/radiofc.jpeg)
+*<p align="center">Figure 4.5: FC Board with Soldered Radio Module</p>*
 
 
 ## Installing the RFMA adapter
 
-Solder on the following part:
+1. The RF-SMA Adapter that will be used for this section is seen in Figure 4-5.
 
-![Figure 4-4](images/RFMA.jpeg) 
- <p align="center">Figure 4.5 RF-SMA Adapter</p>
+![Figure 4-5](images/RFMA.jpeg) 
+ *<p align="center">Figure 4.5 RF-SMA Adapter</p>*
 
- 1. Put the RF-SMA
+!!! Note
+    Ensure that the RF-SMA Adapter that you are using matches the footprint seen on the Internal FC Board. Check the KiCAD Schematics for further details.
