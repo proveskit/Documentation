@@ -1,5 +1,4 @@
-# Chapter 4: Flight Controller Board (FCB)
-
+# Chapter 4: Flight Controller (FC) Board 
 <span style="color:red">***Before continuing:** it is important to note that gloves should worn when soldering and it should be done in a well-ventilated area to avoid the harmful fumes.*</span>
 
 ## Installing the HOPERF (Radio Module)
@@ -27,4 +26,6 @@
 Solder on the following part:
 
 ![Figure 4-4](images/RFMA.jpeg) 
- <p align="center">Figure 4.5 RFMA Adapter</p>
+ <p align="center">Figure 4.5 RF-SMA Adapter</p>
+
+ 1. Put the RF-SMA
