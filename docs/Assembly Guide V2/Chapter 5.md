@@ -21,4 +21,4 @@
    
    c. Repeat step 6 with the other length of measuring tape for the 2nd antenna of the satellite.
    
-   d. **OPTIONAL:** Secure the two antennas to the top-cap by feeding a white 2.5mm nylon screw through the outward-facing side of the top-cap and secure it with a matching white 2.5mm nylon nut.
+   d. **OPTIONAL:** Secure the two antennas to the top-cap by feeding a white 2.5mm nylon screw through the outward-facing side of the top-cap and secure it with a matching white 2.5mm nylon nut
