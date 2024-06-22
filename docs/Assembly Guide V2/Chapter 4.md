@@ -7,7 +7,7 @@
   a. The HopeRF Radio Module Footprint is portrayed as the big rectangle footprint with 8 copper pads located on each side. You can also locate it below the CubeSat Logo. This can be seen in Figure 4-1.
 
 !!! Note
-    The Radio Module Footprint is located below the CubeSat Logo and has a white rectangle outline
+    The Radio Module Footprint is located below the CubeSat Logo and has a white rectangle
 
 **1.** When soldering the radio, the exposed metal part on the underside of the module should be taped up with Kapton Tape in order to avoid contact with the copper pads on the HopeRF footprint of the FC Board.
 ![Figure 4-2](images/radiota.jpeg)
