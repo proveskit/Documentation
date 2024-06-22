@@ -4,33 +4,61 @@
 ## Installing the 433 MHz HOPERF (Radio Module)
 
 **0.** Locate the HopeRF Radio Module Footprint on the FC Board.
-**a.** The HopeRF Radio Module Footprint is portrayed as the big rectangle footprint with 8 copper pads located on each side. You can also locate it below the CubeSat Logo. This can be seen in Figure 4-1.
+  a. The HopeRF Radio Module Footprint is portrayed as the big rectangle footprint with 8 copper pads located on each side. You can also locate it below the CubeSat Logo. This can be seen in Figure 4-1.
 
+!!! Note
+    The Radio Module Footprint is located below the CubeSat Logo and has a white rectangle outline
 
 **1.** When soldering the radio, the exposed metal part on the underside of the module should be taped up with Kapton Tape in order to avoid contact with the copper pads on the HopeRF footprint of the FC Board.
 ![Figure 4-2](images/radiota.jpeg)
-  *<p align="center"> Figure 4.2 Taped Section of Radio Module</p>*
+  *<p align="center"> Figure 4-2 - Taped Section of Radio Module</p>*
 
 **2.** Align the radio module to the white rectangular outline 
 
 **3.** On the radio module, there is a dot on the metal side which should be next to the C15 connection.
 ![Figure 4-3](images/radioc15.png) 
- *<p align="center">Figure 4.3 Front Side of Radio Module </p>*
+ *<p align="center">Figure 4-3 Front Side of Radio Module </p>*
 
 **4.** Tape down the radio module to ensure that it stays in place while soldering the pins of the radio module to the copper pads of the footprint on the FC Board.
 
 **5.** Once the radio module is aligned and secured, begin soldering.
 
+**6.** Once radio module is properly soldered, it should the same as Figure 4-4.
+
 ![Figure 4-4](images/radiofc.jpeg)
-*<p align="center">Figure 4.5: FC Board with Soldered Radio Module</p>*
+*<p align="center">Figure 4-4: FC Board with Soldered Radio Module</p>*
+
+**6.** Solder the copper pads of JP6 to make a connection for the radio module.
+
+**7.** Solder JP10 from the middle pad to the 5V pad.
 
 
-## Installing the RFMA adapter
+## Installing the RF-SMA (Radio Frequency - Surface Mount Adapter)
 
-1. The RF-SMA Adapter that will be used for this section is seen in Figure 4-5.
-
-![Figure 4-5](images/RFMA.jpeg) 
- *<p align="center">Figure 4.5 RF-SMA Adapter</p>*
+**1.** The RF-SMA that will be used for this section is seen in Figure 4-5.
+  <figure>
+    <img src="images/RFMA.jpeg"width="500" height="500">
+  </figure>
+  
+  *<p align="center">Figure 4-5 RF-SMA</p>*
 
 !!! Note
-    Ensure that the RF-SMA Adapter that you are using matches the footprint seen on the Internal FC Board. Check the KiCAD Schematics for further details.
+    Ensure that the RF-SMA that you are using matches the footprint seen on the Internal FC Board. Check the KiCAD Schematics for further details.
+
+**2. Proper Orientation**
+
+&nbsp;  a. Refer to the XYZ Coordinate Axis on the FC Board as seen in Figure 4-6. 
+
+&nbsp; b. Point the **connector side** of the RF-SMA in the **Y-** direction relative to the XYZ coordinate axis on the board. This would mean that it would point to the 5-pin header.
+
+**3. Soldering the Radio Module** 
+
+!!! Tip 
+    Tape down the RF-SMA to secure it and ensure that it is not loose when soldering the pins to the holes of the footprint.
+    
+    If Tape is not available, try and find an item or object to keep the board level to ensure the RF-SMA is secure and not loose.
+
+&nbsp; a. Solder the 5 pins of the RF-SMA to the 5 holes of the footprint.
+
+&nbsp; b. Refer to Figure 4-6, to see what proper installation should look like.
+
