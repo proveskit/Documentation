@@ -6,6 +6,8 @@
 **0.** Locate the HopeRF Radio Module Footprint on the FC Board.
 **a.** The HopeRF Radio Module Footprint is portrayed as the big rectangle footprint with 8 copper pads located on each side. You can also locate it below the CubeSat Logo. This can be seen in Figure 4-1.
 
+!!! Note
+    The Radio Module Footprint is located below the CubeSat Logo and has a white rectangle
 
 **1.** When soldering the radio, the exposed metal part on the underside of the module should be taped up with Kapton Tape in order to avoid contact with the copper pads on the HopeRF footprint of the FC Board.
 ![Figure 4-2](images/radiota.jpeg)
@@ -34,6 +36,14 @@
 ![Figure 4-5](images/RFMA.jpeg) 
 
  *<p align="center">Figure 4.5 RF-SMA Adapter</p>*
+ 
+**1.** The RF-SMA that will be used for this section is seen in Figure 4-5.
+  <figure>
+    <img src="images/RFMA.jpeg"width="500" height="500">
+  </figure>
+  
+  *<p align="center">Figure 4-5 RF-SMA</p>*
+
 
 !!! Note
     Ensure that the RF-SMA Adapter that you are using matches the footprint seen on the Internal FC Board. Check the KiCAD Schematics for further details.
