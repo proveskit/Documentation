@@ -13,7 +13,12 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
 ![Figure 4-2](images/radiota.jpeg)
   *<p align="center"> Figure 4-1 - Taped Section of Radio Module</p>*
 
-**2.** Align the radio module to the white rectangular outline 
+**2.** Align the radio module to the white rectangular outline. Refer to Figure 4-1 a. 
+   <figure>
+    <img src="images/Radio Module.jpeg"width="500" height="500">
+  </figure>
+  
+  *<p align="center">Figure 4-1a Radio Module Footprint</p>*
 
 **3.** On the radio module, there is a dot on the metal side which should be next to the C15 connection.
 ![Figure 4-3](images/radioc15.png) 
@@ -43,13 +48,23 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
   *<p align="center">Figure 4-4 RF-SMA</p>*
 
 !!! Note
-    Ensure that the RF-SMA that you are using matches the footprint seen on the Internal FC Board. Check the KiCAD Schematics for further details.
+    Ensure that the RF-SMA that you are using matches the footprint seen on the Internal FC Board. Check the KiCAD Schematics for further details. Refer to Figure 4-5 to located the footprint. 
 
+  <figure>
+    <img src="images/XYZ.jpeg"width="500" height="500">
+  </figure>
+  
+  *<p align="center">Figure 4-5 RF-SMA Footprint</p>*
 **2. Proper Orientation**
 
 &nbsp;  a. Refer to the XYZ Coordinate Axis on the FC Board as seen in Figure 4-6. 
 
 &nbsp; b. Point the **connector side** of the RF-SMA in the **Y-** direction relative to the XYZ coordinate axis on the board. 
+  <figure>
+    <img src="images/RF-SMA.jpeg"width="500" height="500">
+  </figure>
+  
+  *<p align="center">Figure 4-6 XYZ Coordinate Axis</p>*
 
 **3. Soldering the RF-SMA** 
 
@@ -60,5 +75,11 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
 
 &nbsp; a. Solder the 5 pins of the RF-SMA to the 5 holes of the footprint.
 
-&nbsp; b. Refer to Figure 4-6, to see what proper installation should look like.
+&nbsp; b. Refer to Figure 4-8, to see what proper installation should look like.
+
+  <figure>
+    <img src="images/Full Board.jpeg"width="500" height="500">
+  </figure>
+  
+  *<p align="center">Figure 4-8 Proper Installation</p>*
 
