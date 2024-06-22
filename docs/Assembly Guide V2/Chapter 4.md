@@ -29,7 +29,10 @@
 
 1. The RF-SMA Adapter that will be used for this section is seen in Figure 4-5.
 
+<img src= "RFMA.jpeg" width="100" height="100">
+
 ![Figure 4-5](images/RFMA.jpeg) 
+
  *<p align="center">Figure 4.5 RF-SMA Adapter</p>*
 
 !!! Note
