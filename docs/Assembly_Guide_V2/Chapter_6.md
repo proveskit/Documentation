@@ -15,19 +15,19 @@
 
 *<p align="center">**Figure 6.2: Sample measurements of the U structure** </p>*
 
-<div align="center">
+<center>
 
-   |                |Width (mm)  | Height (mm)|
-   |--------|-------------|-----------|
-   | s1     | Danger Zone |Width      |
-   | s2     | Low         |Width      |
-   | s3     | Normal      |Width      |
-   | s4     | High        |Width      |
-   | s5     | Danger Zone |Width      |
-   | s6     | Danger Zone |Width      |
-   | s7     | Danger Zone |Width      |
-   | s8     | Danger Zone |Width      |
-   </div>
+   |        |Width (mm) | Height (mm)|
+   |--------|-----------|-----------|
+   | s1     | 100.35    |113.08     |
+   | s2     | 100.05    |113.04     |
+   | s3     | 100.47    |113.06     |
+   | s4     | 100.14    |113.14     |
+   | s5     | 100.39    |113.05     |
+   | s6     | 99.67     |113.03     |
+   | s7     | 100.59    |113.02     |
+   | s8     | 100.23    |113.10     |
+   </center>
 
 
 !!! tip
