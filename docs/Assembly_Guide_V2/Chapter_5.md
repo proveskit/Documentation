@@ -18,7 +18,13 @@
 *<p align="center">**Figure 5.2: Antenna length with sanded end and mount hole after drilling.** </p>*
    
 
-**4.** Drill a hole through the exposed aluminum roughly 1-3mm away from the end of the length of measuring tape.
+**4.** Drill a hole through the exposed aluminum roughly 1-3mm away from the end of the length of measuring tape. Ensure you create a horizontal hole precisely in the center of the tape measure.
+ Refer to Figure 5.1.
+  <figure>
+    <img src="images/Hole.jpeg"width="500" height="500">
+  </figure>
+  
+  <p align="center">**Figure 5.1 Hole made in the measuring tape **</p>
 
 **Soldering Antenna to Board**
    **1.** Feed the drilled side of the measuring tape through the outermost rectangular hole of the Top Cap. 
@@ -29,9 +35,22 @@
      
 
 
-   **2.** Hold the antenna in place to solder it to the board. You can have someone hold it in place so it rests flush against the Top Cap or use a c-clamp to hold it as you are soldering.
+   **2.** Hold the antenna in place to solder it to the board. You can have someone hold it in place so it rests flush against the Top Cap or use a c-clamp to hold it as you are soldering. Refer to Figure 5.2 for example of a soldered result.
    
-   **3.** Repeat steps a and b with the other length of measuring tape for the 2nd antenna of the satellite.
+ <figure>
+    <img src="images/Soldered.jpeg"width="500" height="300">
+  </figure>
+  
+  <p align="center">**Figure 5.2 Soldered to board. **</p>
+
+
+   
+   **3.** Repeat steps a and b with the other length of measuring tape for the 2nd antenna of the satellite. Refer to Figure 5.3 for example end result. 
+   <figure>
+    <img src="images/finished.jpeg"width="500" height="300">
+  </figure>
+  
+  <p align="center">**Figure 5.3 Finshed Soldered Antennas **</p>
    
    !!! Note Optional:
       Secure the two antennas to the top-cap by feeding a white 2.5mm nylon screw through the outward-facing side of the top-cap and secure it with a matching white 2.5mm nylon nut
