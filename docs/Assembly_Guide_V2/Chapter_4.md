@@ -61,9 +61,9 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
 
 **2. Proper Orientation**
 
-&nbsp;  a. Refer to the XYZ Coordinate Axis on the FC Board as seen in Figure 4-6. 
+&nbsp;  **a.** Refer to the XYZ Coordinate Axis on the FC Board as seen in Figure 4-6. 
 
-&nbsp; b. Point the **connector side** of the RF-SMA in the **Y-** direction relative to the XYZ coordinate axis on the board. 
+&nbsp; **b.** Point the **connector side** of the RF-SMA in the **Y-** direction relative to the XYZ coordinate axis on the board. 
   *<p align="center">**Figure 4.6: XYZ Coordinate Axis**</p>*
    <figure>
     <img src="images/RF-SMA.jpeg"width="500" height="500">
@@ -78,9 +78,9 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
     
     If Tape is not available, try and find an item or object to keep the board level to ensure the RF-SMA is secure and not loose.
 
-&nbsp; a. Solder the 5 pins of the RF-SMA to the 5 holes of the footprint.
+&nbsp; **a.** Solder the 5 pins of the RF-SMA to the 5 holes of the footprint.
 
-&nbsp; b. Refer to Figure 4.8, to see what proper installation should look like.
+&nbsp; **b.** Refer to Figure 4.8, to see what proper installation should look like.
 *<p align="center">**Figure 4.8 Proper Installation**</p>*
   <figure>
     <img src="images/Full Board.jpeg"width="500" height="500">
