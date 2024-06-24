@@ -14,7 +14,7 @@ In this chapter, the user will learn how to properly assembly the PROVES Z- Face
 
    **1.** Apply Low Temperature Solder Paste to the pads on the Solar Board as seen in Figure 3.1.
 
-   <p align="center">Figure 3.1: Z- Face Solar Board Preparation</p>
+   *<p align="center">**Figure 3.1: Z- Face Solar Board Preparation**</p>*
 
    **2.** Check that the positive and negative terminals on the back side of the cells are matched with the plus and minus silk screened on the PCB.
    
@@ -34,10 +34,10 @@ In this chapter, the user will learn how to properly assembly the PROVES Z- Face
 
 **1.** Get five 5 pin connectors and align them onto the white rectangular outline as seen in Figure 3.2 and 3.3. Ensure that the pins are aligned to the copper pads.
 ![Figure 3-2](images/5pinface1.jpeg)
-*<p align="center">Figure 3.2: Face 1 and Face 2 5-pin headers*
+*<p align="center">**Figure 3.2: Face 1 and Face 2 5-pin headers**</p>*
 
 ![Figure 3-3](images/5pinface2.jpeg)
-*<p align="center">Figure 3.3: Face 0, Face 3 and Solar Breakout 5-pin headers*
+*<p align="center">**Figure 3.3: Face 0, Face 3 and Solar Breakout 5-pin headers**</p>
 
 **2.** Tape down the 5-pin header with tape to ensure it does not move while you solder it on. 
 
@@ -80,7 +80,7 @@ In this chapter, the user will learn how to properly assembly the PROVES Z- Face
 ## Optional: Motor Driver Modification
 3. **OPTIONAL: Remove 0 ohm resistor for motor driver as seen in Figure 3.4S**
    a. If the solar board has already been removed from the oven, the resistor can be removed by a fine tip soldering iron heating each pad simultaneously. If the board is still hot from the oven, tweezers can be used very swiftly to remove the resistor.
-   <p align="center">Figure 3.4: Motor Driver Resistor Removal</p>
+   *<p align="center">**Figure 3.4: Motor Driver Resistor Removal**</p>*
 
 !!! Note
       The Motor Driver Modification step is completely optional as the magnetorquers can be deactivated in software. Only one X Magnetorquer and one perpendicular Y Magnetorquer need to remain active in order to detumble the satellite effectively. The Z- Solar board should let the magnetorquer coil remain active as this is the only coil on the Z faces.
