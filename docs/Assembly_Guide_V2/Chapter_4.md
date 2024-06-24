@@ -36,9 +36,9 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
 ![Figure 4-4](images/radiofc.jpeg)
 
 
-**6.** Solder the copper pads of **JP6** together to make a connection for the radio module.
+**7.** Solder the copper pads of **JP6** together to make a connection for the radio module.
 
-**7.** On **JP10**, create a jump by soldering the middle pad to the 5V pad together.
+**8.** On **JP10**, create a jump by soldering the middle pad to the 5V pad together.
 
 
 ## Installing the RF-SMA (Radio Frequency - Surface Mount Adapter)
