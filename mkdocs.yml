@@ -81,7 +81,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Overview: overview/overview.md
     - Design Philosophy: overview/design_philosophy.md
     - Kit Elements: overview/kit_elements.md
-  - Quick Start Guide: # Qucok start guide 
+  - Quick Start Guide: # Quick start guide 
     - Introduction: quick_start/index.md
     - CubeSat Fundamentals: quick_start/cubesat_fundamentals.md
     - Getting Started with PROVES: quick_start/proves_quick_start.md
@@ -105,6 +105,22 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - "Chapter 8: Integration Procedure": assembly_guide/ch_8_integration.md
     - "Chapter 9: Final Tests": assembly_guide/ch_9_final_tests.md
     - assembly_guide/index.md
+  - Assembly Guide v1.5:
+    - "Chapter 0: Parts and Tools": Assembly_Guide_V2/Chapter_0.md
+    - "Chapter 1: Battery Board Preintegration": Assembly_Guide_V2/Chapter_1.md
+    - "Chapter 2: Feet and Heater Assembly Preintegration": Assembly_Guide_V2/Chapter_2.md
+    - "Chapter 3: Solar Boards Preintegration": Assembly_Guide_V2/Chapter_3.md
+    - "Chapter 4: Flight Controller Board Preintegration": Assembly_Guide_V2/Chapter_4.md
+    - "Chapter 5: Antenna Board Preintegration": Assembly_Guide_V2/Chapter_5.md
+    - "Chapter 6: Structure Preintegration": Assembly_Guide_V2/Chapter_6.md
+    - "Chapter 7: Preintegration Testing Overview":
+      - "Preintegration Testing Index": Assembly_Guide_V2/Chapter_7_testing/index.md
+      - "Solar Board Testing": Assembly_Guide_V2/Chapter_7_testing/solar_board_testing.md
+      - "Battery Board Testing": Assembly_Guide_V2/Chapter_7_testing/battery_board_testing.md
+      - "Flight Controller Testing": Assembly_Guide_V2/Chapter_7_testing/flight_computer_testing.md
+      - "FlatSat Testing": Assembly_Guide_V2/Chapter_7_testing/flatsat_testing.md
+    - "Chapter 8: Integration Procedure": Assembly_Guide_V2/Chapter_8.md
+    - "Chapter 9: Final Tests": Assembly_Guide_V2/Chapter_9.md
   - Core Documentation: 
     - core_documentation/index.md
     - Quick Reference: core_documentation/quick_reference.md
