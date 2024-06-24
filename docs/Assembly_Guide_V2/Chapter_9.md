@@ -1,6 +1,7 @@
 # Chapter 9: Final Check and Tests
 
-NOTICE: not all tests are up to date. 
+!!!WARNING
+      Not all tests are up to date
 
 ## Final Check for Electronics
 The final check for the electronics in the integration process involves running the same flat sat test code to ensure everything is communicating with each other when stacked in the satellite. For guidance on how to do these tests refer to the quick start guide, particularly how to use Tabby.

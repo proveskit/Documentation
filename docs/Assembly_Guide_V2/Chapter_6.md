@@ -27,6 +27,6 @@
    ii. Access the GitHub Documentation repository where an STL file can be obtained and printed for the jig.
 
 !!! note
-    The jig is needed in order to ensure the satellite is squared up enough to fit into its deployment mechanism.
+    The Jig is needed in order to ensure the satellite is squared up enough to fit into its deployment mechanism.
 
 4. **Repeat steps 1 through 3 for each solar board.**
