@@ -52,23 +52,23 @@
   
 **<p align="center">Figure 5.3 Soldered Balun.</p>**
 
-**4. Soldering Burn Wire**
+## Soldering Burn Wire
 
 !!! Note
    This section **requires** Nichrome Wire
 
-   a. **Prepare the Burn Wire:** Flip the board to the topside and locate two white squares labeled "Burn Wire Port" with a fire symbol next to them. These squares each have two separate sections. 
+   1. **Prepare the Burn Wire:** Flip the board to the topside and locate two white squares labeled "Burn Wire Port" with a fire symbol next to them. These squares each have two separate sections. 
 
-   b. **Thread the Burn Wire:** Take one end of the burn wire and thread it through the bottom left corner of the **top** square. Then, thread the other end of the burn wire through the top left corner of the **bottom** square. Refer to Figure 5.4.
+   2. **Thread the Burn Wire:** Take one end of the burn wire and thread it through the bottom left corner of the **top** square. Then, thread the other end of the burn wire through the top left corner of the **bottom** square. Refer to Figure 5.4.
    <figure>
     <img src="images/top-bot.jpeg"width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.4 How to feed each wire. Top and Bot. </p>**
 
-   c. **Flip and Locate Wires:**  Flip the board back over (bottom side facing you). You should now see two wires poking out from the bottom of the board.
+   3. **Flip and Locate Wires:**  Flip the board back over (bottom side facing you). You should now see two wires poking out from the bottom of the board.
 
-   d. **Solder the Burn Wire:**
+   4. **Solder the Burn Wire:**
 
    -**Burn Side:** Identify the wire coming from the top square (now on the bottom) - this is the burn wire. Feed it through the hole directly to its left (adjacent hole). Solder this wire to the topside of the board for a secure connection.
 
@@ -79,7 +79,7 @@
   
   **<p align="center">Figure 5.5 Ideal burn wire loop and location.**
 
-   **5. Soldering the Antennas**
+## Soldering the Antennas
 
    Hold the antenna in place to solder it to the board. You can have someone hold it in place so it rests flush against the Top Cap or use a c-clamp to hold it as you are soldering. Refer to Figure 5.6 for how to feed teh antenna through. Then refer to Figure 5.6 a to see the full soldered antennas on the bottom of the board.
 <figure>
@@ -94,20 +94,20 @@
   
   **<p align="center">Figure 5.6a Soldered Antenna ends. </p>**
 
-   **6. Soldering RFSMA Adapter** 
+## Soldering RFSMA Adapter
 
-a. **Locate and Position:** Find the RFSMA Adapter. Hold it with the five pins facing down towards the bottom side of the board (the side where you previously soldered the Balun). Ensure the pointed tip with grooves is facing the Balun. Refer to Figure 5.7 for postion and location.
+1. **Locate and Position:** Find the RFSMA Adapter. Hold it with the five pins facing down towards the bottom side of the board (the side where you previously soldered the Balun). Ensure the pointed tip with grooves is facing the Balun. Refer to Figure 5.7 for postion and location.
 <figure>
     <img src="images/rf.jpeg"width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.7 Soldered RFSMA Adapter facing the direction of the Balun.</p>**
 
-b. **Secure the Adapter:** Once the pins are aligned with their designated holes on the board, carefully secure the adapter in place using tape.
+2. **Secure the Adapter:** Once the pins are aligned with their designated holes on the board, carefully secure the adapter in place using tape.
 
-c. **Flip and Prepare for Soldering:** Flip the board over so the topside (with the lidar) is facing you. We'll now solder the five pins from this topside for a strong connection. 
+3. **Flip and Prepare for Soldering:** Flip the board over so the topside (with the lidar) is facing you. We'll now solder the five pins from this topside for a strong connection. 
 
-**7. RBF Switch**
+## RBF Switch
 
 Finally we will soldar the RBF Switch onto the bottom side of the board (the side we have the balun on). Postion the RBF switch ends and pin to face in the direction of the RFSMA Adapter. Refer to Figure 5.8 to see location and ideal postion.
 <figure>
