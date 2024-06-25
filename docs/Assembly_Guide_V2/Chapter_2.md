@@ -14,28 +14,34 @@ In this chapter the user will learn the steps to assemble a foot switch. A minim
 **1.**  The first step will require taking a cable out of the 300mm 5 position assembly. To start, take the needle nose tweezers and lift the locking mechanism as seen in Figure 2.1 and pull the cable from each connector housing.
 
 *<p align="center">**Figure 2.1:**</p>*
+![Figure 2-1](images/PicolockAssemblies.PNG)
+
 **2.** Take the freed cable and insert both ends into one 2 position connector housing as seen in Figure 2.2
 
 *<p align="center">**Figure 2.2:**</p>*
+![Figure 2-2](images/Jumped_2position.PNG)
+
 
 </div>
 
 !!!note
-    The steps are similar for creating the non-jumped cables required for the burn wire and direct charging ports. The primary difference is that two cables will be required as well as 2 connector housings. The non-Jumped assemblies can be seen in Figure 2.3
+    The steps are similar for creating the non-jumped cables required for the burn wire and direct charging ports. The primary difference is that two cables will be required as well as 2 connector housings. 
 
 
-*<p align="center">**Figure 2.3**  </p>*
+
 
 ## Solder the Jumped Pico-Lock Assemblies to the switches
 <div class="result" markdown>
 
-**1.** Take jumped assembly and cut in half as seen in Figure 2.4
+**1.** Take jumped assembly and cut in half as seen in Figure 2.3
+![Figure 2-3](images/Cutting_Jumped_2pos.PNG)
 
-*<p align="center">**Figure 2.4**</p>*
+*<p align="center">**Figure 2.3**</p>*
 **2.** Strip ends of assembly wires
 **3.** Slide heat shrink tubing down each wire
-**4.** Wrap wires around leads 1 and 3 respectively as seen in Figure 2.5
-*<p align="center">**Figure 2.5**  </p>*
+**4.** Wrap wires around leads 1 and 3 respectively as seen in Figure 2.4
+*<p align="center">**Figure 2.4**  </p>*
+![Figure 2-4](images/PicolockAssemblies.PNG)
 **5.** Solder wires to switch leads
 **6.** Move heat shrink tubing up and use hot air to shrink tubing around switch leads
 **7.** Repeat these steps to create 2-4 foot switches and 1 RBF switch
