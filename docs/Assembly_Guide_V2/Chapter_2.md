@@ -69,11 +69,12 @@ In this chapter the user will learn the steps to assemble a foot switch. A minim
 **1.** Insert the M2x20 bolts into the holes of the non-embedded feet as seen in Figure 2.6
 
 *<p align="center">**Figure 2.6**  </p>*
-![Figure 2-6](images/.PNG)
+![Figure 2-6](images/footswitch1.PNG)
 **2.** With the bolt inserted, apply some Loctite to the bolt on the opposite end
 **3.** Holding the bolt in place with a Philips head screwdriver, insert the M2 lock nut into the opposite end of the foot and tighten the nut partially without allowing the bolt to go completely through the lock nut as seen in Figures 2.7 and 2.8
 
 *<p align="center">**Figure 2.7 and Figure 2.8**  </p>
+
 **4.** Prepare a small amount of space rated glue
 **5.** Apply the glue to the inside of the foot on the areas shown in Figure 2.9
 
