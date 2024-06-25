@@ -70,9 +70,9 @@
 
    4. **Solder the Burn Wire:**
 
-   -**Burn Side:** Identify the wire coming from the top square (now on the bottom) - this is the burn wire. Feed it through the hole directly to its left (adjacent hole). Solder this wire to the topside of the board for a secure connection.
+       -**Burn Side:** Identify the wire coming from the top square (now on the bottom) - this is the burn wire. Feed it through the hole directly to its left (adjacent hole). Solder this wire to the topside of the board for a secure connection.
 
-   -**Ground Wire:** The other wire from the bottom square (GND) goes to the next hole directly to its left (adjacent hole). Before soldering, bend the wire slightly to create a small arch on the topside of the board. Now, solder both the ends poking out the topside and the base of the arch you created. Refer to Figure 5.5.
+         -**Ground Wire:** The other wire from the bottom square (GND) goes to the next hole directly to its left (adjacent hole). Before soldering, bend the wire slightly to create a small arch on the topside of the board. Now, solder both the ends poking out the topside and the base of the arch you created. Refer to Figure 5.5.
 <figure>
     <img src="images/burn wire.jpeg"width="500" height="500">
   </figure>
