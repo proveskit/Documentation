@@ -27,12 +27,19 @@
    **1.** Secure 2 battery board card brackets onto the board using M2.5x5mm Pan Head bolts as shown in Figure 8.3 below.
  
   *<p align="center">**Figure 8.3: Initial Card Bracket Mount to Battery Board**</p>*
-   **2.** There are two separate approaches to this next step:
-    **a**. Angle the board diagonally with attached brackets and insert into the internal volume of the main structure. Use the board mounting holes on the main structure to secure the battery board using M2.5x5mm pan head bolts. There are several mounting hole options through the vertical length of the structure although the two holes extend further to the bottom on each corner of the structure should be reserved for mounting the feet.
+    **There are two separate approaches to this next step:**
+
+ **a.** Angle the board diagonally with attached brackets and insert into the internal volume of the main structure.
+ 
+  Use the board mounting holes on the main structure to secure the battery board using M2.5x5mm pan head bolts. 
+  
+  There are several mounting hole options through the vertical length of the structure although the two holes extend further to the bottom on each corner of the structure should be reserved for mounting the feet.
   
    *<p align="center">**Figure 8.4: Approach 1 of Installing Battery Board Inside Structure**</p>*
     
-  **b.** The second approach to inserting the battery board would be taking the Structure Halves apart and inserting the board along with any additional boards (battery board(s), development boards, payloads, etc.) into one of the Half U’s. Once the board is inserted, the holes on the bracket is aligned with the structure and fastened with the M2.5x5 Pan Head fasteners. The other Half U can be brought back in and installed like in the Building the Cube step, and the remaining bracket holes can be mounted to the structure. 
+  **b.** The second approach to inserting the battery board would be taking the Structure Halves apart and inserting the board along with any additional boards (battery board(s), development boards, payloads, etc.) into one of the Half U’s.
+  
+   Once the board is inserted, the holes on the bracket is aligned with the structure and fastened with the M2.5x5 Pan Head fasteners. The other Half U can be brought back in and installed like in the Building the Cube step, and the remaining bracket holes can be mounted to the structure. 
 
 
 *<p align="center">**Figure 8.5: Approach 2 of Installing Battery Board Inside Structure**</p>*

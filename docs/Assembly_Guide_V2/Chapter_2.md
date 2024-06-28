@@ -8,14 +8,17 @@ In this chapter the user will learn the steps to assemble a foot switch. A minim
 ## Make 4-6 Jumped 2 Position Pico-Lock Cable Assemblies
 <div class="result" markdown>
 
-**1.** 300mm 5 position Pico-Lock cable assemblies have been included in the kit as well as 2 position connectors. The 100mm assemblies will be used for connecting the solar boards to the EPS, and the 300mm assemblies will be used to create all the needed 2 position Pico-Lock assemblies. The first step will require taking a cable out of the 300mm 5 position assembly. To start, take the needle nose tweezers and lift the locking mechanism as seen in Figure 2.1 and pull the cable from each connector housing.
+!!!
+     300mm 5 position Pico-Lock cable assemblies have been included in the kit as well as 2 position connectors. The 100mm assemblies will be used for connecting the solar boards to the EPS, and the 300mm assemblies will be used to create all the needed 2 position Pico-Lock assemblies.
+
+**1.**  The first step will require taking a cable out of the 300mm 5 position assembly. To start, take the needle nose tweezers and lift the locking mechanism as seen in Figure 2.1 and pull the cable from each connector housing.
 **2.** Take the freed cable and insert both ends into one 2 position connector housing as seen in Figure 2.2
 
 *<p align="center">**Figure 2.2:**</p>*
 
 </div>
 
-!!!note
+!!!TIP
     The steps are similar for creating the non-jumped cables required for the burn wire and direct charging ports. The primary difference is that two cables will be required as well as 2 connector housings. The non-Jumped assemblies can be seen in Figure 2.3
 
 

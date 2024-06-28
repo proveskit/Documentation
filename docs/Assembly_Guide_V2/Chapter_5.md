@@ -8,7 +8,7 @@
       
       
 !!!Note 
-      The antenna lengths need to be 165mm to broadcast in the 437.4MHz range. Only 2 lengths are necessary for the satellite. If you are interested in broadcasting in other frequencies, use a dipole antenna calculator to find out the proper element length for your desired frequency.
+      The antenna lengths need to be **165mm** to broadcast in the 437.4MHz range. Only 2 lengths are necessary for the satellite. If you are interested in broadcasting in other frequencies, use a dipole antenna calculator to find out the proper element length for your desired frequency.
 
 *<p align="center">**Figure 5.1: Lengths of measuring tape cut for use as antenna.**</p>*
   

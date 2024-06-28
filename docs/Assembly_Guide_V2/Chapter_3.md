@@ -73,7 +73,10 @@ In this chapter, the user will learn how to properly assembly the PROVES Z- Face
 **2.** **Install the Solar Cells (KXOB101K08F-TR) using low temperature solder paste and a reflow oven.**
    **a.** Apply Low Temperature Solder Paste to the pads on the Solar Board as seen in Figure 3.3.
    *<p align="center">**Figure 3.3: Before and After Solder Paste Application**</p>*
-   **b.** Check that the positive and negative terminals on the back side of the cells are matched with the plus and minus silk screened on the PCB (Note: you cannot tell the orientation of the cell from the top of the cell so make sure it is placed properly).
+   **b.** Check that the positive and negative terminals on the back side of the cells are matched with the plus and minus silk screened on the PCB 
+   
+   !!!WARNING
+     You **cannot** tell the orientation of the cell from the top of the cell so make sure it is placed properly.
    
    **c.** For cells that are immediately next to each other, scoot them together so that the gap between them is as small as possible. Otherwise, the fishing wire to stow the antenna may get caught in the cracks.
 
