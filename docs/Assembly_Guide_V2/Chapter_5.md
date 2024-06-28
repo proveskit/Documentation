@@ -30,7 +30,7 @@
   **<p align="center">Figure 5.1a Hole made in the measuring tape</p>**
    
 !!!TIP 
-   Make sure to feed it through the outward-facing side of the Top Cap so when the Top Cap is flipped over, the drilled hole of the antenna lines up with the open hole on the inward-facing side of the Top Cap
+    Make sure to feed it through the outward-facing side of the Top Cap so when the Top Cap is flipped over, the drilled hole of the antenna lines up with the open hole on the inward-facing side of the Top Cap
      
 ## Soldering the Balun
    
@@ -55,7 +55,7 @@
 ## Soldering Burn Wire
 
 !!! Note
-   This section **requires** Nichrome Wire
+     This section **requires** Nichrome Wire
 
    1. **Prepare the Burn Wire:** Flip the board to the topside and locate two white squares labeled "Burn Wire Port" with a fire symbol next to them. These squares each have two separate sections. 
 
