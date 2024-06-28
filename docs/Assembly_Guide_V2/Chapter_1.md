@@ -34,6 +34,7 @@ In this chapter, the user will learn the proper steps to assemble an Electrical 
 
 **2**. Solder the through hole battery terminals on the top side of the EPS as seen in Figure 1.5
  *<p align="center">**Figure 1.5:** </p>*
+ ![Figure 1-5](images/BB.jpeg)
 
 ## **OPTIONAL**: Ballast Board creation
 <div class="result" markdown>
