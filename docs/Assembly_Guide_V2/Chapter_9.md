@@ -1,23 +1,24 @@
 # Chapter 9: Final Check and Tests
 
-NOTICE: not all tests are up to date. 
+!!!WARNING
+      Not all tests are up to date
 
 ## Final Check for Electronics
-The final check for the electronics in the integration process involves running the same flat sat test code to ensure everything is communicating with each other when stacked in the satellite. For guidance on how to do these tests refer to the quick start guide, particularly how to use Tabby.
+The final check for the electronics in the integration process involves running the same flat sat test code to ensure everything is communicating with each other when stacked in the satellite. For guidance on how to do these tests refer to the [quick start guide](proves_quick_start.md), particularly how to use Tabby.
 
 A fully assembled structure is required for this test:
 
-1. **Plug in the Micro USB Cable**
+**1.** **Plug in the Micro USB Cable**
 
-2. **Check Switch States**
+**2.** **Check Switch States**
     - Make sure the feet switches and RFB Switch are not depressed. The satellite should be on before continuing (this can be verified by probing the 3.3V pin on the top of the flight computer).
 
-3. **Open a Serial Terminal Connection to the Satellite**
+**3.** **Open a Serial Terminal Connection to the Satellite**
 
-4. **Run Flat Sat Test**
-    - Type the command: `import flatsattest`. (dont have this)
+**4.** **Run Flat Sat Test**
+    - Type the command: `import flatsattest`. 
 
-5. **Observe Results**
+**5.** **Observe Results**
     - The following set of results should appear.
 
 
