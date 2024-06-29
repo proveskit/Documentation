@@ -130,6 +130,9 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
     ??? info "Using another HopeRF Radio Module"
         If you are receiving from a HopeRF module your serial terminal should look someting like this: 
 
+!!! tip 
+    There is now also a niffty ```radio_test.py``` script that helps to automate this process! Find it [here](https://github.com/proveskit/test_scripts)
+
 ### Acquiring Face Data
 
 Unless you have already implemented a payload into the PROVES Kit, most of the data you'll be interested in is the data reported by the satellite's faces. In order to poll this: 
@@ -155,7 +158,8 @@ Unless you have already implemented a payload into the PROVES Kit, most of the d
 One of the number one things that keeps us up at night with the satellite is whether or not we will actually hear back from it after sending it off on its journey in outer space. As a result, a fundemental test to do for every build is a verification of the performance of the radio at long range. We will have a seperate page forthcoming that goes into detail about the reasons and methedology behind this test, but we will quickly reference some of the key steps here: 
 
 1. Position a sending and receiving node some distance away from each other. We recommend at least 1km of seperation and a clear line of sight between the two nodes. 
-2. 
+2. Use the ```radio_test.py``` function on both devices to send and receive pings! Find that script [here](https://github.com/proveskit/test_scripts)
+3. Record the RSSI (Received Signal Strength Indicator) values and see what your link margin is looking like. 
 
 ## Changing the Code
 Inevitably you'll want to change the code out on one of your boards. By default we recommend the CircuitPython implementation be loaded on the boards for ground testing, but this should be swapped out for more resiliant code before flight. 
