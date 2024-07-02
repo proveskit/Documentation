@@ -75,6 +75,10 @@ If in doubt make sure to check the datasheet! These are links to some of the one
 
     [Link to the Datasheet](https://multimedia.3m.com/mws/media/153955O/3mtm-scotch-weldtm-epoxy-adhesive-2216-b-a.pdf)
 
+    Also consider, when using the space glue, that you should probably follow some sort of procedure for it's application. The NASA Staking Guidelines is a great place to start! 
+
+    [Link to the Workmanship Document](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/nasa-std-8739.1b.pdf)
+
 ??? abstract "SatNOGS Taxonomy of Observations"
 
     SatNOGS has a great wiki page that consolidates what some common radio modulations used by satellites will look like on a waterfall.
