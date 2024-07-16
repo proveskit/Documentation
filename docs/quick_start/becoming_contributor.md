@@ -48,3 +48,5 @@ These are examples of changes that might be considered a minor change:
 We're not really sure how to handle hot fixes yet. An example of a hotfix would be something minor that is done to correct an issue on a board, but is not big enough to warrent pushing a whole new version. 
 
 ### Development Hardware Recommendations
+
+

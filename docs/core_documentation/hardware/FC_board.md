@@ -3,6 +3,21 @@
 <p align="center">Figure 1: The Internal Flight Controller Board</p>
 
 The PROVES Kit Flight Controller is part of the PySquared architecture that harbors all of the satellites core operations. There are two variants of the Flight Controller, an internal variant and an external variant.
+
+| Version | Flights | Status |
+| ----------- | ----------- | ----------- |
+| V0 | Unflown | Not Supported |
+| V1 | Pleiades - Yearling, Pleiades - Squared | Legacy Support |
+| V2 | Unflown | Unsupported |
+| V3 | Unflown | Legacy Support |
+| V4a (aka V1a Internal) | Unflown | Supported |
+
+#### V4b Schematic
+![V4b Schematic](images/fc_sch.png)
+
+#### V4b Layout
+![V4b Schematic](images/fc_lay.png)
+
 ## Getting Started
 
 ###  Internal FC Boards 
@@ -27,13 +42,13 @@ To communicate between satellites or to ground stations. This module was selecte
 To detect antenna deployment.
 
 ### MOLEX Micro SD Card Reader
-To log additional data.
+Any SD Card up to 16Gb is supported by CircuitPython. We recommend using [Sandisk Industrial SD Cards](https://www.mouser.com/datasheet/2/669/SanDisk_Industrial%20Grade%20SD%20%20MicroSD%20Product%20Brief-805940.pdf) for flight, but any SD card will do for ground testing. 
 
 ### MAX706RESA Watch Dog Timer
-To ensure the Flight Controller stays operational.
+To ensure the Flight Controller stays operational, this is a component that is borrowed from the PyCubed. 
 
 ### AZ1117CH 3.3V Linear Voltage Regulator
-To power the Flight Controller without a Battery Board.
+To power the Flight Controller without a Battery Board. This linear regulator uses the 5V V_Bus line from the USB port and supplies 3.3V when the JP1 solder jumper is connected.
 
 
 ## Known Issues
