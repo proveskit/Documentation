@@ -11,6 +11,7 @@ The PROVES Kit Flight Controller is part of the PySquared architecture that harb
 | V2 | Unflown | Unsupported |
 | V3 | Unflown | Legacy Support |
 | V4a (aka V1a Internal) | Unflown | Supported |
+| V4b (aka V1a Internal) | Unflown | In Development |
 
 #### V4b Schematic
 ![V4b Schematic](images/fc_sch.png)
@@ -38,8 +39,17 @@ Programmed in CircuitPython or PicoSDK.
 ### RFM98PW 433 MHZ Radio Module
 To communicate between satellites or to ground stations. This module was selected based on its flight heritage on the PyCubed lineage of CubeSats. The RFM98 specifically supports the 435Mhz - 438Mhz range that is allocated to amateur radio satellites. The footprint on the board is a hybrid footprint that also allows the mounting of an RFM95 radio module that can operate in the ISM 915Mhz band as well. 
 
+### RV-3028-C7 Real Time Clock (RTC)
+The RV-3028-C7 is an I2C connected real time clock module that provides UNIX time in seconds, minutes, hours, date, month, year and weekday counters. The RTC also has the ability to deliver microcontroller interupts based on a predetermined time or through an external event. The primary use case for the RTC onboard the flight controller board will be for pin alarms that can be used to either wake up the microcontroller from a preset sleep period or alert the microcontroller to send a radio message on a predetermined schedule. This is the same IC as the RTC used on the OreSat C3. 
+
+![RTC Spec Sheet](images/rtc_specs.png)
+
+[Datasheet](https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf)
+
+[Application Guide](https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3028-C7_App-Manual.pdf) 
+
 ### VL6180 LiDAR
-To detect antenna deployment.
+To detect antenna deployment. As of V4 of the flight controller board the VL6180 is instead connected to the battery board to work in concert with the burn wire circuit. 
 
 ### MOLEX Micro SD Card Reader
 Any SD Card up to 16Gb is supported by CircuitPython. We recommend using [Sandisk Industrial SD Cards](https://www.mouser.com/datasheet/2/669/SanDisk_Industrial%20Grade%20SD%20%20MicroSD%20Product%20Brief-805940.pdf) for flight, but any SD card will do for ground testing. 
@@ -49,6 +59,9 @@ To ensure the Flight Controller stays operational, this is a component that is b
 
 ### AZ1117CH 3.3V Linear Voltage Regulator
 To power the Flight Controller without a Battery Board. This linear regulator uses the 5V V_Bus line from the USB port and supplies 3.3V when the JP1 solder jumper is connected.
+
+## Change Log
+The change log keeps track of major differences between the various versions of the flight controller board. 
 
 
 ## Known Issues
