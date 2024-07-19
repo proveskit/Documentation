@@ -27,6 +27,9 @@ graph TD
     G --> C
 ```
 
+## Block Diagram
+![EPS Block Diagram](images/eps_block.png)
+
 ## Utilized Parts
 The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions. The board serves as an interface with the rest of the satellite. A 12 position picolock is utilized to interface between the Flight Controller and the Battery Board. The board interfaces with 5 solar faces of the satellite using 5 position picolocks. The other 2 position picolocks are used for interfacing with the inhibit scheme, battery heater, burn wire, and direct charging port. The hardware utilized on the module is the following:
 
