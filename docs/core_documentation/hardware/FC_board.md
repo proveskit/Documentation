@@ -30,6 +30,8 @@ The PROVES Kit Flight Controller is part of the PySquared architecture that harb
 
 ## Utilized Parts
 
+![Block Diagram](images/fc_board_block.png)
+
 #### V4b Schematic
 ![V4b Schematic](images/fc_sch.png)
 
