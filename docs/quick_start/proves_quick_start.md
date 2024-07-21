@@ -6,7 +6,7 @@ We are assuming that you have received a fully assembled PROVES Kit to get start
 
 ## Prerequisites 
 
-Before we crack into using our PROVES Kit it is important to acquire or install a few useful tools. 
+Before we crack into using our PROVES Kit it is important to learn, acquire, or install a few useful tools. 
 
 #### Required Items
 In order to interact with the hardware, we will need to install some software that will give us the ability to view and change the code from a serial terminal, download the latest code from the the Github, and edit the code if we desire. Make sure all of these tools are installed on your computer using the links below before proceeding! 
@@ -28,6 +28,11 @@ In order to interact with the hardware, we will need to install some software th
     <p align="center">Figure 2: An example VS Code Page Page</p>
 
     Learn more about VS Code [here](https://code.visualstudio.com). 
+
+!!! sucess "A Working Knowledge of CircuitPython" 
+    It is highly recommended that you get a fundemental understanding of how CircuitPython works before working with the PROVES Kit. CircuitPython is the easiest way to interface with and run tests on the hardware. 
+
+    Check out the Adafruit CiruitPython [here](https://learn.adafruit.com/welcome-to-circuitpython/overview).
 
 Note that these recommendations are for Windows and MacOS users. We presume that if you’re joining us from Linux you probably have your own way of doing all of this. 
 
@@ -131,7 +136,7 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
         If you are receiving from a HopeRF module your serial terminal should look someting like this: 
 
 !!! tip 
-    There is now also a niffty ```radio_test.py``` script that helps to automate this process! Find it [here](https://github.com/proveskit/test_scripts)
+    There is now also a niffty ```radio_test.py``` script that helps to automate this process! Find it [here](https://github.com/proveskit/test_scripts).
 
 ### Acquiring Face Data
 
@@ -170,9 +175,7 @@ Changing out the firmware on the microcontrollers is how we can switch between u
 1. Connect to the board using USB 
 2. Locate the **RESET** and **BOOTSELECT** buttons on the board in question: 
 
-    ??? info "Flight Controller Board"
-
-    ??? info "Internal Flight Computer" 
+    ??? info "Flight Controller Board" 
         ![Description of where the Boot Select and Reset are](images/fc_callout.png)
         <p align="center">Internal FC Board Button Locations</p>
 
@@ -183,6 +186,8 @@ Changing out the firmware on the microcontrollers is how we can switch between u
 3. While holding the **BOOTSELECT** button, tap the **RESET** button 
 4. The board will now reboot into bootloader mode 
 5. Once in bootloader mode you can drag and drop a new ```.uf2``` file in as needed. 
+
+The latest version of the CiruitPython firmware can be found in the dedicated repo for each board. As an exmaple, check out the flight controller board firmware [here](https://github.com/proveskit/flight_controller_board/tree/main/Firmware).
 
 ??? note "Can't Reach the Buttons?" 
     If you're currently using binaries, and want to switch to CircuitPython or update the firmware, sorry but you'll have to disassemble to access the buttons for a swap. 
