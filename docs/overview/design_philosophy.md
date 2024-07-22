@@ -23,3 +23,5 @@ In some ways the humble CubeSat (at least in the United States) is on something 
 Although CubeSats have truly revolutionized the space community through drastically lowering the barier to entry in terms of launch cost, we believe much of this decline can be attributed the realization that CubeSats (to date) have not been able to drastically reduce the overall cost of a space mission. Although the Price per Kilogram to orbit has significantly come down in recent years (especially thanks to SpaceX Rideshare missions) the overall cost of conducting a space mission has not yet reduced to the point where it is generally accessible for academia to conduct them. 
 
 #### New Space is Priced for Venture Captial 
+
+Although the price per kilogram to get something to orbit has come down significantly in the last few years it is still a very long way away from being affordable. With the commerical rate to deliver CubeSats to orbit hovering around $50k / U, launch costs fit decently inside multi-million dollar venture captial rounds, but will quickly blow through grants and other forms of funding for innovative research that don't require a 100x potential upside. 

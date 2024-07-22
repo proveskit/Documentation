@@ -18,3 +18,12 @@ Unfortunately none of the flown PROVES Kit based satellites are currently known 
 | Modulation   | LoRa & FSK  |
 | Spreading Factor   | 8   |
 | Callsign   | KN6NAT   |
+
+## Pleiades - Squared
+| Parameter | Value |
+| -------- | -------- |
+| Operational?   | Launch Planned Fall 2024   |
+| Frequency   | 437.4 Mhz   |
+| Modulation   | LoRa & FSK  |
+| Spreading Factor   | 8   |
+| Callsign   |    |

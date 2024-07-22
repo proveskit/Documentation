@@ -78,6 +78,8 @@ The PyCubed v5 is the forebearer of our 3PySquared architecture that now powers 
 
 The OreSat architecture has been in development one way or another since the founding of the Portland State Aerospace Society in 1996! They have a really cool modular card cage system. Today it has sucessfully been to space once on OreSat-0 and will be flying again soon on OreSat-0.5! 
 
+This architecture is also going to be the basis of Bronco Space's SCALES (Spacecraft Compartmentalized Autonomous Learning and Edge Computing System) flight computer.
+
 #### The Artemis CubeSat Kit
 
 ![Artemis](images/artemis.png)
