@@ -33,8 +33,8 @@ There are a few key components of the kit that align with the usual lineup of sa
     
     ![PROVES Battery Board](images/battery_3.jpg)
 
-    **Status:** V3 / V3a is Supported! <br>
-    V2 has 2x Flight Heritage. 
+    **Status:** V3a/ V3b / V3c Supported! <br>
+    V2 has 2x Flight Heritage. V3 introduces a redundant microcontroller.
 
     [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/battery_board/) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/battery_board)
@@ -47,7 +47,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     
     ![PROVES Structure](images/fc_internal_1a.jpg)
 
-    **Status:** V1a is Supported! <br>
+    **Status:** V4a and V4b Supported! <br>
     No Flight Heritage Yet. 
 
     [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/FC_board/) <br>
