@@ -4,7 +4,7 @@ This page contains links and context on a variety of useful tools and references
 ## Useful Websites
 These sites are places that you can go to get up to date information about CubeSats and the state of the space community! 
 
-??? note "The FAA Operations Advisory
+??? note "The FAA Operations Advisory"
     
     This page summarizes the nationwide operational notifications made by the FAA. We can use this as a way to look at the launch advisories for upcoming rocket launches! 
 
