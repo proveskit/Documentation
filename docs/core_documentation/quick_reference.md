@@ -109,6 +109,12 @@ If books are more your speed there are a couple texts that we think should be in
 
     [Link to the 2024 Report](https://www.nasa.gov/wp-content/uploads/2024/03/soa-2023.pdf?emrc=8ad1a1)
 
+??? abstract "Max Holliday's Intro to Soldering"
+
+    Originally developed for use in the Stanford ECE Department, this site is a well put together introduction to soldering. An important skill for building custom electronics. 
+
+    [Link](https://sites.google.com/stanford.edu/soldering-internal/learninghttps://sites.google.com/stanford.edu/soldering-internal/learning)
+
 ## Sucessful CSLI Proposal Examples
 Looking to craft your own CSLI proposal? Check out these successful examples to help you get a feel for what they should entail! Remember that the CSLI folks really do want you to succeed, just make sure you're following the directions and have a compelling reason for why you're doing what you're doing! 
 
