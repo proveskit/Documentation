@@ -1,4 +1,10 @@
 # Welcome to the PROVES Kit!
+
+!!! tip "Interested in Getting a Kit?"
+    We currently are accepting orders for [Flight Controller Dev Kits](https://095240-c9.myshopify.com/products/flight-controller-board) and [full PROVES Kits](https://095240-c9.myshopify.com/products/proves-kit-reservation). Check them out!
+
+    P.S. we are also selling a [CubeSat Plushie](https://shop.proveskit.space)! 
+
 The Pleiades Rapid Orbital Verification Experiment System (PROVES) 1U kit is intended as an education first option for members of academia and industry who look to be first time or returning CubeSat developers. 
 ![Picture of SN11](images/SN11.JPG)
 <p align="center">Figure 1: A Picture of Pleiades - Yearling SN11</p>
