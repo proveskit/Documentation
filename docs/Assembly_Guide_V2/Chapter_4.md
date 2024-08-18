@@ -10,15 +10,15 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
     The Radio Module Footprint is located below the CubeSat Logo and has a white rectangle
 
 **1.** When soldering the radio, the exposed metal part on the underside of the module should be taped up with Kapton Tape in order to avoid contact with the copper pads on the HopeRF footprint of the FC Board.
-*<p align="center"> **Figure 4.1a: Taped Section of Radio Module**</p>![Figure 4-2](images/radiota.jpeg)
+*<p align="center"> **Figure 4.1a: Taped Section of Radio Module**</p>*
+![Figure 4-2](images/radiota.jpeg)
   
 
 **2.** Align the radio module to the white rectangular outline. Refer to Figure 4-1b. 
-    *<p align="center">**Figure 4.11b: Radio Module Footprint**</p>*
-    
-  <figure>
-    <img src="images/Radio Module.jpeg"width="500" height="500">
-  </figure>
+*<p align="center">**Figure 4.1b: Radio Module Footprint**</p>*
+
+![Figure 4.1b](images/Radio_Module.jpeg)
+
   
  
 
@@ -45,18 +45,13 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
 
 **1.** The RF-SMA that will be used for this section is seen in Figure 4.4.
    *<p align="center">**Figure 4.4: RF-SMA**</p>*
-   <figure>
-    <img src="images/RFMA.jpeg"width="500" height="500">
-  </figure>
-  
- 
+
+   ![Figure 4-4](images/RFMA.jpeg) 
 
 !!! Note
     Ensure that the RF-SMA that you are using matches the footprint seen on the Internal FC Board. Check the KiCAD Schematics for further details. Refer to Figure 4-5 to located the footprint. 
   *<p align="center">**Figure 4.5: RF-SMA Footprint**</p>*
-  <figure>
-    <img src="images/XYZ.jpeg"width="500" height="500">
-  </figure>
+  ![Figure 4-5](images/XYZ.jpeg) 
   
 
 **2. Proper Orientation**
@@ -65,11 +60,7 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
 
 &nbsp; **b.** Point the **connector side** of the RF-SMA in the **Y-** direction relative to the XYZ coordinate axis on the board. 
   *<p align="center">**Figure 4.6: XYZ Coordinate Axis**</p>*
-   <figure>
-    <img src="images/RF-SMA.jpeg"width="500" height="500">
-  </figure>
-  
- 
+  ![Figure 4-6](images/RF-SMA.jpeg) 
 
 **3. Soldering the RF-SMA** 
 
@@ -82,9 +73,7 @@ In this chapter, the user will learn how to assemble the PROVES Flight Controlle
 
 &nbsp; **b.** Refer to Figure 4.8, to see what proper installation should look like.
 *<p align="center">**Figure 4.8 Proper Installation**</p>*
-  <figure>
-    <img src="images/Full Board.jpeg"width="500" height="500">
-  </figure>
+![Figure 4-6](images/Full_Board.jpeg) 
   
   
 
