@@ -109,6 +109,12 @@ If books are more your speed there are a couple texts that we think should be in
 
     [Link to the 2024 Report](https://www.nasa.gov/wp-content/uploads/2024/03/soa-2023.pdf?emrc=8ad1a1)
 
+??? abstract " Aerospace Corp's Improving Mission Success for CubeSats" 
+
+    This is a remarkably detailed study done a few years ago into what makes CubeSats tick. 
+
+    [Link to the Report(https://aerospace.org/sites/default/files/2018-07/TOR-2017-01689%20-%20Improving%20Mission%20Success%20of%20CubeSats.pdf)]
+
 ??? abstract "Max Holliday's Intro to Soldering"
 
     Originally developed for use in the Stanford ECE Department, this site is a well put together introduction to soldering. An important skill for building custom electronics. 
