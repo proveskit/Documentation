@@ -113,7 +113,7 @@ If books are more your speed there are a couple texts that we think should be in
 
     This is a remarkably detailed study done a few years ago into what makes CubeSats tick. 
 
-    [Link to the Report(https://aerospace.org/sites/default/files/2018-07/TOR-2017-01689%20-%20Improving%20Mission%20Success%20of%20CubeSats.pdf)]
+    [Link to the Report](https://aerospace.org/sites/default/files/2018-07/TOR-2017-01689%20-%20Improving%20Mission%20Success%20of%20CubeSats.pdf)
 
 ??? abstract "Max Holliday's Intro to Soldering"
 
