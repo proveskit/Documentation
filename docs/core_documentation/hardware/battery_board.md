@@ -1,4 +1,6 @@
 # Overview
+!!! Looking for the [GitHub](https://github.com/proveskit/battery_board)?
+
 ![Figure 1](images/battery_3_and_a.jpg)
 <p align="center">Figure 1: The Battery Board V3 (left) and V2 (right)</p>
 
@@ -10,6 +12,9 @@ Currently there is one officially supported version of the batery board and one 
 |---------|---------------|--------------------|
 | **V2a** | Pleiades - Yearling 2, Pleiades - Squared | This version contains the core functionalities needed for battery and sensor management. |
 | **V3**  | None| This version is a significant overhaul of the battery board, and it implements a RP2040 microcontroller for power management. |
+| **V3a**  | None| Minor bug fixes over the V3. |
+| **V3b**  | None| More bug fixes over V3a and the first board to be colored red. |
+| **V3c**  | None| Changed the thermocouple IC to an SPI chip and added a real time clock. |
  
 ## Functionalities
 
@@ -87,7 +92,7 @@ The APAN3109 Relay is used to control the flow of current to the battery heater 
 
 
 ## Known Issues
-- Although the R5460N208AA is supposed to auto-release in the case of a battery protection event, it does not appear to actually do this. If you find that the satellite is not delivering power because of a battery protection event that has now been cleared, you can reset the protection circuit by "jump starting" the satellite by applying a voltage higher than the current voltage of the batteries. On-orbit these jump starts should be automatically applied by the solar charger, if they are needed. 
+1. Although the R5460N208AA is supposed to auto-release in the case of a battery protection event, it does not appear to actually do this. If you find that the satellite is not delivering power because of a battery protection event that has now been cleared, you can reset the protection circuit by "jump starting" the satellite by applying a voltage higher than the current voltage of the batteries. On-orbit these jump starts should be automatically applied by the solar charger, if they are needed. 
 
 ## Troubleshooting
 
