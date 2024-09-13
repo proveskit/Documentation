@@ -1,5 +1,5 @@
 # Overview
-!!! Looking for the [GitHub](https://github.com/proveskit/battery_board)?
+!!! tip "Looking for the [GitHub](https://github.com/proveskit/battery_board)?"
 
 ![Figure 1](images/battery_3_and_a.jpg)
 <p align="center">Figure 1: The Battery Board V3 (left) and V2 (right)</p>
@@ -12,7 +12,7 @@ Currently there is one officially supported version of the batery board and one 
 |---------|---------------|--------------------|
 | **V2a** | Pleiades - Yearling 2, Pleiades - Squared | This version contains the core functionalities needed for battery and sensor management. |
 | **V3**  | None| This version is a significant overhaul of the battery board, and it implements a RP2040 microcontroller for power management. |
-| **V3a**  | None| Minor bug fixes over the V3. |
+| **V3a**  | None| Removed the multiplexer and LED driver to make way for a switching 5V regulator. |
 | **V3b**  | None| More bug fixes over V3a and the first board to be colored red. |
 | **V3c**  | None| Changed the thermocouple IC to an SPI chip and added a real time clock. |
  
@@ -90,9 +90,25 @@ The R5460N208AA plays a protective role by disconnecting the battery in cases of
 ### APAN3109 Relay
 The APAN3109 Relay is used to control the flow of current to the battery heater and burn wire MOSFETs. It is an essential component for managing the deployment mechanisms and thermal systems of the satellite.
 
+### The Burn Wire Circuit
+![Burn Wire and Battery Heater Circuits](images/Burn_Circuit.png)
+<p align="center">Figure 6: The Burnwire and Heater Schematic</p>
+In order to hold the antennas in a stowed position during launch we tie them off with a fishing line and use a nichrome wire to burn through that fishing line when it is time to deploy. This circuit is borrowed from Max Holliday's PyCubed. The NDS8434 MOSFETS are fed battery voltage to their sources when the APAN relay is closed and the voltage that they transmit through to the burnwire is modulated using a PWM signal from the uController fed into the gate. 
+
+!!! bug "Burnwire Burn Through"
+
+    If the power that flows through the NDS MOSFETs is too high the circuit will "burn through" and cause a short circuit that will trigger an overcurrent event any time battery voltage is introduced to the circuit. The attatched table from the ON Semi datasheet shows that although the max drain current is 6.5A, the MOSFET can only disapate between 1W and 2.5W. 
+
+    ![MOSFET Max Ratings](images/max_mos.png)
+
+    Right now, to consistently burn the burn wire we need to use a duty cycle of around `0.22`, which (assuming a wire resistance of ~0.3 Ohms and battery voltage of 8.0V) correlates to sending 8.53W through the circuit! Way higher than what is safe. 
+
+    We are currently looking at changing this entire circuit out for the V4 Battery Board.
+
 
 ## Known Issues
 1. Although the R5460N208AA is supposed to auto-release in the case of a battery protection event, it does not appear to actually do this. If you find that the satellite is not delivering power because of a battery protection event that has now been cleared, you can reset the protection circuit by "jump starting" the satellite by applying a voltage higher than the current voltage of the batteries. On-orbit these jump starts should be automatically applied by the solar charger, if they are needed. 
+2. The MOSFETS in the Burn Wire and Battery Heater Circuits have much lower power carrying capacity than they should for their application. This presents a relatively high risk of "burning through" the two circuits if they get too hot, especially in vacuum. 
 
 ## Troubleshooting
 
