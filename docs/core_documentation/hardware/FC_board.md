@@ -12,6 +12,7 @@ The PROVES Kit Flight Controller is part of the PySquared architecture that harb
 | V3 | Unflown | Legacy Support |
 | V4a (aka V1a Internal) | Unflown | Supported |
 | V4b | Unflown | In Development |
+| V4c | Unflown | In Development |
 
 ## Getting Started
 !!! note 
@@ -78,6 +79,18 @@ To power the Flight Controller without a Battery Board. This linear regulator us
 
 ## Change Log
 The change log keeps track of major differences between the various versions of the flight controller board. 
+
+### Version 4
+With the introduction of V4 Flight Controller Boards (also known as V1 Internal Flight Controller Boards) we moved the main flight controller from being the inside of an exterior panel to its own dedicated board on the inside of the satellite. This was done to better protect the main avionics package from thermal and radiation effects. 
+
+#### V4a
+The `a` variant of the flight controller board introduced some layout changes and part package swaps from the base V4. No fundamental functionality was changed in this version. 
+
+#### V4b
+The `b` variant of the board repositioned certain connectors, added a debug Picolock, variant added a Real Time Clock circuit to the board. 
+
+#### V4c 
+The `c` variant of the board adds the OreSat based watchdog timer circuit to try and better defend against radiation upsets. 
 
 
 ## Known Issues
