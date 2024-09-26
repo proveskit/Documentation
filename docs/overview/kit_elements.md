@@ -9,6 +9,9 @@ There are a few key components of the kit that align with the usual lineup of sa
 - Flight Software 
 - Ground Support Systems
 
+!!! "3D Visualizer"
+    The team from Northeastern made this really cool [visualization](https://autode.sk/4eVLtiX) of the kit! You can even do an exploded view with it. 
+
 <div class="grid cards" markdown>
 
 -   :material-cube-unfolded:{ .lg .middle } __1U CubeSat Structure__
