@@ -91,7 +91,7 @@ The R5460N208AA plays a protective role by disconnecting the battery in cases of
 The APAN3109 Relay is used to control the flow of current to the battery heater and burn wire MOSFETs. It is an essential component for managing the deployment mechanisms and thermal systems of the satellite.
 
 ### The Burn Wire Circuit
-![Burn Wire and Battery Heater Circuits](images/Burn_Circuit.png)
+![Burn Wire and Battery Heater Circuits](images/Burn_Circuit.PNG)
 <p align="center">Figure 6: The Burnwire and Heater Schematic</p>
 In order to hold the antennas in a stowed position during launch we tie them off with a fishing line and use a nichrome wire to burn through that fishing line when it is time to deploy. This circuit is borrowed from Max Holliday's PyCubed. The NDS8434 MOSFETS are fed battery voltage to their sources when the APAN relay is closed and the voltage that they transmit through to the burnwire is modulated using a PWM signal from the uController fed into the gate. 
 
@@ -99,7 +99,7 @@ In order to hold the antennas in a stowed position during launch we tie them off
 
     If the power that flows through the NDS MOSFETs is too high the circuit will "burn through" and cause a short circuit that will trigger an overcurrent event any time battery voltage is introduced to the circuit. The attatched table from the ON Semi datasheet shows that although the max drain current is 6.5A, the MOSFET can only disapate between 1W and 2.5W. 
 
-    ![MOSFET Max Ratings](images/max_mos.png)
+    ![MOSFET Max Ratings](images/max_mos.PNG)
 
     Right now, to consistently burn the burn wire we need to use a duty cycle of around `0.22`, which (assuming a wire resistance of ~0.3 Ohms and battery voltage of 8.0V) correlates to sending 8.53W through the circuit! Way higher than what is safe. 
 
@@ -114,3 +114,19 @@ In order to hold the antennas in a stowed position during launch we tie them off
 
 
 *[EPS]: Electrical Power System
+
+## Schematics
+![Battery Board V2 Schematic](images/v2_sch.PNG)
+<p align="center">The V2 Battery Board Schematic</p>
+
+![Battery Board V3 Schematic](images/bbv3_sch.PNG)
+<p align="center">The V3 Battery Board Schematic</p>
+
+![Battery Board V3a Schematic](images/bbv3a_sch.PNG)
+<p align="center">The V3a Battery Board Schematic</p>
+
+![Battery Board V3a Schematic](images/bbv3b_sch.PNG)
+<p align="center">The V3b Battery Board Schematic</p>
+
+![Battery Board V3a Schematic](images/bbv3c_sch.PNG)
+<p align="center">The V3c Battery Board Schematic</p>
