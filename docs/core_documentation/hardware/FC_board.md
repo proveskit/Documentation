@@ -12,11 +12,11 @@ The PROVES Kit Flight Controller is part of the PySquared architecture that harb
 | V3 | Unflown | Legacy Support |
 | V4a (aka V1a Internal) | Unflown | Supported |
 | V4b | Unflown | In Development |
-| V4c | Unflown | In Development |
+| V4c | Planned | In Development |
 
 ## Getting Started
 !!! note 
-    These instructions are valid for Flight Controller Boards V1a (Internal), V4a, and V4b. 
+    These instructions are valid for Flight Controller Boards V1a (Internal), V4a, V4b. V4c. 
 
 1. If you do not plan on connecting a battery board, ensure that the ```JP1``` solder jumper is connected to enable powering the board via USB.
 2. Solder on the Radio Module and an antenna or compatible SMA connector as needed.
