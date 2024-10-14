@@ -35,6 +35,14 @@ graph TD
 ## Block Diagram
 ![EPS Block Diagram](images/eps_block.png)
 
+## The Inhibit Scheme 
+One of the most important functions of the battery board is to properly inhibit the satellite and ensure that no electrical power flows while it is inside the deployer pod. For this purpose, there are a set of limit switches that can be attatched to the 2pos headers on the battery board that are thrown open when inside a deployer pod to cut off battery power from the satellite. Usually the requirement is only for two inhibits in series, but we use a 2s2p configuration for redundancy. 
+
+![Inhibit Diagram](images/inhibit_scheme.PNG)
+
+!!! warning
+    V2 and earlier battery boards are not ISS compliant as there is no low side inhibit switch that fully isolates the batteries from the rest of the electrical subsystems. 
+
 ## Utilized Parts
 The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions. The board serves as an interface with the rest of the satellite. A 12 position picolock is utilized to interface between the Flight Controller and the Battery Board. The board interfaces with 5 solar faces of the satellite using 5 position picolocks. The other 2 position picolocks are used for interfacing with the inhibit scheme, battery heater, burn wire, and direct charging port. The hardware utilized on the module is the following:
 
