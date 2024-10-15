@@ -92,6 +92,8 @@ The `b` variant of the board repositioned certain connectors, added a debug Pico
 #### V4c 
 The `c` variant of the board adds the OreSat based watchdog timer circuit to try and better defend against radiation upsets. 
 
+## Power Consumption Characterization
+Notes on the FC board power consumption and attempts to reduce power consumption through underclocking the MPU are noted in [this GitHub Issue](https://github.com/proveskit/flight_controller_board/issues/22).
 
 ## Known Issues
 - Microcontroller and radio possibility have a high suspectibility failure due to thermal and radiation effects. In a future version imrpoved placement and redundancy will be implemented to protect these core components from those effects.  
