@@ -100,3 +100,9 @@ Notes on the FC board power consumption and attempts to reduce power consumption
 - Antennas are very annoying to install and may also be suceptible to failure due to thermal effects. 
 
 ## Troubleshooting
+
+## Serial Number Tracking 
+
+- FCV4c_0010: RFM98PW Sent to InspireFly
+- FCV4c_0011: RFM98PW Sent to InspireFly
+- FCV4c_0016: RMF98PW Sent to InSpireFly with -SEP Watchdog
