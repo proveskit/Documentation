@@ -106,3 +106,7 @@ Notes on the FC board power consumption and attempts to reduce power consumption
 - FCV4c_0010: RFM98PW Sent to InspireFly
 - FCV4c_0011: RFM98PW Sent to InspireFly
 - FCV4c_0016: RMF98PW Sent to InSpireFly with -SEP Watchdog
+- FCV4c_0006: RFM98PW Sent to Texas State
+- FCV4c_0008: RFM98PW Sent to SlugSat
+- FCV4c_0009: RFM98PW Sent to Northeastern
+- FCV4c_0012: RFM98PW Sent to Columbia
