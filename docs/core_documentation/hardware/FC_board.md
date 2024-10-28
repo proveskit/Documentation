@@ -72,7 +72,24 @@ To detect antenna deployment. As of V4 of the flight controller board the VL6180
 Any SD Card up to 16Gb is supported by CircuitPython. We recommend using [Sandisk Industrial SD Cards](https://www.mouser.com/datasheet/2/669/SanDisk_Industrial%20Grade%20SD%20%20MicroSD%20Product%20Brief-805940.pdf) for flight, but any SD card will do for ground testing. 
 
 ### MAX706RESA Watch Dog Timer
-To ensure the Flight Controller stays operational, this is a component that is borrowed from the PyCubed. 
+To ensure the Flight Controller stays operational, this is a component that is borrowed from the PyCubed and is the watchdog circuit for V4b and earlier flight controller boards. 
+
+### TLV1704 Radiation Tolerant Watchdog Circuit
+[Datasheet](https://www.ti.com/lit/ds/symlink/tlv1704.pdf?ts=1730150302173&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV1704)
+![TLV Circuit Schematic](images/TLV_circuit.png)
+
+Starting with **FC Board V4c** and higher we swapped out the MAX706RESA with a windowed watchdog circuit based on the TLV1704 comparator network from Ti. This particular design has the option of swapping the standard TLV1704 with a TLV1704 **-SEP** (Space Enhanced Part) which is radiation tolerant (note there is a difference between *tolerant* and *hardened*). 
+
+#### Using the Watchdog Circuit
+By default this watchdog circuit expects a voltage pulse along the `WDT_WDI` line from the RP2040 every 26s (or 54s on cold start). If no pulse comes through then a reset will be triggered by pulling the `RESET` line low. 
+
+!!! bug "V4c InspireFly Special Triggers too Fast!"
+    
+    A known issue for V4c InspireFly Special boards is that when powered up the WDT circuit actually triggers a reset approximately every 5s rather than the designed 26s. This was due to a BoM consolidation mistake when manufacturing the boards and will be corrected in future production runs.
+
+    Find out more on [this GitHub Issue](https://github.com/proveskit/flight_controller_board/issues/24).
+
+In order for that `RESET` signal to actually be sent, a bias voltage (5V or greater) must be provided through the `J10` or `J11` breakout connectors. For the signal to actually make it through to the RP2040, then the JP6 solder jumper on the front of the FC board needs to be connected. 
 
 ### AZ1117CH 3.3V Linear Voltage Regulator
 To power the Flight Controller without a Battery Board. This linear regulator uses the 5V V_Bus line from the USB port and supplies 3.3V when the JP1 solder jumper is connected.
@@ -90,7 +107,7 @@ The `a` variant of the flight controller board introduced some layout changes an
 The `b` variant of the board repositioned certain connectors, added a debug Picolock, variant added a Real Time Clock circuit to the board. 
 
 #### V4c 
-The `c` variant of the board adds the OreSat based watchdog timer circuit to try and better defend against radiation upsets. 
+The `c` variant of the board adds the OreSat based watchdog timer circuit to try and better defend against radiation upsets. There are two sub-varients of this board which are the `Express` (as seen on Pleiades - Orpheus) and `InspireFly Special` (as seen on InspireFly). 
 
 ## Power Consumption Characterization
 Notes on the FC board power consumption and attempts to reduce power consumption through underclocking the MPU are noted in [this GitHub Issue](https://github.com/proveskit/flight_controller_board/issues/22).
