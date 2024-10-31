@@ -127,3 +127,4 @@ Notes on the FC board power consumption and attempts to reduce power consumption
 - FCV4c_0008: RFM98PW Sent to SlugSat
 - FCV4c_0009: RFM98PW Sent to Northeastern
 - FCV4c_0012: RFM98PW Sent to Columbia
+- FCV4c_0017: No Radio Sent to Mt. SAC
