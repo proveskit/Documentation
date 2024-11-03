@@ -43,7 +43,7 @@ When you are able to say “our CubeSat is compliant with CDS Rev 14.1 and has p
     [Link to the Spec](https://static1.squarespace.com/static/5418c831e4b0fa4ecac1bacd/t/62193b7fc9e72e0053f00910/1645820809779/CDS+REV14_1+2022-02-09.pdf)
 
 
-???+ abstract "The SpaceX Rideshare Payload User's Guide Version 9"
+???+ abstract "The SpaceX Rideshare Payload User's Guide Version 10"
 
     The SpaceX Rideshare Payload User’s Guide (RPUG) is the preeminent source of guidelines on the testing requirements to fly to space in the modern SmallSat industry. The overwhelming majority of launches from the US are SpaceX rockets, so if you are a US institution looking to go to space it is a good bet that you’ll want to design and test your satellite in a way that is compliant with SpaceX requirements. Make sure to read these guidelines carefully and also look at the design recommendation that they make as well. 
 
