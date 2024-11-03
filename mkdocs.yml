@@ -87,6 +87,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Getting Started with PROVES: quick_start/proves_quick_start.md
     - Contact an Orbiting Satellite: quick_start/contacting_proves.md
     - Becoming a Contributor: quick_start/becoming_contributor.md
+    - fprime-proves Tutorial: quick_start/fprime-proves_tutorial.md
   - Assembly Guide:
     - Introduction: assembly_guide/introduction.md
     - "Chapter 0: Parts and Tools": assembly_guide/ch_0_parts_tools.md
