@@ -135,6 +135,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - FlatSat Dev Board: core_documentation/hardware/flatsat_dev_board.md
     - Software:
       - core_documentation/software/index.md
+      - Battery PicoSDK: core_documentation/software/batt-pico-sdk.md
       - RMF9x Radio Usage: core_documentation/software/rfm_radio_usage.md
       - pysquared.py: core_documentation/software/pysquared.md
       - functions.py: core_documentation/software/functions.md
