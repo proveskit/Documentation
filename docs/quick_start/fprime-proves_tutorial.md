@@ -1,7 +1,7 @@
 # Getting Started with fprime-proves
 [Check Out the GitHub Repo](https://github.com/proveskit/fprime-proves)
 
-!!! tip "From the F' Documentation
+!!! tip "From the F' Documentation"
 
     F´ (or F Prime) is a software framework for the rapid development and deployment of embedded systems and spaceflight applications. Originally developed at NASA’s Jet Propulsion Laboratory, F´ is open-source software that has been successfully deployed for several space applications. It has been used for but is not limited to, CubeSats, SmallSats, instruments, and deployables.
 
