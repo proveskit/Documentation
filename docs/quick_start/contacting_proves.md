@@ -22,10 +22,14 @@ Unfortunately none of the flown PROVES Kit based satellites are currently known 
 ## Pleiades - Orpheus
 | Parameter | Value |
 | -------- | -------- |
-| Operational?   | Launch Planned Q 2024   |
+| Operational?   | Launch Planned Q4 2024   |
 | Frequency   | 437.4 Mhz   |
 | Modulation   | LoRa & FSK  |
 | Spreading Factor   | 8   |
 | Callsign   |  K06AZM  |
 
-Pleiades - Orpheus will be launched in Q4 of 2024 on SpaceX Bandwagon-2! This satellite is jointly built by Bronco Space at Cal Poly Pomona and the Irvington High School Girls in STEM Club. 
+!!! tip "Latest TLE"
+
+    Once the satellite is launched, the latest TLE (Two Line Element) will be posted here! 
+
+Pleiades - Orpheus will be launched in Q4 of 2024 on SpaceX Bandwagon-2! This satellite is jointly built by Bronco Space at Cal Poly Pomona and the Irvington High School Girls in STEM Club. On launch the satellite will beacon appoximately every 40 seconds and listen for 10 seconds after every ping for commands from ground. 

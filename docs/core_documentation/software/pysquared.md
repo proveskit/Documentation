@@ -9,6 +9,10 @@ from pysquared import cubesat as c
 This imports a `cubesat` object from the `pysquared` class and names it `c`, allow you call functions and parameters that are inside the pysquared class conveniently during testing. 
 
 # Version History
+!!! tip "Latest Version" 
+
+    The latest version is `V2.0.0` which reimplements `main` to remove the use of `asyncio` and now uses a modifed version of the more generic `adafruit_rfm` library for the radio driver rather than the older library based on `adafruit_rfm9x`. 
+
 Work in Progress.
 
 Note: There were sigficant changes between the PySquared class used for the V3 and V4 flight controller boards. 
