@@ -28,6 +28,21 @@ Unfortunately none of the flown PROVES Kit based satellites are currently known 
 | Spreading Factor   | 8   |
 | Callsign   |  K06AZM  |
 
+### Orpheus Radio Config Settings
+These are the radio configuration settings defined in the `pysquared.py` file for the Orpheus satellite. Although it is possible to change these settings in flight, whenever the satellite reboots it will default back to these settings. 
+```py
+        self.radio_cfg = {
+            "id": 0xFB,
+            "gs": 0xFA,
+            "freq": 437.4,
+            "sf": 8,
+            "bw": 125,
+            "cr": 8,
+            "pwr": 23,
+            "st": 80000,
+        }
+```
+
 !!! tip "Latest TLE"
 
     Once the satellite is launched, the latest TLE (Two Line Element) will be posted here! 
