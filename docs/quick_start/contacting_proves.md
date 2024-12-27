@@ -111,21 +111,3 @@ while True:
     print(f"{c.radio1.receive(keep_listening=True)} RSSI: {c.radio1.last_rssi}")
 ```
 
-## Pleiades - Yearling 2
-| Parameter | Value |
-| -------- | -------- |
-| Operational?   | No   |
-| Frequency   | 437.4 Mhz   |
-| Modulation   | LoRa   |
-| Spreading Factor   | 8   |
-| Callsign   | KN6NAQ   |
-
-## Pleiades - Squared
-| Parameter | Value |
-| -------- | -------- |
-| Operational?   | No   |
-| Frequency   | 437.4 Mhz   |
-| Modulation   | LoRa & FSK  |
-| Spreading Factor   | 8   |
-| Callsign   | KN6NAT   |
-
