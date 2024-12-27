@@ -9,3 +9,22 @@ This diagram expresses the overall class structure of the Yearling Flight Softwa
 
 Here is a visualization of the development process for our software! 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9-mW69L0Mcs?si=EHgs19kBj3hEUDcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Pleiades - Yearling 2
+| Parameter | Value |
+| -------- | -------- |
+| Operational?   | No   |
+| Frequency   | 437.4 Mhz   |
+| Modulation   | LoRa   |
+| Spreading Factor   | 8   |
+| Callsign   | KN6NAQ   |
+
+## Pleiades - Squared
+| Parameter | Value |
+| -------- | -------- |
+| Operational?   | No   |
+| Frequency   | 437.4 Mhz   |
+| Modulation   | LoRa & FSK  |
+| Spreading Factor   | 8   |
+| Callsign   | KN6NAT   |
