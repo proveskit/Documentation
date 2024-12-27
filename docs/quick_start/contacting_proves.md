@@ -43,8 +43,18 @@ These are the radio configuration settings defined in the `pysquared.py` file fo
         }
 ```
 
+### Tracking Orpheus 
+You can view a live ground track of the Orpheus Satellite on its [TinyGS Page](https://tinygs.com/satellite/PLEIADES-ORPHEUS).
+
 !!! tip "Latest TLE"
 
-    Once the satellite is launched, the latest TLE (Two Line Element) will be posted here! 
+    We are currently following this predicted TLE for the satellite. As of December 25th we were still able to get packets on this TLE from both partner stations in Europe and our own operators in the US. 
 
-Pleiades - Orpheus will be launched in Q4 of 2024 on SpaceX Bandwagon-2! This satellite is jointly built by Bronco Space at Cal Poly Pomona and the Irvington High School Girls in STEM Club. On launch the satellite will beacon appoximately every 40 seconds and listen for 10 seconds after every ping for commands from ground. 
+    ```
+    1 99999U 1800100  24356.55210831  .00000000  00000-0  54728-3 0  9999
+    2 99999  44.9918   0.5192 0006321 333.9104 162.3426 15.19156729    15
+    ```
+
+    This TLE was generated using open-source [TLE Tailor Tool](https://github.com/dcajacob/tle-tailor).
+
+Pleiades - Orpheus was launched on December 21, 2024 on SpaceX Bandwagon-2! This satellite is jointly built by Bronco Space at Cal Poly Pomona and the Irvington High School Girls in STEM Club. On launch the satellite will beacon appoximately every 40 seconds and listen for 10 seconds after every ping for commands from ground. 
