@@ -128,6 +128,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Quick Reference: core_documentation/quick_reference.md
     - Hardware: 
       - core_documentation/hardware/index.md
+      - PROVES Prime: core_documentation/hardware/proves_prime.md
       - Battery Board: core_documentation/hardware/battery_board.md
       - 1U Structure: core_documentation/hardware/1U_structure.md # 1u-structure
       - Flight Control Board: core_documentation/hardware/FC_board.md # flight-control-board
