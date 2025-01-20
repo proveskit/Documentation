@@ -1,3 +1,6 @@
+# Battery PicoSDK Depreication
+In PROVES Kit V2 we will be depreicating the RP2040 microcontroller on the battery board. As a result this code base will also be depreicated.
+
 # Change Log Nov 4 2024 - Battery Manager Software V0.9.3 Update
 
 ## Added Safe Sleep and Watchdog Management
