@@ -4,9 +4,9 @@ Welcome to the development guide for our project! This guide will help you set u
 ## OS Specific Guides
 We suggest you get started with the development guide for your operating system:
 
-- [Windows](/docs/dev-guide-windows.md)
-- [MacOS](/docs/dev-guide-macos.md)
-- [Linux](/docs/dev-guide-linux.md)
+- [Windows](dev-guides/dev-guide-windows.md)
+- [MacOS](dev-guides/dev-guide-macos.md)
+- [Linux](dev-guides/dev-guide-linux.md)
 
 Once you have your development environment set up, you should be able to run the following command to finish the setup:
 ```sh
