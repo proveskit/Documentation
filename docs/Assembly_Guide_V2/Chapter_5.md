@@ -12,7 +12,7 @@
 
 *<p align="center">**Figure 5.1: Lengths of measuring tape cut for use as antenna.**</p>*
 <figure>
-    <img src="images/raw.jpeg"width="500" height="500">
+    <img src="images/raw.jpeg" width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.1 Measured 165mm length. </p>**
@@ -24,7 +24,7 @@
 **4.** Drill a hole through the exposed aluminum roughly 1-3mm away from the end of the length of measuring tape. Ensure you create a horizontal hole precisely in the center of the tape measure.
  Refer to Figure 5.1a.
   <figure>
-    <img src="images/Hole.jpeg"width="500" height="500">
+    <img src="images/Hole.jpeg" width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.1a Hole made in the measuring tape</p>**
@@ -37,8 +37,8 @@
    Before soldering the Antennas, we must solder the balun.The balun should be placed right in the middle of where we would feed the antennas. Refer to Figure 5.2 to see location.
 
 <figure>
-    <img src="images/balun.jpeg"width="500" height="500">
-  </figure>
+    <img src="images/balun.jpeg" width="500" height="500">
+</figure>
   
   **<p align="center">Figure 5.2 Soldered Balun.</p>**
 
@@ -46,9 +46,9 @@
 
  Flip the board over to the topside (the side with BOC and The PROVES Kit Ad Astra Tempore symbol). The lidar footprint is directly beneath the FPS USB ports, on the same side of the board. Refer to Figure 5.3 to see location.
 
- <figure>
-    <img src="images/lidar.jpeg"width="500" height="500">
-  </figure>
+<figure>
+    <img src="images/lidar.jpeg" width="500" height="500">
+</figure>
   
 **<p align="center">Figure 5.3 Soldered Balun.</p>**
 
@@ -61,7 +61,7 @@
 
    2. **Thread the Burn Wire:** Take one end of the burn wire and thread it through the bottom left corner of the **top** square. Then, thread the other end of the burn wire through the top left corner of the **bottom** square. Refer to Figure 5.4.
    <figure>
-    <img src="images/top-bot.jpeg"width="500" height="500">
+    <img src="images/top-bot.jpeg" width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.4 How to feed each wire. Top and Bot. </p>**
@@ -74,7 +74,7 @@
 
          -**Ground Wire:** The other wire from the bottom square (GND) goes to the next hole directly to its left (adjacent hole). Before soldering, bend the wire slightly to create a small arch on the topside of the board. Now, solder both the ends poking out the topside and the base of the arch you created. Refer to Figure 5.5.
 <figure>
-    <img src="images/burn wire.jpeg"width="500" height="500">
+    <img src="images/burn wire.jpeg" width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.5 Ideal burn wire loop and location.**
@@ -83,13 +83,13 @@
 
    Hold the antenna in place to solder it to the board. You can have someone hold it in place so it rests flush against the Top Cap or use a c-clamp to hold it as you are soldering. Refer to Figure 5.6 for how to feed teh antenna through. Then refer to Figure 5.6 a to see the full soldered antennas on the bottom of the board.
 <figure>
-    <img src="images/Feed.jpeg"width="500" height="300">
+    <img src="images/Feed.jpeg" width="500" height="300">
   </figure>
   
   **<p align="center">Figure 5.6 Fed Antenna end on one side. </p>**
 
   <figure>
-    <img src="images/soldered.jpeg"width="500" height="300">
+    <img src="images/soldered.jpeg" width="500" height="300">
   </figure>
   
   **<p align="center">Figure 5.6a Soldered Antenna ends. </p>**
@@ -98,7 +98,7 @@
 
 1. **Locate and Position:** Find the RFSMA Adapter. Hold it with the five pins facing down towards the bottom side of the board (the side where you previously soldered the Balun). Ensure the pointed tip with grooves is facing the Balun. Refer to Figure 5.7 for postion and location.
 <figure>
-    <img src="images/rf.jpeg"width="500" height="500">
+    <img src="images/rf.jpeg" width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.7 Soldered RFSMA Adapter facing the direction of the Balun.</p>**
@@ -111,7 +111,7 @@
 
 Finally we will soldar the RBF Switch onto the bottom side of the board (the side we have the balun on). Postion the RBF switch ends and pin to face in the direction of the RFSMA Adapter. Refer to Figure 5.8 to see location and ideal postion.
 <figure>
-    <img src="images/RBF S.jpeg"width="500" height="500">
+    <img src="images/RBF S.jpeg" width="500" height="500">
   </figure>
   
   **<p align="center">Figure 5.8 Soldered RBF Switch. </p>**
