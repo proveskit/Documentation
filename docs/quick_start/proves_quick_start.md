@@ -61,10 +61,7 @@ Currently there is no dedicated function check script. The best way to validate 
 1. Connect to the satellite via the micro usb cable. You should see a USB drive pop up if you're using the CircuitPython firmware.
 2. Open a serial connection using Tabby. 
 3. Use the keyboard shortcut ++ctrl+c++ to interupt any currently running code and follow the instructions that pop up to enter the REPL
-4. Type the following command: 
-    ```py
-    from pysquared import cubesat as c
-    ```
+4. Once you enter the REPL, a `satellite` object will be imported and called `c` to give access to the core satellite functionalities.
     
     !!! info "What does this command do?"
         This line of code instantiates the ```cubesat``` class within ```pysquared.py``` and names it an object ```c```. 

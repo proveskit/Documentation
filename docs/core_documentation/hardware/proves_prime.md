@@ -24,6 +24,13 @@ Major Updates:
 ## Dev Logs
 This section is for a running log of development activities! The goal is with regular "dev diary" sort of updates to be able to track the logic behind alot of the PROVES Prime Design Decisions. 
 
+### February 9, 2025 | Expanding on the Minimum Viable Satellite
+It has been a couple slower than expected weeks for development! The main thing we have to share at this point is that we've slightly refined what we are thinking of when we talk about the MVS. The attatched block diagram helps explain what our current thinking is.
+
+![Architecture Sketch](images/mvs_feb9.png)
+
+The general concept here is that the MSP430RF used at the core of the MVS system will have the ability to monitor and manipulate the overall power distribution to the rest of the satellite system using its GPIO. In a way, this chip is now going to be the supervisor that ensures all of the satellite's subsystems are behaving. Having this be a seperate chip rather than rolling it into the RP2350 frees up I/O and simplifies the software that needs to run on the RP2350 so it can focus on the mission needs rather than satellite oversight.
+
 ### January 26, 2025 | The First Devlog! 
 Okay so this is where we're starting with trying to actively track the development of this board! Currently the two design contributors are Michael Pham, Rachel Rakushkin, and the Hacker LMBFAO. At this stage we have some preliminary component select and schematic migration from the existing PROVES boards complete. 
 
