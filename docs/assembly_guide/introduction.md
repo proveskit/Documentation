@@ -10,3 +10,4 @@ Welcome to the assembly and integration guide for the PROVES (Pleaides Rapid Orb
 !!! Note
     Some images are still missing throughout this guide as it is in a pre-release state. If you require more specific guidence please contact Michael Pham: mlpham@cpp.edu
 
+Current version of the PROVES kit is V1.5
