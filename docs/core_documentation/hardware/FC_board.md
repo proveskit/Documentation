@@ -65,6 +65,8 @@ The RV-3028-C7 is an I2C connected real time clock module that provides UNIX tim
 
 [Application Guide](https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3028-C7_App-Manual.pdf) 
 
+Blake from the TXST Space Lab did some cool testing to make sure that the RTC doesn't start drifting from real time in this [GitHub Issue](https://github.com/proveskit/pysquared/issues/186)
+
 ### VL6180 LiDAR
 To detect antenna deployment. As of V4 of the flight controller board the VL6180 is instead connected to the battery board to work in concert with the burn wire circuit. 
 
@@ -72,7 +74,7 @@ To detect antenna deployment. As of V4 of the flight controller board the VL6180
 Any SD Card up to 16Gb is supported by CircuitPython. We recommend using [Sandisk Industrial SD Cards](https://www.mouser.com/datasheet/2/669/SanDisk_Industrial%20Grade%20SD%20%20MicroSD%20Product%20Brief-805940.pdf) for flight, but any SD card will do for ground testing. 
 
 ### MAX706RESA Watch Dog Timer
-To ensure the Flight Controller stays operational, this is a component that is borrowed from the PyCubed and is the watchdog circuit for V4b and earlier flight controller boards. 
+To ensure the Flight Controller stays operational, this is a component that is borrowed from the PyCubed and is the watchdog circuit for V4b and earlier flight controller boards.
 
 ### TLV1704 Radiation Tolerant Watchdog Circuit
 [Datasheet](https://www.ti.com/lit/ds/symlink/tlv1704.pdf?ts=1730150302173&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV1704)
