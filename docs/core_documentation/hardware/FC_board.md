@@ -11,8 +11,9 @@ The PROVES Kit Flight Controller is part of the PySquared architecture that harb
 | V2 | Unflown | Unsupported |
 | V3 | Unflown | Legacy Support |
 | V4a (aka V1a Internal) | Unflown | Supported |
-| V4b | Unflown | In Development |
-| V4c | Planned | In Development |
+| V4b | Unflown | Supported |
+| V4c | Pleiades - Orpheus | Supported |
+| V5 | Unflown | In Development |
 
 ## Getting Started
 !!! note 
@@ -117,6 +118,18 @@ Notes on the FC board power consumption and attempts to reduce power consumption
 ## Known Issues
 - Microcontroller and radio possibility have a high suspectibility failure due to thermal and radiation effects. In a future version imrpoved placement and redundancy will be implemented to protect these core components from those effects.  
 - Antennas are very annoying to install and may also be suceptible to failure due to thermal effects. 
+
+### V5 Dev Board Errata
+
+- LM2901 needs to the the B variant for open collector use
+    - When the watchdog load switch is enabled it causes a hard reset of the board
+- SPI1 and SPI0 are using the same hardware peripheral whoops
+- For a currently unknown reason the load switches go into FAULT when connected to the solar panel boards
+    - The solar panels function without overcurrent when powered by an independent supply
+    - Removing the current limit resistor seems to have no effect
+    - This is now SOLVED. Current limit is pulled up instead of down
+- MUX_RESET is not connected
+- When solar face is power cycled quickly it latches the TCA I2C bus low. Requires an unplug and replug
 
 ## Troubleshooting
 
