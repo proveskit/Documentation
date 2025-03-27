@@ -130,6 +130,8 @@ Notes on the FC board power consumption and attempts to reduce power consumption
     - This is now SOLVED. Current limit is pulled up instead of down
 - MUX_RESET is not connected
 - When solar face is power cycled quickly it latches the TCA I2C bus low. Requires an unplug and replug
+- Fire Deploy A and Fire Deploy B need to be connected to burn.
+- 555 Timer Reset Circuit creates a boot loop when used.
 
 ## Troubleshooting
 
