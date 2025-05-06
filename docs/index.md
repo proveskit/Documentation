@@ -1,9 +1,8 @@
 # Welcome to the PROVES Kit!
 
-!!! tip "Interested in Getting a Kit?"
-    We currently are accepting orders for [Flight Controller Dev Kits](https://095240-c9.myshopify.com/products/flight-controller-board) and [full PROVES Kits](https://095240-c9.myshopify.com/products/proves-kit-reservation). Check them out!
+!!! tip "Make Sure to Check Out Our GitHub!"
 
-    P.S. we are also selling a [CubeSat Plushie](https://shop.proveskit.space)! 
+    All of our PROVES Kit Design Files and Software is Availible on [GitHub](https://github.com/proveskit) under Open Source Licenses. We welcome interested users and contributors to take a look and get in touch! 
 
 The Pleiades Rapid Orbital Verification Experiment System (PROVES) 1U kit is intended as an education first option for members of academia and industry who look to be first time or returning CubeSat developers. 
 ![Picture of SN11](images/SN11.JPG)
@@ -34,6 +33,11 @@ This is what inspired us to dream of a world where the CubeSat developer never h
 <p align="center">Figure 5: The Future in the Pleiades Five</p>
 
 The Pleiades - CubeSat Cluster and the Yearling line of satellites was where we sought to lay the ground work for a radically low cost and open source CubeSat architecture. Now we invite the rest of the New Space community to join us in our quest for a more open, accessible, and successful future in the stars! 
+
+!!! tip "Interested in Getting a Kit?"
+    We currently are accepting orders for [Flight Controller Dev Kits](https://095240-c9.myshopify.com/products/flight-controller-board) and [full PROVES Kits](https://095240-c9.myshopify.com/products/proves-kit-reservation). Check them out!
+
+    P.S. we are also selling a [CubeSat Plushie](https://shop.proveskit.space)! 
 
 ## Documentation Layout
 This documentation site is split into five sections: 
