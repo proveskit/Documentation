@@ -1,5 +1,10 @@
 # Notable Publications
 
+## Blake and Nate's Lightning Talk at PyTexas 2025
+This was presented in person at PyTexas 2025 by software contributors Blake and Nate.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EvwtBFz5iME?si=QcBYWP5j-dJx3svy&amp;start=433" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## BIRDS Open Source Webinar: The Any% Method: A Lessons Learned on Designing and Executing LeanSat Missions Quickly and Affordably 
 This was presented virtually during the Feb 2024 BIRDS Open Source Webinar. 
 
