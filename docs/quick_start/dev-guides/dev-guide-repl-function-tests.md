@@ -3,17 +3,17 @@ So, you just got all the parts for a PROVES Kit! What now?
 
 !!! info "Guide Version Control"
 
-    Version Number: V0
-    Written By: Michael Pham
-    Published May 14, 2025
-    Estimated Time to Complete: 20 minutes
+    Version Number: V0 
+    * Written By: Michael Pham
+    * Published May 14, 2025
+    * Estimated Time to Complete: 20 minutes
     
     Dev Enviroment Used:
-    - MacOS
-    - Tabby Terminal Software
-    - `pysquared v2.0.0-alpha-25w20`
-    - Flight Controller Board V5a
-    - XY Solar Panel V2
+    * MacOS
+    * Tabby Terminal Software
+    * `pysquared v2.0.0-alpha-25w20`
+    * Flight Controller Board V5a
+    * XY Solar Panel V2
 
 The good news is that it is easier than ever to get things running and code tested. This guide presumes that you have already setup a developer enviroment on your computer and have a built engineering unit or "FlatSat" wired up in front of you. That should look something like the attatched **Figure X**.
 
