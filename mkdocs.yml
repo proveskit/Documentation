@@ -91,10 +91,11 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Contact an Orbiting Satellite: quick_start/contacting_proves.md
     - Becoming a Contributor: quick_start/becoming_contributor.md
     - Developer Guide: 
-      - Introduction: quick_start/dev-guide.md
+      - Introduction: quick_start/dev-guides/index.md
       - Linux Dev Guide: quick_start/dev-guides/dev-guide-linux.md
       - Windows Dev Guide: quick_start/dev-guides/dev-guide-windows.md
       - Mac Dev Guide: quick_start/dev-guides/dev-guide-macos.md
+      - REPL Function Test: quick_start/dev-guides/dev-guide-repl_function-tests.md
     - fprime-proves Tutorial: quick_start/fprime-proves_tutorial.md
   - Assembly Guide:
     - Introduction: assembly_guide/introduction.md
