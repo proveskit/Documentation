@@ -15,12 +15,13 @@ So, you just got all the parts for a PROVES Kit! What now?
     * Flight Controller Board V5a
     * XY Solar Panel V2
 
-The good news is that it is easier than ever to get things running and code tested. This guide presumes that you have already setup a developer enviroment on your computer and have a built engineering unit or "FlatSat" wired up in front of you. That should look something like the attatched **Figure X**.
+The good news is that it is easier than ever to get things running and code tested. This guide presumes that you have already setup a developer enviroment on your computer and have a built engineering unit or "FlatSat" wired up in front of you. That should look something like the attatched **Figure 1**.
+
+![FlatSat](images/IMG_9646.jpg)
+<p align="center">Figure 1: Example FlatSat From Columbia</p>
 
 ## Step 1: Connecting to the Flight Controller Board
-There should just be a single USB-C for you to plug into with your computer. From here opening a serial terminal using your preferred software will get you hooked up with the board's CircuitPython Enviroment. This process should look like what you see in **Figure X**. 
-
-The baud rate doesn't really matter just choose something bigger than 9600.
+There should just be a single USB-C for you to plug into with your computer. From here opening a serial terminal using your preferred software will get you hooked up with the board's CircuitPython Enviroment. The baud rate doesn't really matter just choose something bigger than 9600.
 
 !!! bug "Time Sensitive Serial Connection with RP2350"
 
