@@ -50,6 +50,14 @@ If all you see is a blank screen when you connect to the serial console, try pre
     Learn more in the following GitHub Issue:
     [[BUG] Use of PySquared safe_sleep Disables USB Connections #4](https://github.com/proveskit/CircuitPython_RP2350_v5a/issues/4)
 
+### Using `reply.py` For Quick Validation and Debugging
+One of the really nice things about CircuitPython is the presence of the Read Print Evaluate Loop or REPL. This feature allows you to use the CircuitPython interpreter in real time, typing arbitrary code into the console and seeing the output without having to go through a compiler on your dev machine. You are prompted with the option of entering the REPL when code is interupted with ++ctrl+c++ and the contents of `reply.py` will run automagically to setup any desired board support software that you may want to use.
+
+Check out the following guides for how to use `repl.py` for quick testing and debugging of new and existing hardware:
+
+- [FlatSat Function Testing Using the REPL](\dev-guide-repl-function-tests.md)
+- [Testing a New Device Using the REPL](\dev-guide-repl-new-device-test.md)
+
 ## Continuous Integration (CI)
 This repo has a continuous integration system using Github Actions. Anytime you push code to the repo, it will run a series of tests. If you see a failure in the CI, you can click on the details to see what went wrong.
 
