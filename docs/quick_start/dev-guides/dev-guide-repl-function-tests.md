@@ -18,7 +18,7 @@ So, you just got all the parts for a PROVES Kit! What now?
 The good news is that it is easier than ever to get things running and code tested. This guide presumes that you have already setup a developer enviroment on your computer and have a built engineering unit or "FlatSat" wired up in front of you. That should look something like the attatched **Figure X**.
 
 ## Step 1: Connecting to the Flight Controller Board
-There should just be a single USB-C for you to plug into with your computer. From here openning a serial terminal using your preferred software will get you hooked up with the board's CircuitPython Enviroment. This process should look like what you see in **Figure X**. 
+There should just be a single USB-C for you to plug into with your computer. From here opening a serial terminal using your preferred software will get you hooked up with the board's CircuitPython Enviroment. This process should look like what you see in **Figure X**. 
 
 The baud rate doesn't really matter just choose something bigger than 9600.
 
@@ -28,7 +28,7 @@ The baud rate doesn't really matter just choose something bigger than 9600.
 
     [[BUG] Use of PySquared safe_sleep Disables USB Connections #4](https://github.com/proveskit/CircuitPython_RP2350_v5a/issues/4)
 
-Once you are connected to the Flight Controller Board try using ++ctrl+c++ to interupt the code and then hit ++enter++ to go into the `REPL`.
+Once you are connected to the Flight Controller Board try using ++ctrl+c++ to interrupt the code and then hit ++enter++ to go into the `REPL`.
 
 ??? note "No Big Logger Output?"
 
