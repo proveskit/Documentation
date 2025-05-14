@@ -117,7 +117,7 @@ while True:
 
 This should now print the accelerometer data from the IMU twice per second! Try tilting the board from side to side and seeing the values change.
 
-??? tip "Intenting in the REPL"
+??? tip "Indenting in the REPL"
 
     If this is your first time using the REPL, you can go to a new line without sending the command by using ++shift+enter++.
 
