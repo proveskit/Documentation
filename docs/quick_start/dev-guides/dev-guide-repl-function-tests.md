@@ -83,7 +83,7 @@ all_faces_on()
 ```
 
 ### Getting Face Data
-By default in `repl.py` the intialization of the TCA and all of the solar panel faces is disabled to avoid a barage of error messages when powering up the board without any solar panel boards attatched. Start by uncommenting it out in your dev enviroment and rerunning `make install`.
+By default in `repl.py` the initialization of the TCA and all of the solar panel faces is disabled to avoid a barage of error messages when powering up the board without any solar panel boards attatched. Start by uncommenting it out in your dev enviroment and rerunning `make install`.
 
 ```py
 ###### Find and Uncomment This Line ########
