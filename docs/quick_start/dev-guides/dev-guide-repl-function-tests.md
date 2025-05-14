@@ -121,7 +121,7 @@ This should now print the accelerometer data from the IMU twice per second! Try 
 
     If this is your first time using the REPL, you can go to a new line without sending the command by using ++shift+enter++.
 
-For a little more advanced readout you can print using an `f` string that takes the individual indicies of the IMU output.
+For a little more advanced readout you can print using an `f` string that takes the individual indices of the IMU output.
 
 ```py
 while True:
