@@ -7,7 +7,7 @@ If this is your first time using CircuitPython, it is highly recommended that yo
 ## OS Specific Setup Guides
 We suggest you get started with the development guide for your operating system:
 
-- [Windows Steup](\dev-guide-windows.md)
+- [Windows Setup](\dev-guide-windows.md)
 - [MacOS Setup](\dev-guide-macos.md)
 - [Linux Setup](\dev-guide-linux.md)
 
