@@ -8,14 +8,28 @@ Follow the instructions below for either a native Windows setup or using the Win
 To set up your development environment on Windows, follow these steps:
 
 1. **Install Git**: Download and install Git from [git-scm.com](https://git-scm.com/downloads). Make sure to also install the Git Bash terminal during the setup process.
-1. **Install Putty**: Download and install Putty from [putty.org](https://putty.org/).
+1. **Install Putty or Tabby**: Download and install Putty from [putty.org](https://putty.org/). Download and install Tabby from [tabby.sh](https://tabby.sh).
 1. **Install Chocolatey**: Chocolatey is a package manager for Windows. Follow the instructions on [chocolatey.org](https://chocolatey.org/install) to install it.
 1. **Install Required Packages**: Open a command prompt or Git Bash terminal and run the following command to install required packages:
     ```sh
     choco install make rsync zip
     ```
 
-Using the Git Bash terminal, you should now be able to run the `make` command in the root of the repo to get started.
+If you haven't already, using the Git Bash terminal clone the repository for the board that you are trying to install code to.
+
+=== "Flight Controller Board V4x"
+
+    ```sh
+    git clone https://github.com/proveskit/CircuitPython_RP2040_v4.git
+    ```
+
+=== "Flight Controller Board V5a"
+
+    ```sh
+    git clone https://github.com/proveskit/CircuitPython_RP2040_v4.git
+    ```
+
+Once it is cloned, you should now be able to run the `make` command in the root of the repo to get started. This command will automagically complete the rest of the developer enviroment setup!
 
 ### A note on `make install`
 

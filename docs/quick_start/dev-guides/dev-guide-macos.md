@@ -14,7 +14,21 @@ To get started with development on MacOS, follow these steps:
     brew install screen
     ```
 
-You should now be able to run the `make` command in the root of the repo to get started.
+If you haven't already, use a terminal to clone the repository for the board that you are trying to install code to.
+
+=== "Flight Controller Board V4x"
+
+    ```sh
+    git clone https://github.com/proveskit/CircuitPython_RP2040_v4.git
+    ```
+
+=== "Flight Controller Board V5a"
+
+    ```sh
+    git clone https://github.com/proveskit/CircuitPython_RP2040_v4.git
+    ```
+
+Once it is cloned, you should now be able to run the `make` command in the root of the repo to get started. This command will automagically complete the rest of the developer enviroment setup!
 
 ### A note on `make install`
 `make install` is a command that can be used to quickly install the code you're working on onto the board. On Mac, you can find the location of your mount by looking for a mount named `PYSQUARED` in your `/Volumes` directory
