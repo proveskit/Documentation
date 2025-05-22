@@ -26,7 +26,7 @@ If you haven't already, using the Git Bash terminal clone the repository for the
 === "Flight Controller Board V5a"
 
     ```sh
-    git clone https://github.com/proveskit/CircuitPython_RP2040_v4.git
+    git clone https://github.com/proveskit/CircuitPython_RP2350_v5a.git
     ```
 
 Once it is cloned, you should now be able to run the `make` command in the root of the repo to get started. This command will automagically complete the rest of the developer enviroment setup!
