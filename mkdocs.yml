@@ -131,6 +131,15 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - "FlatSat Testing": Assembly_Guide_V2/Chapter_7_testing/flatsat_testing.md
     - "Chapter 8: Integration Procedure": Assembly_Guide_V2/Chapter_8.md
     - "Chapter 9: Final Tests": Assembly_Guide_V2/Chapter_9.md
+  - Assembly Guide V3:
+    - "Chapter 0: Parts and Tools": Assembly_Guide_V3/Chapter_0.md
+    - "Chapter 1: Flight Controller Board Preintegration": Assembly_Guide_V3/Chapter_1.md
+    - "Chapter 2: Face Assembly Preintegration": Assembly_Guide_V3/Chapter_2.md
+    - "Chapter 3: Power Stop Preintegration": Assembly_Guide_V3/Chapter_3.md
+    - "Chapter 4: Battery Board Preintegration": Assembly_Guide_V3/Chapter_4.md
+    - "Chapter 5: Antenna Board Preintegration": Assembly_Guide_V3/Chapter_5.md
+    - "Chapter 6: Integration Procedure": Assembly_Guide_V3/Chapter_6.md
+    - "Chapter 7: Final Check and Tests": Assembly_Guide_V3/Chapter_7.md
   - Core Documentation: 
     - core_documentation/index.md
     - Quick Reference: core_documentation/quick_reference.md
