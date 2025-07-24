@@ -13,6 +13,7 @@ In addition to the included parts of the kit, the User will be required to obtai
 - Kapton tape
 - At least 56mm of 1mm heat shrink
 - Pusher (3D printed piece or a long screw that fits in the foot)
+- Blue Loctite (for final sat)
 - 1 Jig
 
 The jig can be obtained from our documentation repository at our [GitHub Organization](https://www.github.com/proveskit).

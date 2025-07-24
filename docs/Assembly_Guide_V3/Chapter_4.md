@@ -20,7 +20,7 @@ Both of the battery readings should be around 7.2V. If they are considerably les
 Both of the readings should read the same number. If they are unequal, you should take the batteries out and then put them back in.
 
 
-**3.** Now plug the battery into the flight control board. Make sure your computer is connected to the board on Tabby.
+**3.** Now plug the battery into the flight control board. Make sure your computer is connected to the flight controller board.
 
   *<p align="center">**Figure 4.3: Battery Board Plugged in**</p>*
 ![Figure 4-3](images/4.3batteryboardpluggedin.png)

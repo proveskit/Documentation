@@ -29,7 +29,7 @@
 *<p align="center">**Figure 6.3: Attached board card brackets to Flight Controller Board and Battery Board**</p>*
 ![Figure 6-3](images/6.3largerelbowbrackets.png)
 
-**2.** Angle the board diagonally with attached brackets and insert into the internal volume of the main structure.
+**2.** Flight the flight controller board to the battery board. Then angle the board diagonally with attached brackets and insert into the internal volume of the main structure.
 
   *<p align="center">**Figure 6.4: Battery Board and Flight Controller Board on Satellite**</p>*
 ![Figure 6-4](images/6.4bbfcbrackers.png)
@@ -37,15 +37,11 @@
   *<p align="center">**Figure 6.5: Figure 6.4: Battery Board and Flight Controller Board on Satellite**</p>*
 ![Figure 6-5](images/6.5fullcubeprejig.png)
 
-**3.** Plug the flight controller into the battery board. Then, use the board mounting holes on the main structure to secure the battery board using M2.5x5mm pan head bolts. There are several mounting hole options through the vertical length of the structure, although the two holes that extend further to the bottom on each corner of the structure should be reserved for mounting the feet.
-
-
 
 ## Integrating Satellite Feet
 ### Installing Feet Assembly
-**1.** Use Blue Loctite, M2.5x10mm pan head fasteners, and M2.5 locknuts to install the feet.
-**2.** Install the feet so the feet with the switches inside should be diagonal from one another.
-**3.** To install the feet on the structure, place locknuts in the small openings of the feet as shown in Figure 6.6, with the nylon side of the locknut facing towards the interior of the satellite. Press downwards on the top of the feet while also pressing them up against the side of the structure. Remember to plug them into the flight controller board!
+**1.** Use M2.5x10mm pan head fasteners, and M2.5 locknuts to install the feet.Install the feet so the feet with the switches inside should be diagonal from one another. Use Blue Loctite if this is the final satellite.
+**2.** To install the feet on the structure, place locknuts in the small openings of the feet as shown in Figure 6.6, with the nylon side of the locknut facing towards the interior of the satellite. Press downwards on the top of the feet while also pressing them up against the side of the structure. Remember to plug them into the flight controller board!
 
 *<p align="center">**Figure 6.6: Feet Mounted on Satellite Half**</p>*
 ![Figure 6-6](images/6.6%20Power%20Stops.png)
@@ -73,10 +69,10 @@
 **2.** If preparing for a launch, apply Loctite. Without taking the satellite out, unscrew fasteners one at a time and secure them by dipping them in Blue Loctite and placing them back in the structure. Be careful with the fasteners that are screwed into the small L brackets.
 
 ## Adding the Faces
-**1.** Plug the faces into the flight controller board, including the Z-face. Then screw them onto the faces of the cube. Wiring the Z-face before you fasten all the faces will make it easier to plug the Z-face in.
+**1.** Plug the faces into the flight controller board, including the Z-face and the antenna baord. Then screw them onto the faces of the cube. Wiring the Z-face before you fasten all the faces will make it easier to plug the Z-face in.
 *<p align="center">**Figure 6.9: Solar Faces being added**</p>*
 ![Figure 6-9](images/6.9%20face%20boards.png)
-*<p align="center">**Figure 6.10: Antenna Board being added**</p>*
+*<p align="center">**Figure 6.10: Z-Board being added**</p>*
 ![Figure 6-10](images/6.10antennaboards.png)
 
 !!! note
