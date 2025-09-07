@@ -8,7 +8,7 @@
 
     Whether you're a new or veteran developer, it is always a good idea to stay up to date with the state of CubeSats. 
 
-    [:octicons-arrow-right-24: CubeSat Fundementals](https://docs.proveskit.space/en/latest/quick_start/cubesat_fundamentals/)
+    [:octicons-arrow-right-24: CubeSat Fundamentals](https://docs.proveskit.space/en/latest/quick_start/cubesat_fundamentals/)
 
 -   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
 
