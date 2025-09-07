@@ -130,7 +130,7 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
         - FSK Mode
 
     ??? info "Using another HopeRF Radio Module"
-        If you are receiving from a HopeRF module your serial terminal should look someting like this: 
+        If you are receiving from a HopeRF module your serial terminal should look something like this: 
 
 !!! tip 
     There is now also a nifty ```radio_test.py``` script that helps to automate this process! Find it [here](https://github.com/proveskit/test_scripts).
