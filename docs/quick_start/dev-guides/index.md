@@ -1,6 +1,9 @@
 # Development Guide
 Welcome to the development guide for our project! This guide will help you set up your development environment and get you started with contributing to the repository.
 
+!!! warning
+    This developer guide is out of date. It still works, but check out the latest [at this link](proveskit.github.io/pysquared/).
+
 #### CircuitPython
 If this is your first time using CircuitPython, it is highly recommended that you check out Adafruit's [Welcome to CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/overview) to help you get started!
 
