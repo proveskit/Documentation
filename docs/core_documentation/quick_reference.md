@@ -10,7 +10,7 @@ These sites are places that you can go to get up to date information about CubeS
 
     [Link](https://www.fly.faa.gov/adv/adv_spt.jsp)
 
-??? note "The University Nanosat Program Mission Design Course
+??? note "The University Nanosat Program Mission Design Course"
 
     The University Nanosat Program (UNP) is run by the Space Dynamics Lab on behalf of the Air Force Research Lab. With the primary objective of this program to provide an educational onramp for students to become aerospace systems engineers, they have created a really great introductory course to the high level mechanics of designing a space mission. 
 
