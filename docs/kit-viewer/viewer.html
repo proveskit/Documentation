@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROVES Kit Viewer</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="viewer.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="viewer.js"></script>
+</head>
+<body>
+  <main class="viewer">
+    <canvas id="scene" aria-label="3D model of the PROVES 1U kit. Drag to orbit, scroll or pinch to zoom, click a part for details."></canvas>
+
+    <div class="toolbar">
+      <label class="explode">
+        <span>Explode</span>
+        <input id="explode" type="range" min="0" max="1" step="0.01" value="0">
+      </label>
+      <button id="reset" type="button">Reset view</button>
+      <button id="parts-toggle" type="button" aria-controls="parts" aria-expanded="false">Parts</button>
+    </div>
+
+    <nav id="parts" class="parts" aria-label="Kit parts">
+      <h2>Parts</h2>
+      <ul id="parts-list"></ul>
+    </nav>
+
+    <section id="bubble" class="bubble" role="dialog" aria-live="polite" hidden>
+      <button id="bubble-close" type="button" class="bubble-close" aria-label="Close">×</button>
+      <h3 id="bubble-title"></h3>
+      <p id="bubble-body"></p>
+      <a id="bubble-docs" target="_top">Read the docs →</a>
+    </section>
+
+    <p id="status" class="status">Loading model…</p>
+  </main>
+</body>
+</html>
