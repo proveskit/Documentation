@@ -1,0 +1,16 @@
+{
+  "name": "kit-viewer-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build-glb": "node build_kit_glb.mjs",
+    "check": "node check_kit_parts.mjs"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "gl-matrix": "3.4.3",
+    "meshoptimizer": "0.22.0"
+  }
+}
