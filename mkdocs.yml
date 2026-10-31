@@ -83,6 +83,7 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
     - Overview: overview/overview.md
     - Design Philosophy: overview/design_philosophy.md
     - Kit Elements: overview/kit_elements.md
+    - Interactive 3D Kit: kit-viewer/index.md
     - The Pleiades Five: overview/the_pleiades_five.md
   - Quick Start Guide: # Quick start guide 
     - Introduction: quick_start/index.md
