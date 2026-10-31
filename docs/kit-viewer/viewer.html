@@ -20,28 +20,38 @@
   <main class="viewer">
     <canvas id="scene" aria-label="3D model of the PROVES 1U kit. Drag to orbit, scroll or pinch to zoom, click a part for details."></canvas>
 
-    <div class="toolbar">
-      <label class="explode">
-        <span>Explode</span>
-        <input id="explode" type="range" min="0" max="1" step="0.01" value="0">
-      </label>
-      <button id="reset" type="button">Reset view</button>
-      <button id="parts-toggle" type="button" aria-controls="parts" aria-expanded="false">Parts</button>
+    <div class="toolbar surface">
+      <button id="explode-toggle" type="button" class="plain">Explode</button>
+      <input id="explode" type="range" min="0" max="1" step="0.01" value="0" aria-label="Explode amount">
+      <span class="divider" aria-hidden="true"></span>
+      <button id="reset" type="button" class="plain">Reset</button>
+      <button id="parts-toggle" type="button" class="plain" aria-controls="parts" aria-expanded="false">Parts</button>
     </div>
 
-    <nav id="parts" class="parts" aria-label="Kit parts">
-      <h2>Parts</h2>
+    <nav id="parts" class="parts surface sheet" aria-label="Kit parts">
       <ul id="parts-list"></ul>
     </nav>
 
-    <section id="bubble" class="bubble" role="dialog" aria-live="polite" hidden>
-      <button id="bubble-close" type="button" class="bubble-close" aria-label="Close">×</button>
-      <h3 id="bubble-title"></h3>
+    <section id="bubble" class="bubble surface sheet" aria-label="Part details">
+      <button id="bubble-close" type="button" class="bubble-close plain" aria-label="Close">
+        <svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <p id="bubble-group" class="eyebrow"></p>
+      <h3 id="bubble-title" aria-live="polite"></h3>
       <p id="bubble-body"></p>
-      <a id="bubble-docs" target="_top">Read the docs →</a>
+      <div class="bubble-actions">
+        <button id="bubble-more" type="button" class="plain link">More</button>
+        <a id="bubble-docs" target="_top">Read the docs</a>
+      </div>
+      <p class="hint">Double-click to zoom to this part</p>
     </section>
 
-    <p id="status" class="status">Loading model…</p>
+    <div id="tooltip" class="tooltip" aria-hidden="true"></div>
+
+    <div id="status" class="status">
+      <p id="status-text">Loading model…</p>
+      <div class="progress"><span id="progress-bar"></span></div>
+    </div>
   </main>
 </body>
 </html>
