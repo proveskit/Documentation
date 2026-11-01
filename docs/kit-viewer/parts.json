@@ -22,10 +22,10 @@
   {
     "id": "mass-block",
     "group": "Board stack",
-    "label": "Mass block",
+    "label": "Payload slot",
     "nodes": ["Assembly 1 <1>"],
-    "title": "Mass Block (Payload Slot)",
-    "body": "TODO: Michael to confirm. A lead block that stands in for a payload, so the satellite has a realistic mass and centre of mass. A real mission would put its payload board here.",
+    "title": "Payload Slot",
+    "body": "The open slot in the middle of the stack, where a mission's payload board goes. Electra's design filled it with a lead block that raised the satellite's mass to almost 2 kg. A heavier satellite loses speed to atmospheric drag more slowly, so it stays in orbit longer. The block was designed and built, but Electra flew without it.",
     "explode": { "dir": [0, 0.15, 0] }
   },
   {
