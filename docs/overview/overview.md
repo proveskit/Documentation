@@ -1,5 +1,5 @@
 # A PROVES Kit Overview
-The PROVES Kit blends Open-Source Hardware and Software. The Hardware developed includes the entire educational satellite structure, brackets, and printed circuit boards. One of the major issues that we sought to solve with the kit was to develop a single solution for an end to end space mission engineering education. Many other open source projects avalible to the community only feature a single element, like just a radio or just a flight computer. 
+The PROVES Kit blends Open-Source Hardware and Software. The Hardware developed includes the entire educational satellite structure, brackets, and printed circuit boards. One of the major issues that we sought to solve with the kit was to develop a single solution for an end to end space mission engineering education. Many other open source projects available to the community only feature a single element, like just a radio or just a flight computer. 
 
 ![Figure 1](images/YearlingV2.jpg)
 <p align="center">Figure 1: The Yearling-2 Satellite</p>
@@ -46,7 +46,7 @@ This satellite was launched on April 8th, 2024, and contact was successfully mad
 
 ## Pleiades - Squared: Third Time's the Charm! 
 ***
-Due to the early loss of Pleaides - Yearling 2, our plan was to spend many months ironning out potential issues with the kit before attempting another spaceflight. This plan was totally cooked at the last minute though, when just a couple weeks after the launch of Yearling 2 we needed to do an emergancy delivery of a 1U satellite for a use it or lose it launch slot. 
+Due to the early loss of Pleiades - Yearling 2, our plan was to spend many months ironing out potential issues with the kit before attempting another spaceflight. This plan was totally cooked at the last minute though, when just a couple weeks after the launch of Yearling 2 we needed to do an emergency delivery of a 1U satellite for a use it or lose it launch slot. 
 
 ![Figure 5](images/squared_trio.png)
 <p align="center">The Journey of Pleiades - Squared</p>
@@ -56,11 +56,11 @@ This satellite was built, tested, and delivered for launch in only 1 calendar we
 This satellite was launched on June 12, 2024. Due to an unexpectedly early deployment from the host vehicle the satellite was actually lost in space for the first 5 hours of its mission life. Through a herculean emergency ground station effort from the amateur radio community though, contact was established and valuable mission telemetry was downlinked. This satellite unfortunately also suffered an early loss, but we were able to collect enough mission data to validate all of the core spacecraft systems. 
 
 ![Figure 5](images/fig5.png)
-<p align="center">Figure 5: The Pleaides - Squared Satellite Right Before Integration!</p>
+<p align="center">Figure 5: The Pleiades - Squared Satellite Right Before Integration!</p>
 
 ## Pleiades - Orpheus: Going Upstream
 ***
-Scheduled to launch in Fall 2024, Pleiades - Orpheus will be the launch of a PROVES Kit based satellite from the Irvington High School Girls in STEM Club! Funded by the gracious donations of Christie English, the Orhpeus project will be a trail of flowing the educational potential of the PROVES Kit upstream to a group of students from a public highschool in Fremont, California. 
+Scheduled to launch in Fall 2024, Pleiades - Orpheus will be the launch of a PROVES Kit based satellite from the Irvington High School Girls in STEM Club! Funded by the gracious donations of Christie English, the Orpheus project will be a trail of flowing the educational potential of the PROVES Kit upstream to a group of students from a public highschool in Fremont, California. 
 
 ## The Pleiades Five: This is Getting Out of Hand
 ***
