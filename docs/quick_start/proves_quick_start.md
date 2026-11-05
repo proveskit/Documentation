@@ -2,7 +2,7 @@
 ![The Yearling Fleet!](images/yearling_fleet.jpg)
 <p align="center">The Pleiades - Yearling Fleet</p>
 
-We are assuming that you have received a fully assembled PROVES Kit to get started. If you only have the indivudual components please refer to the the assembly guide to get things together or the individual checkout procedures for individual components. 
+We are assuming that you have received a fully assembled PROVES Kit to get started. If you only have the individual components please refer to the the assembly guide to get things together or the individual checkout procedures for individual components. 
 
 ## Prerequisites 
 
@@ -12,7 +12,7 @@ Before we crack into using our PROVES Kit it is important to learn, acquire, or 
 In order to interact with the hardware, we will need to install some software that will give us the ability to view and change the code from a serial terminal, download the latest code from the the Github, and edit the code if we desire. Make sure all of these tools are installed on your computer using the links below before proceeding! 
 
 ??? success "A Serial Terminal Software"
-    We need some way to read the output of the satellite on a serial port and ideally a way to also type serial commands back during debugging.Any software that is capable of opening a serial port will do (even the built in terminal on Linux and MacOS will work!), but we recommend installing something like Tabby for a better user experience.  
+    We need some way to read the output of the satellite on a serial port and ideally a way to also type serial commands back during debugging. Any software that is capable of opening a serial port will do (even the built in terminal on Linux and MacOS will work!), but we recommend installing something like Tabby for a better user experience.  
 
     ![Tabby Terminal](images/tabby_1.png)
 
@@ -25,12 +25,12 @@ In order to interact with the hardware, we will need to install some software th
 
     ![VS Code](images/VSCode_1.png)
 
-    <p align="center">Figure 2: An example VS Code Page Page</p>
+    <p align="center">Figure 2: An example VS Code Page</p>
 
     Learn more about VS Code [here](https://code.visualstudio.com). 
 
-!!! sucess "A Working Knowledge of CircuitPython" 
-    It is highly recommended that you get a fundemental understanding of how CircuitPython works before working with the PROVES Kit. CircuitPython is the easiest way to interface with and run tests on the hardware. 
+!!! success "A Working Knowledge of CircuitPython" 
+    It is highly recommended that you get a fundamental understanding of how CircuitPython works before working with the PROVES Kit. CircuitPython is the easiest way to interface with and run tests on the hardware. 
 
     Check out the Adafruit CiruitPython [here](https://learn.adafruit.com/welcome-to-circuitpython/overview).
 
@@ -56,7 +56,7 @@ Hardware:
 Assuming that you have a fully assembled PROVES Kit in front of you, we will go through a quick tour of the major features of the kit!
 
 ### Function Check
-Currently there is no dedicated function check script. The best way to validate if all of satellite's subsystems are online is to use the built in state of health functionality in the ```pysquared.py``` class. To do this, take the following steps: 
+Currently there is no dedicated function check script. The best way to validate if all the satellite's subsystems are online is to use the built in state of health functionality in the ```pysquared.py``` class. To do this, take the following steps: 
 
 1. Connect to the satellite via the micro usb cable. You should see a USB drive pop up if you're using the CircuitPython firmware.
 2. Open a serial connection using Tabby. 
@@ -90,7 +90,7 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
 1. First, configure something to listen in and monitor the radio waves:
 
     ??? info "Using an SDR"
-        If you have a SDR hooked up, tune into to frequency that you're transmitting on and watch the waterfall. 
+        If you have a SDR hooked up, tune into the frequency that you're transmitting on and watch the waterfall. 
 
     ??? info "Using another HopeRF Radio Module"
         If you have a second PROVES Kit, a Flight Controller Dev Board, or a standalone RFM98PW you can use that to monitor for transmissions as well. Make sure that the ```'id'``` and ```'gs'``` parameters on the receiving node are the opposite of what they are on the sending node. 
@@ -106,7 +106,7 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
             print(c.radio1.receive())
         ```
 
-        This code will print either ```none``` when there is no received message or a whatever message has come over the airwaves if there is a valid packet. It can either be implemented as its own script and called or you're a pro gamer you can type it line by line into the REPL. 
+        This code will print either ```none``` when there is no received message or print whatever message that has come over the airwaves if there is a valid packet. It can either be implemented as its own script and called or if you're a pro gamer you can type it line by line into the REPL. 
 
         If you are using a stand alone RFM98PW with a dev board you'll have to go through setting up the pins and radio object for the specific microcontroller you're pairing it with. We recommend referring to the [Adafruit RFM9x documentation](https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts/circuitpython-for-rfm9x-lora) for how to do that. 
 
@@ -130,10 +130,10 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
         - FSK Mode
 
     ??? info "Using another HopeRF Radio Module"
-        If you are receiving from a HopeRF module your serial terminal should look someting like this: 
+        If you are receiving from a HopeRF module your serial terminal should look something like this: 
 
 !!! tip 
-    There is now also a niffty ```radio_test.py``` script that helps to automate this process! Find it [here](https://github.com/proveskit/test_scripts).
+    There is now also a nifty ```radio_test.py``` script that helps to automate this process! Find it [here](https://github.com/proveskit/test_scripts).
 
 ### Acquiring Face Data
 
@@ -157,14 +157,14 @@ Unless you have already implemented a payload into the PROVES Kit, most of the d
 <p align="center">Example Face Data Output</p>
 
 ### Conducting a Range Test
-One of the number one things that keeps us up at night with the satellite is whether or not we will actually hear back from it after sending it off on its journey in outer space. As a result, a fundemental test to do for every build is a verification of the performance of the radio at long range. We will have a seperate page forthcoming that goes into detail about the reasons and methedology behind this test, but we will quickly reference some of the key steps here: 
+One of the number one things that keeps us up at night with the satellite is whether or not we will actually hear back from it after sending it off on its journey in outer space. As a result, a fundamental test to do for every build is a verification of the performance of the radio at long range. We will have a separate page forthcoming that goes into detail about the reasons and methodology behind this test, but we will quickly reference some of the key steps here: 
 
-1. Position a sending and receiving node some distance away from each other. We recommend at least 1km of seperation and a clear line of sight between the two nodes. 
+1. Position a sending and receiving node some distance away from each other. We recommend at least 1km of separation and a clear line of sight between the two nodes. 
 2. Use the ```radio_test.py``` function on both devices to send and receive pings! Find that script [here](https://github.com/proveskit/test_scripts)
 3. Record the RSSI (Received Signal Strength Indicator) values and see what your link margin is looking like. 
 
 ## Changing the Code
-Inevitably you'll want to change the code out on one of your boards. By default we recommend the CircuitPython implementation be loaded on the boards for ground testing, but this should be swapped out for more resiliant code before flight. 
+Inevitably you'll want to change the code out on one of your boards. By default we recommend the CircuitPython implementation be loaded on the boards for ground testing, but this should be swapped out for more resilient code before flight. 
 
 ### Flashing Firmware 
 Changing out the firmware on the microcontrollers is how we can switch between using CircuitPython or C/C++ binaries for our flight software. Ocasionally the dev team will also push an update directly to firmware, but this usally only happens when we have a hardware update, want to use a newer compiler, or have discovered a critical bug. 
@@ -184,7 +184,7 @@ Changing out the firmware on the microcontrollers is how we can switch between u
 4. The board will now reboot into bootloader mode 
 5. Once in bootloader mode you can drag and drop a new ```.uf2``` file in as needed. 
 
-The latest version of the CiruitPython firmware can be found in the dedicated repo for each board. As an exmaple, check out the flight controller board firmware [here](https://github.com/proveskit/flight_controller_board/tree/main/Firmware).
+The latest version of the CircuitPython firmware can be found in the dedicated repo for each board. As an example, check out the flight controller board firmware [here](https://github.com/proveskit/flight_controller_board/tree/main/Firmware).
 
 ??? note "Can't Reach the Buttons?" 
     If you're currently using binaries, and want to switch to CircuitPython or update the firmware, sorry but you'll have to disassemble to access the buttons for a swap. 
@@ -197,7 +197,7 @@ The latest version of the CiruitPython firmware can be found in the dedicated re
     ```
 
 ### Updating CircuitPython Software 
-Updating the CircuitPythong software is remarkably easy and painless, which is part of why we love using it so much in the lab and in the classroom!
+Updating the CircuitPython software is remarkably easy and painless, which is part of why we love using it so much in the lab and in the classroom!
 
 1. Get the code you want to update from the GitHub or your local machine. 
 2. Connect to the board you want to update via USB. You should see a removable drive pop up when it is plugged into your computer. 
