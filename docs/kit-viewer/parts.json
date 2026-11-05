@@ -1,0 +1,147 @@
+[
+  {
+    "id": "flight-controller",
+    "group": "Board stack",
+    "label": "Flight controller",
+    "nodes": ["FC Board Placeholder <1>"],
+    "title": "Flight Controller Board",
+    "body": "The satellite's main computer. It runs the flight software, talks to the ground through the radio, and decides which subsystems get power. In this model it is a simplified placeholder shape.",
+    "docs": "../core_documentation/hardware/FC_board/",
+    "explode": { "dir": [0, 0.9, 0] }
+  },
+  {
+    "id": "battery-board",
+    "group": "Board stack",
+    "label": "Battery board",
+    "nodes": ["Assembly 1 <2>", "Part 1 <1>", "Part 1 <2>"],
+    "title": "Battery Board",
+    "body": "Holds the lithium-ion cells and the power electronics (EPS) that charge them from the solar panels and hand out regulated power. V3 and later boards carry their own RP2040 microcontroller.",
+    "docs": "../core_documentation/hardware/battery_board/",
+    "explode": { "dir": [0, -0.9, 0], "group": "battery" }
+  },
+  {
+    "id": "mass-block",
+    "group": "Board stack",
+    "label": "Payload slot",
+    "nodes": ["Assembly 1 <1>"],
+    "title": "Payload Slot",
+    "body": "The open slot in the middle of the stack, where a mission's payload board goes. Electra's design filled it with a lead block that raised the satellite's mass to almost 2 kg. A heavier satellite loses speed to atmospheric drag more slowly, so it stays in orbit longer. The block was designed and built, but Electra flew without it.",
+    "explode": { "dir": [0, 0.15, 0] }
+  },
+  {
+    "id": "solar-x-plus",
+    "group": "Faces",
+    "label": "Solar X+",
+    "nodes": ["solar-panel-NoCutout (1) <1>"],
+    "title": "XY Solar Panel (X+)",
+    "body": "One of four side panels. Its solar cells charge the battery, and its sensors (sun, temperature) and magnetorquer coil help the satellite know and change its orientation.",
+    "docs": "../core_documentation/hardware/XY_solar_board/"
+  },
+  {
+    "id": "solar-x-minus",
+    "group": "Faces",
+    "label": "Solar X−",
+    "nodes": ["solar-panel-NoCutout (1) <2>"],
+    "title": "XY Solar Panel (X−)",
+    "body": "One of four side panels. Its solar cells charge the battery, and its sensors (sun, temperature) and magnetorquer coil help the satellite know and change its orientation.",
+    "docs": "../core_documentation/hardware/XY_solar_board/"
+  },
+  {
+    "id": "solar-y-plus",
+    "group": "Faces",
+    "label": "Solar Y+",
+    "nodes": ["solar-panel-NoCutout (1) <3>"],
+    "title": "XY Solar Panel (Y+)",
+    "body": "One of four side panels, identical to the others. TODO: Michael to confirm this face is Y+ (axis read from the Onshape export, not the flight frame).",
+    "docs": "../core_documentation/hardware/XY_solar_board/"
+  },
+  {
+    "id": "solar-y-minus",
+    "group": "Faces",
+    "label": "Solar Y−",
+    "nodes": ["solar-panel-NoCutout (1) <4>"],
+    "title": "XY Solar Panel (Y−)",
+    "body": "One of four side panels, identical to the others. TODO: Michael to confirm this face is Y− (axis read from the Onshape export, not the flight frame).",
+    "docs": "../core_documentation/hardware/XY_solar_board/"
+  },
+  {
+    "id": "solar-z-minus",
+    "group": "Faces",
+    "label": "Solar Z−",
+    "nodes": ["solar-panel-side-Z Orpheus <1>"],
+    "title": "Z− Solar Panel",
+    "body": "The bottom face. Six small solar cells plus a temperature sensor, a light sensor and a haptic motor driver, wired to the stack over one 5-pin connector.",
+    "docs": "../core_documentation/hardware/Z_solar_board/"
+  },
+  {
+    "id": "antenna-board",
+    "group": "Faces",
+    "label": "Antenna board Z+",
+    "nodes": ["antenna_top_cap_v2 (1) <1>"],
+    "title": "Antenna Board (Z+)",
+    "body": "The top cap. It holds the folded antenna elements down until the satellite is in orbit, then releases them so they spring out. TODO: Michael to confirm release mechanism wording.",
+    "docs": "../Assembly_Guide_V3/Chapter_5/"
+  },
+  {
+    "id": "antenna-elements",
+    "group": "Faces",
+    "label": "Antenna elements",
+    "nodes": ["antenna <1>", "antenna <2>"],
+    "title": "Antenna Elements",
+    "body": "Two lengths of steel tape measure that form a dipole. Each is cut to about 165 mm for the 437 MHz amateur band. TODO: Michael to confirm these two bodies are the stowed elements.",
+    "docs": "../Assembly_Guide_V3/Chapter_5/"
+  },
+  {
+    "id": "structure-front",
+    "group": "Structure",
+    "label": "Frame half A",
+    "nodes": ["Chassis <1>"],
+    "title": "1U Structure (half A)",
+    "body": "The frame is two identical sheet-metal halves bolted together. It sets the 10 cm cube shape that fits the deployer, and every board mounts to it.",
+    "docs": "../core_documentation/hardware/1U_structure/"
+  },
+  {
+    "id": "structure-back",
+    "group": "Structure",
+    "label": "Frame half B",
+    "nodes": ["Chassis <2>"],
+    "title": "1U Structure (half B)",
+    "body": "The second of the two identical frame halves. Splitting the frame in half makes it cheap to cut and easy to open for integration.",
+    "docs": "../core_documentation/hardware/1U_structure/"
+  },
+  {
+    "id": "feet",
+    "group": "Structure",
+    "label": "Feet",
+    "nodes": [
+      "V4_STRUCTURE_FEET_COMMON (2) <1>", "V4_STRUCTURE_FEET_COMMON (2) <2>",
+      "V4_STRUCTURE_FEET_COMMON (2) <3>", "V4_STRUCTURE_FEET_COMMON (2) <4>",
+      "No screw feet <1>", "No screw feet <2>", "No screw feet <3>", "No screw feet <4>"
+    ],
+    "title": "Feet",
+    "body": "The corner feet are the only parts that touch the deployer rails. TODO: Michael to confirm which feet carry the deployment switches and the difference between the two foot styles.",
+    "docs": "../core_documentation/hardware/1U_structure/"
+  },
+  {
+    "id": "card-brackets",
+    "group": "Structure",
+    "label": "Card brackets",
+    "nodes": ["Brackets_PEM_NUTS <1>", "Brackets_PEM_NUTS <2>", "Brackets_PEM_NUTS <3>", "Brackets_PEM_NUTS <4>"],
+    "title": "Card Brackets",
+    "body": "Small brackets with press-in nuts that tie the board stack to the frame. TODO: Michael to confirm."
+  },
+  {
+    "id": "fasteners",
+    "group": "Structure",
+    "label": "Fasteners",
+    "nodes": [
+      "m2.5x5 90304A328_Steel Pan Head Torx Screws <1>", "m2.5x5 90304A328_Steel Pan Head Torx Screws <2>",
+      "m2.5x5 90304A328_Steel Pan Head Torx Screws <3>", "m2.5x5 90304A328_Steel Pan Head Torx Screws <4>",
+      "Combine1 <1>", "Combine1 <2>", "Combine1 <3>", "Combine1 <4>",
+      "Combine1 <5>", "Combine1 <6>", "Combine1 <7>", "Combine1 <8>",
+      "Boss-Extrude1 <1>", "Boss-Extrude1 <2>", "Boss-Extrude1 <3>", "Boss-Extrude1 <4>"
+    ],
+    "title": "Fasteners",
+    "body": "M2.5 screws and nuts that hold the kit together. TODO: Michael to confirm what the \"Combine1\" and \"Boss-Extrude1\" bodies are."
+  }
+]
