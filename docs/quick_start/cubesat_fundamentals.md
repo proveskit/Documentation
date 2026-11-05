@@ -25,7 +25,7 @@ You will usually find a chart like this and a similar breakdown of sub-systems a
 ??? tip "A Tip on Org Structure"
     Although it is very common to see hierarchical team structures like the one seen in **Figure 2** we strongly advise against any hierarchy that goes more than three levels deep unless you are an exceptionally well funded and organized team. The 2011 print of the Space Mission Analysis and Design (SMAD) textbook (the space engineering bible by some regards) has a specific section on SmallSats that also recommends not exceeding around 20 people on the entire engineering team if possible. 
 
-    These recommendations stem from a simple issue, as the org gets bigger it becomes an exponentially more unweidly and difficult to manage beast. This can be handled, for well funded and full time staffed engineering teams, but will be the death of leaner and more strapped for cash projects. Although it can seem attractive to enlist as many hands as possible (especially in a voulenteer student organization where the labor costs are pizza money!) too many cooks in the kitchen will quickly lead to chaos and confusion. 
+    These recommendations stem from a simple issue, as the org gets bigger it becomes an exponentially more unweidly and difficult to manage beast. This can be handled, for well funded and full time staffed engineering teams, but will be the death of leaner and more strapped for cash projects. Although it can seem attractive to enlist as many hands as possible (especially in a volunteer student organization where the labor costs are pizza money!) too many cooks in the kitchen will quickly lead to chaos and confusion. 
 
     To read more about our recommendations for structuring your organization, see this page [WORK IN PROGRESS]. 
 
@@ -48,7 +48,7 @@ And read their mission summary paper [here.](https://link.springer.com/article/1
 
 <p align="center">Figure 4: A Gallery of Images from Seahawk <br>Courtesy: NASA Earthdata</p>
 
-The Seahawk-1 CubeSat from UNCW is an amazing example of how small satellites can have big impacts! Ocean color is a remarkable but rather niche field of scientific inquiry. As a result, it is difficult to fund dedicated satellite missions to collect high resolution ocean color data. The SOCON mission demonstrated that it was possible ot use these shoebox sized satellites to collect useful scientific data far beyond what the current state of the art is. 
+The Seahawk-1 CubeSat from UNCW is an amazing example of how small satellites can have big impacts! Ocean color is a remarkable but rather niche field of scientific inquiry. As a result, it is difficult to fund dedicated satellite missions to collect high resolution ocean color data. The SOCON mission demonstrated that it was possible to use these shoebox sized satellites to collect useful scientific data far beyond what the current state of the art is. 
 
 Check out a summary of thier mission [here!](https://www.earthdata.nasa.gov/learn/articles/seahawk-hawkeye-ocean-color)
 ***
