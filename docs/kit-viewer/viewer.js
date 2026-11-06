@@ -351,6 +351,16 @@ $('parts-toggle').addEventListener('click', () => setDrawer(!drawerOpen));
 const more = $('bubble-more');
 more.addEventListener('click', () => bubble.classList.add('expanded'));
 
+// scrollIntoView would also scroll every ancestor, including the clipped viewer and the
+// docs page, whenever the row sits in the closed phone sheet below the screen.
+const partsNav = $('parts');
+const revealRow = (row) => {
+  const top = row.offsetTop - 6;
+  const bottom = row.offsetTop + row.offsetHeight + 6;
+  if (top < partsNav.scrollTop) partsNav.scrollTop = top;
+  else if (bottom > partsNav.scrollTop + partsNav.clientHeight) partsNav.scrollTop = bottom - partsNav.clientHeight;
+};
+
 const select = (part, { frame = false } = {}) => {
   if (selected) buttons.get(selected).setAttribute('aria-pressed', 'false');
   const previous = selected;
@@ -363,7 +373,7 @@ const select = (part, { frame = false } = {}) => {
   if (part && part !== previous) {
     const button = buttons.get(part);
     button.setAttribute('aria-pressed', 'true');
-    button.scrollIntoView({ block: 'nearest' });
+    revealRow(button);
     $('bubble-group').textContent = part.group;
     $('bubble-title').textContent = part.title;
     $('bubble-body').textContent = part.body;
