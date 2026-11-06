@@ -412,6 +412,15 @@ button.link:hover { background: transparent; text-decoration: underline; }
   .bubble { overflow-y: auto; }
 }
 
+/* Fingers need 44px targets. */
+@media (pointer: coarse) {
+  .toolbar button.plain { min-height: 44px; padding: 0 12px; }
+  .parts li button { min-height: 44px; }
+  .bubble-close { top: 2px; right: 2px; width: 44px; height: 44px; }
+  .bubble-actions { margin-top: 2px; }
+  .bubble a, button.link { display: inline-flex; align-items: center; min-height: 44px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     transition-duration: 0ms !important;

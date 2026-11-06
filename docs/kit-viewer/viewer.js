@@ -7,7 +7,7 @@ import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 // With no explode.dir, a piece moves this many times its offset from the kit centre.
 const EXPLODE_SPREAD = 1.2;
 const GHOST_OPACITY = 0.1;
-const HOVER_GLOW = 0.22;
+const HOVER_GLOW = 0.45;
 
 const $ = (id) => document.getElementById(id);
 const canvas = $('scene');
@@ -44,6 +44,7 @@ const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: embed
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 const scene = new THREE.Scene();
 scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+scene.environmentIntensity = 0.65;
 const camera = new THREE.PerspectiveCamera(35, 1, 0.001, 10);
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = !reducedMotion.matches;
@@ -97,6 +98,49 @@ scene.add(gltf.scene);
 scene.updateMatrixWorld(true);
 
 const [assembly] = gltf.scene.children;
+
+// Cells are drawn rather than stored in kit.glb: dark silicon, a silver border and fine
+// grid lines, on UVs the build lays out per cell. The ghost fade starts from fadeFrom,
+// since a textured material's color has to be white.
+const cellTexture = (background) => {
+  const c = Object.assign(document.createElement('canvas'), { width: 512, height: 280 });
+  const g = c.getContext('2d');
+  g.fillStyle = background;
+  g.fillRect(0, 0, c.width, c.height);
+  g.strokeStyle = 'rgba(190, 196, 204, 0.12)';
+  g.lineWidth = 1;
+  for (let x = 12; x < c.width; x += 12) {
+    g.beginPath();
+    g.moveTo(x, 0);
+    g.lineTo(x, c.height);
+    g.stroke();
+  }
+  g.fillStyle = 'rgba(205, 210, 216, 0.4)';
+  for (const y of [c.height / 3, (2 * c.height) / 3]) g.fillRect(0, y - 1, c.width, 2);
+  // Inset, because the cell's side walls sample the texture's outer edge.
+  g.fillStyle = background;
+  g.fillRect(0, 0, c.width, 6);
+  g.fillRect(0, c.height - 6, c.width, 6);
+  g.fillRect(0, 0, 6, c.height);
+  g.fillRect(c.width - 6, 0, 6, c.height);
+  g.strokeStyle = '#c4c8cc';
+  g.lineWidth = 3;
+  g.strokeRect(7.5, 7.5, c.width - 15, c.height - 15);
+  const texture = new THREE.CanvasTexture(c);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+  return texture;
+};
+const cellMaterials = new Set();
+gltf.scene.traverse((o) => {
+  if (o.isMesh && o.material.name === 'solar-cell') cellMaterials.add(o.material);
+});
+for (const m of cellMaterials) {
+  m.userData.fadeFrom = m.color.clone();
+  m.map = cellTexture(`#${m.color.getHexString()}`);
+  m.color.set(0xffffff);
+  m.needsUpdate = true;
+}
 const nodeName = (object) => {
   const index = gltf.parser.associations.get(object)?.nodes;
   return index === undefined ? undefined : gltf.parser.json.nodes[index].name;
@@ -228,7 +272,7 @@ const paint = () => {
 
 function tintGhosts() {
   for (const [base, ghost] of ghosts) {
-    ghost.color.lerpColors(base.color, ghostColor, dim);
+    ghost.color.lerpColors(base.userData.fadeFrom ?? base.color, ghostColor, dim);
     ghost.opacity = 1 - (1 - GHOST_OPACITY) * dim;
   }
 }
@@ -307,6 +351,16 @@ $('parts-toggle').addEventListener('click', () => setDrawer(!drawerOpen));
 const more = $('bubble-more');
 more.addEventListener('click', () => bubble.classList.add('expanded'));
 
+// scrollIntoView would also scroll every ancestor, including the clipped viewer and the
+// docs page, whenever the row sits in the closed phone sheet below the screen.
+const partsNav = $('parts');
+const revealRow = (row) => {
+  const top = row.offsetTop - 6;
+  const bottom = row.offsetTop + row.offsetHeight + 6;
+  if (top < partsNav.scrollTop) partsNav.scrollTop = top;
+  else if (bottom > partsNav.scrollTop + partsNav.clientHeight) partsNav.scrollTop = bottom - partsNav.clientHeight;
+};
+
 const select = (part, { frame = false } = {}) => {
   if (selected) buttons.get(selected).setAttribute('aria-pressed', 'false');
   const previous = selected;
@@ -319,7 +373,7 @@ const select = (part, { frame = false } = {}) => {
   if (part && part !== previous) {
     const button = buttons.get(part);
     button.setAttribute('aria-pressed', 'true');
-    button.scrollIntoView({ block: 'nearest' });
+    revealRow(button);
     $('bubble-group').textContent = part.group;
     $('bubble-title').textContent = part.title;
     $('bubble-body').textContent = part.body;
