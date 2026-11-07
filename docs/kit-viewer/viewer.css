@@ -427,3 +427,145 @@ button.link:hover { background: transparent; text-decoration: underline; }
     transition-delay: 0ms !important;
   }
 }
+
+/* Build guide. */
+#guide-toggle[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+}
+
+:root[data-guide] #explode-toggle,
+:root[data-guide] #explode,
+:root[data-guide] .divider { display: none; }
+
+.parts li button:disabled { color: var(--muted); opacity: 0.55; cursor: default; }
+.parts li button:disabled:hover { background: transparent; }
+
+.guide {
+  position: absolute;
+  overflow-y: auto;
+  padding: 14px 16px 12px;
+}
+
+/* Phones get the shared bottom sheet styles instead. */
+@media (min-width: 801px) {
+  .guide {
+    left: 12px;
+    bottom: 12px;
+    width: 340px;
+    max-height: calc(100% - 88px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(6px);
+    transition: opacity 100ms ease-in, transform 100ms ease-in, visibility 0s 100ms;
+  }
+
+  .guide.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    transition: opacity 180ms var(--ease-out), transform 180ms var(--ease-out);
+  }
+}
+
+.guide h3 {
+  margin: 0 32px 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.guide p { margin: 0 0 8px; }
+
+#guide-body { color: color-mix(in srgb, var(--text) 85%, transparent); }
+
+.gap {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.gap::before { content: "Not in the model: "; font-weight: 600; color: var(--text); }
+.gap[hidden], .docs-link[hidden] { display: none; }
+
+.docs-link {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.docs-link:hover { text-decoration: underline; }
+
+/* Back and Next stay on screen when a long step scrolls inside a short phone sheet. */
+.guide-nav {
+  position: sticky;
+  bottom: -12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px -16px -12px;
+  padding: 8px 16px 12px;
+  border-radius: 0 0 12px 12px;
+  background: var(--bg);
+}
+
+.nav-button {
+  min-height: 32px;
+  padding: 0 14px;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  font-weight: 600;
+}
+
+.nav-button.primary {
+  border-color: transparent;
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.nav-button:disabled { opacity: 0.4; cursor: default; }
+
+.dots {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 14px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.dot::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: auto;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background-color 120ms var(--ease-out), transform 120ms var(--ease-out);
+}
+
+.dot:hover::before { background: var(--muted); }
+.dot[aria-current]::before { background: var(--accent); transform: scale(1.35); }
+
+@media (max-width: 800px) {
+  .guide { padding-top: 10px; }
+  .dot { width: 12px; }
+}
+
+@media (pointer: coarse) {
+  .nav-button { min-height: 44px; }
+  .guide .bubble-close { top: 2px; right: 2px; width: 44px; height: 44px; }
+}

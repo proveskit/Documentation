@@ -13,10 +13,20 @@
     "id": "battery-board",
     "group": "Board stack",
     "label": "Battery board",
-    "nodes": ["Assembly 1 <2>", "Part 1 <1>", "Part 1 <2>"],
+    "nodes": ["Assembly 1 <2>"],
     "title": "Battery Board",
     "body": "Holds the lithium-ion cells and the power electronics (EPS) that charge them from the solar panels and hand out regulated power. V3 and later boards carry their own RP2040 microcontroller.",
     "docs": "../core_documentation/hardware/battery_board/",
+    "explode": { "dir": [0, -0.9, 0], "group": "battery" }
+  },
+  {
+    "id": "card-brackets",
+    "group": "Board stack",
+    "label": "Card brackets",
+    "nodes": ["Part 1 <1>", "Part 1 <2>"],
+    "title": "Card Brackets",
+    "body": "Long aluminium angle brackets that screw to two edges of a board and then to the frame. Only the battery board's pair is a separate part in this model. The flight controller and payload brackets are not modeled yet.",
+    "docs": "../assembly_guide/ch_8_integration/",
     "explode": { "dir": [0, -0.9, 0], "group": "battery" }
   },
   {
@@ -123,12 +133,13 @@
     "docs": "../core_documentation/hardware/1U_structure/"
   },
   {
-    "id": "card-brackets",
+    "id": "l-brackets",
     "group": "Structure",
-    "label": "Card brackets",
+    "label": "L-brackets",
     "nodes": ["Brackets_PEM_NUTS <1>", "Brackets_PEM_NUTS <2>", "Brackets_PEM_NUTS <3>", "Brackets_PEM_NUTS <4>"],
-    "title": "Card Brackets",
-    "body": "Small brackets with press-in nuts that tie the board stack to the frame. TODO: Michael to confirm."
+    "title": "L-Brackets",
+    "body": "Four small elbow brackets with press-in (PEM) nuts that join the two frame halves at their seam. Fasten them with M2.5x5 button head screws, not pan heads, so the solar faces sit flat over the screw heads.",
+    "docs": "../assembly_guide/ch_8_integration/"
   },
   {
     "id": "fasteners",
