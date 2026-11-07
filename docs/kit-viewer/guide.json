@@ -1,7 +1,7 @@
 [
   {
     "title": "Attach card brackets to the internal boards",
-    "body": "Screw two card brackets to each internal board with M2.5x5 pan head screws: usually the flight controller, the battery board and a payload board. Leave the screws snug but not tight. You square the brackets in the next step.",
+    "body": "Screw two card brackets to each internal board with M2.5x5 pan head screws: usually the flight controller, the battery board and a payload board. On the battery board the brackets go on the component side, opposite the cells. Leave the screws snug but not tight. You square the brackets in the next step.",
     "add": ["flight-controller", "mass-block", "battery-board", "card-brackets"],
     "focus": ["card-brackets"],
     "pose": { "flight-controller": [0, 0.35, 0], "battery-board": [0, -0.35, 0], "card-brackets": [0, -0.35, 0] },
