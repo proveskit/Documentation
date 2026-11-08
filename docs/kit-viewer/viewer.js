@@ -42,6 +42,8 @@ const stepTweens = (now) => {
 
 const embedded = window !== top;
 if (embedded) document.documentElement.dataset.embedded = '';
+// Opened full screen there is no docs page around the viewer, so offer a way back to it.
+else document.getElementById('back').hidden = false;
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: embedded });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 const scene = new THREE.Scene();
