@@ -7,6 +7,8 @@ import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 // With no explode.dir, a piece moves this many times its offset from the kit centre.
 const EXPLODE_SPREAD = 1.2;
 const GHOST_OPACITY = 0.1;
+// The build guide fades context less than a selection does, so the half-built kit stays readable.
+const GUIDE_DIM = 0.6;
 const HOVER_GLOW = 0.45;
 
 const $ = (id) => document.getElementById(id);
@@ -40,6 +42,8 @@ const stepTweens = (now) => {
 
 const embedded = window !== top;
 if (embedded) document.documentElement.dataset.embedded = '';
+// Opened full screen there is no docs page around the viewer, so offer a way back to it.
+else document.getElementById('back').hidden = false;
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: embedded });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 const scene = new THREE.Scene();
@@ -80,13 +84,14 @@ new ResizeObserver(() => {
   camera.updateProjectionMatrix();
 }).observe(canvas);
 
-let gltf, parts;
+let gltf, parts, guide;
 try {
-  [gltf, parts] = await Promise.all([
+  [gltf, parts, guide] = await Promise.all([
     new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('kit.glb', (e) => {
       if (e.total) $('progress-bar').style.transform = `scaleX(${e.loaded / e.total})`;
     }),
     fetch('parts.json').then((r) => r.json()),
+    fetch('guide.json').then((r) => r.json()),
   ]);
 } catch (err) {
   $('status-text').textContent = `Couldn't load the kit model: ${err.message}`;
@@ -151,7 +156,8 @@ const partByNode = new Map(parts.flatMap((part) => part.nodes.map((n) => [n, par
 const partByObject = new Map();
 for (const part of parts) part.pieces = [];
 const pieces = assembly.children.map((object) => {
-  const piece = { object, rest: object.position.clone(), offset: new THREE.Vector3() };
+  // pose is a build-guide offset added on top of the explode offset.
+  const piece = { object, rest: object.position.clone(), offset: new THREE.Vector3(), pose: new THREE.Vector3() };
   const part = partByNode.get(nodeName(object));
   if (part) {
     part.pieces.push(piece);
@@ -169,6 +175,10 @@ for (const piece of pieces) {
   const key = partByObject.get(piece.object)?.explode?.group ?? piece;
   clusters.set(key, [...(clusters.get(key) ?? []), piece]);
 }
+const toLocal = (piece, worldOffset) => {
+  const parent = piece.object.parent;
+  return parent.worldToLocal(kitCenter.clone().add(worldOffset)).sub(parent.worldToLocal(kitCenter.clone()));
+};
 for (const members of clusters.values()) {
   const box = new THREE.Box3();
   members.forEach((m) => box.expandByObject(m.object));
@@ -177,16 +187,17 @@ for (const members of clusters.values()) {
   const worldOffset = dir
     ? new THREE.Vector3(...dir).multiplyScalar(kitRadius)
     : center.clone().sub(kitCenter).multiplyScalar(EXPLODE_SPREAD);
-  for (const m of members) {
-    const parent = m.object.parent;
-    const from = parent.worldToLocal(center.clone());
-    m.offset.copy(parent.worldToLocal(center.clone().add(worldOffset)).sub(from));
-  }
+  for (const m of members) m.offset.copy(toLocal(m, worldOffset));
 }
 
+let explodeT = 0;
+const place = () => {
+  for (const p of pieces) p.object.position.copy(p.rest).addScaledVector(p.offset, explodeT).add(p.pose);
+};
 let explodeTween = null;
 const setExplode = (t) => {
-  for (const p of pieces) p.object.position.copy(p.rest).addScaledVector(p.offset, t);
+  explodeT = t;
+  place();
   explodeInput.value = String(t);
   explodeInput.style.setProperty('--fill', `${t * 100}%`);
 };
@@ -214,16 +225,16 @@ const homeBox = new THREE.Box3().setFromObject(assembly);
 setExplode(0);
 
 let flight = null;
-const frameBox = (box, { from = 1 } = {}) => {
+const frameBox = (box, { from = 1, view } = {}) => {
   const sphere = box.getBoundingSphere(new THREE.Sphere());
   const fov = THREE.MathUtils.degToRad(camera.fov) / 2;
   const distance = Math.max(sphere.radius, kitRadius * 0.45) / Math.sin(Math.min(fov, fov * camera.aspect)) * 1.35;
-  const dir = camera.position.clone().sub(controls.target).normalize();
+  const dir = (view ? new THREE.Vector3(...view) : camera.position.clone().sub(controls.target)).normalize();
   const fromTarget = controls.target.clone();
   const fromPos = from === 1 ? camera.position.clone() : sphere.center.clone().addScaledVector(dir, distance * from);
   const toPos = sphere.center.clone().addScaledVector(dir, distance);
   const travel = fromPos.distanceTo(toPos) + fromTarget.distanceTo(sphere.center);
-  const ms = clamp(250 + 120 * Math.log2(1 + travel / kitRadius), 250, 520);
+  const ms = clamp(250 + 120 * Math.log2(1 + travel / kitRadius), 250, view ? 800 : 520);
   tweens.delete(flight);
   controls.enableDamping = false;
   flight = animate(ms, expoOut, (e) => {
@@ -254,8 +265,10 @@ const glowOf = (base) => {
 
 let selected = null;
 let hovered = null;
-// The part everything else is dimmed around. It outlives `selected` while the dimming fades out.
-let dimmedFor = null;
+// The current build step, or null outside the guide.
+let stage = null;
+// The pieces everything else is dimmed around. It outlives the selection or step while the dimming fades out.
+let focus = null;
 
 const paint = () => {
   for (const piece of pieces) {
@@ -264,7 +277,7 @@ const paint = () => {
       if (!o.isMesh) return;
       const base = (o.userData.base ??= o.material);
       if (part && part === hovered && part !== selected) o.material = glowOf(base);
-      else if (dimmedFor && part !== dimmedFor) o.material = ghostOf(base);
+      else if (focus && !focus.has(piece)) o.material = ghostOf(base);
       else o.material = base;
     });
   }
@@ -278,18 +291,19 @@ function tintGhosts() {
 }
 
 let fade = null;
-const dimAround = (part) => {
-  if (part) dimmedFor = part;
+const refocus = () => {
+  const around = selected ? new Set(selected.pieces) : stage?.focus;
+  if (around) focus = around;
   paint();
   tintGhosts();
   const from = dim;
-  const to = part ? 1 : 0;
+  const to = selected ? 1 : stage ? GUIDE_DIM : 0;
   tweens.delete(fade);
-  fade = animate(part ? 180 : 140, easeOut, (e) => {
+  fade = animate(around ? 180 : 140, easeOut, (e) => {
     dim = from + (to - from) * e;
     tintGhosts();
-    if (e === 1 && !part) {
-      dimmedFor = null;
+    if (e === 1 && !around) {
+      focus = null;
       paint();
     }
   });
@@ -338,13 +352,18 @@ for (const part of parts) {
   buttons.set(part, button);
 }
 
+// Phones have room for one bottom sheet: the parts list, then part details, then the guide.
 let drawerOpen = false;
-const showBubble = () => bubble.classList.toggle('open', Boolean(selected) && !(narrow.matches && drawerOpen));
+const guidePanel = $('guide');
+const showSheets = () => {
+  bubble.classList.toggle('open', Boolean(selected) && !(narrow.matches && drawerOpen));
+  guidePanel.classList.toggle('open', Boolean(stage) && !(narrow.matches && (drawerOpen || selected)));
+};
 const setDrawer = (open) => {
   drawerOpen = open;
   $('parts').classList.toggle('open', open);
   $('parts-toggle').setAttribute('aria-expanded', String(open));
-  showBubble();
+  showSheets();
 };
 $('parts-toggle').addEventListener('click', () => setDrawer(!drawerOpen));
 
@@ -365,7 +384,7 @@ const select = (part, { frame = false } = {}) => {
   if (selected) buttons.get(selected).setAttribute('aria-pressed', 'false');
   const previous = selected;
   selected = part;
-  if (part !== previous) dimAround(part);
+  if (part !== previous) refocus();
   const url = new URL(location.href);
   if (part) url.searchParams.set('part', part.id);
   else url.searchParams.delete('part');
@@ -387,7 +406,7 @@ const select = (part, { frame = false } = {}) => {
   } else if (part) {
     buttons.get(part).setAttribute('aria-pressed', 'true');
   }
-  showBubble();
+  showSheets();
   if (part && frame) frameBox(partBox(part));
 };
 
@@ -409,11 +428,12 @@ const placeBubble = () => {
   const bw = bubble.offsetWidth;
   const bh = bubble.offsetHeight;
   const right = w - $('parts').offsetWidth - 24;
+  const bottom = guidePanel.classList.contains('open') ? guidePanel.offsetTop : h;
   const left = (minX * 0.5 + 0.5) * w - 16 - bw;
   let x = (maxX * 0.5 + 0.5) * w + 16;
   if (x + bw > right && left >= 12) x = left;
   const y = (-(maxY + minY) / 2 * 0.5 + 0.5) * h - bh / 2;
-  const target = [clamp(x, 12, right - bw), clamp(y, 64, h - bh - 12)];
+  const target = [clamp(x, 12, right - bw), clamp(y, 64, bottom - bh - 12)];
   bubbleAt = bubbleAt && !reducedMotion.matches
     ? bubbleAt.map((v, i) => v + (target[i] - v) * 0.35)
     : target;
@@ -424,7 +444,7 @@ const placeBubble = () => {
 // On phones the open sheet covers the bottom of the canvas, so lift the view above it.
 let viewLift = 0;
 const liftView = () => {
-  const sheet = narrow.matches ? [bubble, $('parts')].find((el) => el.classList.contains('open')) : null;
+  const sheet = narrow.matches ? [bubble, $('parts'), guidePanel].find((el) => el.classList.contains('open')) : null;
   const target = sheet ? sheet.offsetHeight / 2 : 0;
   if (Math.abs(target - viewLift) < 0.5) {
     if (viewLift === target) return;
@@ -445,7 +465,8 @@ const pickAt = (clientX, clientY) => {
     ((clientX - rect.left) / rect.width) * 2 - 1,
     -((clientY - rect.top) / rect.height) * 2 + 1,
   ), camera);
-  const hits = raycaster.intersectObject(assembly, true);
+  const shown = (o) => o.visible && (!o.parent || shown(o.parent));
+  const hits = raycaster.intersectObject(assembly, true).filter((h) => shown(h.object));
   const isGhost = (o) => o.material.transparent && ghosts.get(o.userData.base) === o.material;
   let hit = (hits.find((h) => !isGhost(h.object)) ?? hits[0])?.object;
   while (hit && !partByObject.has(hit)) hit = hit.parent;
@@ -503,9 +524,130 @@ addEventListener('keydown', (e) => {
   select(null);
   row?.focus();
 });
+
+// Build guide. guide.json lists only what each step changes. Folding the steps in order
+// gives every step its full scene, so any step can be opened directly.
+const pieceByName = new Map(pieces.map((p) => [nodeName(p.object), p]));
+const resolve = (ref) => parts.find((p) => p.id === ref)?.pieces ?? [pieceByName.get(ref)];
+const resolveAll = (refs = []) => refs.flatMap(resolve);
+// A number moves a piece that fraction of the way to its exploded spot; a vector is a
+// world offset in kit radii.
+const poseOffset = (piece, v) => (typeof v === 'number'
+  ? piece.offset.clone().multiplyScalar(v)
+  : toLocal(piece, new THREE.Vector3(...v).multiplyScalar(kitRadius)));
+const stages = [];
+{
+  const shown = new Set();
+  for (const step of guide) {
+    for (const p of resolveAll(step.remove)) shown.delete(p);
+    for (const p of resolveAll(step.add)) shown.add(p);
+    const pose = new Map(Object.entries(step.pose ?? {}).flatMap(([ref, v]) => resolve(ref).map((p) => [p, poseOffset(p, v)])));
+    stages.push({ step, index: stages.length, shown: new Set(shown), focus: new Set(resolveAll(step.focus ?? step.add)), pose });
+  }
+}
+const assembled = { shown: new Set(pieces), pose: new Map() };
+
+const shownBox = (scene) => {
+  const box = new THREE.Box3();
+  for (const p of scene.shown) {
+    p.object.position.copy(p.rest).add(scene.pose.get(p) ?? new THREE.Vector3());
+    box.expandByObject(p.object);
+  }
+  place();
+  return box;
+};
+
+// Pieces joining the scene fly in from their exploded spot; pieces leaving fly back out to it.
+let poseTween = null;
+const stageTo = (scene) => {
+  const moves = pieces.map((p) => {
+    const joining = scene.shown.has(p) && !p.object.visible;
+    const leaving = !scene.shown.has(p) && p.object.visible;
+    const to = (scene.pose.get(p) ?? new THREE.Vector3()).clone();
+    if (leaving) to.copy(p.pose).add(p.offset);
+    const from = joining ? to.clone().add(p.offset) : p.pose.clone();
+    if (joining) p.object.visible = true;
+    return { p, from, to, leaving };
+  });
+  const explodeFrom = explodeT;
+  tweens.delete(explodeTween);
+  tweens.delete(poseTween);
+  poseTween = animate(700, easeInOut, (e) => {
+    for (const m of moves) m.p.pose.lerpVectors(m.from, m.to, e);
+    setExplode(explodeFrom * (1 - e));
+    if (e === 1) for (const m of moves) if (m.leaving) m.p.object.visible = false;
+  });
+  for (const [part, button] of buttons) button.disabled = !part.pieces.some((p) => scene.shown.has(p));
+};
+
+const guideToggle = $('guide-toggle');
+const dots = $('guide-dots');
+for (const s of stages) {
+  const dot = document.createElement('button');
+  dot.type = 'button';
+  dot.className = 'dot';
+  dot.setAttribute('aria-label', `Step ${s.index + 1}: ${s.step.title}`);
+  dot.addEventListener('click', () => goTo(s.index));
+  dots.append(dot);
+}
+
+const setStepParam = (n) => {
+  const url = new URL(location.href);
+  if (n === null) url.searchParams.delete('step');
+  else url.searchParams.set('step', String(n + 1));
+  history.replaceState(null, '', url);
+};
+
+const goTo = (n) => {
+  stage = stages[clamp(n, 0, stages.length - 1)];
+  const { step, index } = stage;
+  document.documentElement.dataset.guide = '';
+  guideToggle.setAttribute('aria-pressed', 'true');
+  $('guide-count').textContent = `Step ${index + 1} of ${stages.length}`;
+  $('guide-title').textContent = step.title;
+  $('guide-body').textContent = step.body;
+  $('guide-gap').hidden = !step.gap;
+  $('guide-gap').textContent = step.gap ?? '';
+  const docs = $('guide-docs');
+  docs.hidden = !step.docs;
+  if (step.docs) docs.href = step.docs;
+  $('guide-prev').disabled = index === 0;
+  $('guide-next').textContent = index === stages.length - 1 ? 'Finish' : 'Next';
+  [...dots.children].forEach((d, i) => d.toggleAttribute('aria-current', i === index));
+  guidePanel.scrollTop = 0;
+  setStepParam(index);
+  if (selected) select(null);
+  else refocus();
+  showSheets();
+  stageTo(stage);
+  frameBox(shownBox(stage), { view: step.view });
+};
+
+const exitGuide = () => {
+  stage = null;
+  delete document.documentElement.dataset.guide;
+  guideToggle.setAttribute('aria-pressed', 'false');
+  setStepParam(null);
+  refocus();
+  showSheets();
+  stageTo(assembled);
+  frameBox(homeBox);
+};
+
+guideToggle.addEventListener('click', () => (stage ? exitGuide() : goTo(0)));
+$('guide-close').addEventListener('click', exitGuide);
+$('guide-prev').addEventListener('click', () => goTo(stage.index - 1));
+$('guide-next').addEventListener('click', () => (stage.index === stages.length - 1 ? exitGuide() : goTo(stage.index + 1)));
+addEventListener('keydown', (e) => {
+  if (!stage || e.target instanceof HTMLInputElement) return;
+  if (e.key === 'ArrowRight' && stage.index < stages.length - 1) goTo(stage.index + 1);
+  if (e.key === 'ArrowLeft' && stage.index > 0) goTo(stage.index - 1);
+});
+
 $('reset').addEventListener('click', () => {
   select(null);
-  frameBox(homeBox);
+  if (stage) frameBox(shownBox(stage), { view: stage.step.view });
+  else frameBox(homeBox);
 });
 
 camera.position.copy(kitCenter).add(new THREE.Vector3(1, 0.7, 1.3).normalize().multiplyScalar(kitRadius * 4));
@@ -516,8 +658,10 @@ controls.maxDistance = kitRadius * 12;
 const params = new URLSearchParams(location.search);
 setExplode(clamp(Number(params.get('explode')) || 0, 0, 1));
 const deepLinked = parts.find((p) => p.id === params.get('part'));
+const deepStep = Number(params.get('step'));
+if (deepStep) goTo(deepStep - 1);
 if (deepLinked) select(deepLinked, { frame: true });
-else frameBox(homeBox, { from: 1.3 });
+else if (!deepStep) frameBox(homeBox, { from: 1.3 });
 
 renderer.setAnimationLoop((now) => {
   stepTweens(now);
@@ -528,4 +672,4 @@ renderer.setAnimationLoop((now) => {
   placeBubble();
 });
 
-window.kitViewer = { parts, select, setExplode, camera, controls };
+window.kitViewer = { parts, select, setExplode, camera, controls, goTo, exitGuide };

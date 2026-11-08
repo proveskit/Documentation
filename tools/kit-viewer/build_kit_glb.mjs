@@ -17,6 +17,7 @@ import { MeshoptEncoder, MeshoptSimplifier } from 'meshoptimizer';
 import { mat4 } from 'gl-matrix';
 import { fileURLToPath } from 'node:url';
 import { PALETTE, materialKey } from './palette.mjs';
+import { CAD_FIXES } from './cad_fixes.mjs';
 
 const [input, output = fileURLToPath(new URL('../../docs/kit-viewer/kit.glb', import.meta.url))] = process.argv.slice(2);
 if (!input) {
@@ -111,6 +112,13 @@ for (const instance of assembly.listChildren()) {
   for (const child of instance.listChildren()) child.traverse((n) => descendants.push(n));
   descendants.forEach((n) => n.dispose());
   instance.setMesh(merged);
+}
+
+for (const instance of assembly.listChildren()) {
+  const fix = CAD_FIXES[instance.getName()];
+  if (!fix) continue;
+  const { translation, rotation } = fix({ translation: instance.getTranslation(), rotation: instance.getRotation() });
+  instance.setTranslation(translation).setRotation(rotation);
 }
 
 // keepAttributes: the cell UVs have no texture in the file; viewer.js supplies it.
