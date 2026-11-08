@@ -583,3 +583,8 @@ button.link:hover { background: transparent; text-decoration: underline; }
   .nav-button { min-height: 44px; }
   .guide .bubble-close { top: 2px; right: 2px; width: 44px; height: 44px; }
 }
+
+@media (max-width: 360px) {
+  /* The Explode button still plays the explode animation. */
+  #explode { display: none; }
+}
