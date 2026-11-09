@@ -98,32 +98,32 @@ There are a few key components of the kit that align with the usual lineup of sa
     [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/Z_solar_board.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/solar_boards)
 
--   :material-clock-fast:{ .lg .middle } __Camera Payload__
+-   :material-camera:{ .lg .middle } __Camera Payload__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    The V2 kit adds a Camera Driver Board and a Mux Driver Board as the reference payload. On Pleiades - Orpheus the camera could not be verified on orbit because a software bug held radio transmit power at 100mW.
     
     ![PROVES Structure](images/YearlingV2.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** V1 shipped in the V2 kit. <br>
+    1x Flight on Pleiades - Orpheus, unverified on orbit. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/1U_structure.md) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Kit Version Explainer](../quick_start/index.md#the-proves-kit-version-explainer) <br>
+    [:octicons-arrow-right-24: GitHub Organization](https://github.com/proveskit)
 
--   :material-clock-fast:{ .lg .middle } __Mechanisms__
+-   :material-cog-outline:{ .lg .middle } __Mechanisms__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    Tape measure antennas tied down with fishing line and released by a nichrome burn wire, plus the foot switches and Remove Before Flight pin that keep the satellite off until deployment.
     
     ![PROVES Structure](images/YearlingV2.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** Burn wire circuit on the Battery Board, inhibits in the 3D printed feet. <br>
+    Flown on Yearling 2 and Squared. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/1U_structure.md) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Burn Wire Circuit](../core_documentation/hardware/battery_board.md#the-burn-wire-circuit) <br>
+    [:octicons-arrow-right-24: Feet and Inhibits](../core_documentation/hardware/1U_structure.md#feet-assemblies)
 
 </div>

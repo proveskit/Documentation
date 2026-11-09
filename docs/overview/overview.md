@@ -12,7 +12,7 @@ In order to ensure that the educational experience provided by using a PROVES Ki
 | Pleiades - Yearling | January 2023, with Sapling - Sempervirens | Conceived February 2022 | Reached orbit. The orbital transfer vehicle failed after separating from the Falcon 9, so the satellite was never deployed and remains in its deployer pod |
 | Pleiades - Yearling 2 | April 8, 2024 | R&D began January 25, 2023, qualified by March 1, 2023. Two complete design iterations | Contact through TinyGS 7 minutes after deployment. Contact lost before the amateur radio mission started |
 | Pleiades - Squared | June 12, 2024 | 1 calendar week, rebuilt from the Yearling-2 engineering model as SN11 | Deployed early and lost for the first 5 hours. The amateur radio community re-established contact and downlinked telemetry. Early loss, but all core spacecraft systems were validated |
-| Pleiades - Orpheus | Scheduled Fall 2024 | | Irvington High School Girls in STEM Club mission, funded by Christie English |
+| Pleiades - Orpheus | December 2024, SpaceX Bandwagon-2 | | Irvington High School Girls in STEM Club mission, funded by Christie English |
 | The Pleiades Five | Selected in the 2024 NASA CSLI round | | Six 1U CubeSats from five colleges and universities plus the lead, Cal Poly Pomona |
 
 ## Pleiades - Yearling: The Chaotic First Attempt 
@@ -68,7 +68,7 @@ This satellite was launched on June 12, 2024. Due to an unexpectedly early deplo
 
 ## Pleiades - Orpheus: Going Upstream
 ***
-Scheduled to launch in Fall 2024, Pleiades - Orpheus will be the launch of a PROVES Kit based satellite from the Irvington High School Girls in STEM Club! Funded by the gracious donations of Christie English, the Orpheus project will be a trail of flowing the educational potential of the PROVES Kit upstream to a group of students from a public highschool in Fremont, California. 
+Launched in December 2024 on SpaceX Bandwagon-2, Pleiades - Orpheus is a PROVES Kit based satellite from the Irvington High School Girls in STEM Club! Funded by the gracious donations of Christie English, the Orpheus project is a trial of flowing the educational potential of the PROVES Kit upstream to a group of students from a public highschool in Fremont, California. 
 
 ## The Pleiades Five: This is Getting Out of Hand
 ***

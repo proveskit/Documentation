@@ -24,7 +24,7 @@ The primary structure of the satellite is usually considered the parts of the ph
 flowchart TB
     S["1U Primary Structure"]
     S --> HU["Half U ×2"]
-    S --> LB["L-Bracket ×2<br>joins top and bottom flanges"]
+    S --> LB["L-Bracket ×4<br>joins top and bottom flanges"]
     S --> CB["Card Brackets<br>carry internal boards"]
     S --> FT["Foot Assembly ×8<br>stacking interface + inhibit switches"]
     HU --> PEM["Pressed PEM-Nuts<br>for external mounting"]
@@ -36,7 +36,7 @@ flowchart TB
 | Component | Qty | Material | Recommended Fasteners |
 | --------- | --- | -------- | --------------------- |
 | Half U | 2 | 1.6mm 5052 formable aluminum sheet metal | CLS-M2.5-2 self-clinching nuts, 18-8 stainless steel M2.5x5mm T8 Torx panhead |
-| Brackets | 2 L-brackets plus card brackets | 1.6mm 5052 formable aluminum sheet metal | CLS-M2.5-2 self-clinching nuts, 18-8 stainless steel M2.5x5mm T8 Torx panhead |
+| Brackets | 4 L-brackets plus card brackets | 1.6mm 5052 formable aluminum sheet metal | CLS-M2.5-2 self-clinching nuts, 18-8 stainless steel M2.5x5mm T8 Torx panhead |
 | Feet assemblies | 8 | PA-12 nylon, MJF or SLS 3D printed | |
 
 !!! warning 
@@ -55,7 +55,7 @@ Two foot designs exist. We have no coined term for the current one, so we call i
 
 | | BroncoSat Style (current) | BIRDS Style (older part number) |
 | --- | --- | --- |
-| Switch | Mechanical limit switch wired Normally Closed | SDS005R microswitch |
+| Switch | Mechanical limit switch wired Normally Closed (NC). Throws open when depressed | SDS005R microswitch |
 | Actuation | M2 screw plunger through the foot opens the circuit when depressed. The switch's leaf spring rejects the plunger, a nut retains it | Depressed directly |
 | Assembly | | An incredible pain to assemble, and the switch can be burned through by the burn wire circuit |
 | Manufacturing | 3D printed, about $1 per foot | Can be CNC machined, about $54 per foot |
