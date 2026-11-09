@@ -88,7 +88,16 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
   - Quick Start Guide: # Quick start guide 
     - Introduction: quick_start/index.md
     - CubeSat Fundamentals: quick_start/cubesat_fundamentals.md
-    - Getting Started with PROVES: quick_start/proves_quick_start.md
+    - So You Have a PROVES Kit!: quick_start/proves_quick_start.md
+    - Set Up Your Development Environment: quick_start/setup/dev-environment.md
+    - Run a Ground Station: quick_start/setup/ground-station.md
+    - When Things Go Wrong: quick_start/setup/troubleshooting.md
+    - Paths:
+      - Software Only: quick_start/paths/software-only.md
+      - Flight Controller Board: quick_start/paths/flight-controller.md
+      - Radio Stick: quick_start/paths/radio-stick.md
+      - Full Kit: quick_start/paths/full-kit.md
+    - Legacy CircuitPython Quick Start: quick_start/legacy_circuitpython_quick_start.md
     - Contact an Orbiting Satellite: quick_start/contacting_proves.md
     - Becoming a Contributor: quick_start/becoming_contributor.md
     - Developer Guide: 

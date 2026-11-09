@@ -10,11 +10,11 @@
 
     [:octicons-arrow-right-24: CubeSat Fundamentals](https://docs.proveskit.space/en/latest/quick_start/cubesat_fundamentals/)
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+-   :material-clock-fast:{ .lg .middle } __So you have a PROVES Kit__
 
     ---
 
-    It is quick and easy to get started interacting with the PROVES Kit! Check out the quick start guide here.
+    Four paths from the box to your first command, whether you have the software only, a flight controller board, a radio stick, or a whole kit.
 
     [:octicons-arrow-right-24: Getting started](https://docs.proveskit.space/en/latest/quick_start/proves_quick_start/)
 
