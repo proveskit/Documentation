@@ -8,7 +8,7 @@ This section of the documentation goes in depth about all aspects of the PROVES 
 When we think about the PROVES Kit we generally split our thoughts into hardware related and software related needs. Hardware covers all of the physical aspects of the kit, ranging from the structure to all of the electronics that make it go. Software covers flight software, operations software, and also the testing scripts that help to validate the kit. 
 
 ## Looking for Helpful Links? 
-Make sure to check out the [quick reference section](https://docs.proveskit.space/en/latest/core_documentation/quick_reference/) for some of our favorite external resources! 
+Make sure to check out the [quick reference section](quick_reference.md) for some of our favorite external resources! 
 
 # Table of Contents
 - [Hardware](hardware/index.md)

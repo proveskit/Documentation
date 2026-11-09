@@ -29,17 +29,17 @@
     
     2. The second approach to inserting the battery board would be taking the Structure Halves apart and inserting the board along with any additional boards (battery board(s), development boards, payloads, etc.) into one of the Half U’s. Once the board is inserted, the holes on the bracket is aligned with the structure and fastened with the M2.5x5 Pan Head fasteners. The other Half U can be brought back in and installed like in the Building the Cube step, and the remaining bracket holes can be mounted to the structure.  **Figure 8.5**
 
-![Figure 8-5](images/8-5.png)
+![Figure 8-5](images/8-5.jpg)
 <p align="center">Figure 8.5: Approach 2 of Installing Battery Board Inside Structure</p>
 
 ### b. Applying Thermocouple
   - **i.** Apply space-rated glue to the Thermocouple and place it on the side of one of the two middle batteries. Make sure that the metal part of the thermocouple is touching the battery casing.
-  ![Figure 8-6](images/8-6.png)
+  ![Figure 8-6](images/8-6.jpg)
     <p align="center">Figure 8.6: Applied Thermocouple</p>
 
 ### c. Applying Thermal Blanket
   - **i.** Place strips of double-sided Kapton tape along the face of the batteries and press the thermal blanket down against the exposed tape.
-  ![Figure 8-7](images/8-7.png)
+  ![Figure 8-7](images/8-7.jpg)
     <p align="center">Figure 8.7: Applying Thermal Blanket</p>
   - **ii.** Fold the ends back against the outer-facing side of the thermal blanket.
   ![Figure 8-8](images/8-8.png)

@@ -1,5 +1,5 @@
 # Hardware Overview
-The PROVES kit hardware is completely open source and all design files are viewable on the [GitHub](www.github.com/proveskit).
+The PROVES kit hardware is completely open source and all design files are viewable on the [GitHub](https://github.com/proveskit).
 ## Overview
 The Hardware is split into the respective components of the structure, brackets, PCBs, and other hardware recommendations. 
 
