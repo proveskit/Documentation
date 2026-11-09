@@ -5,7 +5,7 @@ The PROVES kit XY Solar Boards...
 <p align="center">Figure 1: A Render of the Pleiades Five XY Solar Board</p>
 ## Getting Started
 
-!!! Find the Structure on Github [Here!](https://github.com/proveskit/solar_boards)
+!!! tip "Find the solar boards on [GitHub](https://github.com/proveskit/solar_boards)"
 
 ## Utilized Parts
 Each XY solar panel implements the following elements:
