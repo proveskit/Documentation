@@ -56,7 +56,7 @@ Rachel led the design of both the 3.3V and 5V switching regulator schematics. Th
 This is a section for storing quick reference images and notes regarding the design of the PROVES Prime Mainboard. 
 
 ### RP2350 Pin Definitions
-!!! "Source"
+!!! info "Source"
     https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
 
 ![RP2350 Pins 1](images/rp2350_data_1.PNG)

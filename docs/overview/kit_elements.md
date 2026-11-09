@@ -9,7 +9,7 @@ There are a few key components of the kit that align with the usual lineup of sa
 - Flight Software 
 - Ground Support Systems
 
-!!! "3D Visualizer"
+!!! info "3D Visualizer"
     The team from Northeastern made this really cool [visualization](https://autode.sk/4eVLtiX) of the kit! You can even do an exploded view with it. You can also explore the kit right here in the docs with the [Interactive 3D Kit](../kit-viewer/index.md).
 
 <div class="grid cards" markdown>
@@ -98,32 +98,32 @@ There are a few key components of the kit that align with the usual lineup of sa
     [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/Z_solar_board.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/solar_boards)
 
--   :material-clock-fast:{ .lg .middle } __Camera Payload__
+-   :material-camera:{ .lg .middle } __Camera Payload__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    The V3 PROVES Kit carries an Arduino Nicla Vision as its camera payload.
     
     ![PROVES Structure](images/YearlingV2.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** Part of the upcoming V3 kit. <br>
+    No Flight Heritage Yet. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/1U_structure.md) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Kit Version Explainer](../quick_start/index.md#the-proves-kit-version-explainer) <br>
+    [:octicons-arrow-right-24: Arduino Nicla Vision](https://docs.arduino.cc/hardware/nicla-vision/)
 
--   :material-clock-fast:{ .lg .middle } __Mechanisms__
+-   :material-cog-outline:{ .lg .middle } __Mechanisms__
 
     ---
 
-    The backbone of the CubeSat! Made out of bent 5052 Aluminum sheet metal. 
+    Tape measure antennas tied down with fishing line and released by a nichrome burn wire, plus the foot switches and Remove Before Flight pin that keep the satellite off until deployment.
     
     ![PROVES Structure](images/YearlingV2.jpg)
 
-    **Status:** V2.1 is Supported! <br>
-    V1 has 3x Flight Heritage. 
+    **Status:** Burn wire circuit on the Battery Board, inhibits in the 3D printed feet. <br>
+    Flown on Yearling 2 and Squared. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/1U_structure.md) <br>
-    [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
+    [:octicons-arrow-right-24: Burn Wire Circuit](../core_documentation/hardware/battery_board.md#the-burn-wire-circuit) <br>
+    [:octicons-arrow-right-24: Feet and Inhibits](../core_documentation/hardware/1U_structure.md#feet-assemblies)
 
 </div>

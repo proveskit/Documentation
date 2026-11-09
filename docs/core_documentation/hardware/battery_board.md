@@ -19,21 +19,30 @@ Currently there is one officially supported version of the batery board and one 
 ## Functionalities
 
 ```mermaid
-graph TD
-    A[Start] --> B[Boot Sequence]
-    B --> C{Check Power Mode}
-    C -->|Critical| D[Critical Power Operations]
-    C -->|Low| E[Low Power Operations]
-    C -->|Normal| F[Normal Power Operations]
-    C -->|Maximum| G[Maximum Power Operations]
-    D --> C
-    E --> C
-    F --> C
-    G --> C
+stateDiagram-v2
+    [*] --> Boot
+    Boot --> CheckPowerMode
+    CheckPowerMode --> Critical: critical
+    CheckPowerMode --> Low: low
+    CheckPowerMode --> Normal: normal
+    CheckPowerMode --> Maximum: maximum
+    Critical --> CheckPowerMode
+    Low --> CheckPowerMode
+    Normal --> CheckPowerMode
+    Maximum --> CheckPowerMode
 ```
 
 ## Block Diagram
 ![EPS Block Diagram](images/eps_block.png)
+
+## Connectors
+The board serves as an interface with the rest of the satellite.
+
+| Connector | Count | Connects to |
+| --------- | ----- | ----------- |
+| 12 position Picolock | 1 | Flight Controller |
+| 5 position Picolock | 5 | Solar faces |
+| 2 position Picolock | 4 | Inhibit scheme, battery heater, burn wire, direct charging port |
 
 ## The Inhibit Scheme 
 One of the most important functions of the battery board is to properly inhibit the satellite and ensure that no electrical power flows while it is inside the deployer pod. For this purpose, there are a set of limit switches that can be attatched to the 2pos headers on the battery board that are thrown open when inside a deployer pod to cut off battery power from the satellite. Usually the requirement is only for two inhibits in series, but we use a 2s2p configuration for redundancy. 
@@ -44,74 +53,61 @@ One of the most important functions of the battery board is to properly inhibit 
     V2 and earlier battery boards are not ISS compliant as there is no low side inhibit switch that fully isolates the batteries from the rest of the electrical subsystems. 
 
 ## Utilized Parts
-The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions. The board serves as an interface with the rest of the satellite. A 12 position picolock is utilized to interface between the Flight Controller and the Battery Board. The board interfaces with 5 solar faces of the satellite using 5 position picolocks. The other 2 position picolocks are used for interfacing with the inhibit scheme, battery heater, burn wire, and direct charging port. The hardware utilized on the module is the following:
+The battery board flown on the Pleiades-Yearling and Pleiades-Squared missions uses the following hardware. Parts marked PyCubed are borrowed from Max Holliday's PyCubed.
+
+| Function | Part | Notes | Origin |
+| -------- | ---- | ----- | ------ |
+| Solar charger | LT3652 | Emulates MPPT rather than implementing true MPPT. A microcontroller-managed true MPPT circuit is a future goal | |
+| Solar face power switching | PCA9685 LED driver | Selectively powers each face so a faulty face can be isolated. Moved to the Z- panel in V3 | |
+| I2C fan-out | TCA9548 I2C multiplexer | One flight computer bus becomes one channel per face, so identical sensor addresses coexist, and a failed sensor only takes down its own face. Moved to the Z- panel in V3 | |
+| 3.3V and 5V switching regulators | TPS54226PWP, two of them | Primary supply for the microcontroller and sensors. "One Shot" regulator reset lets the power bus be reset for fault recovery. A radiation hardened part exists in the family. [Datasheet](https://www.ti.com/lit/ds/symlink/tps54226.pdf) | PyCubed |
+| 5V RF LDO regulator | TPS7A4501 | Clean 5V for the radio on the flight controller. Linear, so less efficient than switching, but lower noise. A radiation hardened part exists in the family. [Datasheet](https://www.ti.com/lit/ds/symlink/tps7a45.pdf) | PyCubed |
+| Power monitors | INA219 | Real-time solar input and system consumption. Extensive CubeSat flight heritage | |
+| Temperature sensor | PTC2075 | Ambient temperature inside the satellite | |
+| Battery protection | R5460N208AA | Disconnects the battery on overcharge or overdischarge | PyCubed |
+| Relay | APAN3109 | Gates battery voltage to the heater and burn wire MOSFETs | |
+| Burn wire and heater switches | NDS8434 MOSFETs | PWM from the microcontroller on the gate modulates the burn wire voltage | PyCubed |
 
 ### LT3652 Solar Charger 
-This component is used to charge the satellite's batteries using power harvested from solar panels. This part is not a true MPPT solar charger, but it emulates one. There is debate as to whether true MPPT is worth it on small 1U class satellites due to its extra complexity. In the future we will look towards using the microcontroller on the battery board to manage a true MPPT charging curcuit. 
-
 ![Solar Charger Circuit](images/solar_charge_circuit.png)
 <p align="center">Figure 2: The LT3652 Schematic</p>
 
-### PCA9685 LED Driver
-The PCA9685 LED Driver controls the power distribution to the solar faces. It enables selective powering of solar face components, facilitating isolation and power-down of specific faces in case of malfunction, thus protecting the system and conserving energy.
-
-!!! note
-    In V3 of the battery board this circuit was moved to the Z- panel of the satellite.
-
-### TCA9548 I2C Multiplexer
-The TCA9548 I2C Multiplexer expands a single I2C bus from the flight computer into multiple channels. This design simplifies the communication with multiple sensors on different solar faces while keeping their addresses identical, enhancing the modularity and scalability of the system. The TCA also appears to provide some level of bus protection, so in the case of an I2C sensor failure the fault is limited to only the face that the sensor is on rather than also interupting all other I2C sensors on the satellite. 
-
-!!! note
-    In V3 of the battery board this circuit was moved to the Z- panel of the satellite.
-
-### TPS54226PWP Switching Voltage Regulator
-These two Switching Voltage Regulators are the primary regulator for supplying the microcontroller and sensors onboard the satellite. They creates a stable 3.3V and 5V power supply from the variable battery voltage, and its "One Shot" Regulator Reset feature provides a way to reset the power bus, aiding in system recovery and fault tolerance. This part is borrowed from Max Holliday's PyCubed, and is believed to be slightly more radiation tolerant than other switching regulators due to there being a radiation hardened version in the part family. 
-
+### TPS54226PWP Switching Voltage Regulators
 ![3.3V Regulator Circuit](images/3v3_reg.png)
 <p align="center">Figure 3: The 3.3V Regulator Schematic</p>
 
 ![5V Regulator Circuit](images/5V_reg.png)
 <p align="center">Figure 4: The 5V Switching Regulator Schematic</p>
 
-[Link to Datasheet](https://www.ti.com/lit/ds/symlink/tps54226.pdf?ts=1721422838875&ref_url=https%253A%252F%252Fwww.google.com%252F)
-
 ### TPS7A4501 LDO Voltage Regulator
-The TPS7A4501 LDO Voltage Regulator is essential for supplying a stable 5V power to critical components like the radio on the flight controller. Although a linear regulator is more inefficient than a switching one, there are significantly lower concerns of noise on the power lines. This is important for ensuring an electrically clean enviroment for the radio to operate in. This part is borrowed from Max Holliday's PyCubed, and is believed to be slightly more radiation tolerant than other switching regulators due to there being a radiation hardened version in the part family. 
-
 ![5V RF Regulator Circuit](images/5V_VRF.png)
 <p align="center">Figure 5: The 5V RF Regulator Schematic</p>
 
-[Link to Datasheet](https://www.ti.com/lit/ds/symlink/tps7a45.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1721422924204&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D26%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps7a45)
-
 ### INA219 Power Monitors
-These Power Monitors are crucial for real-time tracking of power input from solar cells and power consumption across the system. They provide valuable data for monitoring the health of the electrical power system and for optimizing power usage. These power monitors have extensive flight heritage across many CubeSats. 
-
 ![Power Monitor Circuits](images/power_monitors.png)
 <p align="center">Figure 6: The INA Power Monitors Schematic</p>
 
-### PTC2075 Temperature Sensor
-The PTC2075 Temperature Sensor provides ambient temperature data from inside the satellite. This information is vital for thermal management, ensuring that the satellite's components operate within their safe temperature ranges.
-
-### R5460N208AA
-The R5460N208AA plays a protective role by disconnecting the battery in cases of overcharge or overdischarge. This function is critical for battery health and safety, preventing potential damage to the power system. This part is borrowed from Max Holliday's PyCubed. 
-
-### APAN3109 Relay
-The APAN3109 Relay is used to control the flow of current to the battery heater and burn wire MOSFETs. It is an essential component for managing the deployment mechanisms and thermal systems of the satellite.
-
 ### The Burn Wire Circuit
 ![Burn Wire and Battery Heater Circuits](images/Burn_Circuit.PNG)
-<p align="center">Figure 6: The Burnwire and Heater Schematic</p>
+<p align="center">Figure 7: The Burnwire and Heater Schematic</p>
 In order to hold the antennas in a stowed position during launch we tie them off with a fishing line and use a nichrome wire to burn through that fishing line when it is time to deploy. This circuit is borrowed from Max Holliday's PyCubed. The NDS8434 MOSFETS are fed battery voltage to their sources when the APAN relay is closed and the voltage that they transmit through to the burnwire is modulated using a PWM signal from the uController fed into the gate. 
 
 !!! bug "Burnwire Burn Through"
 
-    If the power that flows through the NDS MOSFETs is too high the circuit will "burn through" and cause a short circuit that will trigger an overcurrent event any time battery voltage is introduced to the circuit. The attatched table from the ON Semi datasheet shows that although the max drain current is 6.5A, the MOSFET can only disapate between 1W and 2.5W. 
+    If the power that flows through the NDS MOSFETs is too high the circuit will "burn through" and cause a short circuit that will trigger an overcurrent event any time battery voltage is introduced to the circuit. The attatched table from the ON Semi datasheet shows the limits.
 
     ![MOSFET Max Ratings](images/max_mos.PNG)
 
-    Right now, to consistently burn the burn wire we need to use a duty cycle of around `0.22`, which (assuming a wire resistance of ~0.3 Ohms and battery voltage of 8.0V) correlates to sending 8.53W through the circuit! Way higher than what is safe. 
+    | Parameter | Value |
+    | --------- | ----- |
+    | NDS8434 max drain current | 6.5 A |
+    | NDS8434 max power dissipation | 1 W to 2.5 W |
+    | Duty cycle needed to burn the wire | ~0.22 |
+    | Assumed wire resistance | ~0.3 Ω |
+    | Assumed battery voltage | 8.0 V |
+    | Power through the circuit at that duty cycle | **8.53 W** |
 
-    We are currently looking at changing this entire circuit out for the V4 Battery Board.
+    Way higher than what is safe. We are currently looking at changing this entire circuit out for the V4 Battery Board.
 
 
 ## Known Issues
@@ -133,8 +129,8 @@ In order to hold the antennas in a stowed position during launch we tie them off
 ![Battery Board V3a Schematic](images/bbv3a_sch.PNG)
 <p align="center">The V3a Battery Board Schematic</p>
 
-![Battery Board V3a Schematic](images/bbv3b_sch.PNG)
+![Battery Board V3b Schematic](images/bbv3b_sch.PNG)
 <p align="center">The V3b Battery Board Schematic</p>
 
-![Battery Board V3a Schematic](images/bbv3c_sch.PNG)
+![Battery Board V3c Schematic](images/bbv3c_sch.PNG)
 <p align="center">The V3c Battery Board Schematic</p>
