@@ -102,15 +102,15 @@ There are a few key components of the kit that align with the usual lineup of sa
 
     ---
 
-    The V2 kit adds a Camera Driver Board and a Mux Driver Board as the reference payload. On Pleiades - Orpheus the camera could not be verified on orbit because a software bug held radio transmit power at 100mW.
+    The V3 PROVES Kit carries an Arduino Nicla Vision as its camera payload.
     
     ![PROVES Structure](images/YearlingV2.jpg)
 
-    **Status:** V1 shipped in the V2 kit. <br>
-    1x Flight on Pleiades - Orpheus, unverified on orbit. 
+    **Status:** Part of the upcoming V3 kit. <br>
+    No Flight Heritage Yet. 
 
     [:octicons-arrow-right-24: Kit Version Explainer](../quick_start/index.md#the-proves-kit-version-explainer) <br>
-    [:octicons-arrow-right-24: GitHub Organization](https://github.com/proveskit)
+    [:octicons-arrow-right-24: Arduino Nicla Vision](https://docs.arduino.cc/hardware/nicla-vision/)
 
 -   :material-cog-outline:{ .lg .middle } __Mechanisms__
 
