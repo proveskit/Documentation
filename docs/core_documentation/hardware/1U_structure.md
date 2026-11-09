@@ -18,42 +18,53 @@ The PROVES kit "1U" structure was designed around maximum customizability. With 
     <p align="center">Figure B2: A Close Up of the Proto Structure</p>
    
 ## The Primary Structure
-The primary structure of the satellite is usually considered the parts of the physical structure that will carry load during the launch environment and define the first resonant mode. Within the PROVES Kit we have two “Half U’s” that are joined by two “L-Brackets” connecting the top and bottom flanges of the half U’s”. The Half-U’s have a series of holes that run up and down the structure to provide spots for mounting “Card Brackets” which carry any component that needs to be held inside of the CubeSat. Additionally, there are eight “Foot Assemblies” that serve the dual purpose of providing a uniform satellite to satellite interface (when multiple 1U’s are stacked with each other) and containing the inhibit switches that keep the satellite turned off while it is inside the deployer. 
+The primary structure of the satellite is usually considered the parts of the physical structure that will carry load during the launch environment and define the first resonant mode. 
+
+```mermaid
+flowchart TB
+    S["1U Primary Structure"]
+    S --> HU["Half U ×2"]
+    S --> LB["L-Bracket ×2<br>joins top and bottom flanges"]
+    S --> CB["Card Brackets<br>carry internal boards"]
+    S --> FT["Foot Assembly ×8<br>stacking interface + inhibit switches"]
+    HU --> PEM["Pressed PEM-Nuts<br>for external mounting"]
+```
+
 ![Figure 2](images/Structure_2.jpg)
 <p align="center">Figure 2: The Raw PROVES Kit Structure Components</p>
+
+| Component | Qty | Material | Recommended Fasteners |
+| --------- | --- | -------- | --------------------- |
+| Half U | 2 | 1.6mm 5052 formable aluminum sheet metal | CLS-M2.5-2 self-clinching nuts, 18-8 stainless steel M2.5x5mm T8 Torx panhead |
+| Brackets | 2 L-brackets plus card brackets | 1.6mm 5052 formable aluminum sheet metal | CLS-M2.5-2 self-clinching nuts, 18-8 stainless steel M2.5x5mm T8 Torx panhead |
+| Feet assemblies | 8 | PA-12 nylon, MJF or SLS 3D printed | |
 
 !!! warning 
     When selecting fasteners do not use Zinc Plated. Although the risk is low, use of Zinc Plated Fasteners for flight can cause issues with your launch provider. See this [NASA site](https://nepp.nasa.gov/whisker/reference/tech_papers/Brusse2003-Zinc-Whisker-Awareness.pdf) for more details. 
 
-### Half U's
-- **Material:** 1.6mm Thickness 5052 Formable Aluminum Sheet Metal 
-- **Recommended Fasteners:** CLS-M2.5-2, Self-Clinching Nuts | 18-8 Stainless Steel M2.5x5mm T8 Torx Panhead
 ![Figure 3](images/Structure_3.jpg)
 <p align="center">Figure 3: The Half U's</p>
 
-### Brackets 
-- **Material:** 1.6mm Thickness 5052 Formable Aluminum Sheet Metal 
-- **Recommended Fasteners:** CLS-M2.5-2, Self-Clinching Nuts | 18-8 Stainless Steel M2.5x5mm T8 Torx Panhead
-
 ### Feet Assemblies 
-- **Material:** PA-12 Nylon made in MJF or SLS 3D Printing Process
-- **Recommended Fasteners:** 
-
 The structure also maintains mounting holes for feet on each structure half, and each 3D printed foot can house switches for inhibiting the satellite. When the satellite is in the deployment pod on its way to space, it needs to remain off until it has been deployed. While the satellite is in the pod, its feet are covered, and thus embedded switches can be depressed to inhibit the satellite. After the satellite is deployed, with nothing depressing the switches, the satellite can spring to life. 
 
 ![Figure 4](images/Structure_4.jpg)
 <p align="center">Figure 4: The Current Footswitch Design</p>
 
-There doesn’t seem to be a coined term for the method we use for the inhibit switches, so we just call them the “BroncoSat Style” because we first used it on BroncoSat-1. This style of inhibit features a mechanical limit switch that is wired in the Normally Closed (NO) form, with an M2 screw is used as a plunger that travels through the foot and clicks the circuit into the Open state when the plunger is depressed. We take advantage of the built in leaf spring on the limit switch to reject the plunger when there is nothing holding it down, and a nut is present to retain the plunger within the satellite. 
+Two foot designs exist. We have no coined term for the current one, so we call it "BroncoSat Style" because we first used it on BroncoSat-1. The older one we call "BIRDS Style" because it is used by the Japanese BIRDS Open Source CubeSat Bus.
 
-The primary reason that we opted to 3D print the feet rather than machine them is to save a radical amount of cost for the complex geometry needed. For anecdotal comparison, each of the 3D printed feet costs exactly \$1 to manufacture whereas one of our CNC feet would cost about \$54. 
-
-There also exists an older part number that uses SDS005R microswitches to detect deployment. We refer to this as “BIRDS Style” because it is used by the Japanese BIRDS Open Source CubeSat Bus. The reason these switches are no longer used is that they are an incredible pain to assemble into the satellite and sometimes can be burned through by the burn wire circuit. These older feet can be used if you must absolutely optimize internal volume or need a part that can be CNC machined when the extra strength is needed or a launch provider will not budge on the requirement that all the touch points for the structure must be made of metal. 
+| | BroncoSat Style (current) | BIRDS Style (older part number) |
+| --- | --- | --- |
+| Switch | Mechanical limit switch wired Normally Closed | SDS005R microswitch |
+| Actuation | M2 screw plunger through the foot opens the circuit when depressed. The switch's leaf spring rejects the plunger, a nut retains it | Depressed directly |
+| Assembly | | An incredible pain to assemble, and the switch can be burned through by the burn wire circuit |
+| Manufacturing | 3D printed, about $1 per foot | Can be CNC machined, about $54 per foot |
+| Use when | Default | You must optimize internal volume, need extra strength, or the launch provider requires metal touch points |
 
 ## Peripheral Hardware
 A Remove Before Flight ("RBF") switch and pin can also be added to the satellites top cap PCB for inhibitting the satellite as it is transported and placed in the deployment pod. The bracket that is mounted to the top cap PCB can house the switch and the top cap PCB features a hole for dropping a pin into place to depress the RBF switch.
 
-![Figure 5](images/Structure_5.png)
+![Figure 5](images/structure_5.png)
 <p align="center">Figure 5: Taking the Jig for a Spin</p>
 
 The Jig is also a valuable piece of hardware for squaring up the structure during assembly. We recommend 3D printing one on a printer known to have good dimensional accuracy and using it throughout the build and intergration process.
@@ -67,4 +78,12 @@ For fun, Adam Elsharhawy has also been working on a carbon fiber varient of the 
 <p align="center">Figure 6: Carbon Fiber!</p>
 
 ## Qualified for space
-An Earlier version of the kit was vibration tested for 20 g's RMS. As stated earlier, the kit's structure can withstand the weight of an adult. The kit has been put through intense thermal cycling and has also survived. After two mission successes, the PROVES kit structure can easily qualify for space.
+
+| Test | Result |
+| ---- | ------ |
+| Random vibration (earlier version of the kit) | Survived 20 g RMS |
+| Static load | Withstands the weight of an adult |
+| Thermal cycling | Survived intense cycling |
+| Flight | Two mission successes |
+
+After two mission successes, the PROVES kit structure can easily qualify for space.

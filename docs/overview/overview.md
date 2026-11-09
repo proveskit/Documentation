@@ -7,6 +7,14 @@ The PROVES Kit blends Open-Source Hardware and Software. The Hardware developed 
 ## Flight Heritage
 In order to ensure that the educational experience provided by using a PROVES Kit here on Earth is as authentic as possible we strove to fly it in outer space and verify that something can indeed be built with a BOM cost of less than $1k and do all of the core functions of a satellite. 
 
+| Mission | Launch | Build time | Outcome |
+| ------- | ------ | ---------- | ------- |
+| Pleiades - Yearling | January 2023, with Sapling - Sempervirens | Conceived February 2022 | Reached orbit. The orbital transfer vehicle failed after separating from the Falcon 9, so the satellite was never deployed and remains in its deployer pod |
+| Pleiades - Yearling 2 | April 8, 2024 | R&D began January 25, 2023, qualified by March 1, 2023. Two complete design iterations | Contact through TinyGS 7 minutes after deployment. Contact lost before the amateur radio mission started |
+| Pleiades - Squared | June 12, 2024 | 1 calendar week, rebuilt from the Yearling-2 engineering model as SN11 | Deployed early and lost for the first 5 hours. The amateur radio community re-established contact and downlinked telemetry. Early loss, but all core spacecraft systems were validated |
+| Pleiades - Orpheus | Scheduled Fall 2024 | | Irvington High School Girls in STEM Club mission, funded by Christie English |
+| The Pleiades Five | Selected in the 2024 NASA CSLI round | | Six 1U CubeSats from five colleges and universities plus the lead, Cal Poly Pomona |
+
 ## Pleiades - Yearling: The Chaotic First Attempt 
 ***
 We began this process with Pleiades - Yearling, which was conceived in Feburary 2022 as the brain child of Michael Pham and Megan Beck. This satellite was hot on the heels of BroncoSat-1 and, inspired by our friends at PSAS, we first tried to use a modular backplane solution that we were going to call the Lovelace Architecture. 

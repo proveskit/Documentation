@@ -54,6 +54,14 @@ Check out a summary of thier mission [here!](https://www.earthdata.nasa.gov/lear
 ***
 ## The Other Open Source CubeSat Architectures
 
+| Architecture | Developer | Since | Form | Flights | Relation to PROVES |
+| ------------ | --------- | ----- | ---- | ------- | ------------------ |
+| PyCubed | Max Holliday, Stanford University | Announced at SmallSat 2019 | Single board avionics | Latest: NASA Py4 | PyCubed v5 is the forebearer of our 3PySquared architecture |
+| PolyCubed | Bronco Space, private fork of PyCubed V4 | BroncoSat-1 | Single board, maximum features | BroncoSat-1 | Never open sourced. Design files available privately on request |
+| OreSat | Portland State Aerospace Society | PSAS founded 1996 | Modular card cage | OreSat-0 flown, OreSat-0.5 upcoming | Basis of Bronco Space's SCALES flight computer |
+| Artemis CubeSat Kit | Hawai'i Space Flight Lab, University of Hawai'i at Manoa | | Kit under $5k with a space mission course | | Education course from universities down to middle and high schools |
+
+
 #### The PyCubed
 The PyCubed architecture was developed by the man, the myth, the legend, Max Holliday while he was a Ph.D student at Stanford University. Since it was announced to the world at the SmallSat 2019 the PyCubed took the world by storm with the promise of being an easy to use and very low cost solution for CubeSat avionics. 
 

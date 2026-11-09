@@ -78,6 +78,19 @@ Ask the agent to explain each command before it runs it. The goal is that you un
 
 ## Where to go next
 
+```mermaid
+flowchart LR
+    DEV["Set up your<br>development environment"] --> SW["Software only"]
+    DEV --> GS["Run a ground station"]
+    GS --> FC["Flight controller board"]
+    GS --> RS["Radio stick"]
+    GS --> FK["Full kit"]
+    SW -. problem? .-> TS["When things go wrong"]
+    FC -. problem? .-> TS
+    RS -. problem? .-> TS
+    FK -. problem? .-> TS
+```
+
 1. Read [Set up your development environment](setup/dev-environment.md). Every path needs it.
 2. If you have hardware, read [Run a ground station](setup/ground-station.md).
 3. Follow your path from the cards above.
@@ -87,32 +100,17 @@ If your kit still runs the older CircuitPython software, the [legacy CircuitPyth
 
 ## Glossary
 
-Bootloader
-:   A small program that runs first when the board powers on. Ours is MCUboot. It checks that the flight software is signed with the right key, then starts it.
-
-Build
-:   Turning the source code into a file the board can run. For us the result is `bootable.uf2`.
-
-Flash (verb)
-:   Copying a built program onto the board.
-
-GDS
-:   The F Prime Ground Data System. A web page on your computer that shows telemetry and lets you send commands.
-
-Repository (repo)
-:   A folder of source code tracked by Git, usually hosted on GitHub.
-
-Telemetry
-:   Measurements the satellite sends down, such as battery voltage and temperatures.
-
-Toolchain
-:   The compilers and tools that turn source code into a program for the board. `make` installs ours.
-
-UF2
-:   A file format the RP2350 bootloader accepts. You copy a `.uf2` file to the board like you copy a file to a USB drive.
-
-YAMCS
-:   Yet Another Mission Control System. An alternative to the GDS with a web interface built for mission operations.
+| Term | Meaning | In this guide |
+| ---- | ------- | ------------- |
+| **Bootloader** | A small program that runs first when the board powers on. It checks that the flight software is signed with the right key, then starts it | MCUboot |
+| **Build** | Turning the source code into a file the board can run | The result is `bootable.uf2` |
+| **Flash** (verb) | Copying a built program onto the board | Copy `bootable.uf2` to the `RP2350` drive |
+| **GDS** | The F Prime Ground Data System. A web page on your computer that shows telemetry and lets you send commands | `make gds` |
+| **Repository** (repo) | A folder of source code tracked by Git, usually hosted on GitHub | `proves-core-reference` |
+| **Telemetry** | Measurements the satellite sends down, such as battery voltage and temperatures | The **Channels** tab in the GDS |
+| **Toolchain** | The compilers and tools that turn source code into a program for the board | `make` installs ours |
+| **UF2** | A file format the RP2350 bootloader accepts. You copy a `.uf2` file to the board like you copy a file to a USB drive | `bootable.uf2`, `mcuboot.uf2` |
+| **YAMCS** | Yet Another Mission Control System. An alternative to the GDS with a web interface built for mission operations | `make yamcs` |
 
 *[RP2350]: The Raspberry Pi microcontroller on the V5e flight controller board
 *[LoRa]: A long-range, low-power radio modulation
