@@ -4,7 +4,7 @@ You have a fully assembled 1U PROVES Kit. Flight software is already on board, w
 
 Before you start, finish [Set up your development environment](../setup/dev-environment.md).
 
-<iframe src="../../kit-viewer/viewer.html?part=antenna-board" title="Antenna board in the PROVES Kit 3D viewer" style="width: 100%; height: 50vh; border: 0; border-radius: 8px;" loading="lazy" allow="fullscreen"></iframe>
+<iframe src="../../../kit-viewer/viewer.html?part=antenna-board" title="Antenna board in the PROVES Kit 3D viewer" style="width: 100%; height: 50vh; border: 0; border-radius: 8px;" loading="lazy" allow="fullscreen"></iframe>
 
 Everything you touch on an assembled kit is on the **antenna board**, the top face with the two tape-measure antennas. Press **Build** in the viewer to see how the kit goes together, or open the [build guide](../../kit-viewer/viewer.html?step=1) full screen.
 

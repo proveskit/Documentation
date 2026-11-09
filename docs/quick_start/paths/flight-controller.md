@@ -4,7 +4,7 @@ You have a V5e Flight Controller Board on its own. By the end of this page the b
 
 Before you start, finish [Set up your development environment](../setup/dev-environment.md).
 
-<iframe src="../../kit-viewer/viewer.html?part=flight-controller" title="Flight controller board in the PROVES Kit 3D viewer" style="width: 100%; height: 50vh; border: 0; border-radius: 8px;" loading="lazy" allow="fullscreen"></iframe>
+<iframe src="../../../kit-viewer/viewer.html?part=flight-controller" title="Flight controller board in the PROVES Kit 3D viewer" style="width: 100%; height: 50vh; border: 0; border-radius: 8px;" loading="lazy" allow="fullscreen"></iframe>
 
 ## What you need
 
