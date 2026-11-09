@@ -61,7 +61,7 @@ Hold the antenna in place to solder it to the board. You can have someone hold i
 
 ![Figure 5.6 Fed Antenna end on one side.](images/Feed.jpeg)
 
-![Figure 5.6a Soldered Antenna ends.](images/soldered.jpeg)
+![Figure 5.6a Soldered Antenna ends.](images/Soldered.jpeg)
 
 ## Soldering RFSMA Adapter
 

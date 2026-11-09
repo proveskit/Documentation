@@ -1,4 +1,5 @@
 site_name: The PROVES Kit Documentation
+site_url: https://docs.proveskit.com/en/latest/
 
 theme: 
   name: material
@@ -193,3 +194,7 @@ extra:
   social:
     - icon: material/github 
       link: https://github.com/proveskit
+validation:
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn

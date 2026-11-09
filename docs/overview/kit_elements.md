@@ -25,7 +25,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V2.1 is Supported! <br>
     V1 has 3x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/1U_structure/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/1U_structure.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
 
 -   :material-battery-charging-100:{ .lg .middle } __Battery / EPS Board__
@@ -39,7 +39,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V3a/ V3b / V3c Supported! <br>
     V2 has 2x Flight Heritage. V3 introduces a redundant microcontroller.
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/battery_board/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/battery_board.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/battery_board)
 
 -   :fontawesome-solid-computer:{ .lg .middle } __Internal Flight Controller__
@@ -53,7 +53,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V4a and V4b Supported! <br>
     No Flight Heritage Yet. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/FC_board/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/FC_board.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/flight_controller_board)
 
 -   :fontawesome-solid-computer:{ .lg .middle } __External Flight Controller__
@@ -67,7 +67,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V2 is Supported! <br>
     V1 has 2x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/FC_board/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/FC_board.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/flight_controller_board)
 
 -   :material-solar-power-variant-outline:{ .lg .middle } __XY Solar Board__
@@ -81,7 +81,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V1 is Supported! <br>
     V1 has 2x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/XY_solar_board/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/XY_solar_board.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/solar_boards)
 
 -   :material-solar-power-variant:{ .lg .middle } __Z- Solar Board__
@@ -95,7 +95,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V2 is In Development! <br>
     V1 has 2x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/Z_solar_board/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/Z_solar_board.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/solar_boards)
 
 -   :material-clock-fast:{ .lg .middle } __Camera Payload__
@@ -109,7 +109,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V2.1 is Supported! <br>
     V1 has 3x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/1U_structure/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/1U_structure.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
 
 -   :material-clock-fast:{ .lg .middle } __Mechanisms__
@@ -123,7 +123,7 @@ There are a few key components of the kit that align with the usual lineup of sa
     **Status:** V2.1 is Supported! <br>
     V1 has 3x Flight Heritage. 
 
-    [:octicons-arrow-right-24: Core Documentation Link](https://docs.proveskit.space/en/latest/core_documentation/hardware/1U_structure/) <br>
+    [:octicons-arrow-right-24: Core Documentation Link](../core_documentation/hardware/1U_structure.md) <br>
     [:octicons-arrow-right-24: GitHub Repo Link](https://github.com/proveskit/1U_structure)
 
 </div>

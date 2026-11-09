@@ -32,7 +32,7 @@ Set the solder jumpers for your configuration first:
 3. If a CircuitPython file system does not appear, you may have to flash the board with firmware. 
     - The most up to date firmware can be found [here](https://github.com/proveskit/flight_controller_board/tree/main/Firmware). 
     - If you have never installed CircuitPython before you can find instructions [here](https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython).
-4. Continue to the [PROVES Quick Start Guide](https://docs.proveskit.space/en/latest/quick_start/proves_quick_start/) for more!
+4. Continue to the [PROVES Quick Start Guide](../../quick_start/proves_quick_start.md) for more!
 
 ## Utilized Parts
 

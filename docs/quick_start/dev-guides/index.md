@@ -2,7 +2,7 @@
 Welcome to the development guide for our project! This guide will help you set up your development environment and get you started with contributing to the repository.
 
 !!! warning
-    This developer guide is out of date. It still works, but check out the latest [at this link](proveskit.github.io/pysquared/).
+    This developer guide is out of date. It still works, but check out the latest [at this link](https://proveskit.github.io/pysquared/).
 
 #### CircuitPython
 If this is your first time using CircuitPython, it is highly recommended that you check out Adafruit's [Welcome to CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/overview) to help you get started!
@@ -10,9 +10,9 @@ If this is your first time using CircuitPython, it is highly recommended that yo
 ## OS Specific Setup Guides
 We suggest you get started with the development guide for your operating system:
 
-- [Windows Setup](\dev-guide-windows.md)
-- [MacOS Setup](\dev-guide-macos.md)
-- [Linux Setup](\dev-guide-linux.md)
+- [Windows Setup](dev-guide-windows.md)
+- [MacOS Setup](dev-guide-macos.md)
+- [Linux Setup](dev-guide-linux.md)
 
 Once you have your development environment set up, you should be able to run the following command to finish the setup:
 ```sh
@@ -58,8 +58,8 @@ One of the really nice things about CircuitPython is the presence of the Read Pr
 
 Check out the following guides for how to use `repl.py` for quick testing and debugging of new and existing hardware:
 
-- [FlatSat Function Testing Using the REPL](\dev-guide-repl-function-tests.md)
-- [Testing a New Device Using the REPL](\dev-guide-repl-new-device-test.md)
+- [FlatSat Function Testing Using the REPL](dev-guide-repl-function-tests.md)
+- [Testing a New Device Using the REPL](dev-guide-repl-new-device-test.md)
 
 ## Continuous Integration (CI)
 This repo has a continuous integration system using Github Actions. Anytime you push code to the repo, it will run a series of tests. If you see a failure in the CI, you can click on the details to see what went wrong.

@@ -58,7 +58,7 @@ In this chapter the user will learn the steps to assemble a foot switch. A minim
 **5.** Wrap wires around leads as seen in Figure 2.5
 
 *<p align="center">**Figure 2.5**  </p>*
-![Figure 2-5](images/wirewrapping.PNG)
+![Figure 2-5](images/wirewrapping.png)
 **6.** Solder wires to heater leads
 **7.** Move heat shrink tubing up and use hot air to shrink tubing around heater leads
 </div>

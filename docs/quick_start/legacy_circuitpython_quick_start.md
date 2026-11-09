@@ -110,7 +110,7 @@ With an active instance of the ```cubesat``` class we can quickly send some pack
 
         If you are using a stand alone RFM98PW with a dev board you'll have to go through setting up the pins and radio object for the specific microcontroller you're pairing it with. We recommend referring to the [Adafruit RFM9x documentation](https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts/circuitpython-for-rfm9x-lora) for how to do that. 
 
-        This is the most basic pattern for receiving and demodulating messages. For more advanced (and useful) test patterns please refer to our dedicated page on [RFM9x Radio Usage](https://docs.proveskit.space/en/latest/core_documentation/software/rfm_radio_usage/).
+        This is the most basic pattern for receiving and demodulating messages. For more advanced (and useful) test patterns please refer to our dedicated page on [RFM9x Radio Usage](../core_documentation/software/rfm_radio_usage.md).
 
 2. You can now send a packet using a command such as: 
     ```c.radio1.send("Hello World!")```
