@@ -22,7 +22,8 @@ Read the error message first. The useful line is usually the first line that say
 | The board shows up as a drive called `CIRCUITPY` | The board runs CircuitPython, not the flight software | Follow the first-time steps in [Flight controller board](../paths/flight-controller.md) to install MCUboot and the flight software |
 | I copied `bootable.uf2` but no serial port appears | The bootloader rejected the image. Either MCUboot is not installed yet, or your `keys/proves.pem` does not match the bootloader on the board | Install MCUboot with `make build-mcuboot`, then copy `bootable.uf2` again |
 | `Permission denied` on `/dev/ttyACM0` | Your Linux user is not in the `dialout` group | Add yourself to `dialout` and log out and back in. The command is in [Set up your development environment](dev-environment.md) |
-| The board resets every 20 to 30 seconds | The hardware watchdog is enabled and the flight software is not petting it, or the board is in a boot loop | Look at the events in the GDS. On a bare board, a shunt on the **J4** header disables the watchdog for bench work |
+| The board resets about every 42 seconds | The hardware watchdog is enabled and the flight software is not petting it, or the board is in a boot loop | Look at the events in the GDS. On a bare board, a shunt on **J4** (`WDT_DISABLE`) disables the watchdog for bench work |
+| The `RP2350` drive disappears after about 42 seconds | The hardware watchdog ended bootloader mode, because nothing pets it there | Enter bootloader mode again and copy the file sooner. See the watchdog note in [Full kit](../paths/full-kit.md#3-put-the-kit-into-bootloader-mode) |
 
 ## Ground station problems
 

@@ -105,7 +105,7 @@ This is the development loop you will run hundreds of times:
 
 ## About the watchdog
 
-The V5e has a hardware watchdog that power-cycles the board if the flight software stops petting it. On boards from the factory, the solder jumper **JP6** that connects the watchdog to the power supply is open, so the watchdog cannot reset anything. If your board has JP6 bridged, a shunt on the 2-pin header **J4** (`WDT_DISABLE`) turns the watchdog off for bench work. Remove the shunt before flight.
+The V5e has a hardware watchdog that power-cycles the board if the flight software stops petting it for about 42 seconds. The solder jumper **JP6** connects the watchdog to the power supply. Boards that ship in a kit have JP6 bridged. A board straight from the assembly house has it open, and then the watchdog cannot reset anything. With JP6 bridged, the watchdog also ends bootloader mode after about 42 seconds, so copy your file promptly. A shunt on **J4** (`WDT_DISABLE`) turns the watchdog off for bench work. Kit boards have a 2-pin header soldered there. A board straight from the assembly house has two bare holes. Remove the shunt before flight.
 
 ## Next step
 

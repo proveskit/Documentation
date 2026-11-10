@@ -90,7 +90,11 @@
     "nodes": ["antenna_top_cap_v2 (1) <1>"],
     "title": "Antenna Board (Z+)",
     "body": "The top cap. It holds the folded antenna elements down until the satellite is in orbit, then releases them so they spring out. TODO: Michael to confirm release mechanism wording.",
-    "docs": "../Assembly_Guide_V3/Chapter_5/"
+    "docs": "../Assembly_Guide_V3/Chapter_5/",
+    "marks": [
+      { "id": "boot-select", "label": "BOOT SELECT", "at": [0.047095, 0.0998, 0.027802], "normal": [0, 1, 0] },
+      { "id": "reset", "label": "RESET", "at": [0.047095, 0.0998, 0.024102], "normal": [0, 1, 0] }
+    ]
   },
   {
     "id": "antenna-elements",
