@@ -271,8 +271,14 @@ const marksBox = (list) => {
 };
 
 let flight = null;
-const frameBox = (box, { from = 1, view, tight = false } = {}) => {
+// A locked orbit pivots on one spot, such as a build step's focus or a set of marks. Panning
+// is off while it holds, so every drag turns the view around that spot. Any frame without
+// lock releases it.
+let orbitLock = null;
+const frameBox = (box, { from = 1, view, tight = false, lock = false } = {}) => {
   const sphere = box.getBoundingSphere(new THREE.Sphere());
+  orbitLock = lock ? { target: sphere.center.clone(), position: new THREE.Vector3() } : null;
+  controls.enablePan = !lock;
   const fov = THREE.MathUtils.degToRad(camera.fov) / 2;
   // A part is framed no closer than half the kit, so the kit stays recognisable; a tight frame
   // (a mark deep link) fills the view with the detail itself.
@@ -282,6 +288,7 @@ const frameBox = (box, { from = 1, view, tight = false } = {}) => {
   const fromTarget = controls.target.clone();
   const fromPos = from === 1 ? camera.position.clone() : sphere.center.clone().addScaledVector(dir, distance * from);
   const toPos = sphere.center.clone().addScaledVector(dir, distance);
+  orbitLock?.position.copy(toPos);
   const travel = fromPos.distanceTo(toPos) + fromTarget.distanceTo(sphere.center);
   const ms = clamp(250 + 120 * Math.log2(1 + travel / kitRadius), 250, view ? 800 : 520);
   tweens.delete(flight);
@@ -293,7 +300,14 @@ const frameBox = (box, { from = 1, view, tight = false } = {}) => {
   });
 };
 controls.addEventListener('start', () => {
-  if (tweens.delete(flight)) controls.enableDamping = !reducedMotion.matches;
+  if (tweens.delete(flight)) {
+    controls.enableDamping = !reducedMotion.matches;
+    // A drag that interrupts the flight to a locked spot still has to pivot on that spot.
+    if (orbitLock) {
+      controls.target.copy(orbitLock.target);
+      camera.position.copy(orbitLock.position);
+    }
+  }
   bubble.classList.add('dragging');
   hideTooltip();
 });
@@ -596,14 +610,22 @@ const stages = [];
 }
 const assembled = { shown: new Set(pieces), pose: new Map() };
 
-const shownBox = (scene) => {
+const sceneBox = (scene, members) => {
   const box = new THREE.Box3();
-  for (const p of scene.shown) {
+  for (const p of members) {
     p.object.position.copy(p.rest).add(scene.pose.get(p) ?? new THREE.Vector3());
     box.expandByObject(p.object);
   }
   place();
   return box;
+};
+const shownBox = (scene) => sceneBox(scene, scene.shown);
+// A step that names its focus is framed on those parts and the orbit locks onto them. Other
+// steps show everything built so far and orbit freely.
+const frameStage = (scene) => {
+  const focused = scene.step.focus ? [...scene.focus].filter((p) => scene.shown.has(p)) : [];
+  if (focused.length) frameBox(sceneBox(scene, focused), { view: scene.step.view, lock: true });
+  else frameBox(shownBox(scene), { view: scene.step.view });
 };
 
 // Pieces joining the scene fly in from their exploded spot; pieces leaving fly back out to it.
@@ -669,7 +691,7 @@ const goTo = (n) => {
   else refocus();
   showSheets();
   stageTo(stage);
-  frameBox(shownBox(stage), { view: step.view });
+  frameStage(stage);
 };
 
 const exitGuide = () => {
@@ -695,7 +717,7 @@ addEventListener('keydown', (e) => {
 
 $('reset').addEventListener('click', () => {
   select(null);
-  if (stage) frameBox(shownBox(stage), { view: stage.step.view });
+  if (stage) frameStage(stage);
   else frameBox(homeBox);
 });
 
@@ -713,7 +735,7 @@ const deepMarks = marks.filter((m) => m.part === deepLinked && (params.get('mark
 if (deepStep) goTo(deepStep - 1);
 if (deepLinked && deepMarks.length) {
   select(deepLinked);
-  frameBox(marksBox(deepMarks), { from: 1.3, view: deepMarks[0].normal ? deepMarks[0].normal.clone().multiplyScalar(2).add(new THREE.Vector3(0.6, 0, -0.5)).toArray() : undefined, tight: true });
+  frameBox(marksBox(deepMarks), { from: 1.3, view: deepMarks[0].normal ? deepMarks[0].normal.clone().multiplyScalar(2).add(new THREE.Vector3(0.6, 0, -0.5)).toArray() : undefined, tight: true, lock: true });
 } else if (deepLinked) select(deepLinked, { frame: true });
 else if (!deepStep) frameBox(homeBox, { from: 1.3 });
 

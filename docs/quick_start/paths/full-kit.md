@@ -72,10 +72,10 @@ The holes have no header pins. Straighten two paper clips and bend the end of ea
 
 A drive called `RP2350` appears on your computer. The flight controller inside is now in bootloader mode. If the drive does not appear, the clip left **BOOT SELECT** before the reset finished. Try again and hold it a moment longer.
 
-!!! warning "You may have about 26 seconds"
-    The flight controller has a hardware watchdog. When the flight software runs it pets the watchdog every second. In bootloader mode nothing pets it, and about 26 seconds after the reset the watchdog restarts the flight controller, which boots the old software again and the `RP2350` drive disappears.
+!!! warning "You have about 42 seconds"
+    The flight controller has a hardware watchdog. When the flight software runs it pets the watchdog every second. In bootloader mode nothing pets it, and about 42 seconds after the reset the watchdog restarts the flight controller. The old software boots again and the `RP2350` drive disappears.
 
-    This only happens on kits whose watchdog is wired in, with the **JP6** solder jumper on the flight controller bridged. Bare boards from the factory have it open. If your drive vanishes on its own, have `bootable.uf2` ready in a terminal before you reset, and copy it as soon as the drive appears. The copy takes a few seconds. If the window closes halfway, nothing is lost: enter bootloader mode again and copy again.
+    Every kit ships with the watchdog wired in, so expect this. Have `bootable.uf2` ready in a terminal before you reset, and copy it as soon as the drive appears. The copy takes a few seconds. If the window closes halfway, nothing is lost: enter bootloader mode again and copy again.
 
 !!! tip "The command-line way, once the kit is yours"
     After your own build is on board, the GDS command `ReferenceDeployment.bootloaderTrigger.TRIGGER_BOOTLOADER` reboots the kit into bootloader mode without touching the jumpers. Raspberry Pi's `picotool reboot -f -u` does not work on a kit running the flight software, because the flight software does not expose the reset interface picotool looks for. Use the jumpers the first time.
