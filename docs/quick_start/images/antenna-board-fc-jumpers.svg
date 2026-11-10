@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 230" width="1220" height="460" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 236" width="1220" height="472" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
 <title id="t">FC Jumpers corner of the antenna board</title>
-<desc id="d">The outer face of the antenna board near one corner. A silkscreen box labelled FC Jumpers holds three pairs of plated holes: RESET, BOOT SELECT and WDT DISABLE. A bent paper clip bridges the two BOOT SELECT holes. A second clip touches the RESET pair.</desc>
-<style>text{fill:#e8e9f1}.silk{fill:#e8e9f1;font-size:7px;font-weight:600;letter-spacing:.2px}.call{fill:#1c1d26;font-size:9.5px}.num{fill:#fff;font-size:9px;font-weight:700}</style>
-<path d="M260.0,44.2 H499.5 V149.2 H604.5 V232.0 H260.0 Z" fill="#20262c" stroke="#3c4650" stroke-width="1"/>
+<desc id="d">The outer face of the antenna board near one corner. A silkscreen box labelled FC Jumpers holds three pairs of plated holes: RESET, BOOT SELECT and WDT DISABLE. A bent paper clip bridges the two BOOT SELECT holes. A second clip touches the RESET pair. The Batt Charging Bypass holes beside them are crossed out: they are wired to the battery and must not be touched.</desc>
+<style>.silk{fill:#e8e9f1;font-weight:600;letter-spacing:.2px}.call{fill:#1c1d26;font-size:9.5px}.sub{fill:#4a4d5e;font-size:8px}.warn{fill:#b3261e;font-size:9.5px;font-weight:700}.num{fill:#fff;font-size:9px;font-weight:700}</style>
+<rect x="0" y="0" width="610" height="236" rx="6" fill="#f4f5fb"/>
+<path d="M260.0,44.2 H499.5 V149.2 H604.5 V238.0 H260.0 Z" fill="#20262c" stroke="#3c4650" stroke-width="1"/>
 <line x1="460.5" y1="78.2" x2="460.5" y2="189.2" stroke="#e8e9f1" stroke-width="1.2" stroke-linecap="round"/>
 <line x1="460.5" y1="115.7" x2="395.5" y2="115.7" stroke="#e8e9f1" stroke-width="1.2" stroke-linecap="round"/>
 <line x1="460.5" y1="153.2" x2="395.5" y2="153.2" stroke="#e8e9f1" stroke-width="1.2" stroke-linecap="round"/>
@@ -21,14 +22,14 @@
 <line x1="310.5" y1="93.2" x2="310.5" y2="87.2" stroke="#e8e9f1" stroke-width="1.2" stroke-linecap="round"/>
 <line x1="300.5" y1="93.2" x2="388.5" y2="93.2" stroke="#e8e9f1" stroke-width="1.2" stroke-linecap="round"/>
 <line x1="300.5" y1="133.2" x2="300.5" y2="93.2" stroke="#e8e9f1" stroke-width="1.2" stroke-linecap="round"/>
-<text class="silk" x="427.5" y="73.2" font-size="5.5" text-anchor="middle" dominant-baseline="middle" transform="rotate(0 427.5 73.2)">FC Jumpers</text>
-<text class="silk" x="467.5" y="98.2" font-size="3.4" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 467.5 98.2)">RESET</text>
-<text class="silk" x="469.9" y="133.2" font-size="3.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 469.9 133.2)">BOOT</text>
-<text class="silk" x="465.2" y="133.2" font-size="3.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 465.2 133.2)">SELECT</text>
-<text class="silk" x="468.9" y="173.2" font-size="3.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 468.9 173.2)">WDT</text>
-<text class="silk" x="464.2" y="173.2" font-size="3.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 464.2 173.2)">DISABLE</text>
-<text class="silk" x="428.0" y="198.2" font-size="4.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(0 428.0 198.2)">Circle is Ground</text>
-<text class="silk" x="341.5" y="146.2" font-size="4" text-anchor="middle" dominant-baseline="middle" transform="rotate(0 341.5 146.2)">Batt Charging Bypass</text>
+<text class="silk" x="427.5" y="73.2" style="font-size:6.5px" text-anchor="middle" dominant-baseline="middle" transform="rotate(0 427.5 73.2)">FC Jumpers</text>
+<text class="silk" x="467.5" y="98.2" style="font-size:5.2px" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 467.5 98.2)">RESET</text>
+<text class="silk" x="464.2" y="133.2" style="font-size:4.6px" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 464.2 133.2)">BOOT</text>
+<text class="silk" x="470.9" y="133.2" style="font-size:4.6px" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 470.9 133.2)">SELECT</text>
+<text class="silk" x="463.2" y="173.2" style="font-size:4.6px" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 463.2 173.2)">WDT</text>
+<text class="silk" x="469.9" y="173.2" style="font-size:4.6px" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 469.9 173.2)">DISABLE</text>
+<text class="silk" x="428.0" y="198.2" style="font-size:6px" text-anchor="middle" dominant-baseline="middle" transform="rotate(0 428.0 198.2)">Circle is Ground</text>
+<text class="silk" x="341.5" y="146.2" style="font-size:6px" text-anchor="middle" dominant-baseline="middle" transform="rotate(0 341.5 146.2)">Batt Charging Bypass</text>
 <rect x="407.3" y="89.7" width="17.0" height="17.0" fill="#d4a93a"/>
 <circle cx="415.8" cy="98.2" r="5.0" fill="#101418"/>
 <circle cx="441.2" cy="98.2" r="8.5" fill="#d4a93a"/>
@@ -48,6 +49,8 @@
 <path d="M415.8,135.2 C411.8,119.2 445.2,119.2 441.2,135.2" fill="none" stroke="#8c9eff" stroke-width="4" stroke-linecap="round"/>
 <path d="M415.8,135.2 C411.8,119.2 445.2,119.2 441.2,135.2" fill="none" stroke="#dfe4ff" stroke-width="1.4" stroke-linecap="round"/>
 <path d="M415.8,98.2 C411.8,82.2 445.2,82.2 441.2,98.2" fill="none" stroke="#8c9eff" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 3" opacity=".9"/>
+<rect x="318.9" y="103.2" width="53.4" height="28" rx="5" fill="none" stroke="#ff5a4f" stroke-width="2" stroke-dasharray="4 3"/>
+<line x1="322.9" y1="127.2" x2="368.3" y2="107.2" stroke="#ff5a4f" stroke-width="2"/>
 <line x1="246.0" y1="135.0" x2="394.0" y2="135.0" stroke="#1c1d26" stroke-width="1" opacity=".7"/>
 <circle cx="246.0" cy="135.0" r="7" fill="#3f51b5"/>
 <text class="num" x="246.0" y="135.5" text-anchor="middle" dominant-baseline="middle">1</text>
@@ -59,7 +62,9 @@
 <line x1="246.0" y1="172.0" x2="394.0" y2="172.0" stroke="#1c1d26" stroke-width="1" opacity=".7"/>
 <circle cx="246.0" cy="172.0" r="7" fill="#3f51b5"/>
 <text class="num" x="246.0" y="172.5" text-anchor="middle" dominant-baseline="middle">3</text>
-<text class="call" x="235.0" y="175.5" text-anchor="end">Leave WDT DISABLE open</text>
-<text class="call" x="4" y="13" font-size="9.5" font-weight="700">Antenna board, outer face, FC Jumpers corner</text>
-<text class="call" x="4" y="25" font-size="8" opacity=".75">Each pair of holes is 2.54 mm apart. Drawn from the v2c layout, looking at the board from outside the kit.</text>
+<text class="call" x="235.0" y="175.5" text-anchor="end">WDT DISABLE: open in normal use</text>
+<line x1="253.0" y1="208.0" x2="345.6" y2="132.2" stroke="#b3261e" stroke-width="1"/>
+<text class="warn" x="249.0" y="211.5" text-anchor="end">Do not touch: wired to the battery</text>
+<text class="call" x="8" y="15" style="font-weight:700">Antenna board, outer face, FC Jumpers corner</text>
+<text class="sub" x="8" y="27">Each pair of holes is 2.54 mm apart. Drawn from the v2c layout, looking at the board from outside the kit.</text>
 </svg>

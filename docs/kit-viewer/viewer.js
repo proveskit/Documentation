@@ -226,11 +226,12 @@ setExplode(0);
 
 // Marks label one spot on a part, such as the jumper holes on the antenna board. parts.json
 // gives each in world space with the kit closed; it rides on its piece from then on, so it
-// follows the explode slider and the build-guide poses. A mark shows while its part is
-// selected and the camera is on the marked face.
+// follows the explode slider and the build-guide poses. Marks stay hidden until a ?mark=
+// deep link asks for them, because at part zoom neighbouring labels would overlap. They show
+// while their part stays selected and the camera is on the marked face.
 scene.updateMatrixWorld(true);
 const markLayer = $('marks');
-const marks = parts.flatMap((part) => (part.marks ?? []).map((mark) => {
+const marks = parts.flatMap((part) => (part.pieces.length ? part.marks ?? [] : []).map((mark) => {
   const piece = part.pieces[0];
   const anchor = new THREE.Object3D();
   anchor.position.copy(piece.object.worldToLocal(new THREE.Vector3(...mark.at)));
@@ -249,9 +250,18 @@ const marks = parts.flatMap((part) => (part.marks ?? []).map((mark) => {
 }));
 const markPos = new THREE.Vector3();
 const markEye = new THREE.Vector3();
+// The marks a deep link asked for. Selecting anything else, or nothing, drops them.
+let shownMarks = new Set();
+const dropMarks = () => {
+  if (!shownMarks.size) return;
+  shownMarks = new Set();
+  const url = new URL(location.href);
+  url.searchParams.delete('mark');
+  history.replaceState(null, '', url);
+};
 const placeMarks = () => {
   for (const m of marks) {
-    let show = selected === m.part;
+    let show = shownMarks.has(m) && selected === m.part;
     if (show) {
       m.anchor.getWorldPosition(markPos);
       if (m.normal) show = markEye.subVectors(camera.position, markPos).dot(m.normal) > 0;
@@ -279,6 +289,8 @@ const frameBox = (box, { from = 1, view, tight = false, lock = false } = {}) => 
   const sphere = box.getBoundingSphere(new THREE.Sphere());
   orbitLock = lock ? { target: sphere.center.clone(), position: new THREE.Vector3() } : null;
   controls.enablePan = !lock;
+  // Marks are only legible in their own tight frame, so any other frame drops them.
+  if (!tight) dropMarks();
   const fov = THREE.MathUtils.degToRad(camera.fov) / 2;
   // A part is framed no closer than half the kit, so the kit stays recognisable; a tight frame
   // (a mark deep link) fills the view with the detail itself.
@@ -448,6 +460,12 @@ const select = (part, { frame = false } = {}) => {
   const previous = selected;
   selected = part;
   if (part !== previous) refocus();
+  // Leaving a marked view drops its marks and its orbit lock.
+  if (part !== previous && shownMarks.size) {
+    dropMarks();
+    orbitLock = null;
+    controls.enablePan = true;
+  }
   const url = new URL(location.href);
   if (part) url.searchParams.set('part', part.id);
   else url.searchParams.delete('part');
@@ -735,6 +753,7 @@ const deepMarks = marks.filter((m) => m.part === deepLinked && (params.get('mark
 if (deepStep) goTo(deepStep - 1);
 if (deepLinked && deepMarks.length) {
   select(deepLinked);
+  shownMarks = new Set(deepMarks);
   frameBox(marksBox(deepMarks), { from: 1.3, view: deepMarks[0].normal ? deepMarks[0].normal.clone().multiplyScalar(2).add(new THREE.Vector3(0.6, 0, -0.5)).toArray() : undefined, tight: true, lock: true });
 } else if (deepLinked) select(deepLinked, { frame: true });
 else if (!deepStep) frameBox(homeBox, { from: 1.3 });

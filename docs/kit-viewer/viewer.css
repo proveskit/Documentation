@@ -385,8 +385,6 @@ button.link:hover { background: transparent; text-decoration: underline; }
   white-space: nowrap;
 }
 
-.mark.behind { opacity: 0.35; }
-
 .status {
   position: absolute;
   inset: 0;
