@@ -344,6 +344,49 @@ button.link:hover { background: transparent; text-decoration: underline; }
   transition: opacity 120ms var(--ease-out);
 }
 
+/* Marks pin a label to one spot on a part, such as a pair of jumper holes. */
+.marks {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  will-change: transform;
+}
+
+.mark[hidden] { display: none; }
+
+.mark-dot {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+  box-shadow: 0 0 0 2px var(--bg);
+}
+
+.mark-label {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mark.behind { opacity: 0.35; }
+
 .status {
   position: absolute;
   inset: 0;

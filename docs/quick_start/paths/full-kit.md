@@ -16,9 +16,9 @@ Look at the antenna board. You will use these features, and the silkscreen label
 | ----- | ---------- | ------------------- |
 | **Remove Before Flight Pin Port** | The RBF pin. While the pin is in, the batteries are disconnected | Pull it to power on. Put it back to power off |
 | **FC USB** | A USB-C port wired to the flight controller for data only. It does not power the kit | Connect your computer here |
-| **FC Jumpers: BOOT SELECT** | A 2-pin header wired to the flight controller's BOOT button | Short it to enter bootloader mode |
-| **FC Jumpers: RESET** | A 2-pin header wired to the flight controller's RESET button | Short it to reset |
-| **FC Jumpers: WDT DISABLE** | A 2-pin header that turns off the hardware watchdog | Leave it alone unless you know why |
+| **FC Jumpers: BOOT SELECT** | Two plated holes wired to the flight controller's BOOT button. No pins are fitted | Bridge them to enter bootloader mode |
+| **FC Jumpers: RESET** | Two plated holes wired to the flight controller's RESET button | Bridge them to reset |
+| **FC Jumpers: WDT DISABLE** | Two plated holes that turn off the hardware watchdog | Leave them open unless you know why |
 
 The feet have deployment switches. In the deployer those switches hold the satellite off, and they do the same on your desk. Stand the kit so that no foot switch is pressed, for example on its side on a soft pad, before you expect it to power on.
 
@@ -58,13 +58,24 @@ make
 
 ## 3. Put the kit into bootloader mode
 
-With the kit powered on and connected:
+The software on board will not take your commands, so you cannot ask it to reboot into the bootloader. Instead you do what the two buttons on the flight controller do, from outside the kit, through the **FC Jumpers** holes on the antenna board.
 
-1. Put a jumper block across the **BOOT SELECT** header.
-2. Touch a second jumper block across the **RESET** header for a moment, or tap the pins with a bent paper clip.
-3. Remove the jumper from **BOOT SELECT**.
+<iframe src="../../../kit-viewer/viewer.html?part=antenna-board&mark=boot-select,reset" title="The BOOT SELECT and RESET jumper holes on the antenna board, in the PROVES Kit 3D viewer" style="width: 100%; height: 50vh; border: 0; border-radius: 8px;" loading="lazy" allow="fullscreen"></iframe>
 
-A drive called `RP2350` appears on your computer. The flight controller inside is now in bootloader mode.
+![The FC Jumpers corner of the antenna board, with a bent paper clip bridging the two BOOT SELECT holes and a second one touching the RESET holes](../images/antenna-board-fc-jumpers.svg)
+
+The holes have no header pins. Straighten two paper clips and bend the end of each into a U that spans 2.54 mm, or use two pairs of tweezers. With the kit powered on and connected:
+
+1. Hold one clip in the two **BOOT SELECT** holes. Keep it there.
+2. Touch the second clip across the two **RESET** holes for a moment, then take it away.
+3. Take the clip out of **BOOT SELECT**.
+
+A drive called `RP2350` appears on your computer. The flight controller inside is now in bootloader mode. If the drive does not appear, the clip left **BOOT SELECT** before the reset finished. Try again and hold it a moment longer.
+
+!!! warning "You may have about 26 seconds"
+    The flight controller has a hardware watchdog. When the flight software runs it pets the watchdog every second. In bootloader mode nothing pets it, and about 26 seconds after the reset the watchdog restarts the flight controller, which boots the old software again and the `RP2350` drive disappears.
+
+    This only happens on kits whose watchdog is wired in, with the **JP6** solder jumper on the flight controller bridged. Bare boards from the factory have it open. If your drive vanishes on its own, have `bootable.uf2` ready in a terminal before you reset, and copy it as soon as the drive appears. The copy takes a few seconds. If the window closes halfway, nothing is lost: enter bootloader mode again and copy again.
 
 !!! tip "The command-line way, once the kit is yours"
     After your own build is on board, the GDS command `ReferenceDeployment.bootloaderTrigger.TRIGGER_BOOTLOADER` reboots the kit into bootloader mode without touching the jumpers. Raspberry Pi's `picotool reboot -f -u` does not work on a kit running the flight software, because the flight software does not expose the reset interface picotool looks for. Use the jumpers the first time.
@@ -106,7 +117,7 @@ From here the kit is yours. The [radio stick](radio-stick.md) path puts the same
 - To power off, put the RBF pin back in. Unplug USB after that, not before, if you want the board to go dark at once.
 - Put the RBF pin in and disconnect the batteries before you unplug any solar face.
 - The kit charges its batteries from the solar faces under bright light. Indoor light is not enough to matter.
-- Keep the **WDT DISABLE** header open unless the flight software is not running. The flight software pets the hardware watchdog for you.
+- Keep the **WDT DISABLE** holes open unless the flight software is not running. The flight software pets the hardware watchdog for you.
 
 ## Next step
 

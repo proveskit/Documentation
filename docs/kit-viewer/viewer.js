@@ -224,11 +224,60 @@ setExplode(0.5);
 const homeBox = new THREE.Box3().setFromObject(assembly);
 setExplode(0);
 
+// Marks label one spot on a part, such as the jumper holes on the antenna board. parts.json
+// gives each in world space with the kit closed; it rides on its piece from then on, so it
+// follows the explode slider and the build-guide poses. A mark shows while its part is
+// selected and the camera is on the marked face.
+scene.updateMatrixWorld(true);
+const markLayer = $('marks');
+const marks = parts.flatMap((part) => (part.marks ?? []).map((mark) => {
+  const piece = part.pieces[0];
+  const anchor = new THREE.Object3D();
+  anchor.position.copy(piece.object.worldToLocal(new THREE.Vector3(...mark.at)));
+  piece.object.add(anchor);
+  const el = document.createElement('div');
+  el.className = 'mark';
+  el.hidden = true;
+  const dot = document.createElement('span');
+  dot.className = 'mark-dot';
+  const label = document.createElement('span');
+  label.className = 'mark-label';
+  label.textContent = mark.label;
+  el.append(dot, label);
+  markLayer.append(el);
+  return { id: mark.id, part, anchor, el, normal: mark.normal ? new THREE.Vector3(...mark.normal) : null };
+}));
+const markPos = new THREE.Vector3();
+const markEye = new THREE.Vector3();
+const placeMarks = () => {
+  for (const m of marks) {
+    let show = selected === m.part;
+    if (show) {
+      m.anchor.getWorldPosition(markPos);
+      if (m.normal) show = markEye.subVectors(camera.position, markPos).dot(m.normal) > 0;
+    }
+    m.el.hidden = !show;
+    if (!show) continue;
+    markPos.project(camera);
+    const x = (markPos.x * 0.5 + 0.5) * canvas.clientWidth;
+    const y = (-markPos.y * 0.5 + 0.5) * canvas.clientHeight;
+    m.el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) translateY(-50%)`;
+  }
+};
+const marksBox = (list) => {
+  const box = new THREE.Box3();
+  for (const m of list) box.expandByPoint(m.anchor.getWorldPosition(new THREE.Vector3()));
+  return box.expandByScalar(kitRadius * 0.12);
+};
+
 let flight = null;
-const frameBox = (box, { from = 1, view } = {}) => {
+const frameBox = (box, { from = 1, view, tight = false } = {}) => {
   const sphere = box.getBoundingSphere(new THREE.Sphere());
   const fov = THREE.MathUtils.degToRad(camera.fov) / 2;
-  const distance = Math.max(sphere.radius, kitRadius * 0.45) / Math.sin(Math.min(fov, fov * camera.aspect)) * 1.35;
+  // A part is framed no closer than half the kit, so the kit stays recognisable; a tight frame
+  // (a mark deep link) fills the view with the detail itself.
+  const radius = tight ? sphere.radius : Math.max(sphere.radius, kitRadius * 0.45);
+  const distance = radius / Math.sin(Math.min(fov, fov * camera.aspect)) * 1.35;
   const dir = (view ? new THREE.Vector3(...view) : camera.position.clone().sub(controls.target)).normalize();
   const fromTarget = controls.target.clone();
   const fromPos = from === 1 ? camera.position.clone() : sphere.center.clone().addScaledVector(dir, distance * from);
@@ -659,8 +708,13 @@ const params = new URLSearchParams(location.search);
 setExplode(clamp(Number(params.get('explode')) || 0, 0, 1));
 const deepLinked = parts.find((p) => p.id === params.get('part'));
 const deepStep = Number(params.get('step'));
+// ?mark=boot-select,reset zooms to those marks on the deep-linked part instead of the whole part.
+const deepMarks = marks.filter((m) => m.part === deepLinked && (params.get('mark') ?? '').split(',').includes(m.id));
 if (deepStep) goTo(deepStep - 1);
-if (deepLinked) select(deepLinked, { frame: true });
+if (deepLinked && deepMarks.length) {
+  select(deepLinked);
+  frameBox(marksBox(deepMarks), { from: 1.3, view: deepMarks[0].normal ? deepMarks[0].normal.clone().multiplyScalar(2).add(new THREE.Vector3(0.6, 0, -0.5)).toArray() : undefined, tight: true });
+} else if (deepLinked) select(deepLinked, { frame: true });
 else if (!deepStep) frameBox(homeBox, { from: 1.3 });
 
 renderer.setAnimationLoop((now) => {
@@ -670,6 +724,7 @@ renderer.setAnimationLoop((now) => {
   liftView();
   renderer.render(scene, camera);
   placeBubble();
+  placeMarks();
 });
 
 window.kitViewer = { parts, select, setExplode, camera, controls, goTo, exitGuide };
