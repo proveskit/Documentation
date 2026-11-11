@@ -10,16 +10,27 @@ Everything you touch on an assembled kit is on the **antenna board**, the top fa
 
 ## Meet the top face
 
-Look at the antenna board. You will use these features, and the silkscreen labels them:
+This is the outer face of the antenna board, rendered from its KiCad design. The numbers match the table.
 
-| Label | What it is | What you do with it |
-| ----- | ---------- | ------------------- |
-| **Remove Before Flight Pin Port** | The RBF pin. While the pin is in, the batteries are disconnected | Pull it to power on. Put it back to power off |
-| **FC USB** | A USB-C port wired to the flight controller for data only. It does not power the kit | Connect your computer here |
-| **FC Jumpers: BOOT SELECT** | Two plated holes wired to the flight controller's BOOT button. No pins are fitted | Bridge them to enter bootloader mode |
-| **FC Jumpers: RESET** | Two plated holes wired to the flight controller's RESET button | Bridge them to reset |
-| **FC Jumpers: WDT DISABLE** | Two plated holes that turn off the hardware watchdog while they are bridged | Leave them open, except while you load software |
-| **Batt Charging Bypass** | Two plated holes wired to the battery, beside the FC Jumpers box | Never bridge them |
+![The outer face of the antenna board with thirteen numbered features: two USB-C ports and the RBF jumper holes at the top left, the FC Jumpers and Batt Charging Bypass holes at the top right, the antennas and light sensor along the bottom](../images/antenna-board-top-face.svg)
+
+| # | Silkscreen label | What it is | What you do with it |
+| - | ---------------- | ---------- | ------------------- |
+| 1 | **FC USB** (J12) | A USB-C port wired to the flight controller for data only. It does not power the kit | Connect your computer here |
+| 2 | J8 | A USB-C port wired to the payload connector inside the kit | Leave it empty until you fit a payload |
+| 3 | **ALT RBF** | The remove-before-flight (RBF) jumper. Four plated holes in a white box. While the jumper bridges a left hole to a right hole, the batteries are disconnected | Pull the jumper to power on. Put it back to power off |
+| 4 | **Remove Before Flight Pin Port** | A label left over from an older RBF pin. This board has no hole here | Nothing |
+| 5 | **Batt Charging Bypass** (J2) | Two plated holes wired to the battery | Never bridge them |
+| 6 | **FC Jumpers: RESET** | Two plated holes wired to the flight controller's RESET button. No pins are fitted | Bridge them to reset |
+| 7 | **FC Jumpers: BOOT SELECT** | Two plated holes wired to the flight controller's BOOT button | Bridge them to enter bootloader mode |
+| 8 | **FC Jumpers: WDT DISABLE** | Two plated holes that turn off the hardware watchdog while they are bridged | Leave them open, except while you load software |
+| 9 | U3 | The top face light sensor | Keep it uncovered |
+| 10 | | The slots where the two tape-measure antennas mount | Screw both antennas on before you power on |
+| 11 | Flame mark | The burn wire that holds the antennas folded for launch | Leave it alone on the bench |
+| 12 | | A blue LED on the 3.3 V supply | It glows faintly while the flight controller has power |
+| 13 | | Four screws that hold the antenna board to the frame | Nothing |
+
+The four gold pads to the left of the boxed **ALT RBF** holes, and the other bare pads on this face, are the solder joints of connectors on the inside. Do not bridge them.
 
 The feet have deployment switches. In the deployer those switches hold the satellite off, and they do the same on your desk. Stand the kit so that no foot switch is pressed, for example on its side on a soft pad, before you expect it to power on.
 
@@ -28,7 +39,13 @@ The feet have deployment switches. In the deployer those switches hold the satel
 1. Screw both antennas on if they are not already fitted. Never let the radio transmit into nothing.
 2. Stand the kit so that no foot switch is pressed.
 3. Connect a USB-C cable from **FC USB** to your computer.
-4. Pull the RBF pin.
+4. Pull the RBF jumper straight out of the **ALT RBF** holes.
+
+<video autoplay loop muted playsinline controls poster="../../images/rbf-jumper-poster.jpg" style="width: 100%; border-radius: 8px;" aria-label="Animation of the two-pin RBF jumper lifting out of the boxed ALT RBF holes beside the FC USB port, then going back in">
+  <source src="../../images/rbf-jumper.mp4" type="video/mp4">
+</video>
+
+The RBF jumper is a two-pin header with its pins soldered together. In the holes it joins the left column to the right column, which switches the batteries off. Either row works. Keep it somewhere safe, because it is also how you turn the kit off.
 
 The kit boots on battery power. The **FC USB** port on the antenna board carries data only, so the kit does not run from USB the way a bare board does. If the batteries are flat, charge them under a bright light or take one solar face off to reach the flight controller's own USB-C port, which does power the board.
 
@@ -122,8 +139,8 @@ From here the kit is yours. The [radio stick](radio-stick.md) path puts the same
 
 ## Power off and handling
 
-- To power off, put the RBF pin back in. Unplug USB after that, not before, if you want the board to go dark at once.
-- Put the RBF pin in and disconnect the batteries before you unplug any solar face.
+- To power off, put the RBF jumper back in. Unplug USB after that, not before, if you want the board to go dark at once.
+- Put the RBF jumper in and disconnect the batteries before you unplug any solar face.
 - The kit charges its batteries from the solar faces under bright light. Indoor light is not enough to matter.
 - Keep the **WDT DISABLE** holes open in normal use. The flight software pets the hardware watchdog for you. The one time to bridge them is while you load software in bootloader mode.
 
