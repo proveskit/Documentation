@@ -171,15 +171,52 @@ const localTo = (parent) => {
     .map((instance) => ({ instance, body: footBody(instance), height: box(worldPoints(footBody(instance))).center[1] }))
     .sort((a, b) => b.height - a.height || a.instance.getName().localeCompare(b.instance.getName()));
   if (feet.length !== 8) throw new Error(`expected eight feet, found ${feet.length}`);
+
+  // Each new foot takes two M2x5 screws through the frame, one per side of the
+  // corner. Hole axes in the foot's part frame, read from the STEP cylinders
+  // (r = 1.2 mm, same in both feet), at the face the frame sheet sits on.
+  const HOLE_Z = { at: [-0.0377, 0.0371, -0.042] };
+  const HOLE_X = { at: [-0.0475, 0.0370, -0.0519] };
+  // The old switch foot's upper button-head screw sits on HOLE_Z's axis, head
+  // towards +z; it is M2.5, so it is thinned to M2 about its axis.
+  const screwFoot = feet.find(({ instance }) => /\(2\)/.test(instance.getName()));
+  const screwLeaves = findAll(screwFoot.instance, (n) => /Button Head.*Combine1/.test(n.getName()) && n.getMesh());
+  const toBody = mat4.invert(mat4.create(), screwFoot.body.getWorldMatrix());
+  const screw = screwLeaves
+    .map((leaf) => ({ leaf, axis: box(worldPoints(leaf).map((p) => apply(toBody, p))).center }))
+    .sort((a, b) => b.axis[1] - a.axis[1])[0];
+  const screwInBody = mat4.multiply(mat4.create(), mat4.fromTranslation(mat4.create(), [HOLE_Z.at[0], HOLE_Z.at[1], 0]),
+    mat4.multiply(mat4.create(), mat4.fromScaling(mat4.create(), [0.8, 0.8, 1]),
+      mat4.multiply(mat4.create(), mat4.fromTranslation(mat4.create(), [-screw.axis[0], -screw.axis[1], 0]), toBody)));
+  const zToMinusX = mat4.fromYRotation(mat4.create(), -Math.PI / 2);
+  const screwInHoleX = mat4.multiply(mat4.create(), mat4.fromTranslation(mat4.create(), HOLE_X.at),
+    mat4.multiply(mat4.create(), zToMinusX, mat4.fromTranslation(mat4.create(), HOLE_Z.at.map((v) => -v))));
+  const steel = screw.leaf.getMesh().listPrimitives()[0].getMaterial().getBaseColorFactor();
+  const screwSource = electra.createNode('screw source').setMatrix(mat4.create())
+    .addChild(electra.createNode('screw').setMesh(screw.leaf.getMesh()).setMatrix(screw.leaf.getWorldMatrix()));
+
+  const footScrews = assembly.listChildren().filter((n) => /^Combine1 <\d>$/.test(n.getName()))
+    .sort((a, b) => a.getName().localeCompare(b.getName(), 'en', { numeric: true }));
+  if (footScrews.length !== feet.length) throw new Error(`expected ${feet.length} Combine1 screw nodes, found ${footScrews.length}`);
+
   const gray = [0.4969, 0.4969, 0.4969, 1];
   feet.forEach(({ instance, body }, i) => {
     const style = i < 3 ? gussetFoot : solidFoot;
     const bodyWorld = body.getWorldMatrix();
+    const pair = footScrews[i];
+    disposeChildren(pair);
+    pair.setMatrix(mat4.create()).setMesh(null);
+    const screwMesh = (inBody) => copyMesh(pair.getName(), screwSource, (world) => mat4.multiply(mat4.create(),
+      mat4.invert(mat4.create(), assembly.getWorldMatrix()),
+      mat4.multiply(mat4.create(), bodyWorld, mat4.multiply(mat4.create(), inBody, mat4.multiply(mat4.create(), screwInBody, world)))), steel);
+    pair.addChild(electra.createNode('M2x5 button head (Z)').setMesh(screwMesh(mat4.create())));
+    pair.addChild(electra.createNode('M2x5 button head (X)').setMesh(screwMesh(screwInHoleX)));
     disposeChildren(instance);
     instance.addChild(electra.createNode('V4_STRUCTURE_FEET_COMMON')
       .setMesh(copyMesh('V4_STRUCTURE_FEET_COMMON', sceneRoot(style), localTo(instance)(bodyWorld), gray)));
-    console.log(`feet: ${instance.getName()} -> ${i < 3 ? 'gusset' : 'solid'}${i < 4 ? ' (top)' : ''}`);
+    console.log(`feet: ${instance.getName()} -> ${i < 3 ? 'gusset' : 'solid'}${i < 4 ? ' (top)' : ''}, screws ${pair.getName()}`);
   });
+  screwSource.traverse((n) => n.dispose());
 }
 
 await io.write(output, electra);
