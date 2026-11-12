@@ -168,12 +168,8 @@ nav: # Setting up the navigation. The below list will be tabs on left panel
       - Software Dev Diary: core_documentation/software/software-dev-diary.md
       - Battery PicoSDK: core_documentation/software/batt-pico-sdk.md
       - RMF9x Radio Usage: core_documentation/software/rfm_radio_usage.md
-      - pysquared.py: core_documentation/software/pysquared.md
-      - functions.py: core_documentation/software/functions.md
-      - big_data.py: core_documentation/software/big_data.md
-      - cdh.py: core_documentation/software/cdh.md
-      - payload.py: core_documentation/software/payload.md
-      - detumble.py: core_documentation/software/detumble.md
+      - PROVES Core Reference docs: https://open-source-space-foundation.github.io/proves-core-reference/
+      - pysquared.py (CircuitPython, legacy): core_documentation/software/pysquared.md
     - Legacy Documentation: 
       - Original Pleiades Concept Proposal: core_documentation/legacy/original_pleiades_proposal.md
       - Yearling-1 Block Diagram: core_documentation/legacy/yearling_1_block_diagram.md

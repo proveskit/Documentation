@@ -44,7 +44,7 @@
     "label": "Solar X+",
     "nodes": ["solar-panel-NoCutout (1) <1>"],
     "title": "XY Solar Panel (X+)",
-    "body": "One of four side panels. Its solar cells charge the battery, and its sensors (sun, temperature) and magnetorquer coil help the satellite know and change its orientation.",
+    "body": "One of four side panels. Its solar cells charge the battery, and its sensors (sun, temperature) and magnetorquer coil help the satellite know and change its orientation. The X and Y labels are for reference only. You choose the satellite's body frame when you configure the flight software.",
     "docs": "../core_documentation/hardware/XY_solar_board/"
   },
   {
@@ -53,7 +53,7 @@
     "label": "Solar X−",
     "nodes": ["solar-panel-NoCutout (1) <2>"],
     "title": "XY Solar Panel (X−)",
-    "body": "One of four side panels. Its solar cells charge the battery, and its sensors (sun, temperature) and magnetorquer coil help the satellite know and change its orientation.",
+    "body": "One of four side panels. Its solar cells charge the battery, and its sensors (sun, temperature) and magnetorquer coil help the satellite know and change its orientation. The X and Y labels are for reference only. You choose the satellite's body frame when you configure the flight software.",
     "docs": "../core_documentation/hardware/XY_solar_board/"
   },
   {
@@ -62,7 +62,7 @@
     "label": "Solar Y+",
     "nodes": ["solar-panel-NoCutout (1) <3>"],
     "title": "XY Solar Panel (Y+)",
-    "body": "One of four side panels, identical to the others. TODO: Michael to confirm this face is Y+ (axis read from the Onshape export, not the flight frame).",
+    "body": "One of four side panels, identical to the others. The X and Y labels are for reference only. You choose the satellite's body frame when you configure the flight software.",
     "docs": "../core_documentation/hardware/XY_solar_board/"
   },
   {
@@ -71,7 +71,7 @@
     "label": "Solar Y−",
     "nodes": ["solar-panel-NoCutout (1) <4>"],
     "title": "XY Solar Panel (Y−)",
-    "body": "One of four side panels, identical to the others. TODO: Michael to confirm this face is Y− (axis read from the Onshape export, not the flight frame).",
+    "body": "One of four side panels, identical to the others. The X and Y labels are for reference only. You choose the satellite's body frame when you configure the flight software.",
     "docs": "../core_documentation/hardware/XY_solar_board/"
   },
   {
@@ -89,7 +89,7 @@
     "label": "Antenna board Z+",
     "nodes": ["antenna_top_cap_v2 (1) <1>"],
     "title": "Antenna Board (Z+)",
-    "body": "The top cap. It holds the folded antenna elements down until the satellite is in orbit, then releases them so they spring out. TODO: Michael to confirm release mechanism wording.",
+    "body": "The top cap. It holds the stowed antennas down until the satellite is in orbit, then burns them free. One Berkley FireLine fishing line ties to the end of one antenna, loops once around the burn resistor on this board, and ties to the end of the other. Heating the resistor melts the line in the middle. The spring steel flings both antennas out, and each half of the line stays tied to its antenna, so nothing is ejected.",
     "docs": "../Assembly_Guide_V3/Chapter_5/",
     "marks": [
       { "id": "boot-select", "label": "BOOT SELECT", "at": [0.047095, 0.0998, 0.027802], "normal": [0, 1, 0] },
@@ -102,7 +102,7 @@
     "label": "Antenna elements",
     "nodes": ["antenna <1>", "antenna <2>"],
     "title": "Antenna Elements",
-    "body": "Two lengths of steel tape measure that form a dipole. Each is cut to about 165 mm for the 437 MHz amateur band. TODO: Michael to confirm these two bodies are the stowed elements.",
+    "body": "Two lengths of steel tape measure that form a dipole. Each is cut to about 165 mm for the 437 MHz amateur band. In this model they are stowed: the yellow strips wrapped around the kit.",
     "docs": "../Assembly_Guide_V3/Chapter_5/"
   },
   {
@@ -133,7 +133,7 @@
       "No screw feet <1>", "No screw feet <2>", "No screw feet <3>", "No screw feet <4>"
     ],
     "title": "Feet",
-    "body": "The corner feet are the only parts that touch the deployer rails. TODO: Michael to confirm which feet carry the deployment switches and the difference between the two foot styles.",
+    "body": "The corner feet are the only parts that touch the deployer rails. The deployment switches go on the top feet, at the antenna board end, so the kit turns on while standing upright on the bench.",
     "docs": "../core_documentation/hardware/1U_structure/"
   },
   {
@@ -157,6 +157,6 @@
       "Boss-Extrude1 <1>", "Boss-Extrude1 <2>", "Boss-Extrude1 <3>", "Boss-Extrude1 <4>"
     ],
     "title": "Fasteners",
-    "body": "M2.5 screws and nuts that hold the kit together. TODO: Michael to confirm what the \"Combine1\" and \"Boss-Extrude1\" bodies are."
+    "body": "The screws and nuts that hold the kit together. M2.5 screws join the frame, M2 screws fasten the feet to the frame, and four long screws in the corner rails act as the plungers that press the foot switches."
   }
 ]
