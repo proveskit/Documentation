@@ -102,7 +102,7 @@
     "label": "Antenna elements",
     "nodes": ["antenna <1>", "antenna <2>"],
     "title": "Antenna Elements",
-    "body": "Two lengths of steel tape measure that form a dipole. Each is cut to about 165 mm for the 437 MHz amateur band. In this model they are stowed: the yellow strips wrapped around the kit.",
+    "body": "Two lengths of steel tape measure that form a dipole. Each is cut to about 165 mm for the 437 MHz amateur band. The model shows them deployed, as they are in orbit. Before launch they wrap around the bottom of the kit, held by the burn wire on the antenna board.",
     "docs": "../Assembly_Guide_V3/Chapter_5/"
   },
   {

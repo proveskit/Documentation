@@ -44,7 +44,7 @@ const RULES = [
   { color: 'dedede', key: 'enig' },
   { color: '0000e0', minSize: CELL_MIN_SIZE_M, key: 'solar-cell' },
   { color: ['0000e0', 'ffff00'], key: 'busbar' },
-  { color: 'e0e000', key: 'tape-yellow' },
+  { color: ['e0e000', 'fde68b'], key: 'tape-yellow' },
   { color: '97e000', key: 'zinc' },
   { color: 'eedeb9', key: 'enig' },
   { color: ['e9e9e4', 'cecece', 'd7d4ca', 'f2f2e8', 'e0e0e0', 'fefffe', 'ffffff', 'bbbbbb', '67a9dc'], key: 'tin' },

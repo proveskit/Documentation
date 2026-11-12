@@ -6,6 +6,7 @@
 //   https://cad.onshape.com/api/assemblies/d/<doc>/w/<workspace>/e/<element>/gltf?outputFaceAppearances=true
 // kit.glb currently comes from "PROVES - Electra Assembly":
 //   d/acc5f9bc92965fa5d217bfe2/w/d08f4ac9f9109027620bb594/e/2cdf5fa55e1dd2b19a03dfd0
+// with its stowed antennas swapped for deployed ones by graft_deployed_antennas.mjs.
 //
 // Each top-level assembly instance becomes one node, named exactly as in
 // Onshape, holding one primitive per material. parts.json addresses these names,
