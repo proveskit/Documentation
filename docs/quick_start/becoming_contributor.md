@@ -1,8 +1,16 @@
 # Becoming a Contributor
 Open source projects live and die on the contributions of users like you! If you are interested in being a part of the development here are a few ways to get involved. 
 
-### Contact Us!  
-You can email Michael Pham at mlpham@cpp.edu. 
+### Join the Discord
+The main way to start contributing is the [PROVES Discord](https://discord.gg/Uc2k9U8WQ2). Every kit ships with a QR code that links to it.
+
+| Step | What you do |
+|---|---|
+| 1 | Join the [Discord](https://discord.gg/Uc2k9U8WQ2) and introduce yourself. |
+| 2 | Come to the weekly software meeting. The time is posted in the Discord. |
+| 3 | Pick up an open task with the team and make your first pull request. |
+
+You can also email Michael Pham at mlpham@cpp.edu.
 
 ## How to use GitHub
 !!! Tip "First Time Using GitHub?"
@@ -16,14 +24,20 @@ GitHub is our preferred method of version control. Once you've been added to (or
 4. **Step 4:** When you're done making new contributions make a pull request back to the main branch of the repository! One of the responsible engineers for that repo will then review the request to make sure everything looks good, and if it is ready to rock and roll they will merge it. 
 
 ### Fork a Repo and Make Pull Requests
-!!! Tip 
-    More instructions coming soon! 
+If you don't have write access to a repository, fork it and open your pull request from the fork. GitHub's guide [Contributing to a project](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) walks through each step.
 
 ## Versioning System 
 Whenever a change is made and shipped to our hardware or software we should change the version number so people can quickly differentiate what version they are using. 
 
 ### Software Versioning 
-TBD! 
+The flight software, [proves-core-reference](https://github.com/Open-Source-Space-Foundation/proves-core-reference), uses semantic version tags on its [releases](https://github.com/Open-Source-Space-Foundation/proves-core-reference/releases).
+
+| Part | Example | Changes when |
+|---|---|---|
+| Major | `v1.0.0` → `v2.0.0` | A change breaks compatibility with earlier builds or ground tools |
+| Minor | `v1.1.0` → `v1.2.0` | New features land without breaking anything |
+| Patch | `v1.0.1` → `v1.0.2` | Bug fixes only |
+| Pre-release | `v1.1.0-beta-26w20` | A build for testing before a release; the suffix names the year and week |
 
 ### Hardware Versioning 
 For major changes in hardware we denote each unique version a full version number iteration. As an example, going from ```V1``` to ```V2``` to ```V3```. A full version iteration *must be reviewed* before it is considered official on the main branch. 

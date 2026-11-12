@@ -1,3 +1,6 @@
+!!! warning "Legacy software"
+    This page covers the CircuitPython flight software that earlier kits ran. Current kits run [proves-core-reference](https://open-source-space-foundation.github.io/proves-core-reference/).
+
 # Overview
 The PySquared class is the one primary hardware abstracton class for boards in the PROVES Kit that employ a microcontroller. It is intended that all of the hardware drivers are initialized and data calls are abstracted in this class. This way flight software that is developed across multiple versions of the PROVES Kit can be interchangable by just changing out which `pysquared.py` version they are calling. 
 
@@ -13,7 +16,6 @@ This imports a `cubesat` object from the `pysquared` class and names it `c`, all
 
     The latest version is `V2.0.0` which reimplements `main` to remove the use of `asyncio` and now uses a modifed version of the more generic `adafruit_rfm` library for the radio driver rather than the older library based on `adafruit_rfm9x`. 
 
-Work in Progress.
 
 Note: There were sigficant changes between the PySquared class used for the V3 and V4 flight controller boards. 
 

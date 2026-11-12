@@ -16,5 +16,5 @@ Make sure to check out the [quick reference section](quick_reference.md) for som
     - [Flight Controller Board](hardware/FC_board.md)
     - [Electrical Power System Board](hardware/battery_board.md)
 - [Software](software/index.md)
-    - [Software](software/pysquared.md)
+    - [PROVES Core Reference docs](https://open-source-space-foundation.github.io/proves-core-reference/)
 
