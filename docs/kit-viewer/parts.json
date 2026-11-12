@@ -133,7 +133,7 @@
       "No screw feet <1>", "No screw feet <2>", "No screw feet <3>", "No screw feet <4>"
     ],
     "title": "Feet",
-    "body": "The corner feet are the only parts that touch the deployer rails. The deployment switches go on the top feet, at the antenna board end, so the kit turns on while standing upright on the bench.",
+    "body": "The corner feet are the only parts that touch the deployer rails. Three of the four top feet, at the antenna board end, are gusset feet that hold the deployment switches: two high-side inhibits and one low-side inhibit. The rest are solid feet. Keeping the switches on top means the kit turns on while standing upright on the bench.",
     "docs": "../core_documentation/hardware/1U_structure/"
   },
   {
