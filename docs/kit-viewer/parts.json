@@ -102,7 +102,7 @@
     "label": "Antenna elements",
     "nodes": ["antenna <1>", "antenna <2>"],
     "title": "Antenna Elements",
-    "body": "Two lengths of steel tape measure that form a dipole. Each is cut to about 165 mm for the 437 MHz amateur band. In this model they are stowed: the yellow strips wrapped around the kit.",
+    "body": "Two lengths of steel tape measure that form a dipole. Each is cut to about 165 mm for the 437 MHz amateur band. The model shows them deployed, as they are in orbit. Before launch they wrap around the bottom of the kit, held by the burn wire on the antenna board.",
     "docs": "../Assembly_Guide_V3/Chapter_5/"
   },
   {
@@ -133,7 +133,7 @@
       "No screw feet <1>", "No screw feet <2>", "No screw feet <3>", "No screw feet <4>"
     ],
     "title": "Feet",
-    "body": "The corner feet are the only parts that touch the deployer rails. The deployment switches go on the top feet, at the antenna board end, so the kit turns on while standing upright on the bench.",
+    "body": "The corner feet are the only parts that touch the deployer rails. Three of the four top feet, at the antenna board end, are gusset feet that hold the deployment switches: two high-side inhibits and one low-side inhibit. The rest are solid feet. Keeping the switches on top means the kit turns on while standing upright on the bench.",
     "docs": "../core_documentation/hardware/1U_structure/"
   },
   {
@@ -157,6 +157,6 @@
       "Boss-Extrude1 <1>", "Boss-Extrude1 <2>", "Boss-Extrude1 <3>", "Boss-Extrude1 <4>"
     ],
     "title": "Fasteners",
-    "body": "The screws and nuts that hold the kit together. M2.5 screws join the frame, M2 screws fasten the feet to the frame, and four long screws in the corner rails act as the plungers that press the foot switches."
+    "body": "The screws and nuts that hold the kit together. M2.5 screws join the frame, two M2 screws per foot fasten it to the frame, one on each side of the corner, and four long screws in the corner rails act as the plungers that press the foot switches."
   }
 ]
