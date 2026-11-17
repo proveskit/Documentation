@@ -1,6 +1,18 @@
 # Flight controller board
 
-You have a V5e Flight Controller Board on its own. By the end of this page the board runs flight software you built, and you have sent it a command from a ground station on your computer.
+You have a V5e Flight Controller Board on its own, possibly fresh from the assembly house with no firmware at all. By the end of this page the board runs flight software you built, and you have sent it a command from a ground station on your computer.
+
+!!! warning "JP6 (watchdog enable) is not soldered on the current board revision"
+    On the current V5e revision the solder jumper **JP6** ships open, so the hardware watchdog cannot reset the board. Nothing on this page needs it. Bridge JP6 only when you want flight-like watchdog behavior, and read [About the watchdog](#about-the-watchdog) first.
+
+| Step | What happens | Time |
+|---|---|---|
+| [1](#1-power-the-board-from-usb) | Power the board from USB | 1 min |
+| [2](#2-put-the-board-into-bootloader-mode) | Enter bootloader mode (a blank board starts there on its own) | 1 min |
+| [3](#3-install-the-bootloader-first-time-only) | Install MCUboot, once per board | 5 min |
+| [4](#4-flash-the-flight-software) | Copy your signed `bootable.uf2` | 1 min |
+| [5](#5-connect-a-ground-station) | Connect the GDS and send `CMD_NO_OP` | 5 min |
+| [6](#6-check-the-board) | Sanity check | 2 min |
 
 Before you start, finish [Set up your development environment](../setup/dev-environment.md).
 
@@ -22,6 +34,9 @@ Find the USB-C connector **J12** on the bottom side of the board and plug the bo
     Never command the radio to transmit without an antenna or a dummy load on the UHF connector. The output stage can be damaged. On the bench, screw on the antenna that came with the board before you send any radio command.
 
 ## 2. Put the board into bootloader mode
+
+!!! note "A blank board is already in bootloader mode"
+    The RP2350's built-in bootloader starts on its own when the flash holds no program. A board with no firmware shows up as the `RP2350` drive as soon as you plug it in, so you can skip the buttons below.
 
 The RP2350 has a bootloader built into the chip. In bootloader mode the board shows up on your computer as a USB drive called `RP2350`, and you load software by copying a file to it.
 
@@ -54,6 +69,19 @@ If the board already runs the flight software and you have a ground station conn
 
 A new board, or a board coming back from CircuitPython, needs MCUboot. MCUboot checks that the flight software is signed and lets the satellite update itself in orbit. You install it once.
 
+| You run | You get | Role of the image signing key |
+|---|---|---|
+| `make build-mcuboot` | `mcuboot.uf2`, the bootloader | Holds the public half and checks every image |
+| `make build` | `bootable.uf2`, the flight software | Signed with the private half, `keys/proves.pem` |
+
+!!! info "Two keys, and which one you own"
+    | Key | Where it lives | Made by | What it protects |
+    |---|---|---|---|
+    | Image signing key | `keys/proves.pem` | `make generate` copies MCUboot's sample RSA-2048 key | Which images MCUboot will boot |
+    | Command authentication key | `AuthDefaultKey.h` | `make generate` makes a random key, once per clone | Which ground station can command the board |
+
+    The sample signing key is public, which is fine on the bench. MCUboot and the flight software must use the same signing key. If you flash a bootloader built on another computer, copy that computer's `keys/proves.pem` too, or your images will not boot. The [proves-core-reference board list](https://open-source-space-foundation.github.io/proves-core-reference/additional-resources/board-list/) has the details and the SWD route.
+
 ```sh
 make build-mcuboot
 cp mcuboot.uf2 /media/$USER/RP2350/
@@ -80,6 +108,9 @@ ls /dev/ttyACM*
 
 If you see a port, the flight software is running.
 
+!!! tip "No USB bootloader? Use SWD"
+    With a debug probe on the SWD header, `make debug-install <file>` flashes through OpenOCD instead. The [proves-core-reference board list](https://open-source-space-foundation.github.io/proves-core-reference/additional-resources/board-list/) covers wiring and files.
+
 !!! note "Copy `bootable.uf2`, not `zephyr.uf2`"
     The build folder also contains `build-artifacts/zephyr/zephyr.uf2`. That file is not signed and MCUboot will not start it. Always copy `bootable.uf2` from the top of the repository.
 
@@ -93,7 +124,18 @@ On a bare board, expect these things:
 - Events may report that a face or sensor did not respond. That is the software noticing that the hardware is missing.
 - The board sits in safe mode because the battery voltage reads as zero without a battery board. `ReferenceDeployment.modeManager.EXIT_SAFE_MODE` takes it out for about 10 seconds, then the low battery reading puts it back and an event complains about a missing `/seq/enter_safe.bin`. On USB power that is normal, and commands and telemetry work in safe mode.
 
-## 6. Change, build, flash, repeat
+## 6. Check the board
+
+| Check | Pass |
+|---|---|
+| Serial port | `/dev/ttyACM*` (Linux) or `/dev/cu.usbmodem*` (macOS) appears a few seconds after the copy |
+| Ground station link | The GDS shows events arriving |
+| Commanding | `CMD_NO_OP` shows a completed event |
+| Bootloader round trip | `ReferenceDeployment.bootloaderTrigger.TRIGGER_BOOTLOADER` brings the `RP2350` drive back |
+
+If any check fails, see [Troubleshooting](../setup/troubleshooting.md).
+
+## 7. Change, build, flash, repeat
 
 This is the development loop you will run hundreds of times:
 
@@ -105,7 +147,14 @@ This is the development loop you will run hundreds of times:
 
 ## About the watchdog
 
-The V5e has a hardware watchdog that power-cycles the board if the flight software stops petting it for about 42 seconds. The solder jumper **JP6** connects the watchdog to the power supply. Boards that ship in a kit have JP6 bridged. A board straight from the assembly house has it open, and then the watchdog cannot reset anything. With JP6 bridged, the watchdog also ends bootloader mode after about 42 seconds, so copy your file promptly. A shunt on **J4** (`WDT_DISABLE`) turns the watchdog off for bench work. Kit boards have a 2-pin header soldered there. A board straight from the assembly house has two bare holes. Remove the shunt before flight.
+The V5e has a hardware watchdog that power-cycles the board if the flight software stops petting it for about 42 seconds. The solder jumper **JP6** connects the watchdog to the power supply.
+
+| JP6 | Watchdog | Bootloader mode | When |
+|---|---|---|---|
+| Open (current revision default) | Cannot reset the board | Stays open until you copy a file | Bench development |
+| Bridged | Power-cycles the board after ~42 s without a pet | Ends after ~42 s, so copy promptly | Flight-like testing and flight |
+
+A shunt on **J4** (`WDT_DISABLE`) turns the watchdog off while JP6 is bridged. On a bare board J4 is two holes. Remove the shunt before flight.
 
 ## Next step
 

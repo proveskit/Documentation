@@ -95,10 +95,10 @@ With the kit powered on and connected:
 
 A drive called `RP2350` appears on your computer. The flight controller inside is now in bootloader mode. If the drive does not appear, the clip left **BOOT SELECT** before the reset finished. Try again and hold it a moment longer.
 
-!!! warning "You have about 42 seconds"
+!!! warning "If JP6 is bridged, you have about 42 seconds"
     The flight controller has a hardware watchdog. When the flight software runs it pets the watchdog every second. In bootloader mode nothing pets it, and about 42 seconds after the reset the watchdog power-cycles the flight controller. The `RP2350` drive disappears.
 
-    Every kit ships with the watchdog wired in, so expect this. Have `bootable.uf2` ready in a terminal before you reset, and copy it as soon as the drive appears. The copy takes a few seconds. If the window closes in the middle of a copy, the kit may not start until you copy again. Enter bootloader mode again and repeat the copy. The bootloader is in the chip and cannot be erased this way.
+    The watchdog is only wired in when the solder jumper **JP6** on the flight controller is bridged. On the current flight controller revision JP6 ships open, and then the drive stays until you copy a file. If your board has JP6 bridged, expect the 42 second window. Have `bootable.uf2` ready in a terminal before you reset, and copy it as soon as the drive appears. The copy takes a few seconds. If the window closes in the middle of a copy, the kit may not start until you copy again. Enter bootloader mode again and repeat the copy. The bootloader is in the chip and cannot be erased this way.
 
     If 42 seconds is not enough, a third clip across the two **WDT DISABLE** holes stops the watchdog for as long as it stays in. Take it out as soon as the copy finishes.
 
